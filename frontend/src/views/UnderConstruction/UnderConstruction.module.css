@@ -1,43 +1,59 @@
 .main{
     height: 100vh;
+    width: 100%;
+    position:absolute;
+    
 }
 
 .url {
-  height: 65%;
-  background: blue;
-  border: 1px solid #000;
+  height: 70%;
+  background: #3F51B5;
+ margin-bottom: 20px;
 }
 
 
 .url > div {
-    border: 1px solid #000;
+  
     height: auto;
     text-align: center;
-    max-width: 350px;
     margin: auto;
     position: relative;
     top: 100px;
     box-sizing: border-box;
+
+   
+}
+.url > .welcome_note {
+  margin-top : 50px; 
+  width: 900px;
+  height: 400px;
+  background-color: white;
+  border-radius: 1%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+} 
+.url > .welcome_note > img {
+  width: 100%;
+  height: 100%;
 }
 
 .wlcm_text {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: 350;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 
 .wlcm_text + div {
-    margin: auto;
-  min-height: 100px;
-  max-width: 500px;
+  margin: auto;
+  min-height: 70px;
+  max-width: 400px;
   background: white;
-  border: 1px solid #000;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
   align-items: center;
   display: flex;
   justify-content: center;
-  border-radius: 100px;
+  border-radius: 5px;
 }
-
 
 
 

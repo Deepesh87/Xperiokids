@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import UnderConstruction from "../views/UnderConstruction/UnderConstruction";
 import FalseRoute from "../common/FalseRoute";
 
+
 function MainRoutes() {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ function MainRoutes() {
         <Route path="/" element={<UnderConstruction/>} />
         <Route path="/home" element={<Landing />} />
         <Route path="*" element={<FalseRoute/>} />
+       
       </Routes>
     </BrowserRouter>
   );
