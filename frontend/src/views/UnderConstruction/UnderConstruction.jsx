@@ -6,9 +6,9 @@ function UnderConstruction() {
     <div className={style.main}>
       <div className={style.url}>
         <div>
-          <p className={style.wlcm_text}>Welcome at</p>
+          <p className={style.wlcm_text}>Welcome At</p>
           <div>
-            <a href="#">google.com</a>
+            <a href="#">WWW.XPERIOKIDS.COM</a>
           </div>
         </div>
         <div className={style.welcome_note}>

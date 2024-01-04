@@ -55,5 +55,9 @@
   border-radius: 5px;
 }
 
-
+.wlcm_text + div > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
 
