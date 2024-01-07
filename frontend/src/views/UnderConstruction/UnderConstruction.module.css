@@ -24,14 +24,14 @@ p{
     margin: auto;
     position: relative;
     top: 100px;
-    box-sizing: border-box;
-
-   
+    box-sizing: border-box;  
 }
+
+
 .url > .welcome_note {
-  margin-top : 50px; 
-  width: 900px;
-  height: 400px;
+  margin-top : 70px; 
+  width: 60%;
+  height: 80%;
   background-color: white;
   border-radius: 1%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -66,3 +66,22 @@ p{
   font-weight: bold;
 }
 
+
+@media (max-width: 600px) {
+  .url > .welcome_note {
+    margin-bottom: 50%;
+   max-height: 50%;
+   width: 350px;
+  } 
+
+  .url > div {
+    margin: 10px;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    box-sizing: border-box;  
+}
+}
