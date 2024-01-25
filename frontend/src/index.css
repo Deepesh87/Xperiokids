@@ -10,4 +10,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+ 
 }
+
+
+:root {
+  --main-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --heading-font-family: 'Georgia, Times, serif';
+  --base-font-size: 16px;
+  --heading-font-size: 24px;
+  --font-color : black;
+}
+
+
+

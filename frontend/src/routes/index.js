@@ -1,9 +1,9 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Landing from "../views/LandingPg/Landing";
+import { Route, Routes } from "react-router-dom"; 
 import { BrowserRouter } from "react-router-dom";
 import UnderConstruction from "../views/UnderConstruction/UnderConstruction";
 import FalseRoute from "../common/FalseRoute";
+import Main from "../views/LandingPg/Main"
 
 
 function MainRoutes() {
@@ -11,7 +11,7 @@ function MainRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<UnderConstruction/>} />
-        <Route path="/home" element={<Landing />} />
+        <Route path="/home" element={<Main/>} />
         <Route path="*" element={<FalseRoute/>} />
        
       </Routes>
