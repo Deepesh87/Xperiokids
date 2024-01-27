@@ -15,7 +15,8 @@ h1{
     margin: 0;
     padding: 0;
     font-family: var(--main-font-family);
-    font-size: 50px;
+    font-size: var(--heading-font-size);
+
 }
 
 .content{
@@ -24,8 +25,9 @@ h1{
 }
 
 .content > div > p {
-    font-size: large;
+    font-size: 20px;
     margin: 20px;
+    font-family: var(--heading-font-family);
 }
 
 .experiment{
@@ -47,6 +49,13 @@ button {
     text-align: justify;
     margin-top: 20px;
     padding: 10px;
+    font-size: var(--base-font-size);
 }
 
 
+.type {
+    display: inline;
+    border: 1px solid #000;
+   color: #D2DE32;
+  }
+  

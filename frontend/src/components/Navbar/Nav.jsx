@@ -12,9 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Home', 'About us', 'Courses', 'Free Demo'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Nav() {
@@ -58,8 +58,8 @@ function Nav() {
     <AppBar style={{ background: scrolling ? "white":"blueviolet"  }}  position={scrolling ? "sticky":"static"}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} >
-          <img  height={"45px"} width={"60px"} src={logo}/>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width:"170px"}} >
+          <img  height={"100%"} width={"100%"} src={logo} />
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -101,12 +101,12 @@ function Nav() {
           <Box width={"100%"} sx={{display: { xs: 'flex', md: 'none' }, mr: 1 }} justifyContent="center">
           <img  height={"45px"} width={"60px"} src={logo}/>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent:"center",gap:"50px"} }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: scrolling?"black":"white", display: 'block' }}
+                sx={{ my: 2, color: scrolling?"black":"white", display: 'block' , fontWeight:"bold"}}
               >
                 {page}
               </Button>
