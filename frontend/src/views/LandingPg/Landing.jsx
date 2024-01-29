@@ -10,10 +10,10 @@ function Landing() {
         <div className={Style.content}>
           <div>
             <h1>
-              {" "}
+              <span>
               Unlocking the World of 
               {
-                <Typewriter
+              <Typewriter
       options={{
         strings: [
             '<span style="color: #FF9843;">Science</span>',
@@ -27,7 +27,9 @@ function Landing() {
     />
               }{" "}
               through Playful Exploration!
+              </span>
             </h1>
+            
             <p>
               Get access to compact lessons from the experts and <br /> connect
               with a community of native speakers to help you <br /> master

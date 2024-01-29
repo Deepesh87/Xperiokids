@@ -99,7 +99,7 @@ function Nav() {
             </Menu>
           </Box>
           <Box width={"100%"} sx={{display: { xs: 'flex', md: 'none' }, mr: 1 }} justifyContent="center">
-          <img  height={"45px"} width={"60px"} src={logo}/>
+          <img  height={"55px"} width={"130px"} src={logo}/>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent:"center",gap:"50px"} }}>
             {pages.map((page) => (
