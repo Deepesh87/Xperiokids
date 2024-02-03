@@ -1,12 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
 import MainRoutes from './routes';
+import Footer from './components/Footer/Footer';
+
 
 
 
 function App() {
-  return (
+  return (<div>
     <MainRoutes/>
+    <Footer/>
+    </div>
   );
 }
 

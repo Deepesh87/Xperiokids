@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import UnderConstruction from "../views/UnderConstruction/UnderConstruction";
 import FalseRoute from "../common/FalseRoute";
 import Main from "../views/LandingPg/Main"
+import About from "../views/About us/About";
 
 
 function MainRoutes() {
@@ -12,8 +13,8 @@ function MainRoutes() {
       <Routes>
         <Route path="/" element={<UnderConstruction/>} />
         <Route path="/home" element={<Main/>} />
+        <Route path="/about" element={<About/>} />
         <Route path="*" element={<FalseRoute/>} />
-       
       </Routes>
     </BrowserRouter>
   );

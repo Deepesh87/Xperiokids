@@ -1,13 +1,15 @@
 import React from "react";
-import Nav from "../../components/Navbar/Nav";
 import Landing from "./Landing";
 import Responsive from "./Carousel";
+import WhyXperio from "./WhyXperio";
+import Nav from "../../components/Navbar/Nav";
 
 function Main() {
   return <div >
-    <Nav/>
+  <Nav/>
     <Landing/>
     <Responsive/>
+    <WhyXperio/>
   </div>;
 }
 

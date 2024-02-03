@@ -11,10 +11,14 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import logo from "../../assets/logo.svg";
+import { NavLink } from 'react-router-dom';
 
-const pages = ['Home', 'About us', 'Courses', 'Free Demo'];
+const pages = [{to:"/home",name:"Home"},
+{to:"/about",name:"About us"},
+{to:"/courses",name:"Courses"},
+{to:"/demo",name:"Demo"},
+];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Nav() {
@@ -49,9 +53,9 @@ function Nav() {
 
     window.addEventListener('scroll', handleScroll);
 
-    // return () => {
-    //   window.removeEventListener('scroll', handleScroll);
-    // };
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [])
 
   return (
@@ -93,7 +97,9 @@ function Nav() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                 <Typography textAlign="center">{page}</Typography>
+                <NavLink style={{textDecoration:"none"}} to={page.to}>
+                 <Typography textAlign="center">{page.name}</Typography>
+                 </NavLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -103,13 +109,15 @@ function Nav() {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent:"center",gap:"50px"} }}>
             {pages.map((page) => (
+              <NavLink style={{textDecoration:"none"}} to={page.to}>
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: scrolling?"black":"white", display: 'block' , fontWeight:"bold"}}
               >
-                {page}
+                {page.name}
               </Button>
+              </NavLink>
             ))}
           </Box>
 
