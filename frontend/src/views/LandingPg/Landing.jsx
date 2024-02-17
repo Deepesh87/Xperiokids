@@ -16,10 +16,10 @@ function Landing() {
               <Typewriter
       options={{
         strings: [
-            '<span style="color: #FF9843;">Science!</span>',
-            '<span style="color: #756AB6;">Geography!</span>',
-            '<span style="color: #D24545;">Computer Science!</span>',
-            '<span style="color: #789461;">Public Speaking!</span>',
+            '<span style="color: #21654E;">Science!</span>',
+            '<span style="color: #2CD192;">Geography!</span>',
+            '<span style="color: #21654E;">Computer Science!</span>',
+            '<span style="color: #2CD192;">Public Speaking!</span>',
           ],
         autoStart: true,
         loop: true,
@@ -31,9 +31,9 @@ function Landing() {
             </h1>
             
             <p>
-              Get access to compact lessons from the experts and <br /> connect
-              with a community of native speakers to help you <br /> master
-              words faster.
+              Learn in a batch of 4-6 students. Xperiokids focuses on Practicals <br />
+              as much as on Theory! We dont just teach a concept, we show them!<br />
+              Visit, Whatsapp or call us to know more!
             </p>
           </div>
           <button>Visit us today</button>
