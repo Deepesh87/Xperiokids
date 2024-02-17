@@ -11,15 +11,15 @@ function Landing() {
           <div>
             <h1>
               <span>
-              Unlocking the World of 
+              Experience the wonders of  
               {
               <Typewriter
       options={{
         strings: [
-            '<span style="color: #FF9843;">Science</span>',
-            '<span style="color: #756AB6;">Geography</span>',
-            '<span style="color: #D24545;">Astronomy</span>',
-            '<span style="color: #789461;">Public Speaking</span>',
+            '<span style="color: #FF9843;">Science!</span>',
+            '<span style="color: #756AB6;">Geography!</span>',
+            '<span style="color: #D24545;">Computer Science!</span>',
+            '<span style="color: #789461;">Public Speaking!</span>',
           ],
         autoStart: true,
         loop: true,
@@ -36,7 +36,7 @@ function Landing() {
               words faster.
             </p>
           </div>
-          <button>Learn for free</button>
+          <button>Visit us today</button>
         </div>
         <div className={Style.experiment}>
           <img width={"100%"} height={"100%"} src={experiment} />
