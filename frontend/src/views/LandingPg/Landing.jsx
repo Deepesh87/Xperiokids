@@ -26,7 +26,7 @@ function Landing() {
       }}
     />
               }{" "}
-              through Playful Exploration!
+              through Experiential Learning!
               </span>
             </h1>
             
