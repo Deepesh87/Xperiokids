@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Style from "./Carousel.module.css";
-import science from "../../assets/science.jpg"
-import geography from "../../assets/geography.jpg"
-import speaking from "../../assets/speaking.jpg"
-import astronomy from "../../assets/astronomy.jpg"
+import Science from "../../assets/science.jpg"
+import geography from "../../assets/geography.png"
+import PublicSpeaking from "../../assets/speaking.png"
+import Computers from "../../assets/computers.png"
 
 
 
@@ -74,19 +74,19 @@ export default class Responsive extends Component {
     };
     return (
       <div className={Style.main}>
-        <h1>I want to Learn.....</h1>
+        <h1>Topics we are teaching</h1>
         <Slider className={Style.container} {...settings}>
           <div>
-           <img className={Style.image} height={100%"} width={100%"} src={science}/>
+           <img className={Style.image} height={100%"} width={100%"} src={Science}/>
           </div>
           <div>
           <img className={Style.image} height={100%"} width={100%"} src={geography}/>
           </div>
           <div>
-          <img className={Style.image} height={100%"} width={100%"} src={astronomy}/>
+          <img className={Style.image} height={100%"} width={100%"} src={Computers}/>
           </div>
           <div>
-          <img className={Style.image} height={100%"} width={100%"} src={speaking}/>
+          <img className={Style.image} height={100%"} width={100%"} src={PublicSpeaking}/>
           </div>
         </Slider>
       </div>

@@ -31,7 +31,7 @@ function Landing() {
             </h1>
             
             <p>
-              Learn in a batch of 4-6 students. Xperiokids focuses on Practicals <br />
+              Learn in a batch of 4-8 students. Xperiokids focuses on Practicals <br />
               as much as on Theory! We dont just teach a concept, we show them!<br />
               Visit, Whatsapp or call us to know more!
             </p>
