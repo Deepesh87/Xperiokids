@@ -17,9 +17,9 @@ function Landing() {
       options={{
         strings: [
             '<span style="color: #21654E;">Science!</span>',
-            '<span style="color: #2CD192;">Geography!</span>',
+            '<span style="color: #21654E;">Geography!</span>',
             '<span style="color: #21654E;">Computer Science!</span>',
-            '<span style="color: #2CD192;">Public Speaking!</span>',
+            '<span style="color: #21654E;">Public Speaking!</span>',
           ],
         autoStart: true,
         loop: true,
