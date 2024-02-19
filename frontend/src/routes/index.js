@@ -5,6 +5,7 @@ import UnderConstruction from "../views/UnderConstruction/UnderConstruction";
 import FalseRoute from "../common/FalseRoute";
 import Main from "../views/LandingPg/Main"
 import About from "../views/About us/About";
+import Calandly from "../views/Calandly/Calandly";
 
 
 function MainRoutes() {
@@ -14,6 +15,7 @@ function MainRoutes() {
         <Route path="/" element={<UnderConstruction/>} />
         <Route path="/home" element={<Main/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/demo" element={<Calandly/>} />
         <Route path="*" element={<FalseRoute/>} />
       </Routes>
     </BrowserRouter>

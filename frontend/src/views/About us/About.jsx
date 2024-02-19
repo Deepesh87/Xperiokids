@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./About.module.css";
 import pic from "../../assets/kislay.jpg";
 import Nav from "../../components/Navbar/Nav";
+import Footer from "../../components/Footer/Footer";
 
 function About() {
   return (
@@ -26,13 +27,13 @@ function About() {
             </p>
             <div className={styles.data}>
               <a href="https://www.linkedin.com/in/kislaysingh/" target="_blank" className={styles.hire}>
-              <ion-icon name="logo-linkedin"></ion-icon>
                 Connect With me
               </a>
             </div>
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }

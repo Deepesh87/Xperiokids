@@ -15,7 +15,6 @@ function UnderConstruction() {
        <img src='https://emergiclean.com/wp-content/uploads/2022/07/hammering-sign-1440-12fps.gif' alt="under construction"/>
       </div>
       </div>
-      
     </div>
   );
 }
