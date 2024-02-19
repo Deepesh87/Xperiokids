@@ -1,3 +1,3 @@
 # Xperiokids
 
-## Curiosity meets Discovery
+## experience the wonders of Science

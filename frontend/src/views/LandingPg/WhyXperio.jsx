@@ -7,9 +7,12 @@ function WhyXperio() {
     <div className={Style.together}>
       <img width={"100%"} height={"100%"} src="https://img.freepik.com/free-photo/diverse-people-using-their-phones_53876-95104.jpg?w=1380&t=st=1706609573~exp=1706610173~hmac=8a454240c9147971f88c6ed1a8e7b363273babfcfd4c1f683cb5995e6759b9df" alt="toghther"/>
       <div id={Style.txt}>
-         <strong>AN INTERACTIVE COMMUNITY</strong>
-         <h2>Learn more together</h2>
-         <p>Go beyond the textbook. Practice pronunciation, gain cultural insights and exchange local language tips with our global community of learners.</p>
+         <h2>Laboratory, not just a Classroom</h2>
+         <p>We go beyond the textbooks. Xperio Kids Learn by Doing, So be it Exploring the Plant Kingdom under a
+          microscope or performing Chemistry experiments in a test tube, Or becoming Little Elon Musks and
+          confirming Physics Laws. Teachers at Experiokids dont just teach but also show students what they teach.
+          <strong> Please visit our Centre on Haralur Road, Bangalore or call us today to learn more.</strong>
+          </p>
       </div>
     </div>
     <div className={Style.together}  id={Style.reverse_img} >

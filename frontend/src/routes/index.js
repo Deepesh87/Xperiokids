@@ -12,7 +12,7 @@ function MainRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<UnderConstruction/>} />
+        <Route path="/" element={<Main/>} />
         <Route path="/home" element={<Main/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/demo" element={<Calandly/>} />

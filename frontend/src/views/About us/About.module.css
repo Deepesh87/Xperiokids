@@ -5,7 +5,7 @@
   height: auto;
   width: 100%;
   padding: 90px 0;
-  background: #ddd;
+  background: #ffffff;
 }
 .pic{
   height: auto;
@@ -61,7 +61,7 @@
  
 }
 .hire:hover{
-  background: #000;
+  background: #1a1818;
   border: 1px solid #4070f4;
 }
 
