@@ -27,12 +27,8 @@ function About() {
             </p>
             <div className={styles.data}>
               <a href="https://www.linkedin.com/in/kislaysingh/" target="_blank" className={styles.hire}>
-<<<<<<< HEAD
-                Connect With me
-=======
               <ion-icon name="logo-linkedin"></ion-icon>
                  LinkedIn Profile
->>>>>>> 480336c67131640ecfb0c5f75165ae583979e474
               </a>
             </div>
           </div>
