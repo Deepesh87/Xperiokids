@@ -11,32 +11,32 @@ function Landing() {
           <div>
             <h1>
               <span>
-              Unlocking the World of 
+              Experience the wonders of  
               {
               <Typewriter
       options={{
         strings: [
-            '<span style="color: #FF9843;">Science</span>',
-            '<span style="color: #756AB6;">Geography</span>',
-            '<span style="color: #D24545;">Astronomy</span>',
-            '<span style="color: #789461;">Public Speaking</span>',
+            '<span style="color: #21654E;">Science!</span>',
+            '<span style="color: #21654E;">Geography!</span>',
+            '<span style="color: #21654E;">Computer Science!</span>',
+            '<span style="color: #21654E;">Public Speaking!</span>',
           ],
         autoStart: true,
         loop: true,
       }}
     />
               }{" "}
-              through Playful Exploration!
+              through Experiential Learning!
               </span>
             </h1>
             
             <p>
-              Get access to compact lessons from the experts and <br /> connect
-              with a community of native speakers to help you <br /> master
-              words faster.
+              Learn in a batch of 4-8 students. Xperiokids focuses on Practicals <br />
+              as much as on Theory! We dont just teach a concept, we show them!<br />
+              Visit, Whatsapp or call us to know more!
             </p>
           </div>
-          <button>Learn for free</button>
+          <button><h2>Chat with Us!</h2></button>
         </div>
         <div className={Style.experiment}>
           <img width={"100%"} height={"100%"} src={experiment} />

@@ -59,14 +59,14 @@ function Nav() {
   }, [])
 
   return (
-    <AppBar style={{ background: scrolling ? "white":"blueviolet"  }}  position={scrolling ? "sticky":"static"}>
+    <AppBar style={{ background: scrolling ? "white":"#faf2fe"  }}  position={scrolling ? "sticky":"static"}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width:"170px"}} >
           <img  height={"100%"} width={"100%"} src={logo} />
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }}}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -113,7 +113,7 @@ function Nav() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: scrolling?"black":"white", display: 'block' , fontWeight:"bold"}}
+                sx={{ my: 2, color: scrolling?"black":"black", display: 'block' , fontWeight:"bold"}}
               >
                 {page.name}
               </Button>

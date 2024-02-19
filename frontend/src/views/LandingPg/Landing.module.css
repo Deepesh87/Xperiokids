@@ -5,7 +5,7 @@
     margin: 0;
     width: 100%;
     height: auto;
-    background-color: blueviolet;
+    background-color: #faf2fe;
     display: flex;
     justify-content: space-around; 
     align-items: center;
@@ -36,18 +36,19 @@ h1{
 
 button {
     display: block;
-    padding:15px 80px 15px 80px;
+    padding:3px 10px 3px 10px;
     border-radius: 22px;
     margin: auto;
     border: none;
-    background: #D2DE32;
+    background: #2CD192;
+    cursor: pointer;
+    float: center;
 }
-
 
 .type {
     display: inline;
     border: 1px solid #000;
-   color: #D2DE32;
+   color: #faf2fe;
   }
   
 
