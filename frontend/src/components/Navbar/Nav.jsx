@@ -17,7 +17,7 @@ import { NavLink } from 'react-router-dom';
 const pages = [{to:"/home",name:"Home"},
 {to:"/about",name:"About us"},
 {to:"/courses",name:"Courses"},
-{to:"/demo",name:"Demo"},
+{to:"/demo",name:"Free Demo"},
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

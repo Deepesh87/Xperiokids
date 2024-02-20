@@ -1,24 +1,22 @@
-import React, { useEffect } from "react";
-import {RotatingLines} from "react-loader-spinner";
-
+import React from "react";
+import { PopupWidget } from "react-calendly";
 
 function Calandly() {
-    useEffect(()=>{
-      window.location.href = "https://calendly.com/imsinghshivendra/30min"
-    },[])
-  return <div style={{height:"100vh", width:"100%",display:"flex",alignItems:"center",justifyContent:"center"}}>
-    <RotatingLines
-  visible={true}
-  height="96"
-  width="96"
-  color="grey"
-  strokeWidth="5"
-  animationDuration="0.75"
-  ariaLabel="rotating-lines-loading"
-  wrapperStyle={{}}
-  wrapperClass=""
-  />
-  </div>
-}
+  return (
+    <div className="App">
+      <PopupWidget
+        url="https://calendly.com/xperiokids"
+        /*
+         * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+         * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+         */
+        rootElement={document.getElementById("root")}
+        text="Click here to schedule a free Demo!"
+        textColor="#ffffff"
+        color="#21654E"
+      />
+    </div>
+  );
+};
 
 export default Calandly;

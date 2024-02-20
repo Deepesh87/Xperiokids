@@ -22,7 +22,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles['social-icon__item']}`}>
-          <a className={`${styles['social-icon__link']}`} href="#">
+          <a className={`${styles['social-icon__link']}`} href="https://www.linkedin.com/company/xperiokids/">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>
@@ -34,27 +34,27 @@ const Footer = () => {
       </ul>
       <ul className={`${styles.menu}`}>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="#">
+          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
             Home
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="#">
+          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
             About
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="#">
+          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
             Services
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="#">
+          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
             Team
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="#">
+          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
             Contact
           </a>
         </li>
