@@ -1,11 +1,12 @@
 import React from "react";
 import Style from "./WhyXperio.module.css";
+import lab from "../../assets/lab.jpg";
 
 function WhyXperio() {
   return <div className={Style.main}>
     <h1>Why learn with Xperiokids?</h1>
     <div className={Style.together}>
-      <img width={"100%"} height={"100%"} src="https://img.freepik.com/free-photo/diverse-people-using-their-phones_53876-95104.jpg?w=1380&t=st=1706609573~exp=1706610173~hmac=8a454240c9147971f88c6ed1a8e7b363273babfcfd4c1f683cb5995e6759b9df" alt="toghther"/>
+      <img width={"100%"} height={"100%"} src={lab} alt="toghther"/>
       <div id={Style.txt}>
          <h2>Laboratory, not just a Classroom</h2>
          <p>We go beyond the textbooks. Xperio Kids Learn by Doing, So be it Exploring the Plant Kingdom under a
@@ -15,7 +16,7 @@ function WhyXperio() {
           </p>
       </div>
     </div>
-    <div className={Style.together}  id={Style.reverse_img} >
+    {/* <div className={Style.together}  id={Style.reverse_img} >
       <div id={Style.txt}>
          <strong>COURSES CREATED BY EXPERTS</strong>
          <h2>Learn with confidence</h2>
@@ -39,7 +40,8 @@ function WhyXperio() {
       </div>
       <img width={"100%"} height={"100%"} src="https://img.freepik.com/free-vector/flat-university-concept-background_23-2148189344.jpg?size=626&ext=jpg&uid=R135795550&ga=GA1.1.905453276.1706342616&semt=ais" alt="toghther"/>
     </div>
-  </div>;
+  </div>; */}
+</div>;
 }
 
 export default WhyXperio;
