@@ -11,20 +11,24 @@ function WhyXperio() {
          <h2>Laboratory, not just a Classroom</h2>
          <p>We go beyond the textbooks. Xperio Kids Learn by Doing, So be it Exploring the Plant Kingdom under a
           microscope or performing Chemistry experiments in a test tube, Or becoming Little Elon Musks and
-          confirming Physics Laws. Teachers at Experiokids dont just teach but also show students what they teach.
+          testing the Laws of Physics. Our hands-on approach encourages children to actively participate
+           in the learning process, fostering critical thinking skills, creativity, and confidence.
           <strong> Please visit our Centre on Haralur Road, Bangalore or call us today to learn more.</strong>
           </p>
       </div>
     </div>
-    {/* <div className={Style.together}  id={Style.reverse_img} >
+
+    <div className={Style.together}  id={Style.reverse_img} >
       <div id={Style.txt}>
-         <strong>COURSES CREATED BY EXPERTS</strong>
-         <h2>Learn with confidence</h2>
-         <p>Make real improvements, get real results. Be prepared for real-world interactions by building solid foundations with plenty of speaking, listening, reading and writing practice.</p>
+         <h2>Courses Offered</h2>
+         <p>For students upto grade K-10, we provide engaging classes in Science and Computer Science basics.
+           For students in grades 11-12, as well as those preparing for Medical | Engineering entrance exams,
+            we offer specialized Chemistry & Biology classes. Led by experienced instructors, our chemistry
+             classes provide students with the knowledge and skills needed to excel.</p>
       </div>
       <img  width={"100%"} height={"100%"} src="https://img.freepik.com/free-vector/reading-achieve-goals-education-success-concept-vector-flat-illustration-man-with-flag-award-standing-top-books-stack-staircase-books-leading-win_107791-11835.jpg?size=626&ext=jpg&uid=R135795550&ga=GA1.1.905453276.1706342616&semt=ais" alt="toghther"/>
     </div>
-    <div className={Style.together} >
+    {/* <div className={Style.together} >
       <img  width={"100%"} height={"100%"} src="https://img.freepik.com/free-vector/career-path-concept-illustration_114360-13664.jpg?size=626&ext=jpg&uid=R135795550&ga=GA1.1.905453276.1706342616&semt=ais" alt="toghther"/>
       <div id={Style.txt}>
          <strong>LESSONS FEATURING REAL PEOPLE</strong>
@@ -41,6 +45,7 @@ function WhyXperio() {
       <img width={"100%"} height={"100%"} src="https://img.freepik.com/free-vector/flat-university-concept-background_23-2148189344.jpg?size=626&ext=jpg&uid=R135795550&ga=GA1.1.905453276.1706342616&semt=ais" alt="toghther"/>
     </div>
   </div>; */}
+
 </div>;
 }
 
