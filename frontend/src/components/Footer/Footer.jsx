@@ -18,17 +18,17 @@ const Footer = () => {
         </li> */}
         <li className={`${styles['social-icon__item']}`}>
           <a className={`${styles['social-icon__link']}`} href="#">
-            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="Youtube Channel"></ion-icon>
           </a>
         </li>
         <li className={`${styles['social-icon__item']}`}>
           <a className={`${styles['social-icon__link']}`} href="https://www.linkedin.com/company/xperiokids/" target="_blank">
-            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="LinkedIn Page"></ion-icon>
           </a>
         </li>
         <li className={`${styles['social-icon__item']}`}>
           <a className={`${styles['social-icon__link']}`} href="#">
-            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="Insta Page"></ion-icon>
           </a>
         </li>
       </ul>

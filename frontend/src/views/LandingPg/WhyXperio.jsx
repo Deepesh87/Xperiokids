@@ -23,8 +23,8 @@ function WhyXperio() {
          <h2>Courses Offered</h2>
          <p>For students upto grade K-10, we provide engaging classes in Science and Computer Science basics.
            For students in grades 11-12, as well as those preparing for Medical | Engineering entrance exams,
-            we offer specialized Chemistry & Biology classes. Led by experienced instructors, our chemistry
-             classes provide students with the knowledge and skills needed to excel.</p>
+            we offer specialized Chemistry & Biology classes. Led by experienced instructors, our classes provide
+             students with the knowledge and skills needed to excel in Life and not just school.</p>
       </div>
       <img  width={"100%"} height={"100%"} src="https://img.freepik.com/free-vector/reading-achieve-goals-education-success-concept-vector-flat-illustration-man-with-flag-award-standing-top-books-stack-staircase-books-leading-win_107791-11835.jpg?size=626&ext=jpg&uid=R135795550&ga=GA1.1.905453276.1706342616&semt=ais" alt="toghther"/>
     </div>
