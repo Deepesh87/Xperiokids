@@ -12,20 +12,19 @@ function About() {
     <>
       <Nav />
       <section className={styles["demo-page"]}>
-      <div className="App">
-      {/* <PopupWidget
+      {/* <div className="App">
+      <PopupWidget
         url="https://calendly.com/xperiokids"
         rootElement={document.getElementById("root")}
         text="Click here to schedule a free Demo!"
         textColor="#ffffff"
         color="#21654E"
         
-      /> */}
-    </div>
+      />
+    </div> */}
         <div className={styles.about}>
           {/* <img src={pic} className={styles.pic} alt="Profile Picture" /> */}
           <div className={styles.text}>
-            {/* <h2>About Us</h2> */}
             <h5>
               <span>More details on the Free Demo! Please read them before scheduling</span>
             </h5>

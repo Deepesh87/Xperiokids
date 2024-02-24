@@ -40,11 +40,6 @@ const Footer = () => {
         </li>
         <li className={`${styles.menu__item}`}>
           <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
-            Terms of Services
-          </a>
-        </li>
-        <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
             Careers
           </a>
         </li>
@@ -56,6 +51,11 @@ const Footer = () => {
         <li className={`${styles.menu__item}`}>
           <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
             Contact Us
+          </a>
+        </li>
+        <li className={`${styles.menu__item}`}>
+          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
+            Terms of Services
           </a>
         </li>
       </ul>
