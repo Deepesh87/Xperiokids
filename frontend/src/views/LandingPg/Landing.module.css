@@ -34,6 +34,7 @@ h1{
     height: 500px;
 }
 
+
 button {
     display: block;
     padding:3px 10px 3px 10px;
@@ -49,18 +50,4 @@ button {
     display: inline;
     border: 1px solid #000;
    color: #faf2fe;
-  }
-  
-
-  @media (max-width: 800px ){
-
-    .main{
-        display: block;
-    }
-
-    h1{
-        font-size: 28px;
-        text-align: center;
-    }
-
   }
