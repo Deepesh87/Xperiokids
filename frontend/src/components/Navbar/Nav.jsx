@@ -14,9 +14,9 @@ import MenuItem from '@mui/material/MenuItem';
 import logo from "../../assets/logo.svg";
 import { NavLink } from 'react-router-dom';
 
-const pages = [{to:"/home",name:"Home"},
+const pages = [{to:"/",name:"Home"},
 {to:"/about",name:"About us"},
-{to:"/courses",name:"Courses"},
+{to:"/",name:"Courses"},
 {to:"/demo",name:"Free Demo"},
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

@@ -74,7 +74,7 @@ export default class Responsive extends Component {
     };
     return (
       <div className={Style.main}>
-        <h1>Topics we are teaching</h1>
+        <h1>We are teaching</h1>
         <Slider className={Style.container} {...settings}>
           <div>
            <img className={Style.image} height={100%"} width={100%"} src={Science}/>
