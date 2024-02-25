@@ -36,8 +36,8 @@ function Landing() {
               Visit, Whatsapp or call us to know more!
             </p>
           </div>
-          <button><h2>Chat with Us!</h2></button>
         </div>
+        <br/>
         <div className={Style.experiment}>
           <img width={"100%"} height={"100%"} src={experiment} />
         </div>

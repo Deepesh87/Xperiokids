@@ -14,7 +14,7 @@ function About() {
           <div className={styles.text}>
             <h2>About Us</h2>
             <h5>
-              Researcher & <span>Teacher by profession</span>
+              <span>Researcher & Teacher by profession</span>
             </h5>
             <p>
               Hello Everyone. Having taught students of various age groups
