@@ -79,7 +79,7 @@ const Footer = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={whatsapp_image} />
+      <img height={"100%"} width={"100%"} src={whatsapp_image} />
     </a>
 
     </div>
