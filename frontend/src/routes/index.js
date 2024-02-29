@@ -6,6 +6,7 @@ import FalseRoute from "../common/FalseRoute";
 import Main from "../views/LandingPg/Main"
 import About from "../views/About us/About";
 import Calandly from "../views/Calandly/Calandly";
+import Camp from "../views/summercamp/camp";
 
 
 function MainRoutes() {
@@ -16,6 +17,7 @@ function MainRoutes() {
         <Route path="/home" element={<Main/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/demo" element={<Calandly/>} />
+        <Route path="/camp" element={<Camp/>} />
         <Route path="*" element={<FalseRoute/>} />
       </Routes>
     </BrowserRouter>
