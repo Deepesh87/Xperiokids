@@ -35,7 +35,7 @@ function Landing() {
               as much as on Theory! We dont just teach a concept, we show them!
               Visit our Centre at
               <a target = "_blank" href="https://maps.app.goo.gl/tpDbkzeaULD5LWj37"><u> Haralur Road, near Fisherman's Wharf </u></a>
-               or Whatsapp/call us to know more!
+               or Whatsapp/call us at 890 474 9795 to know more!
             </p>
           </div>
         </div>
