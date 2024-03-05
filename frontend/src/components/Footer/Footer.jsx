@@ -55,12 +55,12 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
-            Team
+          <a className={`${styles.menu__link}`} href="/camp">
+            Summer Camp 2024
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
+          <a className={`${styles.menu__link}`} target="_blank" href="https://wa.me/918904749795">
             Contact Us
           </a>
         </li>
