@@ -92,7 +92,7 @@ const Footer = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <p> Summer Camp 2024</p>
+      <p> <b>Summer Camp 2024 </b></p>
     </a>
 
     </div>
