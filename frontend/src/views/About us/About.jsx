@@ -22,8 +22,8 @@ function About() {
               come to realize how broken our Education system is. We focus more
               on theory and very little on hands on and esp for Sciences
               where it is most needed. I started Xperiokids so students can learn
-              by experiencing. I have a set up a lab to help young minds see and
-              learn rather then just learn theory.
+              by experiencing. I have set up a lab to help young minds see, try and
+              learn Science rather then just learn from theory.
             </p>
             <div className={styles.data}>
               <a href="https://www.linkedin.com/in/kislaysingh/" target="_blank" className={styles.hire}>

@@ -21,7 +21,7 @@ This Summer Holidays will be different, we promise. From exploring the world und
                 Icing on the cake will be to understand Planetary events. All of this via cool 
                 experiment along with the Theory behind. Help your kids sow the seeds of Science 
                 at an early age, so they can become Elon Musks or APJ Abdul Kalams later in their Lives.
-                Contact us to know more.
+                Contact us to know more. Batches Starting from April, first week.
             </p>
             <br/>
 
