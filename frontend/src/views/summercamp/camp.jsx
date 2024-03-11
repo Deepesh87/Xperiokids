@@ -13,7 +13,7 @@ function Camp() {
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
-              <span>Information on Summer Camp | Grade 4 to Grade 12 |</span>
+              <span>Information on Science Summer Camp | Grade 4 to Grade 12 |</span>
             </h5>
             <p>
 This Summer Holidays will be different, we promise. From exploring the world under a Microscope
