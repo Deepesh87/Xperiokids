@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './footer.module.css';
 import whatsapp_image from "../../assets/whatsapp.svg";
+import test from "../../assets/wave2.png";
 
 const Footer = () => {
   return (
@@ -80,6 +81,18 @@ const Footer = () => {
       rel="noopener noreferrer"
     >
       <img height={"100%"} width={"100%"} src={whatsapp_image} />
+    </a>
+
+    </div>
+
+    <div className={styles.summer_camp_notification}>
+    <a
+      href="/camp"
+      class="summer_camp_notification"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <p> <b>Summer Camp 2024 </b></p>
     </a>
 
     </div>
