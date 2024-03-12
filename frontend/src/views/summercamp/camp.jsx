@@ -23,8 +23,26 @@ function Camp() {
             </p>
             <br/>
 
+            <p>
+            ⚫ Batch details:<br/>
+            <b>April Cohort 1: </b>Tentative April 3rd, Morning and Afternoon batches.<br/>
+            <b>April Cohort 2: </b>Tentative April 8th, Morning and Afternoon batches.<br/>
+            <br/>
+            <b>May Cohort 1: </b>Tentative May 6th, Morning and Afternoon batches.<br/>
+            <b>May Cohort 2: </b>Tentative May 8th, Morning and Afternoon batches.<br/>         
+             {/* Batch A1: April 3rd, timings: 10 AM - 12 PM.
+             Batch A2: April 3rd, timings: 3 PM - 5 PM.
+             Batch B1: April 8th, timings: 10 AM - 12 PM.
+             Batch B2: April 8th, timings: 3 PM - 5 PM. */}
+             <br/>
+             {/* Batch C1: May 6th, timings: 10 AM - 12 PM.
+             Batch C2: May 6th, timings: 3 PM - 5 PM.
+             Batch D1: May 8th, timings: 10 AM - 12 PM.
+             Batch D2: May 8th, timings: 3 PM - 5 PM. */}
 
-
+Please note: Only maximum 8 students per batch. Please contact us to know vacancy.
+            </p>
+            <br/>
 
             <p>
             ⚫ Summer Camp will include 10-15 Experiments each from Physics, Chemistry and Biology. The experiments 
