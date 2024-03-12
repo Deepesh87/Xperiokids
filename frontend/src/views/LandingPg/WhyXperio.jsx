@@ -24,7 +24,7 @@ function WhyXperio() {
          <h2>Courses Offered</h2>
          <p>For students upto grade K-10, we provide regular tuitons in all subjects. For students in
            grades 11-12, as well as those preparing for Medical | Engineering entrance exams, we offer specialized Chemistry & Biology classes.
-           Our Tuitons also include a lot of practical experiments in addition to theory. We also provide 1:1 classes on request.</p>
+           Our Tuitions also include a lot of practical experiments in addition to theory. We also provide 1:1 classes on request.</p>
       </div>
       <img  width={"100%"} height={"100%"} src={goals} alt="toghther"/>
     </div>

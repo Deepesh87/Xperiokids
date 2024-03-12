@@ -31,9 +31,10 @@ function Landing() {
             </h1>
             
             <p>
-              Learn in a batch of 4-8 students. Xperiokids focuses on Practicals
-              as much as on Theory! We dont just teach a concept, we show them!
-              Visit, Whatsapp or call us to know more!
+            Join small classes of 4-8 students at Xperiokids, 
+            where we emphasize practical learning alongside theory.
+             Experience hands-on demonstrations and comprehensive education.
+              Visit, WhatsApp, or call us for more details!
             </p>
           </div>
         </div>
