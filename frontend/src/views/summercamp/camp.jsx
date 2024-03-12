@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./camp.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import pic from "../../assets/kislay.jpg";
 
 
 function Camp() {
@@ -16,12 +15,11 @@ function Camp() {
               <span>Information on Science Summer Camp | Grade 4 to Grade 12 |</span>
             </h5>
             <p>
-This Summer Holidays will be different, we promise. From exploring the world under a Microscope
-               to Performing Chemistry Experiments and not to miss Making circuits in Physics.
-                Icing on the cake will be to understand Planetary events. All of this via cool 
-                experiment along with the Theory behind. Help your kids sow the seeds of Science 
-                at an early age, so they can become Elon Musks or APJ Abdul Kalams later in their Lives.
-                Contact us to know more. Batches Starting from April, first week.
+              <i>
+            This summer, embark on a unique learning journey with us! Dive into the world of microscopes,
+             chemistry experiments, and physics circuits. Experience planetary events firsthand with 
+             exciting experiments and theory. Nurture your child's curiosity and pave the way for future
+              success. Contact us for details. Batches start in April & May. Limited Seats on FCFS.</i> 
             </p>
             <br/>
 
