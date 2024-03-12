@@ -64,7 +64,7 @@ function Nav() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width:"170px"}} >
-          <img  height={"100%"} width={"100%"} src={logo} />
+          <a href="/"><img  height={"100%"} width={"100%"} src={logo} /></a>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }}}>
