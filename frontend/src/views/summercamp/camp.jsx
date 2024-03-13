@@ -12,7 +12,7 @@ function Camp() {
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
-              <span>Information on Science Summer Camp | Grade 4 to Grade 12 |</span>
+              <span>Information on Science Summer Camp | Grade 4 to Grade 10</span>
             </h5>
             <p>
               <i>
@@ -56,8 +56,7 @@ Please note: Only maximum 8 students per batch. Please contact us to know vacanc
             </p>
             <br/>
             <p>
-            ⚫ The Fees for the Camp is INR 10,000. The Summer Camp fees includes the fees of the Science Kit that students will be using during the sessions.
-            The Sessions will be conducted in mutiple batches of 4-8 students from similar Grades. The sessions will be
+            ⚫ The Fees for the Camp is INR 10,000. The Sessions will be conducted in mutiple batches of 4-8 students from similar Grades. The sessions will be
             4-5 days a week. We are flexible and could customise a batch as per your schedule.
             </p>
             <br/>
