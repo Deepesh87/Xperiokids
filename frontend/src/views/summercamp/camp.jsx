@@ -12,13 +12,14 @@ function Camp() {
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
-              <span>Information on Science Summer Camp | Grade 4 to Grade 10</span>
+              <span>Information on Science Summer Camp | Grade 3 to Grade 10</span>
             </h5>
             <p>
               <i>
             This summer, embark on a unique learning journey with us! Dive into the world of microscopes,
-             chemistry experiments, and physics circuits. Experience planetary events firsthand with 
-             exciting experiments and theory. Nurture your child's curiosity and pave the way for future
+             chemistry experiments on properties of matter/Solutions/Acids and Bases etc., and physics circuits 
+             to light up a bulb or create a personal fan or spin up wheels of a Toy Car. Experience planetary 
+             events Like Solar/Lunar Eclipse & more firsthand. With exciting experiments and theory, nurture your child's curiosity and pave the way for future
               success. Contact us for details. Batches start in April & May. Limited Seats on FCFS.</i> 
             </p>
             <br/>
