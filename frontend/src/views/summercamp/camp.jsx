@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./camp.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
+import camp_pic from "../../assets/image_for_camp.jpg";
 
 
 function Camp() {
@@ -23,7 +24,8 @@ function Camp() {
               success. Contact us for details. Batches start in April & May. Limited Seats on FCFS.</i> 
             </p>
             <br/>
-
+            <img src={camp_pic} className={styles.pic} alt="camp picture" />
+      <br/>
             <p>
             ⚫ Batch details:<br/>
             <b>April Cohort 1: </b>Tentative April 3rd, Morning and Afternoon batches.<br/>
@@ -58,7 +60,7 @@ Please note: Only maximum 8 students per batch. Please contact us to know vacanc
             <br/>
             <p>
             ⚫ The Fees for the Camp is INR 10,000. The Sessions will be conducted in mutiple batches of 4-8 students from similar Grades. The sessions will be
-            4-5 days a week. We are flexible and could customise a batch as per your schedule.
+            4-5 days a week lsting upto 4 weeks. We are flexible and could customise a batch as per your schedule ( for group enrollments)
             </p>
             <br/>
             <p>

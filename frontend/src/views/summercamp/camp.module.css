@@ -8,6 +8,13 @@
   background: #ffffff;
 }
 
+.pic{
+  padding: 20px;
+  height: auto;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .about{
   width: 1130px;
@@ -84,4 +91,7 @@
       font-size: 45px;
    }
 
+   .pic{ 
+    display: none;
+}
   }
