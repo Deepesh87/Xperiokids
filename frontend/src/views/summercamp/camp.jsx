@@ -21,7 +21,7 @@ function Camp() {
              chemistry experiments on properties of matter/Solutions/Acids and Bases etc., and physics circuits 
              to light up a bulb or create a personal fan or spin up wheels of a Toy Car. Experience planetary 
              events Like Solar/Lunar Eclipse & more firsthand. With exciting experiments and theory, nurture your child's curiosity and pave the way for future
-              success. Contact us for details. Batches start in April & May. Limited Seats on FCFS.</i> 
+              success. Contact us for details. Batches start in April & May. Limited Seats on FCFS. </i> 
             </p>
             <br/>
             <img src={camp_pic} className={styles.pic} alt="camp picture" />
@@ -46,7 +46,6 @@ function Camp() {
 Please note: Only maximum 8 students per batch. Please contact us to know vacancy.
             </p>
             <br/>
-
             <p>
             ⚫ Summer Camp will include 10-15 Experiments each from Physics, Chemistry and Biology. The experiments 
             are designed to give students a wholistic learning experience. The Theory behind the experiments will also be explained. 
@@ -77,9 +76,10 @@ Please note: Only maximum 8 students per batch. Please contact us to know vacanc
             </p>
             <br/>
             <p>
-            ⚫ Please contact us over whatsapp or a call to know more. We will be happy to help.
+            ⚫ More information can be found in the brochure below. Please contact us over whatsapp or a call to know more. We will be happy to help.
             </p>
             <br/>
+            <iframe src ="https://drive.google.com/file/d/1iIljbC0PIdrRWZZQbipgM-fLN8BlY27l/preview" frameborder="0" width="100%" height="800px" />
           </div>
         </div>
       </section>
