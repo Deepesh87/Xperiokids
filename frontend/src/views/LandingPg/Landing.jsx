@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "./Landing.module.css";
-import experiment from "../../assets/experiment.png";
+import experiment from "../../assets/dp.png";
 import Typewriter from "typewriter-effect";
 
 function Landing() {

@@ -43,7 +43,7 @@ function Camp() {
              Batch D1: May 8th, timings: 10 AM - 12 PM.
              Batch D2: May 8th, timings: 3 PM - 5 PM. */}
 
-Please note: Only maximum 8 students per batch. Please contact us to know vacancy.
+Please note: Only maximum 10 students per batch. Please contact us to know vacancy.
             </p>
             <br/>
             <p>
@@ -58,7 +58,7 @@ Please note: Only maximum 8 students per batch. Please contact us to know vacanc
             </p>
             <br/>
             <p>
-            ⚫ The Fees for the Camp is INR 10,000. The Sessions will be conducted in mutiple batches of 4-8 students from similar Grades. The sessions will be
+            ⚫ The Fees for the Camp is INR 10,000. The Sessions will be conducted in mutiple batches of 7-10 students from similar Grades. The sessions will be
             4-5 days a week lsting upto 4 weeks. We are flexible and could customise a batch as per your schedule ( for group enrollments)
             </p>
             <br/>
