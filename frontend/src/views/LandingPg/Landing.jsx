@@ -26,7 +26,6 @@ function Landing() {
       }}
     />
               }{" "}
-              through Experiential Learning!
               </span>
             </h1>
             

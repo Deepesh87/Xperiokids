@@ -64,7 +64,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="/terms">
+          <a className={`${styles.menu__link}`} target="_blank"  href="/terms">
             Terms of Services
           </a>
         </li>
