@@ -7,6 +7,7 @@ import Main from "../views/LandingPg/Main"
 import About from "../views/About us/About";
 import Calandly from "../views/Calandly/Calandly";
 import Camp from "../views/summercamp/camp";
+import Terms from "../views/terms/terms";
 
 
 function MainRoutes() {
@@ -18,6 +19,7 @@ function MainRoutes() {
         <Route path="/about" element={<About/>} />
         <Route path="/demo" element={<Calandly/>} />
         <Route path="/camp" element={<Camp/>} />
+        <Route path="/terms" element={<Terms/>} />
         <Route path="*" element={<FalseRoute/>} />
       </Routes>
     </BrowserRouter>

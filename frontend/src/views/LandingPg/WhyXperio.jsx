@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./WhyXperio.module.css";
-import lab from "../../assets/lab.jpg";
-import goals from "../../assets/goals.jpg";
+import lab from "../../assets/lab1.jpg";
+import goals from "../../assets/goals1.jpg";
 
 function WhyXperio() {
   return <div className={Style.main}>

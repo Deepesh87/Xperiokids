@@ -11,7 +11,7 @@ function Landing() {
           <div>
             <h1>
               <span>
-              Experience the wonders of  
+              Experience  
               {
               <Typewriter
       options={{
@@ -31,7 +31,7 @@ function Landing() {
             </h1>
             
             <p>
-            Join small classes of 4-8 students at Xperiokids, 
+            Join small classes of 6-10 students at Xperiokids, 
             where we emphasize practical learning alongside theory.
              Experience hands-on demonstrations and comprehensive education.
               Visit, WhatsApp, or call us for more details!

@@ -9,8 +9,6 @@ const Footer = () => {
       <div className={`${styles.waves}`}>
         <div className={`${styles.wave}`} id={`${styles.wave1}`}></div>
         <div className={`${styles.wave}`} id={`${styles.wave2}`}></div>
-        {/* <div className={`${styles.wave}`} id={`${styles.wave3}`}></div>
-        <div className={`${styles.wave}`} id={`${styles.wave4}`}></div> */}
       </div>
       <ul className={`${styles['social-icon']}`}>
         <li className={`${styles['social-icon__item']}`}>
@@ -66,7 +64,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
+          <a className={`${styles.menu__link}`} href="/terms">
             Terms of Services
           </a>
         </li>

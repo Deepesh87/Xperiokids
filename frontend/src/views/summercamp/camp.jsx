@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./camp.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import camp_pic from "../../assets/image_for_camp.jpg";
+import camp_pic from "../../assets/Summer_camp.png";
 
 
 function Camp() {
@@ -21,18 +21,20 @@ function Camp() {
              chemistry experiments on properties of matter/Solutions/Acids and Bases etc., and physics circuits 
              to light up a bulb or create a personal fan or spin up wheels of a Toy Car. Experience planetary 
              events Like Solar/Lunar Eclipse & more firsthand. With exciting experiments and theory, nurture your child's curiosity and pave the way for future
-              success. Contact us for details. Batches start in April & May. Limited Seats on FCFS. </i> 
+              success. <br/> 
+              Contact us for details. Multiple batches starting in April & May. Limited Seats on FCFS. </i> 
             </p>
             <br/>
             <img src={camp_pic} className={styles.pic} alt="camp picture" />
       <br/>
             <p>
             ⚫ Batch details:<br/>
-            <b>April Cohort 1: </b>Tentative April 3rd, Morning and Afternoon batches.<br/>
-            <b>April Cohort 2: </b>Tentative April 8th, Morning and Afternoon batches.<br/>
+            <b>Weekends Batch:</b> Starting April 27th, Timings 11:00 to 13:00 | Lasts 8 Weekends | Enrollments Open<br/>
+            <b>Weekdays Batch: </b>Grade 6 to 9. Mornings 10:00 to 12:00 | Enrollments Closed<br/>
             <br/>
-            <b>May Cohort 1: </b>Tentative May 6th, Morning and Afternoon batches.<br/>
-            <b>May Cohort 2: </b>Tentative May 8th, Morning and Afternoon batches.<br/>         
+            <b>Weekdays Next batch schedule: </b>Tentative May 6th, Mornings 10:00 to 12:00 | Lasts 3-4 weeks<br/>
+            <b>Weekdays Next batch schedule: </b>Tentative April 29th, Afternoons 15:30 to 17:30  | Lasts 3-4 weeks<br/>   
+            {/* <b>Weekends Next batch schedule: </b>Tentative May 4th, Timings 11:00 to 13:00   | Lasts 3-4 weeks<br/>          */}
              {/* Batch A1: April 3rd, timings: 10 AM - 12 PM.
              Batch A2: April 3rd, timings: 3 PM - 5 PM.
              Batch B1: April 8th, timings: 10 AM - 12 PM.
@@ -43,12 +45,17 @@ function Camp() {
              Batch D1: May 8th, timings: 10 AM - 12 PM.
              Batch D2: May 8th, timings: 3 PM - 5 PM. */}
 
-Please note: Only maximum 10 students per batch. Please contact us to know vacancy.
+Note: Only maximum 10 students per batch. Please contact us to know vacancy.
             </p>
             <br/>
             <p>
-            ⚫ Summer Camp will include 10-15 Experiments each from Physics, Chemistry and Biology. The experiments 
+            ⚫ We have 2 types of camps/batches. A Juniors batch is for Grade 2 to Grade 5. Seniors Batch is for Grade 6 to 9.
+            </p>
+            <br/>
+            <p>
+            ⚫ Summer Camp will include 10-15 Experiments each from Physics, Chemistry, Biology, Geography and Genral Science. The experiments 
             are designed to give students a wholistic learning experience. The Theory behind the experiments will also be explained. 
+            The Camp also includes Public Speaking, Journalling and developing Leadership Skills with Studnets mentoring other students.
             </p>
             <br/>
             <p>
@@ -58,13 +65,13 @@ Please note: Only maximum 10 students per batch. Please contact us to know vacan
             </p>
             <br/>
             <p>
-            ⚫ The Fees for the Camp is INR 10,000. The Sessions will be conducted in mutiple batches of 7-10 students from similar Grades. The sessions will be
-            4-5 days a week lsting upto 4 weeks. We are flexible and could customise a batch as per your schedule ( for group enrollments)
+            ⚫ The Fees for the Camp is INR 10,000. The Sessions will be conducted in mutiple batches of 8-10 students from similar Grades. The Weekday batch sessions will
+            be from Monday to Friday. Weekends batch will be on both days. We are flexible and could customise a batch as per your schedule ( for group enrollments)
             </p>
             <br/>
             <p>
-            ⚫ Discounts: We also offer group discounts. If 3 or more students enroll together, the fees per student will be 7999 INR. If 5 or more
-            enroll together, the fees would be 6999 per student.
+            ⚫ Discounts: We also offer group discounts. If 3 or more students enroll together, the fees per student will be 8999 INR. If 5 or more
+            enroll together, the fees would be 7999 per student.
             </p>
             <br/>
             <p>
@@ -72,7 +79,7 @@ Please note: Only maximum 10 students per batch. Please contact us to know vacan
             ⚫ Summer Camp fees includes the fees of the Science Kit that students will be using during the sessions. 
             </p>
             <br/>
-            ⚫ The Demo/Experiments are using harmless chemicals in Chemistry or Dry batteries of 10-12V in Physics. Safety is always our first priority. 
+            ⚫ The Demo/Experiments are using harmless chemicals in Chemistry or Dry batteries of 1.5-9V in Physics. Safety is always our first priority. 
             </p>
             <br/>
             <p>
