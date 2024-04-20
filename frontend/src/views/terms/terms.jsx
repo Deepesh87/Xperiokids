@@ -1,33 +1,40 @@
 import React from "react";
-import styles from "./terms.css";
+import styless from "./terms.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
+
 
 
 function Terms() {
   return (
     <>
       <Nav />
-          <div className={styles.text}>
+      <section className={styless["all_terms"]}>
+          <div className={styless.text1}>
             <h5>
-              <span>Terms & Conditions</span>
+            <span>Terms & Conditions</span>
             </h5>
             <p>
-            ⚫ The Terms & conditions are applicable to anyone who enrolls into any of our courses or Visits us for the free demo.
+            ⚫ The Terms & Conditions are applicable to anyone who enrolls into any of our courses or visits us for the free demo.
             </p>
-            <br/>
             <p>
-            ⚫ Fees once paid may not be refunded. The refund will be at our discretion. We will however try our best to accomodate
+            ⚫ Fees once paid may not be refunded. The refund will be at our discretion. We will try our best to accomodate
             you into an upcoming batch depending on the schedule.
             </p>
-            <br/>
             <p>
-            ⚫ Xperio Learnings reserves the right to use photos/videos clicked during our Demo/Classes for publishing 
-            on our websites or online for promotions.
+            ⚫ Xperio Learnings reserves the right to use photos/videos clicked during our Demos/Classes for publishing 
+            on our websites or on our YouTube channel.
             </p>
             <br/>
-            <br/>        
+            <br/>  
+            <p>
+                                         
+            </p>
+            <p>
+                         
+            </p>      
           </div>
+          </section>
       <Footer/>
     </>
   );

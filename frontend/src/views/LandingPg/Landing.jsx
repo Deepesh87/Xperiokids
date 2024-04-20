@@ -11,7 +11,7 @@ function Landing() {
           <div>
             <h1>
               <span>
-              Experience  
+              Experiment, Explore, Experience   
               {
               <Typewriter
       options={{
@@ -30,10 +30,11 @@ function Landing() {
             </h1>
             
             <p>
-            Join small classes of 6-10 students at Xperiokids, 
-            where we emphasize practical learning alongside theory.
-             Experience hands-on demonstrations and comprehensive education.
-              Visit, WhatsApp, or call us for more details!
+             Our small classes, limited to just 8-10 students, ensure personalized attention. 
+             We believe in the power of practical learning alongside theory, allowing children 
+             to experience hands-on demonstrations and receive comprehensive education.
+              Lay the foundation for a successful future with us at Xperiokids.
+             
             </p>
           </div>
         </div>

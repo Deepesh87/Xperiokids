@@ -10,9 +10,8 @@ function WhyXperio() {
       <img width={"100%"} height={"100%"} src={lab} alt="toghther"/>
       <div id={Style.txt}>
          <h2>Laboratory, not just a Classroom</h2>
-         <p>We go beyond the textbooks. Xperio Kids Learn by doing, So be it Exploring the Plant Kingdom under a
-          microscope or performing Chemistry experiments in a test tube, Or becoming Little Elon Musks and
-          validating the Laws of Physics. Our hands-on approach encourages children to actively participate
+         <p>We go beyond the textbooks. Xperio Kids Learn by doing. We help Students perform Experiments on each possible topic
+          be it Physics/Chemistry/Biology or Geography. This hands-on approach encourages children to actively participate
            in the learning process, fostering critical thinking skills, creativity, and confidence.
           <strong> Please visit our Centre on Haralur Road, Bangalore or call us today to learn more.</strong>
           </p>

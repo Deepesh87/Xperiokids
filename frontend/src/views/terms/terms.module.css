@@ -1,0 +1,26 @@
+.all_terms{
+  height: auto;
+  width: 100%;  
+  padding: 20px 0;
+  background: #f8f6f6;
+}
+
+.text1{
+  width: 70%;
+  padding:10px;
+}
+.text1 h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+}
+.text1 span{
+  color: #4070f4;
+}
+.text1 p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  padding:10px;
+}
