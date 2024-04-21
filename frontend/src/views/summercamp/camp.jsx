@@ -29,19 +29,21 @@ function Camp() {
       <br/>
 
       <h2>
-            <span>Batch details:</span>
+            <span>Batch details</span>
       </h2>
       <p>
-      🟢 We have 2 types of camps/batches. A Juniors batch is for Grade 2 to Grade 5. Seniors Batch is for Grade 6 to 9.
+      🟢 We have 2 types of batches. A Juniors batch is for Grade 2 to Grade 5. Seniors Batch is for Grade 6 to 9.
+      This mix of grades ensure diversity and promotes learning from each other. Also, this makes the class an excellent 
+      replica of the real world where Men and Women from all walks of life solve problems and make our lives better.
             </p>
       <h5>
-            <span>Senior's Batch, Grade 6 to Grade 9</span>
+            <span>Seniors' Batch,<br/> Grade 6 to Grade 9</span>
       </h5>
             <p>
             <b>Weekends Batch:</b> Starts April 27th, Timings 11:00 to 13:00 both Sat & Sundays| Lasts 8 Weekends | Enrollments Open<br/>
             <b>Weekdays Batch: </b> Starts May 3rd, Timings 9:30 to 11:30 Monday to Friday| Lasts 3-4 weeks | Enrollments Open<br/>
              <h5>
-            <span>Junior's Batch, Grade 2 to Grade 5</span>
+            <span>Juniors' Batch,<br/> Grade 2 to Grade 5</span>
             </h5>
             </p>
             <p>
