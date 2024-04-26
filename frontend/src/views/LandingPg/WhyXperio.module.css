@@ -8,6 +8,14 @@
     margin-bottom: 50px; 
 }
 
+.menu__link {
+    font-size: 1.0rem;
+    color: #ec0ba9;
+    /* margin: 0 10px; */
+    display: inline-block;
+    text-decoration: underline;
+  }
+  
 .together {
     display: flex;
     justify-content: space-evenly;

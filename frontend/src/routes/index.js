@@ -8,6 +8,7 @@ import About from "../views/About us/About";
 import Calandly from "../views/Calandly/Calandly";
 import Camp from "../views/summercamp/camp";
 import Terms from "../views/terms/terms";
+import Bday from "../views/bday/bday";
 
 
 function MainRoutes() {
@@ -20,6 +21,7 @@ function MainRoutes() {
         <Route path="/demo" element={<Calandly/>} />
         <Route path="/camp" element={<Camp/>} />
         <Route path="/terms" element={<Terms/>} />
+        <Route path="/bday" element={<Bday/>} />
         <Route path="*" element={<FalseRoute/>} />
       </Routes>
     </BrowserRouter>

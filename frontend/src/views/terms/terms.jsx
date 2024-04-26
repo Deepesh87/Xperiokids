@@ -17,10 +17,10 @@ function Terms() {
             <p>
             ⚫ The Terms & Conditions are applicable to anyone who enrolls into any of our courses or visits us for the free demo.
             </p>
-            <p>
+            {/* <p>
             ⚫ Fees once paid may not be refunded. The refund will be at our discretion. We will try our best to accomodate
             you into an upcoming batch depending on the schedule.
-            </p>
+            </p> */}
             <p>
             ⚫ Xperio Learnings reserves the right to use photos/videos clicked during our Demos/Classes for publishing 
             on our websites or on our YouTube channel.
