@@ -65,10 +65,8 @@ function Bday() {
             </p>
             <h5>
             <span>🌟🌟 Book Your Xperiokids Birthday Bash Today!🌟 🌟 </span>
-      </h5>
-            
-
-          </div>
+      </h5>          
+      </div>
         </div>
       </section>
       <Footer/>
