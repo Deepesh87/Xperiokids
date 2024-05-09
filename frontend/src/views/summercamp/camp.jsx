@@ -48,7 +48,7 @@ function Camp() {
             <p>
            <b>Weekdays Weekly Batch: </b> Starts every Monday, Timings 12:00 to 14:00 Monday to Friday| Lasts 1-2 weeks | Enrollments Open<br/>
              <br/>
-             ⚫ Note: Only maximum 10 students per batch. Please contact us to know vacancy. Fees per week is 2k.
+             ⚫ Note: Only maximum 10 students per batch. Please contact us to know vacancy.
             </p>
             <br/>
             <p>
