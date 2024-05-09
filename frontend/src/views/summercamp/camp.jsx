@@ -40,17 +40,15 @@ function Camp() {
             <span>Seniors' Batch,<br/> Grade 6 to Grade 9</span>
       </h5>
             <p>
-            <b>Weekends Batch:</b> Starts May 4th, Timings 11:00 to 13:00 both Sat & Sundays| Lasts 8 Weekends | Enrollments Open<br/>
-            <b>Weekdays Batch: </b> Starts May 6th, Timings 9:45 to 11:45 Monday to Friday| Ends May 31st | Enrollments Open<br/>
+            <b>Weekdays Batch: </b> Started May 6th, Timings 9:45 to 11:45 Monday to Friday| Ends May 31st | Enrollments Closed<br/>
              <h5>
             <span>Juniors' Batch,<br/> Grade 2 to Grade 5</span>
             </h5>
             </p>
             <p>
-            <b>Weekends Batch:</b> Starts May 4th, Timings 15:00 to 17:00 both Sat & Sundays| Lasts 8 Weekends | Enrollments Open<br/>
-            <b>Weekdays Batch: </b> Starts May 6th, Timings 15:00 to 17:00 Monday to Friday| Lasts 3-4 weeks | Enrollments Open<br/>
+           <b>Weekdays Weekly Batch: </b> Starts every Monday, Timings 12:00 to 14:00 Monday to Friday| Lasts 1-2 weeks | Enrollments Open<br/>
              <br/>
-             ⚫ Note: Only maximum 10 students per batch. Please contact us to know vacancy.
+             ⚫ Note: Only maximum 10 students per batch. Please contact us to know vacancy. Fees per week is 2k.
             </p>
             <br/>
             <p>
