@@ -27,7 +27,7 @@ function WhyXperio() {
          <p> Celebrate your child's special day with Xperiokids Birthday Bash! Immerse them in a world of science
            wonder with mind-blowing experiments, customizable themes, and unforgettable memories. Book now for an
             extraordinary celebration like no other!
-        <strong> Click<a className={`${Style.menu__link}`} href="/bday" target="_blank">
+        <strong> Click <a className={`${Style.menu__link}`} href="/bday" target="_blank">
           here</a> to know more.</strong>
  </p>
       </div>
