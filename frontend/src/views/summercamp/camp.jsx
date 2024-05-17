@@ -40,15 +40,15 @@ function Camp() {
             <span>Seniors' Batch,<br/> Grade 6 to Grade 9</span>
       </h5>
             <p>
-            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 9:45 to 11:45 |Enrollments open<br/>
-            <b>Weekdays Batch:</b> June 24th - July 5th, Monday to Friday| 9:45 to 11:45 |Enrollments open<br/>
+            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 9:45 to 11:45 | Enrollments open<br/>
+            <b>Weekdays Batch:</b> June 24th - July 5th, Monday to Friday| 9:45 to 11:45 | Enrollments open<br/>
              <h5>
             <span>Juniors' Batch,<br/> Grade 2 to Grade 5</span>
             </h5>
             </p>
             <p>
-            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 12:00 to 14:00 |Enrollments open<br/>
-            <b>Weekdays Batch:</b> June 24th - July 5th, Monday to Friday| 12:00 to 14:00 |Enrollments open<br/>
+            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 12:00 to 14:00 | Enrollments open<br/>
+            <b>Weekdays Batch:</b> June 24th - July 5th, Monday to Friday| 12:00 to 14:00 | Enrollments open<br/>
              <br/>
              ⚫ Note: Only maximum 10 students per batch. Please contact us to know vacancy.
             </p>
@@ -58,10 +58,10 @@ function Camp() {
             The Camp also includes Public Speaking, Journalling and developing Leadership Skills with Students mentoring other students.
             </p>
             <br/>
-            <p>
+            {/* <p>
             ⚫ We also provide the option to attend weekly and pay as you attend. The charge for each week of attenance is 3000.
             </p>
-            <br/>
+            <br/> */}
             <p>
             ⚫ The Demo/Experiments are using harmless chemicals in Chemistry or Dry batteries of 1.5-9V in Physics. Safety is always our first priority. 
             </p>
