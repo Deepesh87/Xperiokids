@@ -22,7 +22,7 @@ function Camp() {
              to light up a bulb or learn about bread boards. Experience planetary 
              events Like Solar/Lunar Eclipse & more firsthand. With exciting experiments and theory, nurture your child's curiosity and pave the way for future
               success. <br/> 
-              Contact us for details. Multiple batches starting in April & May. Limited Seats on FCFS. </i> 
+              Contact us for details. Multiple batches running from May to July . Limited Seats on FCFS. </i> 
             </p>
             <br/>
             <img src={camp_pic} className={styles.pic} alt="camp picture" />
@@ -40,29 +40,26 @@ function Camp() {
             <span>Seniors' Batch,<br/> Grade 6 to Grade 9</span>
       </h5>
             <p>
-            <b>Weekdays Batch: </b> Started May 6th, Timings 9:45 to 11:45 Monday to Friday| Ends May 31st | Enrollments Closed<br/>
+            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 9:45 to 11:45 |Enrollments open<br/>
+            <b>Weekdays Batch:</b> June 24th - July 5th, Monday to Friday| 9:45 to 11:45 |Enrollments open<br/>
              <h5>
             <span>Juniors' Batch,<br/> Grade 2 to Grade 5</span>
             </h5>
             </p>
             <p>
-           <b>Weekdays Weekly Batch: </b> Starts every Monday, Timings 12:00 to 14:00 Monday to Friday| Lasts 1-2 weeks | Enrollments Open<br/>
+            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 12:00 to 14:00 |Enrollments open<br/>
+            <b>Weekdays Batch:</b> June 24th - July 5th, Monday to Friday| 12:00 to 14:00 |Enrollments open<br/>
              <br/>
              ⚫ Note: Only maximum 10 students per batch. Please contact us to know vacancy.
             </p>
             <br/>
             <p>
-            ⚫ Summer Camp will include 10-15 Experiments each from Physics, Chemistry, Biology, Geography and General Studies. 
+            ⚫ Summer Camp will include 8-10 Experiments each from Physics, Chemistry, Biology, Geography and General Studies. 
             The Camp also includes Public Speaking, Journalling and developing Leadership Skills with Students mentoring other students.
             </p>
             <br/>
             <p>
             ⚫ We also provide the option to attend weekly and pay as you attend. The charge for each week of attenance is 3000.
-            </p>
-            <br/>
-            <p>
-            ⚫ Discounts: We also offer group discounts. If 3 or more students enroll together, the fees per student will be 8999 INR. If 5 or more
-            enroll together, the fees would be 7999 per student.
             </p>
             <br/>
             <p>
