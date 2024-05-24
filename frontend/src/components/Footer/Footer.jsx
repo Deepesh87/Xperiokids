@@ -39,8 +39,8 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
-            Courses
+          <a className={`${styles.menu__link}`} href="/gallery">
+            Gallery
           </a>
         </li>
         <li className={`${styles.menu__item}`}>

@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import FalseRoute from "../common/FalseRoute";
 import Main from "../views/LandingPg/Main"
 import About from "../views/About us/About";
+import Gallery from "../views/gallery/gallery";
 import Calandly from "../views/Calandly/Calandly";
 import Camp from "../views/summercamp/camp";
 import Terms from "../views/terms/terms";
@@ -18,6 +19,7 @@ function MainRoutes() {
         <Route path="/" element={<Main/>} />
         <Route path="/" element={<Main/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/gallery" element={<Gallery/>} />
         <Route path="/demo" element={<Calandly/>} />
         <Route path="/camp" element={<Camp/>} />
         <Route path="/terms" element={<Terms/>} />
