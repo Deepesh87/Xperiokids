@@ -1,78 +1,76 @@
 import React from "react";
-import styles from "./camp.module.css";
+import styles from "./voicemasters.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import camp_pic from "../../assets/Summer_camp.png";
+import pricing from "../../assets/pricing_voicemasters.jpeg";
+import logo from "../../assets/voice_logo.jpg";
 
 
-function Camp() {
+function Voice() {
   return (
     <>
       <Nav />
       <section className={styles["demo-page"]}>
         <div className={styles.about}>
           <div className={styles.text}>
+          <br/>
+            <img src={logo} className={styles.pic2} alt="pricing" />
             <h5>
-              <span>Information on Science Summer Camp | Grade 3 to Grade 10, IB curriculum</span>
+              <span>VoiceMasters by Xperiokids | Grade 3 Onwards</span>
             </h5>
             <p>
               <i>
-            This summer, embark on a unique learning journey with us! Dive into the world of microscopes,
-             chemistry experiments on properties of matter/Solutions/Acids and Bases etc., and physics circuits 
-             to light up a bulb or learn about bread boards. Experience planetary 
-             events Like Solar/Lunar Eclipse & more firsthand. With exciting experiments and theory, nurture your child's curiosity and pave the way for future
-              success. <br/> <br/> 
-              Camp re-launched for IB Board students. Contact us for details. Multiple batches running from May to July . Limited Seats on FCFS. </i> 
-            </p>
-            <br/>
-            <img src={camp_pic} className={styles.pic} alt="camp picture" />
-      <br/>
+              Strong communication and public speaking skills are vital for success in various aspects of life,
+               and the sooner one starts, the easier it is to develop these abilities.
 
-      <h2>
-            <span>Batch details</span>
-      </h2>
+Although public speaking can be intimidating for many adults, children can conquer this fear by
+ being exposed to it early. With proper guidance, children can find joy in public speaking, 
+ fostering exceptional self-confidence and leadership skills. <br/>
+              Our carefully curated course by Experts trains young minds to not just master Communication but also 
+              helps them develop Leadership skills. At VoiceMasters, we offer two comprehensive modules designed to cultivate essential skills in young learners.</i> 
+            </p>
+
+      <h5>
+              <span>Communication Milestones</span>
+            </h5>
       <p>
-      🚀 We have 2 types of batches. A Juniors batch is for Grade 2 to Grade 5. Seniors Batch is for Grade 6 to 9.
-      This mix of grades ensure diversity and promotes learning from each other. Also, this makes the class an excellent 
-      replica of the real world where Men and Women from all walks of life solve problems and make our lives better.
+      🚀 Our Communication Milestones module focuses on developing effective public speaking skills.
+       Through a series of engaging projects, children will learn to structure their speeches,
+        enhance their vocal variety, and master the art of storytelling, all aimed at building
+         confidence and clarity in their communication.
             </p>
       <h5>
-            <span>Seniors' Batch 🧪,<br/> Grade 6 to Grade 9</span>
+            <span>Leadership Milestones</span>
       </h5>
             <p>
-            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 9:45 to 11:45 | Enrollments open<br/>
-            <b>Weekdays Batch:</b> June 26th - July 17th, Monday to Friday| 9:45 to 11:45 | Enrollments open<br/>
-             <h5>
-            <span>Juniors' Batch 🧪,<br/> Grade 2 to Grade 5</span>
-            </h5>
+            🚀 The Leadership Milestones module is designed to nurture leadership abilities. Participants will gain 
+            hands-on experience in organizing events, leading teams, and providing constructive feedback, 
+            equipping them with the skills necessary to become confident and inspiring leaders.
+            </p>
+            <h5>
+            <span>More information</span>
+      </h5>
+
+            <iframe src ="https://drive.google.com/file/d/11fhAQ7_1mslNaaUUKqqw3aqQLqEn8xen/preview" frameborder="0" width="100%" height="800px" />
+            <br/>
+            <img src={pricing} className={styles.pic} alt="pricing" />
+
+            <p>
+            ⦿ VoiceMasters Timings: Every Saturday, 3 PM to 5 PM
             </p>
             <p>
-            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 12:00 to 14:00 | Enrollments open<br/>
-            <b>Weekdays Batch:</b> June 26th - July 17th, Monday to Friday| 12:00 to 14:00 | Enrollments open<br/>
-             <br/>
-             ⚫ Note: Only maximum 10 students per batch. Please contact us to know vacancy.
+            ⦿ The first month of emrollment is the trial month. We offer full refund of fees within the trial period
+            after deducting the fees for the current month. For example, If you paid ₹10,000 for 3 months, and decide
+            to opt out within 1 month then the remaining fees of ₹6,666 ( after deducting ₹3333 for 1 month) will be refunded.
+            No refund will be done after the trial period. 
             </p>
-            <br/>
             <p>
-            ⚫ Summer Camp will include 8-10 Experiments each from Physics, Chemistry, Biology, Geography and General Studies. 
-            The Camp also includes Public Speaking, Journalling and developing Leadership Skills with Students mentoring other students.
+            ⦿ If we are closed on any Saturday on account of a Public Holiday or other reasons, we will extend the course period
+            accordingly or arrange an alternate class on another day (for example on Sunday) at no extra cost.
             </p>
-            <br/>
-            {/* <p>
-            ⚫ We also provide the option to attend weekly and pay as you attend. The charge for each week of attenance is 3000.
+      <p>
+            ⦿ We are here to help you. Please contact us if you need any other information to help decide the best for your child.
             </p>
-            <br/> */}
-            <p>
-            ⚫ The Demo/Experiments are using harmless chemicals in Chemistry or Dry batteries of 1.5-9V in Physics. Safety is always our first priority. 
-            </p>
-            <br/>
-            <p>
-            ⚫ More information can be found in the brochure below. Please contact us over whatsapp or a call to know more. We will be happy to help.
-            </p>
-            <br/>
-            <iframe src ="https://drive.google.com/file/d/1iIljbC0PIdrRWZZQbipgM-fLN8BlY27l/preview" frameborder="0" width="100%" height="800px" />
-            <br/>
-            <br/>
           </div>
         </div>
       </section>
@@ -81,4 +79,4 @@ function Camp() {
   );
 }
 
-export default Camp;
+export default Voice;
