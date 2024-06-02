@@ -2,6 +2,7 @@ import React from "react";
 import Style from "./WhyXperio.module.css";
 import lab from "../../assets/lab1.jpg";
 import goals from "../../assets/goals1.jpg";
+import voice from "../../assets/voicemasters.jpeg";
 
 
 function WhyXperio() {
@@ -33,6 +34,24 @@ function WhyXperio() {
       </div>
       <img  width={"100%"} height={"100%"} src={goals} alt="toghther"/>
     </div>
+
+
+
+    <div className={Style.together}>
+      <div id={Style.txt}>
+         <h2>VoiceMasters for Public Speaking 🎤</h2>
+         <p> Unlock your child's potential with VoiceMasters by XperioKids, where we cultivate confident
+           communicators and inspiring leaders through fun and engaging public speaking and
+            leadership programs. Join us to empower your child with skills for success and personal growth.
+        <strong> Click <a className={`${Style.menu__link}`} href="/voicemasters" target="_blank">
+          here</a> to know more.</strong>
+ </p>
+      </div>
+      <img  width={"100%"} height={"100%"} src={voice} alt="toghther"/>
+    </div>
+
+
+
 </div>;
 }
 
