@@ -44,8 +44,8 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="/demo">
-            Free Demo
+          <a className={`${styles.menu__link}`} href="/voicemasters">
+          VoiceMasters
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
