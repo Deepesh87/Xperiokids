@@ -40,9 +40,9 @@ function WhyXperio() {
     <div className={Style.together}>
       <div id={Style.txt}>
          <h2>VoiceMasters for Public Speaking 🎤</h2>
-         <p> Unlock your child's potential with VoiceMasters by XperioKids, where we cultivate confident
-           communicators and inspiring leaders through fun and engaging public speaking and
-            leadership programs. Join us to empower your child with skills for success and personal growth.
+         <p> Imagine your child excelling in presentations, interviews,
+           and collaborative projects, all thanks to the foundational skills they will gain with VoiceMasters. 
+           Join us to empower your child with skills for success and personal growth.
         <strong> Click <a className={`${Style.menu__link}`} href="/voicemasters" target="_blank">
           here</a> to know more.</strong>
  </p>
