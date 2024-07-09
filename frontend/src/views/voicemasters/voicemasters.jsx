@@ -56,7 +56,7 @@ Although public speaking can be intimidating for many adults, children can conqu
             <img src={pricing} className={styles.pic} alt="pricing" />
 
             <p>
-            ⦿ VoiceMasters Timings: Every Saturday, 3 PM to 5 PM
+            ⦿ VoiceMasters Timings: Every Sunday, 10 AM to 12:30 PM
             </p>
             <p>
             ⦿ The first month of emrollment is the trial month. We offer full refund of fees within the trial period
@@ -65,7 +65,7 @@ Although public speaking can be intimidating for many adults, children can conqu
             No refund will be done after the trial period. 
             </p>
             <p>
-            ⦿ If we are closed on any Saturday on account of a Public Holiday or other reasons, we will extend the course period
+            ⦿ If we are closed on any Sunday on account of a Public Holiday or other reasons, we will extend the course period
             accordingly or arrange an alternate class on another day (for example on Sunday) at no extra cost.
             </p>
       <p>

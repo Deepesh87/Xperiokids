@@ -12,12 +12,12 @@ import MenuItem from '@mui/material/MenuItem';
 import logo from "../../assets/logo.svg";
 import { NavLink } from 'react-router-dom';
 
-const pages = [{to:"/",name:"Home"},
-{to:"/about",name:"About us"},
-{to:"/gallery",name:"Gallery"},
+const pages = [{to:"/",name:"Home🏠"},
+{to:"/about",name:"About us 👨‍👨‍👦‍👦"},
+{to:"/gallery",name:"Gallery📷"},
 {to:"/demo",name:"Free Demo"},
-{to:"/voicemasters",name:"VoiceMasters"},
-{to:"/camp",name:"Summer Camp 2024"},
+{to:"/voicemasters",name:"VoiceMasters🎤"},
+{to:"/camp",name:"Summer Camp 2024🏄"},
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
