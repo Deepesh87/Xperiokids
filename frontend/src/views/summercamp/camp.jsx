@@ -2,8 +2,22 @@ import React from "react";
 import styles from "./camp.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import camp_pic from "../../assets/Summer_camp.png";
-
+import image_1 from "../../assets/image_folder/a.jpeg";
+import image_2 from "../../assets/image_folder/b.jpeg";
+import image_3 from "../../assets/image_folder/c.jpeg";
+import image_4 from "../../assets/image_folder/d.jpeg";
+import image_5 from "../../assets/image_folder/e.jpeg";
+import image_6 from "../../assets/image_folder/f.jpeg";
+import image_7 from "../../assets/image_folder/g.jpeg";
+import image_8 from "../../assets/image_folder/h.jpeg";
+import image_9 from "../../assets/image_folder/i.jpeg";
+import image_10 from "../../assets/image_folder/j.jpeg";
+import image_11 from "../../assets/image_folder/k.jpeg";
+import image_12 from "../../assets/image_folder/l.jpeg";
+import image_13 from "../../assets/image_folder/m.jpeg";
+import image_14 from "../../assets/image_folder/abc.jpeg";
+import image_15 from "../../assets/image_folder/def.jpeg";
+import image_16 from "../../assets/image_folder/ghi.jpeg";
 
 function Camp() {
   return (
@@ -13,67 +27,47 @@ function Camp() {
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
-              <span>Information on Science Summer Camp | Grade 3 to Grade 10, IB curriculum</span>
+              <span>Xperiokids Summer Camp 2024: A Memorable Journey of Learning and Fun</span>
             </h5>
             <p>
-              <i>
-            This summer, embark on a unique learning journey with us! Dive into the world of microscopes,
-             chemistry experiments on properties of matter/Solutions/Acids and Bases etc., and physics circuits 
-             to light up a bulb or learn about bread boards. Experience planetary 
-             events Like Solar/Lunar Eclipse & more firsthand. With exciting experiments and theory, nurture your child's curiosity and pave the way for future
-              success. <br/> <br/> 
-              Camp re-launched for IB Board students. Contact us for details. Multiple batches running from May to July . Limited Seats on FCFS. </i> 
+            During the Summer of 2024, we had the pleasure of engaging with many enthusiastic children 
+            during the months of May, June and July spread across 4 batches. Over the course of the camp,
+             participants delved into the wonders of science through hands-on experiments, honed their 
+             public speaking skills, and explored the art of journaling.<br/> The camp was designed to ignite curiosity,
+              foster creativity, and build confidence. We guided the children through various scientific principles 
+              with interactive demonstrations, encouraging a deeper understanding and love for science.<br/>
+               The public speaking sessions helped children develop their communication skills,
+                making them more articulate and confident speakers. Meanwhile, journaling provided 
+                a creative outlet for self-expression, allowing participants to reflect on their 
+                experiences and thoughts.
+                <br/><br/>
+                The camp was not just about learning; it was also about making new friends, having fun, 
+                and creating lasting memories. The smiles and excitement on the children's faces were 
+                the true testament to the camp's success.
             </p>
-            <br/>
-            <img src={camp_pic} className={styles.pic} alt="camp picture" />
-      <br/>
+            <div className={styles.about2}>
+        <div className={styles.img_gallery}>
+        <img src={image_10}></img>
+          <img src={image_11}></img>
+          <img src={image_12}></img>
+          <img src={image_13}></img>
+          <img src={image_7}></img>
+          <img src={image_14}></img>
+          <img src={image_15}></img>
+          <img src={image_16}></img>   
+          <img src={image_1}></img>
+          <img src={image_3}></img>
+          <img src={image_2}></img>
 
-      <h2>
-            <span>Batch details</span>
-      </h2>
-      <p>
-      🚀 We have 2 types of batches. A Juniors batch is for Grade 2 to Grade 5. Seniors Batch is for Grade 6 to 9.
-      This mix of grades ensure diversity and promotes learning from each other. Also, this makes the class an excellent 
-      replica of the real world where Men and Women from all walks of life solve problems and make our lives better.
-            </p>
-      <h5>
-            <span>Seniors' Batch 🧪,<br/> Grade 6 to Grade 9</span>
-      </h5>
-            <p>
-            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 9:45 to 11:45 | Enrollments open<br/>
-            <b>Weekdays Batch:</b> June 26th - July 17th, Monday to Friday| 9:45 to 11:45 | Enrollments open<br/>
-             <h5>
-            <span>Juniors' Batch 🧪,<br/> Grade 2 to Grade 5</span>
-            </h5>
-            </p>
-            <p>
-            <b>Weekdays Batch: </b> June 3rd - June 14th, Monday to Friday| 12:00 to 14:00 | Enrollments open<br/>
-            <b>Weekdays Batch:</b> June 26th - July 17th, Monday to Friday| 12:00 to 14:00 | Enrollments open<br/>
-             <br/>
-             ⚫ Note: Only maximum 10 students per batch. Please contact us to know vacancy.
-            </p>
-            <br/>
-            <p>
-            ⚫ Summer Camp will include 8-10 Experiments each from Physics, Chemistry, Biology, Geography and General Studies. 
-            The Camp also includes Public Speaking, Journalling and developing Leadership Skills with Students mentoring other students.
-            </p>
-            <br/>
-            {/* <p>
-            ⚫ We also provide the option to attend weekly and pay as you attend. The charge for each week of attenance is 3000.
-            </p>
-            <br/> */}
-            <p>
-            ⚫ The Demo/Experiments are using harmless chemicals in Chemistry or Dry batteries of 1.5-9V in Physics. Safety is always our first priority. 
-            </p>
-            <br/>
-            <p>
-            ⚫ More information can be found in the brochure below. Please contact us over whatsapp or a call to know more. We will be happy to help.
-            </p>
-            <br/>
-            <iframe src ="https://drive.google.com/file/d/1iIljbC0PIdrRWZZQbipgM-fLN8BlY27l/preview" frameborder="0" width="100%" height="800px" />
-            <br/>
-            <br/>
+          <img src={image_4}></img>
+          <img src={image_5}></img>
+          <img src={image_6}></img>
+
+          <img src={image_8}></img>
+          <img src={image_9}></img>
+        </div>
           </div>
+        </div>
         </div>
       </section>
       <Footer/>
