@@ -39,6 +39,7 @@ function WhyXperio() {
 
 
     <div className={Style.together}>
+    <img width={"100%"} height={"100%"} src={voice} alt="toghther"/>
       <div id={Style.txt}>
          <h2>VoiceMasters for Public Speaking 🎤</h2>
          <p> Imagine your child excelling in presentations, interviews,
@@ -48,11 +49,11 @@ function WhyXperio() {
           here</a> to know more.</strong>
  </p>
       </div>
-      <img  width={"100%"} height={"100%"} src={voice} alt="toghther"/>
+      {/* <img  width={"100%"} height={"100%"} src={voice} alt="toghther"/> */}
     </div>
 
 
-    <div className={Style.together}>
+    <div className={Style.together} >
       <div id={Style.txt}>
          <h2>Want to Teach Something? Use our Space</h2>
          <p> Do you have a skill or a hobby that you want to present to young minds. Call us today, and we will make
