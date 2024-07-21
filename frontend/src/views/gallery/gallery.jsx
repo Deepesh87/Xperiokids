@@ -18,6 +18,9 @@ import image_13 from "../../assets/image_folder/m.jpeg";
 import image_14 from "../../assets/image_folder/abc.jpeg";
 import image_15 from "../../assets/image_folder/def.jpeg";
 import image_16 from "../../assets/image_folder/ghi.jpeg";
+import image_17 from "../../assets/image_folder/ib.jpeg";
+import image_18 from "../../assets/image_folder/ib2.jpeg";
+import image_19 from "../../assets/image_folder/ib3.jpeg";
 
 function gallery() {
 return (
@@ -44,7 +47,10 @@ return (
           <img src={image_7}></img>
           <img src={image_14}></img>
           <img src={image_15}></img>
-          <img src={image_16}></img>    
+          <img src={image_16}></img>  
+          <img src={image_17}></img>
+        <img src={image_18}></img>
+        <img src={image_19}></img>  
 
 
         </div>
