@@ -18,6 +18,9 @@ import image_13 from "../../assets/image_folder/m.jpeg";
 import image_14 from "../../assets/image_folder/abc.jpeg";
 import image_15 from "../../assets/image_folder/def.jpeg";
 import image_16 from "../../assets/image_folder/ghi.jpeg";
+import image_17 from "../../assets/image_folder/ib.jpeg";
+import image_18 from "../../assets/image_folder/ib2.jpeg";
+import image_19 from "../../assets/image_folder/ib3.jpeg";
 
 function Camp() {
   return (
@@ -30,16 +33,11 @@ function Camp() {
               <span>Xperiokids Summer Camp 2024: A Memorable Journey of Learning and Fun</span>
             </h5>
             <p>
-            During the Summer of 2024, we had the pleasure of engaging with many enthusiastic children 
-            during the months of May, June and July spread across 4 batches. Over the course of the camp,
-             participants delved into the wonders of science through hands-on experiments, honed their 
-             public speaking skills, and explored the art of journaling.<br/> The camp was designed to ignite curiosity,
-              foster creativity, and build confidence. We guided the children through various scientific principles 
-              with interactive demonstrations, encouraging a deeper understanding and love for science.<br/>
-               The public speaking sessions helped children develop their communication skills,
-                making them more articulate and confident speakers. Meanwhile, journaling provided 
-                a creative outlet for self-expression, allowing participants to reflect on their 
-                experiences and thoughts.
+
+            <strong>Months Held:</strong> May, June & July.<br/>
+            <strong>Boards Covered:</strong> CBSE, ICSE and IB Board<br/>
+            <strong>Grades Covered:</strong> Grade 2 to Grade 9th<br/>
+            <strong>Topics Covered:</strong> Science Experiments, Public Speaking, Sudoku, Journaling
                 <br/><br/>
                 The camp was not just about learning; it was also about making new friends, having fun, 
                 and creating lasting memories. The smiles and excitement on the children's faces were 
@@ -48,6 +46,9 @@ function Camp() {
             <div className={styles.about2}>
         <div className={styles.img_gallery}>
         <img src={image_10}></img>
+        <img src={image_17}></img>
+        <img src={image_18}></img>
+        <img src={image_19}></img>
           <img src={image_11}></img>
           <img src={image_12}></img>
           <img src={image_13}></img>

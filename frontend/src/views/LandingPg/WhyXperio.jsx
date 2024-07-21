@@ -3,6 +3,7 @@ import Style from "./WhyXperio.module.css";
 import lab from "../../assets/lab1.jpg";
 import goals from "../../assets/goals1.jpg";
 import voice from "../../assets/voicemasters.jpeg";
+import hobby2 from "../../assets/hobbies2.png";
 
 
 function WhyXperio() {
@@ -48,6 +49,18 @@ function WhyXperio() {
  </p>
       </div>
       <img  width={"100%"} height={"100%"} src={voice} alt="toghther"/>
+    </div>
+
+
+    <div className={Style.together}>
+      <div id={Style.txt}>
+         <h2>Want to Teach Something? Use our Space</h2>
+         <p> Do you have a skill or a hobby that you want to present to young minds. Call us today, and we will make
+          all arrangements for a seamless classroom experience. We are currently looking for 
+          folks who can do workshops on Pottery, DIY Crafts, Photography, Abacus. Dont hestitate to call/mail us!
+ </p>
+      </div>
+      <img  width={"100%"} height={"100%"} src={hobby2} alt="toghther"/>
     </div>
 
 
