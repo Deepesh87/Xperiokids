@@ -85,12 +85,13 @@ const Footer = () => {
 
     <div className={styles.summer_camp_notification}>
     <a
-      href="/camp"
+      href="/sudoku"
       class="summer_camp_notification"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <p> <b>Summer Camp 2024 </b></p>
+      <p> <b>Sudoku 2024</b></p>      
+
     </a>
 
     </div>

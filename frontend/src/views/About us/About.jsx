@@ -15,7 +15,7 @@ function About() {
           <div className={styles.text}>
             <h2>About Us</h2>
             <h5>
-              <span>Dr. Kislay Singh: Founder Experiokids</span>
+              <span>Dr. Kislay Singh: Founder Xperiokids</span>
             </h5>
             <p>
               Hello Everyone. Having taught students from Primary school to Engineering & Masters,
