@@ -30,13 +30,14 @@ function Sudoku() {
                 2) Each event will last upto 1 hour and happen on the days mentioned. You can pre-book 
                 your slot and attend the contest.<br/>
                 3) Students chosen for Finals will be informed by call/whatsapp by End of September.<br/>
-                4) The Scoring for the Contest will be based on Correctness, Speed & Difficulty Level.<br/>
-                5) The Fees for the Contest will be ₹199 for each category<br/>
+                4) The Scoring for the Contest will be based on Correctness, Speed & Difficulty Level.<br/><br/>
+                5) The Fees for the Contest will be ₹299 for each category<br/>
                 6) Each event will have a set of 2-4 Sudokus of complexity varying from easy to very hard.<br/>
                 7) Partilally solved Sudokus will not fetch any Scores.<br/>
                 8) There will be Bonus Points for Speed.<br/>
-                9) Please contact us if you wish to learn more on the Scoring.<br/>
+                9) Please contact us if you wish to learn more on the Scoring.<br/><br/>
                 10) Attractive Prizes to be won in each Cateogry!<br/>
+                11) Contest Enrollments on FSFS. Beyond a certain number of enrollments in each Category, no further enrollments will be allowed<br/>
             </p>
             <div className={stylees.about2}>
         <div className={stylees.img_gallery}>
