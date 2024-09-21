@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './footer.module.css';
 import whatsapp_image from "../../assets/whatsapp.svg";
-import test from "../../assets/wave2.png";
 
 const Footer = () => {
   return (
@@ -54,8 +53,8 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="/camp">
-            Summer Camp 2024
+          <a className={`${styles.menu__link}`} href="/pujacamp">
+            Dussehra Camp, 2024
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
@@ -85,12 +84,12 @@ const Footer = () => {
 
     <div className={styles.summer_camp_notification}>
     <a
-      href="/sudoku"
+      href="/pujacamp"
       class="summer_camp_notification"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <p> <b>Sudoku 2024</b></p>      
+      <p> <b>Dussehra Camp</b></p>      
 
     </a>
 

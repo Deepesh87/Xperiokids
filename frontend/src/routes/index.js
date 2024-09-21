@@ -10,6 +10,7 @@ import Calandly from "../views/Calandly/Calandly";
 import Voice from "../views/voicemasters/voicemasters";
 import Camp from "../views/summercamp/camp";
 import Sudoku from "../views/sudoku/sudoku";
+import Dussehra from "../views/dussehracamp/pujacamp";
 import Terms from "../views/terms/terms";
 import Bday from "../views/bday/bday";
 
@@ -25,7 +26,7 @@ function MainRoutes() {
         <Route path="/demo" element={<Calandly/>} />
         <Route path="/voicemasters" element={<Voice/>} />
         <Route path="/camp" element={<Camp/>} />
-        <Route path="/sudoku" element={<Sudoku/>} />
+        <Route path="/pujacamp" element={<Dussehra/>} />
         <Route path="/terms" element={<Terms/>} />
         <Route path="/bday" element={<Bday/>} />
         <Route path="*" element={<FalseRoute/>} />
