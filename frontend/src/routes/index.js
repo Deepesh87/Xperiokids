@@ -26,6 +26,7 @@ function MainRoutes() {
         <Route path="/demo" element={<Calandly/>} />
         <Route path="/voicemasters" element={<Voice/>} />
         <Route path="/camp" element={<Camp/>} />
+        <Route path="/sudoku" element={<Sudoku/>} />
         <Route path="/pujacamp" element={<Dussehra/>} />
         <Route path="/terms" element={<Terms/>} />
         <Route path="/bday" element={<Bday/>} />
