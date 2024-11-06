@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import pic from "../../assets/kislay.jpg";
-import deepesh from "../../assets/deepesh.png";
+import deepesh from "../../assets/deepesh.jpeg";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 
@@ -44,8 +44,8 @@ function About() {
             </h5>
             <p>
             I am a full time Lead Data Scientist at a Leading Logistic Company. 
-            I have worked for over 12 years in the Data Science/Software Industry. I have also taught over 3000+ 
-            Working professionals on my own, in small private batches or at Great Learning, Scaler,
+            I have worked for over 12 years in the Data Science/Software Industry. I have also taught Data Science and ML to over 3000+ 
+            Working professionals at Great Learning, Scaler,
              Upgrad, Imarticus and several other top institutes that provide Data Science Courses. My Role at
              Xperiokids is to oversee the pedagogy and bring in my learnings from the Tech Industry.
             </p>

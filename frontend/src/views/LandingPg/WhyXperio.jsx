@@ -3,12 +3,28 @@ import Style from "./WhyXperio.module.css";
 import lab from "../../assets/lab1.jpg";
 import goals from "../../assets/goals1.jpg";
 import voice from "../../assets/voicemasters.jpeg";
+import hobby3 from "../../assets/robotics.png";
 import hobby2 from "../../assets/hobbies2.png";
 
 
 function WhyXperio() {
   return <div className={Style.main}>
     <h1>Why learn with Xperiokids?</h1>
+
+    <div className={Style.together}  id={Style.reverse_img} >
+      <div id={Style.txt}>
+         <h2>Introduction to Robotics & Coding</h2>
+         <p> In a world driven by technology, learning robotics is more than just fun—it's essential.
+           Kids who dive into robotics today become the creators, problem-solvers,
+            and innovators of tomorrow. Equip yourself with the tools to build,
+             explore, and shape a future where anything is possible. Start building now!
+        <strong> Click <a className={`${Style.menu__link}`} href="/robotics" target="_blank">
+          here</a> to know more.</strong>
+ </p>
+      </div>
+      <img  width={"100%"} height={"100%"} src={hobby3} alt="toghther"/>
+    </div>
+
     <div className={Style.together}>
       <img width={"100%"} height={"100%"} src={lab} alt="toghther"/>
       <div id={Style.txt}>

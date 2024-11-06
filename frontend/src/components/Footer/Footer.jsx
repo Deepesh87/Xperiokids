@@ -53,8 +53,8 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="/pujacamp">
-            Dussehra Camp, 2024
+          <a className={`${styles.menu__link}`} href="/robotics">
+            Robotics
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
@@ -84,12 +84,12 @@ const Footer = () => {
 
     <div className={styles.summer_camp_notification}>
     <a
-      href="/pujacamp"
+      href="/robotics"
       class="summer_camp_notification"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <p> <b>Dussehra Camp</b></p>      
+      <p> <b>Robotics</b></p>      
 
     </a>
 

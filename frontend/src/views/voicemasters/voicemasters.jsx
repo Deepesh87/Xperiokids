@@ -50,7 +50,6 @@ Although public speaking can be intimidating for many adults, children can conqu
             <h5>
             <span>More information</span>
       </h5>
-
             <iframe src ="https://drive.google.com/file/d/11fhAQ7_1mslNaaUUKqqw3aqQLqEn8xen/preview" frameborder="0" width="100%" height="800px" />
             <br/>
             <img src={pricing} className={styles.pic} alt="pricing" />

@@ -17,8 +17,8 @@ function Landing() {
       options={{
         strings: [
             '<span style="color: #21654E;">Science!</span>',
-            '<span style="color: #21654E;">Geography!</span>',
-            '<span style="color: #21654E;">Computer Science!</span>',
+            '<span style="color: #21654E;">Robotics!</span>',
+            '<span style="color: #21654E;">Coding!</span>',
             '<span style="color: #21654E;">Public Speaking!</span>',
           ],
         autoStart: true,
