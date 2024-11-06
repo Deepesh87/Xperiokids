@@ -13,7 +13,7 @@ function WhyXperio() {
 
     <div className={Style.together}  id={Style.reverse_img} >
       <div id={Style.txt}>
-         <h2>Introduction to Robotics & Coding</h2>
+         <h2>Robotics & Coding 🤖</h2>
          <p> In a world driven by technology, learning robotics is more than just fun—it's essential.
            Kids who dive into robotics today become the creators, problem-solvers,
             and innovators of tomorrow. Equip yourself with the tools to build,
