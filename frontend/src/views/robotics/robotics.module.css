@@ -138,3 +138,41 @@ cursor: pointer;
     display: none;
 }
   }
+
+
+  .videowrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows the videos to wrap to the next line if there's no space */
+    gap: 20px; /* Space between the videos */
+    justify-content: center; /* Center the videos horizontally */
+    margin: 20px 0;
+  }
+  .videocontainer {
+    position: relative;
+    padding-bottom: 177.77%; /* 9:16 Aspect ratio (vertical video) */
+    height: 0;
+    overflow: hidden;
+    width: 48%; /* This makes each video take 48% of the container's width */
+    background: #000;
+  }
+  
+  .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Mobile view - Stack the videos vertically */
+  @media (max-width: 768px) {
+    .videowrapper {
+      flex-direction: column; /* Stack the videos vertically */
+      align-items: center; /* Center the videos */
+    }
+  
+    .videocontainer {
+      width: 90%; /* Videos take up 90% of the screen width on mobile */
+      margin-bottom: 20px; /* Space between stacked videos */
+    }
+  }
