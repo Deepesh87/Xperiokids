@@ -9,7 +9,7 @@ import hobby2 from "../../assets/hobbies2.png";
 
 function WhyXperio() {
   return <div className={Style.main}>
-    <h1>Why learn with Xperiokids?</h1>
+    <h1>Why choose Xperio Learning!?</h1>
 
     <div className={Style.together}  id={Style.reverse_img} >
       <div id={Style.txt}>

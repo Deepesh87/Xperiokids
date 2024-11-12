@@ -1,3 +1,3 @@
-# Xperiokids
+# Xperio Learning
 
-## experience the wonders of Science
+## Xperience Science

@@ -33,7 +33,7 @@ function Landing() {
              Our small classes, limited to just 8-10 students, ensure personalized attention. 
              We believe in the power of practical learning alongside theory, allowing children 
              to experience hands-on demonstrations and receive comprehensive education.
-              Lay the foundation for a successful future with us at Xperiokids.
+              Lay the foundation for a successful future with us at Xperio Learning.
              
             </p>
           </div>

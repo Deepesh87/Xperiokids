@@ -13,12 +13,12 @@ function Bday() {
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
-              <span> 🎉🎉🎉 Introducing Xperiokids Birthday Bash! 🎉🎉🎉</span>
+              <span> 🎉🎉🎉 Introducing Xperio Kids Birthday Bash! 🎉🎉🎉</span>
             </h5>
             <p>
               <i>
               Make your child's special day a thrilling journey into the world of science with our
-               exclusive birthday celebration package! At Xperiokids, we're redefining birthday parties
+               exclusive birthday celebration package! At Xperio, we're redefining birthday parties
                 by infusing them with mind-blowing experiments and unforgettable experiences.<br/> 
               Contact us for details. </i> 
             </p>

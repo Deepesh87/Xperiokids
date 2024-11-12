@@ -15,13 +15,13 @@ function About() {
           <div className={styles.text}>
             <h2>About Us</h2>
             <h5>
-              <span>Dr. Kislay Singh: Founder Xperiokids</span>
+              <span>Dr. Kislay Singh: Founder Xperio Learning</span>
             </h5>
             <p>
               Hello Everyone. Having taught students from Primary school to Engineering & Masters,
                I have come to realize how broken our Education system is. We focus more
               on theory and very little on hands on and esp for Sciences
-              where it is most needed. I started Xperiokids so students can learn
+              where it is most needed. I started Xperio Learning so students can learn
               by experiencing. I have set up a classroom cum lab to help young minds see, try and
               learn Science rather then just read from books.
             </p>
@@ -40,14 +40,14 @@ function About() {
           <img src={deepesh} className={styles.pic} alt="Profile Picture" />
           <div className={styles.text}>
             <h5>
-              <span>Deepesh Singh, Mentor Xperiokids</span>
+              <span>Deepesh Singh, Mentor Xperio Learning</span>
             </h5>
             <p>
             I am a full time Lead Data Scientist at a Leading Logistic Company. 
             I have worked for over 12 years in the Data Science/Software Industry. I have also taught Data Science and ML to over 3000+ 
             Working professionals at Great Learning, Scaler,
              Upgrad, Imarticus and several other top institutes that provide Data Science Courses. My Role at
-             Xperiokids is to oversee the pedagogy and bring in my learnings from the Tech Industry.
+             Xperio Learning is to oversee the pedagogy and bring in my learnings from the Tech Industry.
             </p>
             <div className={styles.data}>
               <a href="https://www.linkedin.com/in/connectdeepesh/" target="_blank" className={styles.hire}>

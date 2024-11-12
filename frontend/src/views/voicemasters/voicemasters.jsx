@@ -16,7 +16,7 @@ function Voice() {
           <br/>
             <img src={logo} className={styles.pic2} alt="pricing" />
             <h5>
-              <span>VoiceMasters by Xperiokids | Grade 3 Onwards</span>
+              <span>VoiceMasters by Xperio Learning | Grade 3 Onwards</span>
             </h5>
             <p>
               <i>

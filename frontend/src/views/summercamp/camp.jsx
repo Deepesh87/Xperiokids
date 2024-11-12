@@ -30,7 +30,7 @@ function Camp() {
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
-              <span>Xperiokids Summer Camp 2024: A Memorable Journey of Learning and Fun</span>
+              <span>Xperio Learning Summer Camp 2024: A Memorable Journey of Learning and Fun</span>
             </h5>
             <p>
 

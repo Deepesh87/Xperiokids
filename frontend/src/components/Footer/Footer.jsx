@@ -28,7 +28,7 @@ const Footer = () => {
       </ul>
       <ul className={`${styles.menu}`}>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
+          <a className={`${styles.menu__link}`} href="https://www.xperiolearning.com/">
             Home
           </a>
         </li>
@@ -48,7 +48,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiokids.com/">
+          <a className={`${styles.menu__link}`} href="https://www.xperiolearning.com/">
             Careers
           </a>
         </li>
@@ -68,7 +68,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p>&copy;2024 Xperiokids.com | All Rights Reserved</p>
+      <p>&copy;2024 xperiolearning.com | All Rights Reserved</p>
 
     <div className={styles.whatsapp_float}>
     <a
