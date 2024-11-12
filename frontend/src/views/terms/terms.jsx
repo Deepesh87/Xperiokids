@@ -22,7 +22,7 @@ function Terms() {
             you into an upcoming batch depending on the schedule.
             </p> */}
             <p>
-            ⚫ Xperio Learnings reserves the right to use photos/videos clicked during our Demos/Classes for publishing 
+            ⚫ Xperio Learning reserves the right to use photos/videos clicked during our Demos/Classes for publishing 
             on our websites or on our YouTube channel.
             </p>
             <br/>
