@@ -53,7 +53,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="/robotics">
+          <a className={`${styles.menu__link}`} target="_blank" href="/robotics">
             Robotics
           </a>
         </li>
