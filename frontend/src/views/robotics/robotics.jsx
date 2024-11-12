@@ -54,7 +54,7 @@ function Robotics() {
              Please reach out to us to enrol or if you need any more details. <br/> 
                 <br/>
                 <br/>
-            <iframe src ="https://drive.google.com/file/d/1rTSs-nF2OKDJNfAqMz7OADfVcW-SbNW4/preview" frameborder="0" width="100%" height="800px" />
+            <iframe src ="https://drive.google.com/file/d/1gFtLd1KjGUhwZw9SgTPTZfxMIzKnhzLm/preview" frameborder="0" width="100%" height="800px" />
             <br/>
             </p>
             <div className={styles.about2}>
