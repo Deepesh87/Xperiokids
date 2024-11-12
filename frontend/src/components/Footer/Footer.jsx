@@ -33,17 +33,17 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiolearning.com/about">
+          <a className={`${styles.menu__link}`} href="/about">
             About Us
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiolearning.com/gallery">
+          <a className={`${styles.menu__link}`} href="/gallery">
             Gallery
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiolearning.com/voicemasters">
+          <a className={`${styles.menu__link}`} target="_blank"  href="/voicemasters">
           VoiceMasters
           </a>
         </li>
@@ -53,7 +53,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} href="https://www.xperiolearning.com//robotics">
+          <a className={`${styles.menu__link}`} target="_blank"  href="/robotics">
             Robotics
           </a>
         </li>
@@ -63,7 +63,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} target="_blank"  href="https://www.xperiolearning.com/terms">
+          <a className={`${styles.menu__link}`} target="_blank"  href="/terms">
             Terms of Services
           </a>
         </li>
@@ -84,7 +84,7 @@ const Footer = () => {
 
     <div className={styles.summer_camp_notification}>
     <a
-      href="https://www.xperiolearning.com/robotics"
+      href="/robotics"
       class="summer_camp_notification"
       target="_blank"
       rel="noopener noreferrer"
