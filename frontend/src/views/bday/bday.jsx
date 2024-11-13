@@ -59,12 +59,12 @@ function Bday() {
             <span>✨ Create Memories to Last a Lifetime:</span>
       </h5>
       <p>
-      With Xperiokids, you're not just hosting a party—you're creating unforgettable memories
+      With Xperio, you're not just hosting a party—you're creating unforgettable memories
        that will spark curiosity and ignite a passion for science in every young mind.
         Give your child the gift of wonder and adventure with a birthday bash they'll never forget.
             </p>
             <h5>
-            <span>🌟🌟 Book Your Xperiokids Birthday Bash Today!🌟 🌟 </span>
+            <span>🌟🌟 Book Your Xperio Kids Birthday Bash Today!🌟 🌟 </span>
       </h5>          
       </div>
         </div>

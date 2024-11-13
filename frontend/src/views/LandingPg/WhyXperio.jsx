@@ -29,7 +29,7 @@ function WhyXperio() {
       <img width={"100%"} height={"100%"} src={lab} alt="toghther"/>
       <div id={Style.txt}>
          <h2>Laboratory, not just a Classroom</h2>
-         <p>We extend beyond traditional textbooks at Xperio Kids. 
+         <p>We extend beyond traditional textbooks at Xperio Learning. 
           Our methodology revolves around hands-on learning, where students engage in 
           experiments covering a wide range of subjects, including Robotics, Coding, Physics, Chemistry, 
           Biology, and more. This interactive approach promotes active participation,
