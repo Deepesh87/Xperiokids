@@ -11,7 +11,8 @@ function Landing() {
           <div>
             <h1>
               <span>
-              Xperiment,<br/> Xplore,<br/> Xperience   
+              Xperiment,<br/> <br/> Xperience  
+               {/* Xplore, */}
               {
               <Typewriter
       options={{

@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
       <ul className={`${styles['social-icon']}`}>
         <li className={`${styles['social-icon__item']}`}>
-          <a className={`${styles['social-icon__link']}`} href="https://www.youtube.com/@Xperiokids" target="_blank">
+          <a className={`${styles['social-icon__link']}`} href="https://www.youtube.com/@Xperio-learning" target="_blank">
           <ion-icon name="logo-youtube"></ion-icon>
           </a>
         </li>

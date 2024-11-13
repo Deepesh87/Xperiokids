@@ -13,7 +13,6 @@ function Voice() {
       <section className={styles["demo-page"]}>
         <div className={styles.about}>
           <div className={styles.text}>
-          <br/>
             <img src={logo} className={styles.pic2} alt="pricing" />
             <h5>
               <span>VoiceMasters by Xperio Learning | Grade 3 Onwards</span>
@@ -48,14 +47,16 @@ Although public speaking can be intimidating for many adults, children can conqu
             equipping them with the skills necessary to become confident and inspiring leaders.
             </p>
             <h5>
-            <span>More information</span>
+            <span>For more information, please download the brochure here.</span>
       </h5>
-            <iframe src ="https://drive.google.com/file/d/11fhAQ7_1mslNaaUUKqqw3aqQLqEn8xen/preview" frameborder="0" width="100%" height="800px" />
+
+      <strong> Voicemasters <a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1Rm9SX3SsLReowlSLrOi2z3j6soKgswny/view?usp=sharing" target="_blank">
+       Brochure</a> </strong>
             <br/>
             <img src={pricing} className={styles.pic} alt="pricing" />
 
             <p>
-            ⦿ VoiceMasters Timings: Every Sunday, 10 AM to 12:30 PM
+            ⦿ VoiceMasters Timings: Pls contact us to know the timings.
             </p>
             <p>
             ⦿ The first month of emrollment is the trial month. We offer full refund of fees within the trial period

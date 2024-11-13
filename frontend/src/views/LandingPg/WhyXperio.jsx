@@ -31,8 +31,8 @@ function WhyXperio() {
          <h2>Laboratory, not just a Classroom</h2>
          <p>We extend beyond traditional textbooks at Xperio Kids. 
           Our methodology revolves around hands-on learning, where students engage in 
-          experiments covering a wide range of subjects, including Physics, Chemistry, 
-          Biology, and Geography. This interactive approach promotes active participation,
+          experiments covering a wide range of subjects, including Robotics, Coding, Physics, Chemistry, 
+          Biology, and more. This interactive approach promotes active participation,
            nurtures critical thinking, sparks creativity, and instills confidence in children.
           {/* <strong> Please visit our Centre on Haralur Road, Bangalore or call us today to learn more.</strong> */}
           </p>
