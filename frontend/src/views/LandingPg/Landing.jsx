@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "./Landing.module.css";
-import experiment from "../../assets/dp.png";
+import experiment from "../../assets/dp1.png";
 import Typewriter from "typewriter-effect";
 
 function Landing() {
@@ -31,11 +31,7 @@ function Landing() {
             </h1>
             
             <p>
-             Our small classes, limited to just 8-10 students, ensure personalized attention. 
-             We believe in the power of practical learning alongside theory, allowing children 
-             to experience hands-on demonstrations and receive comprehensive education.
-              Lay the foundation for a successful future with us at Xperio Learning.
-             
+            Join us today and witness the positive change in your child!          
             </p>
           </div>
         </div>

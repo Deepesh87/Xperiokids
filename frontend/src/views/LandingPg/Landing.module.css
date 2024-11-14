@@ -20,7 +20,7 @@ h1{
 }
 
 .content{
-   max-width: 600px;
+   max-width: 500px;
    padding: 10px;
 }
 
@@ -32,7 +32,7 @@ h1{
 
 .experiment{
     max-width: auto;
-    height: 500px;
+    height: 400px;
 }
 
 /* for mobile */

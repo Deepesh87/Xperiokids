@@ -63,7 +63,7 @@ function Nav() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width:"170px"}} >
-          <a href="/"><img  height={"100%"} width={"100%"} src={logo} /></a>
+          <a href="/"><img  height={"130%"} width={"130%"} src={logo} /></a>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }}}>
@@ -104,7 +104,7 @@ function Nav() {
             </Menu>
           </Box>
           <Box width={"100%"} sx={{display: { xs: 'flex', md: 'none' }, mr: 1 }} justifyContent="center">
-          <img  height={"55px"} width={"130px"} src={logo}/>
+          <img  height={"90px"} width={"200px"} src={logo}/>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent:"center",gap:"50px"} }}>
             {pages.map((page) => (
