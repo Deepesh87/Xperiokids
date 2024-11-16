@@ -12,36 +12,32 @@ import MenuItem from '@mui/material/MenuItem';
 import logo from "../../assets/logo_.svg";
 import { NavLink } from 'react-router-dom';
 
-const pages = [{to:"/",name:"Home🏠"},
-{to:"/about",name:"About us 👨‍👨‍👦‍👦"},
-{to:"/gallery",name:"Gallery📷"},
-{to:"/sudoku",name:"Sudoku"},
-{to:"/voicemasters",name:"VoiceMasters🎤"},
-{to:"/camp",name:"Summer Camp 2024🏄"},
+const pages = [
+  { to: "/", name: "Home🏠" },
+  { to: "/about", name: "About us 👨‍👨‍👦‍👦" },
+  { to: "/gallery", name: "Gallery📷" },
+  { to: "/sudoku", name: "Sudoku" },
+  { to: "/voicemasters", name: "VoiceMasters🎤" },
+  { to: "/camp", name: "Summer Camp 2024🏄" },
 ];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Nav() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [scrolling, setScrolling] = React.useState(false);
-  
+
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-  
   React.useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -56,23 +52,65 @@ function Nav() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [])
+  }, []);
 
   return (
-    <AppBar style={{ background: scrolling ? "white":"#faf2fe"  }}  position={scrolling ? "sticky":"static"}>
+    <AppBar style={{ background: scrolling ? "white" : "#faf2fe" }} position={scrolling ? "sticky" : "static"}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width:"170px"}} >
-          <a href="/"><img  height={"130%"} width={"130%"} src={logo} /></a>
-          </Box>
+          {/* Logo for mobile */}
+          <NavLink to="/" style={{ textDecoration: "none", width: "100%" }} onClick={scrollToTop}>
+            <Box
+              sx={{
+                display: { xs: "flex", md: "none" },
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+              }}
+            >
+              <img
+                src={logo}
+                alt="Logo"
+                style={{
+                  maxHeight: "100px",
+                  maxWidth: "200px",
+                  objectFit: "contain",
+                }}
+              />
+            </Box>
+          </NavLink>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }}}>
+          {/* Logo for desktop - left aligned */}
+          <NavLink to="/" style={{ textDecoration: "none", width: "100%" }} onClick={scrollToTop}>
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" },
+                justifyContent: "flex-start",  // Left align logo on desktop
+                alignItems: "center",
+                width: "auto",  // Ensures it doesn’t stretch
+                flexGrow: 0, // Prevent logo from growing
+              }}
+            >
+              <img
+                src={logo}
+                alt="Logo"
+                style={{
+                  maxHeight: "150px",
+                  maxWidth: "300px",
+                  objectFit: "contain",
+                }}
+              />
+            </Box>
+          </NavLink>
+
+          {/* Mobile menu button */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={handleOpenNavMenu} 
+              onClick={handleOpenNavMenu}
             >
               <MenuIcon />
             </IconButton>
@@ -95,66 +133,40 @@ function Nav() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <NavLink style={{textDecoration:"none"}} to={page.to}>
-                 <Typography textAlign="center">{page.name}</Typography>
-                 </NavLink>
+                <MenuItem key={page.to} onClick={handleCloseNavMenu}>
+                  <NavLink style={{ textDecoration: "none" }} to={page.to}>
+                    <Typography textAlign="center">{page.name}</Typography>
+                  </NavLink>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <Box width={"100%"} sx={{display: { xs: 'flex', md: 'none' }, mr: 1 }} justifyContent="center">
-          <img  height={"90px"} width={"200px"} src={logo}/>
-          </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent:"center",gap:"50px"} }}>
+
+          {/* Desktop menu */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center", gap: "50px" }}>
             {pages.map((page) => (
-              <NavLink style={{textDecoration:"none"}} to={page.to}>
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: scrolling?"black":"black", display: 'block' , fontWeight:"bold"}}
-              >
-                {page.name}
-              </Button>
+              <NavLink style={{ textDecoration: "none", display: "inline-block" }} to={page.to} key={page.name}>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    color: scrolling ? "black" : "black",
+                    display: 'block',
+                    fontWeight: "bold",
+                    whiteSpace: "nowrap",  // Prevent wrapping
+                    textOverflow: "ellipsis", // Ensure text doesn't overflow
+                    overflow: "hidden", // Hide any overflow text
+                  }}
+                >
+                  {page.name}
+                </Button>
               </NavLink>
             ))}
           </Box>
-
-          {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
+
 export default Nav;
-
-
-

@@ -1,61 +1,60 @@
-
-
-.main{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: auto;
-    background-color: #faf2fe;
+/* Main Container */
+.main {
     display: flex;
-    justify-content: space-around; 
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-
-h1{
-    margin: 0;
-    padding: 0;
-    font-family: var(--main-font-family);
-    font-size: var(--heading-font-size);
-}
-
-.content{
-   max-width: 500px;
-   padding: 10px;
-}
-
-.content > div > p {
-    font-size: 20px;
-    margin: 20px;
-    font-family: var(--heading-font-family);
-}
-
-.experiment{
-    max-width: auto;
-    height: 400px;
-}
-
-/* for mobile */
-@media screen and (max-width: 767px) {
-    .experiment {
-        display: none;
+    max-width: 1200px; /* Constrain the width for large screens */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add some padding for better appearance */
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  /* Content Section */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Experiment Image Section */
+  .experiment {
+    width: 100%;
+    max-width: 900px; /* Limit the maximum width of the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .experiment img {
+    width: 100%; /* Image takes full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the image fits inside without stretching */
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .main {
+      padding: 15px; /* Adjust padding for smaller screens */
     }
-    
+  
+    .experiment img {
+      width: 100%; /* Ensure the image remains full width on mobile */
+    }
   }
-
-button {
-    display: block;
-    padding:3px 10px 3px 10px;
-    border-radius: 22px;
-    margin: auto;
-    border: none;
-    background: #2CD192;
-    cursor: pointer;
-    float: center;
-}
-
-.type {
-    display: inline;
-    border: 1px solid #000;
-   color: #faf2fe;
+  
+  /* Desktop-specific styles */
+  @media (min-width: 1024px) {
+    .experiment {
+      max-width: 650px; /* Restrict the image to max width for desktop */
+    }
+  
+    .experiment img {
+      width: 95%; /* Image fills up to 100% of the parent container's max width */
+    }
   }
+  

@@ -8,36 +8,32 @@ function Landing() {
     <>
       <div className={Style.main}>
         <div className={Style.content}>
-          <div>
+          <div className={Style.textContent}>
             <h1>
               <span>
-              Xperiment,<br/> Xperience  
-               {/*<br/>  Xplore, */}
-              {
-              <Typewriter
-      options={{
-        strings: [
-            '<span style="color: #21654E;">Science!</span>',
-            '<span style="color: #21654E;">Robotics!</span>',
-            '<span style="color: #21654E;">Coding!</span>',
-            '<span style="color: #21654E;">Public Speaking!</span>',
-          ],
-        autoStart: true,
-        loop: true,
-      }}
-    />
-              }{" "}
+                Xperiment,<br /> Xperience
+                {
+                  <Typewriter
+                    options={{
+                      strings: [
+                        '<span style="color: #21654E;">Science!</span>',
+                        '<span style="color: #21654E;">Robotics!</span>',
+                        '<span style="color: #21654E;">Coding!</span>',
+                        '<span style="color: #21654E;">Public Speaking!</span>',
+                      ],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                }{" "}
               </span>
             </h1>
-            
-            <p>
-            Join us today and witness the positive change in your child!          
-            </p>
+            <p>Join us today and witness the positive change in your child!</p>
           </div>
         </div>
-        <br/>
+
         <div className={Style.experiment}>
-          <img width={"100%"} height={"100%"} src={experiment} />
+          <img src={experiment} alt="Experiment" />
         </div>
       </div>
     </>

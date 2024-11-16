@@ -12,17 +12,17 @@ const Footer = () => {
       <ul className={`${styles['social-icon']}`}>
         <li className={`${styles['social-icon__item']}`}>
           <a className={`${styles['social-icon__link']}`} href="https://www.youtube.com/@Xperio-learning" target="_blank">
-          <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
           </a>
         </li>
         <li className={`${styles['social-icon__item']}`}>
           <a className={`${styles['social-icon__link']}`} href="https://www.linkedin.com/company/xperiokids/" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>
         <li className={`${styles['social-icon__item']}`}>
           <a className={`${styles['social-icon__link']}`} href="#">
-          <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
           </a>
         </li>
       </ul>
@@ -43,8 +43,8 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} target="_blank"  href="/voicemasters">
-          VoiceMasters
+          <a className={`${styles.menu__link}`} target="_blank" href="/voicemasters">
+            VoiceMasters
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
@@ -53,7 +53,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} target="_blank"  href="/robotics">
+          <a className={`${styles.menu__link}`} target="_blank" href="/robotics">
             Robotics
           </a>
         </li>
@@ -63,37 +63,24 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} target="_blank"  href="/terms">
+          <a className={`${styles.menu__link}`} target="_blank" href="/terms">
             Terms of Services
           </a>
         </li>
       </ul>
       <p>&copy;2024 xperiolearning.com | All Rights Reserved</p>
 
-    <div className={styles.whatsapp_float}>
-    <a
-      href="https://wa.me/918904749795"
-      class="whatsapp_float"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img height={"100%"} width={"100%"} src={whatsapp_image} />
-    </a>
+      <div className={styles.whatsapp_float}>
+        <a href="https://wa.me/918904749795" className="whatsapp_float" target="_blank" rel="noopener noreferrer">
+          <img height={"100%"} width={"100%"} src={whatsapp_image} />
+        </a>
+      </div>
 
-    </div>
-
-    <div className={styles.summer_camp_notification}>
-    <a
-      href="/robotics"
-      class="summer_camp_notification"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <p> <b>Robotics</b></p>      
-
-    </a>
-
-    </div>
+      <div className={styles.summer_camp_notification}>
+        <a href="/robotics" className="summer_camp_notification" target="_blank" rel="noopener noreferrer">
+          <p><b>Robotics</b></p>
+        </a>
+      </div>
     </footer>
   );
 };
