@@ -77,7 +77,11 @@ const Footer = () => {
       </div>
 
       <div className={styles.summer_camp_notification}>
-        <a href="/robotics" className="summer_camp_notification" target="_blank" rel="noopener noreferrer">
+        <a href="/robotics" className="summer_camp_notification" target="_blank" rel="noopener noreferrer"
+        style={{
+          textDecoration: 'none', 
+        }}
+        >
           <p><b>Robotics</b></p>
         </a>
       </div>

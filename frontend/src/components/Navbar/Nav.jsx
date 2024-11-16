@@ -111,9 +111,19 @@ function Nav() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
+              sx={{
+                color: '#21654E',  // Bright color (e.g., brand color)
+                '&:hover': {
+                  backgroundColor: 'transparent',  // Ensure no background on hover
+                },
+              }}
             >
-              <MenuIcon />
+              <MenuIcon sx={{ color: '#21654E' }} />  {/* Apply bright color directly to the icon */}
             </IconButton>
+
+
+
+
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
