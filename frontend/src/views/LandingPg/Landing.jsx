@@ -1,7 +1,6 @@
 import React from "react";
 import Style from "./Landing.module.css";
 import experiment from "../../assets/dp1.png";
-import Typewriter from "typewriter-effect";
 
 function Landing() {
   return (
@@ -14,7 +13,8 @@ function Landing() {
                   Unlock Your Child’s Full Potential with 
                   <span className={Style.highlight}> Science</span>, 
                   <span className={Style.highlight}> Robotics</span>, 
-                  <span className={Style.highlight}> Coding</span>, & More!
+                  <span className={Style.highlight}> Coding</span>,
+                  <span className={Style.highlight}> Public Speaking</span> & More!
                 </span>
               </h1>
               <p>Empowering young minds to explore, create, and innovate.</p>

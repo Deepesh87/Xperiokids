@@ -58,3 +58,16 @@
     }
   }
   
+
+  .highlight {
+    color: #e70404; /* Bright orange color */
+    font-weight: bold;
+   /* text-shadow: 2px 2px 5px #f7350a;  Adds a shadow for emphasis */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .highlight:hover {
+    color: #ffcc00; /* Bright yellow on hover */
+    text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.8);
+  }
+  
