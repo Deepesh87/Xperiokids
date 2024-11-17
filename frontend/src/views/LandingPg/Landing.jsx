@@ -17,7 +17,7 @@ function Landing() {
                   <span className={Style.highlight}> Public Speaking</span> & More!
                 </span>
               </h1>
-              <p>Empowering young minds to explore, create, and innovate.</p>
+              <p>Empowering young minds to Xperiment, Xplore and Xperience</p>
             </div>
           </div>
 

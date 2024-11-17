@@ -14,10 +14,8 @@ function WhyXperio() {
     <div className={Style.together}  id={Style.reverse_img} >
       <div id={Style.txt}>
          <h2>Robotics & Coding 🤖</h2>
-         <p> In a world driven by technology, learning robotics is more than just fun—it's essential.
-           Kids who dive into robotics today become the creators, problem-solvers,
-            and innovators of tomorrow. Equip yourself with the tools to build,
-             explore, and shape a future where anything is possible. Start building now!
+         <p> In today's tech-driven world, learning robotics is essential. Kids who explore robotics
+           now become tomorrow's innovators and problem-solvers. Build, explore, and shape the future today!
         <strong> Click <a className={`${Style.menu__link}`} href="/robotics" target="_blank">
           here</a> to know more.</strong>
  </p>
@@ -29,11 +27,9 @@ function WhyXperio() {
       <img width={"100%"} height={"100%"} src={lab} alt="toghther"/>
       <div id={Style.txt}>
          <h2>Laboratory, not just a Classroom</h2>
-         <p>We extend beyond traditional textbooks at Xperio Learning. 
-          Our methodology revolves around hands-on learning, where students engage in 
-          experiments covering a wide range of subjects, including Robotics, Coding, Physics, Chemistry, 
-          Biology, and more. This interactive approach promotes active participation,
-           nurtures critical thinking, sparks creativity, and instills confidence in children.
+         <p>At Xperio Learning, we go beyond textbooks with hands-on learning. Students engage 
+          in experiments across subjects like Robotics, Coding, Physics, Chemistry, and 
+          Biology. This interactive approach fosters critical thinking, creativity, and confidence.
           {/* <strong> Please visit our Centre on Haralur Road, Bangalore or call us today to learn more.</strong> */}
           </p>
       </div>
@@ -42,9 +38,9 @@ function WhyXperio() {
     <div className={Style.together}  id={Style.reverse_img} >
       <div id={Style.txt}>
          <h2>Xperiokids Birthday Bash! 🎉</h2>
-         <p> Celebrate your child's special day with Xperiokids Birthday Bash! Immerse them in a world of science
-           wonder with mind-blowing experiments, customizable themes, and unforgettable memories. Book now for an
-            extraordinary celebration like no other!
+         <p> Celebrate your child's special day with an unforgettable Xperiokids Birthday 
+          Bash! Enjoy science-filled experiments, customizable themes, and lasting 
+          memories. Book now for a unique celebration!
         <strong> Click <a className={`${Style.menu__link}`} href="/bday" target="_blank">
           here</a> to know more.</strong>
  </p>
