@@ -11,31 +11,55 @@ function Robotics() {
       <section className={styles["demo-page"]}>
         <div className={styles.about}>
           <div className={styles.text}>
-          <img src={pujo} className={styles.pic2} alt="pricing" />
+            <img src={pujo} className={styles.pic2} alt="pricing" />
             <h5>
               <span>Week-End Robotics Course</span>
             </h5>
             <p>
-            <strong>Course Duration: 60 hours spread across 4-5 months</strong><br/>
-            <strong>Course Timings: 2 hours every Sat & Sundays</strong><br/>
-            <strong>Course Fees: ₹ 45,000 payable in 2 installment</strong><br/>
-
-            <br/>The topics that will be covered and more finer details are mentioned in the camp brochure.
-             Please reach out to us to enrol or if you need any more details. <br/> 
-                <br/>
-                <br/>
-            <iframe src ="https://drive.google.com/file/d/1Hzd-rLPdIElKvsB3jNai4TjNfRFmU8d6/preview" frameborder="0" width="100%" height="800px" />
-            <br/>
+              <strong>Course Duration: 60 hours spread across 4-5 months</strong>
+              <br />
+              <strong>Course Timings: 2 hours every Sat & Sundays</strong>
+              <br />
+              <strong>Course Fees: ₹ 45,000 payable in 2 installments</strong>
+              <br />
+              <br />
+              The topics that will be covered and more finer details are mentioned in the camp brochure.
+              <br />
             </p>
-            <div className={styles.about2}>
-        <div className={styles.img_gallery}>
+            {/* PDF iframe with reduced gap */}
+            <div style={{ display: "flex", justifyContent: "center", marginBottom: "10px" }}>
+              <iframe
+                src="https://drive.google.com/file/d/1Hzd-rLPdIElKvsB3jNai4TjNfRFmU8d6/preview"
+                frameBorder="0"
+                width="100%"
+                height="500px"
+                style={{ marginBottom: "0", paddingBottom: "0", maxWidth: "100%" }}
+              />
+            </div>
 
-        </div>
+            {/* Centered Text between PDF and Google Form */}
+            <div style={{ textAlign: "center", marginTop: "10px" }}>
+              <p style={{ fontSize: "22px", fontWeight: "500", color: "#333" }}>
+                Please fill this form to complete Student Registration & receive a callback.
+              </p>
+            </div>
           </div>
         </div>
-        </div>
       </section>
-      <Footer/>
+
+      {/* Google Form iframe */}
+      <div style={{ display: "flex", justifyContent: "center", marginBottom: "100px" }}>
+        <iframe
+          src="https://forms.gle/W1Y4RwTp9EE8oH2a7"
+          width="90%"
+          height="500"
+          frameBorder="0"
+          style={{ border: "1px solid #ccc", borderRadius: "0" }}
+          title="Google Form"
+        />
+      </div>
+
+      <Footer />
     </>
   );
 }
