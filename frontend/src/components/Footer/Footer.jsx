@@ -5,27 +5,25 @@ import whatsapp_image from "../../assets/whatsapp.svg";
 const Footer = () => {
   return (
     <footer className={`${styles.footer}`}>
-      <div className={`${styles.waves}`}>
-        <div className={`${styles.wave}`} id={`${styles.wave1}`}></div>
-        <div className={`${styles.wave}`} id={`${styles.wave2}`}></div>
-      </div>
+
       <ul className={`${styles['social-icon']}`}>
-        <li className={`${styles['social-icon__item']}`}>
-          <a className={`${styles['social-icon__link']}`} href="https://www.youtube.com/@Xperio-learning" target="_blank">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </a>
-        </li>
-        <li className={`${styles['social-icon__item']}`}>
-          <a className={`${styles['social-icon__link']}`} href="https://www.linkedin.com/company/xperiokids/" target="_blank">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-        <li className={`${styles['social-icon__item']}`}>
-          <a className={`${styles['social-icon__link']}`} href="#">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
-      </ul>
+  <li className={`${styles['social-icon__item']}`} style={{ marginRight: '30px' }}>
+    <a href="https://www.youtube.com/@Xperio-learning" target="_blank" rel="noopener noreferrer">
+      <ion-icon name="logo-youtube" style={{ color: '#FF0000', fontSize: '2rem' }}></ion-icon>
+    </a>
+  </li>
+  <li className={`${styles['social-icon__item']}`} style={{ marginRight: '30px' }}>
+    <a href="https://www.linkedin.com/company/xperio-learning" target="_blank" rel="noopener noreferrer">
+      <ion-icon name="logo-linkedin" style={{ color: '#0077B5', fontSize: '2rem' }}></ion-icon>
+    </a>
+  </li>
+  <li className={`${styles['social-icon__item']}`}>
+    <a href="#" target="_blank" rel="noopener noreferrer">
+      <ion-icon name="logo-instagram" style={{ color: '#E1306C', fontSize: '2rem' }}></ion-icon>
+    </a>
+  </li>
+</ul>
+
       <ul className={`${styles.menu}`}>
         <li className={`${styles.menu__item}`}>
           <a className={`${styles.menu__link}`} href="https://www.xperiolearning.com/">
