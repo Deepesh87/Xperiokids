@@ -16,7 +16,7 @@ function Robotics() {
               <span>Week-End Robotics Course</span>
             </h5>
             <p>
-              <strong>Course Duration: 60 hours spread across 4-5 months</strong>
+              <strong>Course Duration: 60 hours spread across 5-6 months</strong>
               <br />
               <strong>Course Timings: 2 hours every Sat & Sundays</strong>
               <br />
@@ -29,7 +29,7 @@ function Robotics() {
             {/* PDF iframe with reduced gap */}
             <div style={{ display: "flex", justifyContent: "center", marginBottom: "10px" }}>
               <iframe
-                src="https://drive.google.com/file/d/1Hzd-rLPdIElKvsB3jNai4TjNfRFmU8d6/preview"
+                src="https://drive.google.com/file/d/1d6wGEIR5C9xSRRJaq4n22LzvFlGSUotf/preview"
                 frameBorder="0"
                 width="100%"
                 height="500px"

@@ -56,7 +56,7 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} target="_blank" href="https://maps.app.goo.gl/sn93JELCGweMpa3f9">
+          <a className={`${styles.menu__link}`} target="_blank" href="https://maps.app.goo.gl/2nkiPgKQfWt7qHzk6">         
             Locate Us
           </a>
         </li>
@@ -66,7 +66,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p>&copy;2024 xperiolearning.com | All Rights Reserved</p>
+      <p>&copy;2025 xperiolearning.com | All Rights Reserved</p>
 
       <div className={styles.whatsapp_float}>
         <a href="https://wa.me/918904749795" className="whatsapp_float" target="_blank" rel="noopener noreferrer">
