@@ -1,10 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./robotics.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import pujo from "../../assets/robotics_flyer.png";
 
+function FAQItem({ question, answer }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className={styles.faqItem}>
+      <button className={styles.faqQuestion} onClick={() => setIsOpen(!isOpen)}>
+        {question}
+        <span>{isOpen ? "-" : "+"}</span>
+      </button>
+      {isOpen && <p className={styles.faqAnswer}>{answer}</p>}
+    </div>
+  );
+}
+
 function Robotics() {
+  const faqs = [
+    {
+      question: "What is Robotics?",
+      answer:
+        "Robotics for kids is a hands-on way for children to learn about science, technology, engineering, and math (STEM). It involves designing, programming, and building robots, and can help kids develop skills like problem-solving, creativity, and critical thinking. Robotics empower children to create projects from their own concepts, fostering self-assurance and a positive 'can-do' mindset.",
+    },
+    {
+      question: "What prior knowledge is required for this course?",
+      answer:
+        "No prior knowledge is required. The course is beginner-friendly and designed to teach you from scratch.",
+    },
+    {
+      question: "What materials or tools are needed?",
+      answer: "All necessary materials, including Arduino kits, will be provided during the course.",
+    },
+    {
+      question: "Is there any certification after course completion?",
+      answer: "Yes, participants will receive a certificate of completion at the end of the course.",
+    },
+    {
+      question: "Can I pay the course fee in installments?",
+      answer: "Yes, the course fee can be paid in two installments as mentioned.",
+    },
+    {
+      question: "How can Robotics benefit young children?",
+      answer:
+        "Robotics can also enhance academic performance in children by creating an interest in Mathematics and Science, leading to improved outcomes in these subjects.",
+    },
+    {
+      question: "What is the future of Robotics?",
+      answer:
+        "In the future, various fields such as medicine, psychology, law enforcement, and agriculture that currently have limited technology integration will become increasingly dependent on technology. AI added to Robotics can make wonders like how Elon has done.",
+    },
+    {
+      question: "Is Robotics and Programming doable by Children?",
+      answer:
+        "Yes, robotics and programming are doable by children, and can be a fun and rewarding experience for both children and parents. Our course and faculty are designed to break down difficult concepts into easy digestible chunks and abstract what is not needed.",
+    },
+  ];
+
   return (
     <>
       <Nav />
@@ -24,41 +78,36 @@ function Robotics() {
               <br />
               <br />
               The topics that will be covered and more finer details are mentioned in the camp brochure.
-              <br />
             </p>
-            {/* PDF iframe with reduced gap */}
-            <div style={{ display: "flex", justifyContent: "center", marginBottom: "10px" }}>
-              <iframe
-                src="https://drive.google.com/file/d/1d6wGEIR5C9xSRRJaq4n22LzvFlGSUotf/preview"
-                frameBorder="0"
-                width="100%"
-                height="500px"
-                style={{ marginBottom: "0", paddingBottom: "0", maxWidth: "100%" }}
-              />
-            </div>
-
-            {/* Centered Text between PDF and Google Form */}
-            <div style={{ textAlign: "center", marginTop: "10px" }}>
-              <p style={{ fontSize: "22px", fontWeight: "500", color: "#333" }}>
-                Please fill this form to complete Student Registration & receive a callback.
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Google Form iframe */}
-      <div style={{ display: "flex", justifyContent: "center", marginBottom: "100px" }}>
+      <section className={styles.faqSection}>
+        <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
+        {faqs.map((faq, index) => (
+          <FAQItem key={index} question={faq.question} answer={faq.answer} />
+        ))}
+      </section>
+
+      <div className={styles.docFrame}>
         <iframe
-          src="https://forms.gle/W1Y4RwTp9EE8oH2a7"
-          width="90%"
-          height="500"
+          src="https://drive.google.com/file/d/1d6wGEIR5C9xSRRJaq4n22LzvFlGSUotf/preview"
           frameBorder="0"
-          style={{ border: "1px solid #ccc", borderRadius: "0" }}
-          title="Google Form"
+          title="Course Brochure"
         />
       </div>
 
+      <div className={styles.formSection}>
+        <p className={styles.formText}>
+          Please fill this form to complete Student Registration & receive a callback.
+        </p>
+        <iframe
+          src="https://forms.gle/W1Y4RwTp9EE8oH2a7"
+          frameBorder="0"
+          title="Google Form"
+        />
+      </div>
       <Footer />
     </>
   );
