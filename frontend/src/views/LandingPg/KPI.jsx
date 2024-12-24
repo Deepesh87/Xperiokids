@@ -45,10 +45,10 @@ function KPI() {
           <div className={Style.kpiValue}>{rating}</div>
         </a>
       </div>
-      <div className={Style.kpiItem}>
+      {/* <div className={Style.kpiItem}>
         <h3 className={Style.kpiSubtitle}>Student Count</h3>
         <div className={Style.kpiValue}>{students}</div>
-      </div>
+      </div> */}
     </div>
   );
 }

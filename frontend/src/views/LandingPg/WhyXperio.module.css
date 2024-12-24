@@ -76,7 +76,7 @@
   }
   
   .main img:hover {
-    transform: scale(1.35); /* Slight zoom effect */
+    transform: scale(1.20); /* Slight zoom effect */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
     cursor: pointer; /* Change cursor to pointer */
   }
@@ -101,7 +101,7 @@
     }
   
     .main img:hover {
-      transform: scale(1.35);
+      transform: scale(1.20);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       cursor: pointer;
     }
