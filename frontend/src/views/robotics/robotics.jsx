@@ -32,7 +32,7 @@ function Robotics() {
     },
     {
       question: "What materials or tools are needed?",
-      answer: "All necessary materials, including Arduino kits, will be provided during the course.",
+      answer: "All necessary materials, including a Very cool Robotics Kit worth around ₹10,000 will be provided to each student.",
     },
     {
       question: "Is there any certification after course completion?",
@@ -40,7 +40,7 @@ function Robotics() {
     },
     {
       question: "Can I pay the course fee in installments?",
-      answer: "Yes, the course fee can be paid in two installments as mentioned.",
+      answer: "Yes, the course fee can be paid in two installments of ₹30,000 in Jan and rest ₹15,000 before March 10th.",
     },
     {
       question: "How can Robotics benefit young children?",
@@ -70,7 +70,7 @@ function Robotics() {
               <span>Week-End Robotics Course</span>
             </h5>
             <p>
-              <strong>Course Duration: 60 hours spread across 5-6 months</strong>
+              <strong>Course Duration: 60 hours spread across 5-6 months (includes Course pause for 3 weekends during School Examinations)</strong>
               <br />
               <strong>Course Timings: 2 hours every Sat & Sundays</strong>
               <br />
@@ -92,7 +92,7 @@ function Robotics() {
 
       <div className={styles.docFrame}>
         <iframe
-          src="https://drive.google.com/file/d/1d6wGEIR5C9xSRRJaq4n22LzvFlGSUotf/preview"
+          src="https://drive.google.com/file/d/1l_6cVG4zz6KdDob4i1-j_tmX_CQ-ztdv/preview"
           frameBorder="0"
           title="Course Brochure"
         />
