@@ -71,7 +71,7 @@ function Robotics() {
             </h5>
             <p>
               <strong>Course Duration: 60 hours spread across 5-6 months (includes Course pause for 3 weekends during School Examinations)</strong>
-              <br />
+              <br /><br />
               <strong>Course Timings: 2 hours every Sat & Sundays</strong>
               <br />
               <strong>Course Fees: ₹ 45,000 payable in 2 installments</strong>
