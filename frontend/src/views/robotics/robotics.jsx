@@ -32,7 +32,7 @@ function Robotics() {
     },
     {
       question: "What materials or tools are needed?",
-      answer: "All necessary materials, including a Very cool Robotics Kit worth around ₹10,000 will be provided to each student.",
+      answer: "All necessary materials, including a Very cool Robotics Kit as per the course will be provided.",
     },
     {
       question: "Is there any certification after course completion?",
@@ -40,7 +40,7 @@ function Robotics() {
     },
     {
       question: "Can I pay the course fee in installments?",
-      answer: "Yes, the course fee can be paid in two installments of ₹30,000 in Jan and rest ₹15,000 before March 10th.",
+      answer: "Yes, the course fee can be paid in two installments. Pls contact us for more details.",
     },
     {
       question: "How can Robotics benefit young children?",
