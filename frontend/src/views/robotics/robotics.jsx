@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./robotics.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import pujo from "../../assets/robotics_flyer.png";
+import pujo from "../../assets/robotics_new_flyer.png";
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,14 +67,14 @@ function Robotics() {
           <div className={styles.text}>
             <img src={pujo} className={styles.pic2} alt="pricing" />
             <h5>
-              <span>Week-End Robotics Course</span>
+              <span>Week-End Beginners Robotics Course</span>
             </h5>
             <p>
-              <strong>Course Duration: 60 hours spread across 5-6 months (includes Course pause for 3 weekends during School Examinations)</strong>
+              <strong>Course Duration: 4 days or 2 weekends</strong>
               <br /><br />
-              <strong>Course Timings: 2 hours every Sat & Sundays</strong>
+              <strong>Course Timings: Flexible, pls contact us</strong>
               <br />
-              <strong>Course Fees: ₹ 45,000 payable in 2 installments</strong>
+              <strong>Course Fees: ₹ 6,000 (includes Robotics kit worth 2k)</strong>
               <br />
               <br />
               The topics that will be covered and more finer details are mentioned in the camp brochure.
@@ -89,10 +89,9 @@ function Robotics() {
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
       </section>
-
       <div className={styles.docFrame}>
         <iframe
-          src="https://drive.google.com/file/d/1l_6cVG4zz6KdDob4i1-j_tmX_CQ-ztdv/preview"
+          src="https://drive.google.com/file/d/1vg3mFEsZU75KBA0KrAkuWbhfyds_g-18/preview"
           frameBorder="0"
           title="Course Brochure"
         />
