@@ -49,24 +49,23 @@ Although public speaking can be intimidating for many adults, children can conqu
             <h5>
             <span>For more information, please download the brochure here.</span>
       </h5>
-
-      <strong> Voicemasters <a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1Rm9SX3SsLReowlSLrOi2z3j6soKgswny/view?usp=sharing" target="_blank">
-       Brochure</a> </strong>
+      <strong> Click to <a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1PegLbXgY1_Z9JTwCp4a76vm7KSZtNBme/view?usp=sharing" target="_blank">
+      Download Brochure <br/></a> </strong>
             <br/>
             <img src={pricing} className={styles.pic} alt="pricing" />
 
             <p>
-            ⦿ VoiceMasters Timings: Pls contact us to know the timings.
+            ⦿ VoiceMasters Timings: Pls contact us to learn more about the pedagogy.
             </p>
             <p>
             ⦿ The first month of emrollment is the trial month. We offer full refund of fees within the trial period
-            after deducting the fees for the current month. For example, If you paid ₹10,000 for 3 months, and decide
-            to opt out within 1 month then the remaining fees of ₹6,666 ( after deducting ₹3333 for 1 month) will be refunded.
+            after deducting the fees for the current month. For example, If you paid ₹8,999 for 4 months, and decide
+            to opt out within 1 month then the remaining fees of ₹6,749 ( after deducting ₹2249 for 1 month) will be refunded.
             No refund will be done after the trial period. 
             </p>
             <p>
             ⦿ If we are closed on any Sunday on account of a Public Holiday or other reasons, we will extend the course period
-            accordingly or arrange an alternate class on another day (for example on Sunday) at no extra cost.
+            accordingly or arrange an alternate class on another day (for example on a Saturday) at no extra cost.
             </p>
       <p>
             ⦿ We are here to help you. Please contact us if you need any other information to help decide the best for your child.
