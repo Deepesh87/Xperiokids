@@ -57,7 +57,7 @@ Although public speaking can be intimidating for many adults, children can conqu
             <h5>
             <span>For more information, please download the brochure here.</span>
       </h5>
-      <strong> Click to <a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/12LRkUNe0rg65qLZyRHvTWeEmyhbReq3S/view?usp=sharing" target="_blank">
+      <strong> Click to <a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1LhXuOwZIFcIRNJEwJQ_hvzd84jdlbK0R/view?usp=sharing" target="_blank">
       Download Brochure <br/></a> </strong>
             <br/>
             <img src={pricing} className={styles.pic} alt="pricing" />
