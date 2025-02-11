@@ -29,27 +29,35 @@ Although public speaking can be intimidating for many adults, children can conqu
               helps them develop Leadership skills. At VoiceMasters, we offer two comprehensive modules designed to cultivate essential skills in young learners.</i> 
             </p>
 
-      <h5>
-              <span>Communication Milestones</span>
+            <h5>
+              <span>🚀 Creative Expression Track</span>
             </h5>
       <p>
-      🚀 Our Communication Milestones module focuses on developing effective public speaking skills.
+      This track comprises Book reading, Impromptu Speaking, Creative Storytelling and 
+      engaging Audio Visual rounds. This is designed to spark creativity and enhance quick thinking..
+            </p>
+
+      <h5>
+              <span>🚀 Communication Track</span>
+            </h5>
+      <p>
+      Our Communication Milestones module focuses on developing effective public speaking skills.
        Through a series of engaging projects, children will learn to structure their speeches,
         enhance their vocal variety, and master the art of storytelling, all aimed at building
          confidence and clarity in their communication.
             </p>
       <h5>
-            <span>Leadership Milestones</span>
+            <span>🚀 Leadership Track</span>
       </h5>
             <p>
-            🚀 The Leadership Milestones module is designed to nurture leadership abilities. Participants will gain 
+             The Leadership Milestones module is designed to nurture leadership abilities. Participants will gain 
             hands-on experience in organizing events, leading teams, and providing constructive feedback, 
             equipping them with the skills necessary to become confident and inspiring leaders.
             </p>
             <h5>
             <span>For more information, please download the brochure here.</span>
       </h5>
-      <strong> Click to <a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1PegLbXgY1_Z9JTwCp4a76vm7KSZtNBme/view?usp=sharing" target="_blank">
+      <strong> Click to <a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/12LRkUNe0rg65qLZyRHvTWeEmyhbReq3S/view?usp=sharing" target="_blank">
       Download Brochure <br/></a> </strong>
             <br/>
             <img src={pricing} className={styles.pic} alt="pricing" />
@@ -59,9 +67,7 @@ Although public speaking can be intimidating for many adults, children can conqu
             </p>
             <p>
             ⦿ The first month of emrollment is the trial month. We offer full refund of fees within the trial period
-            after deducting the fees for the current month. For example, If you paid ₹8,999 for 4 months, and decide
-            to opt out within 1 month then the remaining fees of ₹6,749 ( after deducting ₹2249 for 1 month) will be refunded.
-            No refund will be done after the trial period. 
+            after deducting the fees for the current month. No refund is available after the trial period.
             </p>
             <p>
             ⦿ If we are closed on any Sunday on account of a Public Holiday or other reasons, we will extend the course period
