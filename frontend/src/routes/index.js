@@ -12,6 +12,7 @@ import Sudoku from "../views/sudoku/sudoku";
 import Robotics from "../views/robotics/robotics";
 import Terms from "../views/terms/terms";
 import Bday from "../views/bday/bday";
+import Camp24 from "../views/summercamp24/camp24";
 
 
 function MainRoutes() {
@@ -28,6 +29,7 @@ function MainRoutes() {
         <Route path="/robotics" element={<Robotics/>} />
         <Route path="/terms" element={<Terms/>} />
         <Route path="/bday" element={<Bday/>} />
+        <Route path="/camp24" element={<Camp24/>} />
         <Route path="*" element={<FalseRoute/>} />
       </Routes>
     </BrowserRouter>

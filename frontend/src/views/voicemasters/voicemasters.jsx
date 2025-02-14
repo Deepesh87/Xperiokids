@@ -26,7 +26,7 @@ Although public speaking can be intimidating for many adults, children can conqu
  being exposed to it early. With proper guidance, children can find joy in public speaking, 
  fostering exceptional self-confidence and leadership skills. <br/>
               Our carefully curated course by Experts trains young minds to not just master Communication but also 
-              helps them develop Leadership skills. At VoiceMasters, we offer two comprehensive modules designed to cultivate essential skills in young learners.</i> 
+              helps them develop Leadership skills. At VoiceMasters, we offer 3 comprehensive modules designed to cultivate essential skills in young learners.</i> 
             </p>
 
             <h5>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./robotics.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import pujo from "../../assets/robotics_new_flyer.png";
+import pujo from "../../assets/roboticskitbox.png";
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,14 +67,14 @@ function Robotics() {
           <div className={styles.text}>
             <img src={pujo} className={styles.pic2} alt="pricing" />
             <h5>
-              <span>Week-End Beginners Robotics Course</span>
+              <span>Robotics Course</span>
             </h5>
             <p>
-              <strong>Course Duration: 4 days or 2 weekends</strong>
+              <strong>Course Duration: 4-6 weekends</strong>
               <br /><br />
               <strong>Course Timings: Flexible, pls contact us</strong>
               <br />
-              <strong>Course Fees: ₹ 6,000 (includes Robotics kit worth 2k)</strong>
+              <strong>Course Fees: ₹ 26,000 (includes Robotics kit worth 6k)</strong>
               <br />
               <br />
               The topics that will be covered and more finer details are mentioned in the camp brochure.
@@ -97,7 +97,7 @@ function Robotics() {
         />
       </div>
 
-      <div className={styles.formSection}>
+      {/* <div className={styles.formSection}>
         <p className={styles.formText}>
           Please fill this form to complete Student Registration & receive a callback.
         </p>
@@ -106,7 +106,7 @@ function Robotics() {
           frameBorder="0"
           title="Google Form"
         />
-      </div>
+      </div> */}
       <Footer />
     </>
   );
