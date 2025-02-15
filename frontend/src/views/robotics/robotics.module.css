@@ -9,7 +9,7 @@
 }
 
 .pic{
-  padding: 20px;
+  padding: 5px;
   height: auto;
   width: 800px;
   margin-left: auto;
@@ -17,7 +17,7 @@
 }
 
 .pic2{
-  width: 90%;
+  width: 30%;
   margin: 0px auto 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -202,7 +202,7 @@ cursor: pointer;
   }
   
   .faqQuestion {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     color: #4070f4;
     background: none;
@@ -216,11 +216,11 @@ cursor: pointer;
   
   .faqQuestion span {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 12px;
   }
   
   .faqAnswer {
-    font-size: 16px;
+    font-size: 12px;
     color: #555;
     margin-top: 10px;
     padding-left: 10px;
@@ -229,13 +229,13 @@ cursor: pointer;
 
   .docFrame iframe,
   .formSection iframe {
-    width: 60%;
-    height: 600px;
+    width: 50%;
+    height: 750px;
     margin: 20px auto;
     display: block;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   }
   
   .formSection {
@@ -253,7 +253,7 @@ cursor: pointer;
     .docFrame iframe,
     .formSection iframe {
       width: 90%;
-      height: 300px;
+      height: 350px;
     }
   
     .formText {
@@ -261,3 +261,32 @@ cursor: pointer;
     }
   }
   
+
+/* Container for images */
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between images */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  margin-bottom: 10px;
+}
+
+/* Individual images */
+.imageContainer img {
+  width: 45%; /* Each image takes half width on PC */
+  max-width: 400px; /* Prevents excessive stretching */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Mobile: Stack images vertically */
+@media (max-width: 768px) {
+  .imageContainer {
+    flex-direction: column; /* Stack images vertically */
+  }
+
+  .imageContainer img {
+    width: 90%; /* Wider images on mobile */
+  }
+}

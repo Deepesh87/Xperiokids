@@ -3,6 +3,7 @@ import styles from "./robotics.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import pujo from "../../assets/roboticskitbox.png";
+import pujo2 from "../../assets/Robotics_certificate.png";
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +58,11 @@ function Robotics() {
       answer:
         "Yes, robotics and programming are doable by children, and can be a fun and rewarding experience for both children and parents. Our course and faculty are designed to break down difficult concepts into easy digestible chunks and abstract what is not needed.",
     },
+    {
+      question: "What if I miss a few days of class due to travel plan or sickness?",
+      answer:
+        "We will try our best to accomodate you by arranging an extra class over a weekend or extending the course by a few days. However, we recommend you to attend all classes to get the best out of the course.",
+    },
   ];
 
   return (
@@ -65,16 +71,22 @@ function Robotics() {
       <section className={styles["demo-page"]}>
         <div className={styles.about}>
           <div className={styles.text}>
-            <img src={pujo} className={styles.pic2} alt="pricing" />
+
+          <div className={styles.imageContainer}>
+          <img src={pujo} className={styles.pic2} alt="Robotics Kit" />
+          <img src={pujo2} className={styles.pic2} alt="Robotics Certificate" />
+        </div>
+
+
             <h5>
-              <span>Robotics Course</span>
+              <span>Summer Robotics Course</span>
             </h5>
             <p>
-              <strong>Course Duration: 4-6 weekends</strong>
-              <br /><br />
-              <strong>Course Timings: Flexible, pls contact us</strong>
+              <strong>Course Duration: 4 Weeks (Monday to Fri)</strong>
               <br />
-              <strong>Course Fees: ₹ 26,000 (includes Robotics kit worth 6k)</strong>
+              <strong>Course Timings: Pls contact us!</strong>
+              <br />
+              <strong>Course Fees: ₹ 16,000 (includes Robotics kit worth 4k)</strong>
               <br />
               <br />
               The topics that will be covered and more finer details are mentioned in the camp brochure.
@@ -83,19 +95,20 @@ function Robotics() {
         </div>
       </section>
 
+      <div className={styles.docFrame}>
+        <iframe
+          src="https://drive.google.com/file/d/1sGXI3ioTg5_LWzF3-SJ8pk7F0rs3xDZE/preview"
+          frameBorder="0"
+          title="Course Brochure"
+        />
+      </div>
+
       <section className={styles.faqSection}>
         <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
       </section>
-      <div className={styles.docFrame}>
-        <iframe
-          src="https://drive.google.com/file/d/1vg3mFEsZU75KBA0KrAkuWbhfyds_g-18/preview"
-          frameBorder="0"
-          title="Course Brochure"
-        />
-      </div>
 
       {/* <div className={styles.formSection}>
         <p className={styles.formText}>
