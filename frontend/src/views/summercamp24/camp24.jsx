@@ -38,12 +38,36 @@ function Camp24() {
             <strong>Boards Covered:</strong> CBSE, ICSE and IB Board<br/>
             <strong>Grades Covered:</strong> Grade 2 to Grade 9th<br/>
             <strong>Topics Covered:</strong> Science Experiments, Public Speaking, Sudoku, Journaling
-                <br/><br/>
-                The camp was not just about learning; it was also about making new friends, having fun, 
-                and creating lasting memories. The smiles and excitement on the children's faces were 
-                the true testament to the camp's success.
+
             </p>
             <div className={styles.about2}>
+
+              
+            <div className={styles.videoContainer}>
+  <div className={styles.videoWrapper}>
+    <iframe
+      src="https://www.youtube.com/embed/40g6dN7ZDtQ"
+      title="Xperio Learning Summer Camp 2024"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+
+  <div className={styles.videoWrapper}>
+    <iframe
+      src="https://www.youtube.com/embed/CyOUrXubY4k"
+      title="Summer Camp 2024"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
+
+
+
         <div className={styles.img_gallery}>
         <img src={image_10}></img>
         <img src={image_17}></img>

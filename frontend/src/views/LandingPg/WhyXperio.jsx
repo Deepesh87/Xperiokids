@@ -10,6 +10,8 @@ function WhyXperio() {
   return (
     <div className={Style.main}>
       <h1>Why choose Xperio Learning!</h1>
+
+
       <div className={Style.together}>
       <a href="/robotics" target="_blank">
           <img width={"100%"} height={"100%"} src={hobby3} alt="Robotics" />
@@ -22,8 +24,8 @@ function WhyXperio() {
             problem-solvers. Build, explore, and shape the future today!
           </p>
         </div>
-
       </div>
+
 
       <div className={Style.together}>
         <a href="https://www.xperiolearning.com/" >
@@ -41,6 +43,9 @@ function WhyXperio() {
         </div>
       </div>
 
+
+
+
       <div className={Style.together} >
 
       <a href="/bday" target="_blank">
@@ -57,6 +62,9 @@ function WhyXperio() {
         </div>
 
       </div>
+
+
+
 
       <div className={Style.together}>
         <a href="/voicemasters" target="_blank">
@@ -78,7 +86,7 @@ function WhyXperio() {
         </div>
       </div>
 
-      <div className={Style.together}>
+      {/* <div className={Style.together}>
       <a href="https://www.xperiolearning.com/" >
           <img width={"100%"} height={"100%"} src={hobby2} alt="Teach Space" />
         </a>
@@ -93,7 +101,9 @@ function WhyXperio() {
           </p>
         </div>
 
-      </div>
+      </div> */}
+
+
     </div>
   );
 }

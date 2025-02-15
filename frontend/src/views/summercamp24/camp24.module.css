@@ -130,3 +130,46 @@ cursor: pointer;
     display: none;
 }
   }
+
+  
+/* Container for both videos */
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between videos */
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+/* Individual video wrapper for 16:9 aspect ratio */
+.videoWrapper {
+  position: relative;
+  width: 45%; /* Videos take 45% width each on PC */
+  max-width: 600px; /* Prevents excessive stretching */
+  padding-bottom: 25.2%; /* 16:9 aspect ratio (height = width * 9 / 16) */
+  height: 0;
+  overflow: hidden;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive: Stack videos vertically on mobile */
+@media (max-width: 768px) {
+  .videoContainer {
+    flex-direction: column; /* Stack videos */
+    gap: 15px; /* Reduce space between videos */
+  }
+
+  .videoWrapper {
+    width: 90%; /* Wider for mobile */
+    padding-bottom: 50.6%; /* Maintain 16:9 aspect ratio */
+  }
+}
+

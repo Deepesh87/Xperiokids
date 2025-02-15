@@ -109,51 +109,76 @@
   }
 } 
 
-
 .summer_camp_notification {
   position: fixed;
-  width: 100px;
+  width: 120px;
   height: 50px;
   bottom: 120px;
   right: 40px;
-  background-color: #0e0101;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 50px;
-  font-weight: 900;
-  box-shadow: 2px 2px 3px #999;
+  background-color: #ff5722;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: normal;
+  animation: glowing 1.5s infinite;
 }
 
+/* Glowing effect */
 @keyframes glowing {
-  0% {
-    background-color: #0f0594;
-    box-shadow: 0 0 3px #0f0594;
-  }
-  50% {
-    background-color: #361c96;
-    box-shadow: 0 0 10px #361c96;
-  }
-  100% {
-    background-color: #f20d4a;
-    box-shadow: 0 0 3px #f20d4a;
-  }
-}
-.summer_camp_notification {
-  animation: glowing 1600ms infinite;
+  0% { background-color: #ff5722; box-shadow: 0 0 5px #ff5722; }
+  50% { background-color: #ff784e; box-shadow: 0 0 15px #ff784e; }
+  100% { background-color: #ff5722; box-shadow: 0 0 5px #ff5722; }
 }
 
+/* NEW Flag */
+.summer_camp_notification::after {
+  content: "NEW!";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #f8d210;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform-origin: top right;
+  animation: waving 1s infinite alternate;
+}
+
+/* Waving Animation */
+@keyframes waving {
+  0% { transform: rotate(0deg) translateY(0); }
+  100% { transform: rotate(-10deg) translateY(-3px); }
+}
+
+/* Mobile Responsiveness */
 @media screen and (max-width: 767px) {
   .summer_camp_notification {
-      width: 100px;
-      text-align: center;
-      height: 40px;
-      bottom: 70px;
-      right: 10px;
-      font-size: 22px;
-      
+    width: 100px;
+    height: 40px;
+    bottom: 70px;
+    right: 10px;
+    font-size: 14px;
   }
-} 
+
+  .summer_camp_notification::after {
+    font-size: 10px;
+    padding: 3px 8px;
+    top: -8px;
+    right: -8px;
+  }
+}
+
 
 
 .social-icon__item {

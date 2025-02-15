@@ -51,8 +51,8 @@ const Footer = () => {
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
-          <a className={`${styles.menu__link}`} target="_blank" href="/robotics">
-            Robotics
+          <a className={`${styles.menu__link}`} target="_blank" href="/sudoku">
+            Sudoku
           </a>
         </li>
         <li className={`${styles.menu__item}`}>
@@ -75,12 +75,12 @@ const Footer = () => {
       </div>
 
       <div className={styles.summer_camp_notification}>
-        <a href="/robotics" className="summer_camp_notification" target="_blank" rel="noopener noreferrer"
+        <a href="/camp" className="summer_camp_notification" target="_blank" rel="noopener noreferrer"
         style={{
           textDecoration: 'none', 
         }}
         >
-          <p><b>Robotics</b></p>
+          <p><b>Summer Camp25</b></p>
         </a>
       </div>
     </footer>

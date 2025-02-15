@@ -16,7 +16,7 @@ const pages = [
   { to: "/", name: "Home🏠" },
   { to: "/about", name: "About us 👨‍👨‍👦‍👦" },
   { to: "/gallery", name: "Gallery📷" },
-  { to: "/sudoku", name: "Sudoku" },
+  { to: "/robotics", name: "Robotics" },
   { to: "/voicemasters", name: "VoiceMasters🎤" },
   { to: "/camp", name: "Summer Camp 2025🏄" },
 ];
@@ -120,9 +120,6 @@ function Nav() {
             >
               <MenuIcon sx={{ color: '#21654E' }} />  {/* Apply bright color directly to the icon */}
             </IconButton>
-
-
-
 
             <Menu
               id="menu-appbar"
