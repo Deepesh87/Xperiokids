@@ -1,54 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Style from "./Landing.module.css";
+import { FaStar } from "react-icons/fa";
 
 function KPI() {
-  const [rating, setRating] = useState(0);
-  const [students, setStudents] = useState(0);
-  const targetRating = 4.9; // Replace with your actual Google rating
-  const targetStudents = 80; // Replace with your actual number of students
-
-  useEffect(() => {
-    let startRating = 0;
-    let startStudents = 0;
-    const duration = 3000; // Animation duration in milliseconds
-    const incrementRating = targetRating / (duration / 50); // Update every 50ms
-    const incrementStudents = targetStudents / (duration / 50); // Update every 50ms
-
-    const timer = setInterval(() => {
-      startRating += incrementRating;
-      startStudents += incrementStudents;
-
-      if (startRating >= targetRating && startStudents >= targetStudents) {
-        clearInterval(timer);
-        setRating(targetRating.toFixed(1));
-        setStudents(Math.ceil(targetStudents));
-      } else {
-        setRating(Math.min(startRating, targetRating).toFixed(1));
-        setStudents(Math.min(startStudents, targetStudents).toFixed(0));
-      }
-    }, 50);
-
-    return () => clearInterval(timer);
-  }, [targetRating, targetStudents]);
+  const googleRating = 4.9; // Replace with actual Google rating
+  const reviewLink = "https://maps.app.goo.gl/2nkiPgKQfWt7qHzk6";
 
   return (
     <div className={Style.kpiContainer}>
-      {/* <h2 className={Style.kpiTitle}>Our Achievements</h2> */}
-      <div className={Style.kpiItem}>
-        <h3 className={Style.kpiSubtitle}>Google Rating</h3>
-        <a
-          href="https://maps.app.goo.gl/2nkiPgKQfWt7qHzk6"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={Style.kpiLink}
-        >
-          <div className={Style.kpiValue}>{rating}</div>
-        </a>
-      </div>
-      {/* <div className={Style.kpiItem}>
-        <h3 className={Style.kpiSubtitle}>Student Count</h3>
-        <div className={Style.kpiValue}>{students}</div>
-      </div> */}
+      <h3 className={Style.kpiSubtitle}>Our Google Rating</h3>
+      <a href={reviewLink} target="_blank" rel="noopener noreferrer" className={Style.kpiLink}>
+        <div className={Style.kpiValue}>
+          {googleRating}{" "}
+          <span className={Style.stars}>
+            {[...Array(5)].map((_, index) => (
+              <FaStar key={index} color={index < Math.round(googleRating) ? "#FFD700" : "#ccc"} />
+            ))}
+          </span>
+        </div>
+      </a>
     </div>
   );
 }
