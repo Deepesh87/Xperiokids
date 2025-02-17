@@ -27,7 +27,7 @@ function Nav() {
 
   // Function to scroll to the top of the page
   const scrollToTop = () => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0);
   };
 
   const handleOpenNavMenu = (event) => {
@@ -40,139 +40,142 @@ function Nav() {
 
   React.useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      setScrolling(window.scrollY > 50); // Adjust threshold as needed
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <AppBar style={{ background: scrolling ? "white" : "#faf2fe" }} position={scrolling ? "sticky" : "static"}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          {/* Logo for mobile */}
-          <NavLink to="/" style={{ textDecoration: "none", width: "100%" }} onClick={scrollToTop}>
-            <Box
-              sx={{
-                display: { xs: "flex", md: "none" },
-                justifyContent: "center",
-                alignItems: "center",
-                width: "100%",
-              }}
-            >
-              <img
-                src={logo}
-                alt="Logo"
-                style={{
-                  maxHeight: "100px",
-                  maxWidth: "200px",
-                  objectFit: "contain",
+    <>
+      <AppBar
+        style={{
+          background: scrolling ? "white" : "#faf2fe",
+          transition: "background 0.3s ease-in-out",
+          boxShadow: scrolling ? "0 2px 10px rgba(0,0,0,0.1)" : "none",
+        }}
+        position="fixed"
+      >
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            {/* Logo for mobile */}
+            <NavLink to="/" style={{ textDecoration: "none", width: "100%" }} onClick={scrollToTop}>
+              <Box
+                sx={{
+                  display: { xs: "flex", md: "none" },
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
                 }}
-              />
-            </Box>
-          </NavLink>
-
-          {/* Logo for desktop - left aligned */}
-          <NavLink to="/" style={{ textDecoration: "none", width: "100%" }} onClick={scrollToTop}>
-            <Box
-              sx={{
-                display: { xs: "none", md: "flex" },
-                justifyContent: "flex-start",  // Left align logo on desktop
-                alignItems: "center",
-                width: "auto",  // Ensures it doesn’t stretch
-                flexGrow: 0, // Prevent logo from growing
-              }}
-            >
-              <img
-                src={logo}
-                alt="Logo"
-                style={{
-                  maxHeight: "150px",
-                  maxWidth: "300px",
-                  objectFit: "contain",
-                }}
-              />
-            </Box>
-          </NavLink>
-
-          {/* Mobile menu button */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              sx={{
-                color: '#21654E',  // Bright color (e.g., brand color)
-                '&:hover': {
-                  backgroundColor: 'transparent',  // Ensure no background on hover
-                },
-              }}
-            >
-              <MenuIcon sx={{ color: '#21654E' }} />  {/* Apply bright color directly to the icon */}
-            </IconButton>
-
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page.to} onClick={handleCloseNavMenu}>
-                  <NavLink style={{ textDecoration: "none" }} to={page.to}>
-                    <Typography textAlign="center">{page.name}</Typography>
-                  </NavLink>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-
-          {/* Desktop menu */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center", gap: "50px" }}>
-            {pages.map((page) => (
-              <NavLink style={{ textDecoration: "none", display: "inline-block" }} to={page.to} key={page.name}>
-                <Button
-                  onClick={handleCloseNavMenu}
-                  sx={{
-                    my: 2,
-                    color: scrolling ? "black" : "black",
-                    display: 'block',
-                    fontWeight: "bold",
-                    whiteSpace: "nowrap",  // Prevent wrapping
-                    textOverflow: "ellipsis", // Ensure text doesn't overflow
-                    overflow: "hidden", // Hide any overflow text
+              >
+                <img
+                  src={logo}
+                  alt="Logo"
+                  style={{
+                    maxHeight: "100px",
+                    maxWidth: "200px",
+                    objectFit: "contain",
                   }}
-                >
-                  {page.name}
-                </Button>
-              </NavLink>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+                />
+              </Box>
+            </NavLink>
+
+            {/* Logo for desktop - left aligned */}
+            <NavLink to="/" style={{ textDecoration: "none", width: "100%" }} onClick={scrollToTop}>
+              <Box
+                sx={{
+                  display: { xs: "none", md: "flex" },
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  width: "auto",
+                  flexGrow: 0,
+                }}
+              >
+                <img
+                  src={logo}
+                  alt="Logo"
+                  style={{
+                    maxHeight: "150px",
+                    maxWidth: "300px",
+                    objectFit: "contain",
+                  }}
+                />
+              </Box>
+            </NavLink>
+
+            {/* Mobile menu button */}
+            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+              <IconButton
+                size="large"
+                aria-label="menu"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                sx={{
+                  color: '#21654E',
+                  '&:hover': {
+                    backgroundColor: 'transparent',
+                  },
+                }}
+              >
+                <MenuIcon sx={{ color: '#21654E' }} />
+              </IconButton>
+
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{ display: { xs: 'block', md: 'none' } }}
+              >
+                {pages.map((page) => (
+                  <MenuItem key={page.to} onClick={handleCloseNavMenu}>
+                    <NavLink style={{ textDecoration: "none" }} to={page.to}>
+                      <Typography textAlign="center">{page.name}</Typography>
+                    </NavLink>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+
+            {/* Desktop menu */}
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center", gap: "50px" }}>
+              {pages.map((page) => (
+                <NavLink style={{ textDecoration: "none", display: "inline-block" }} to={page.to} key={page.name}>
+                  <Button
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      my: 2,
+                      color: "black",
+                      display: 'block',
+                      fontWeight: "bold",
+                      whiteSpace: "nowrap",
+                      textOverflow: "ellipsis",
+                      overflow: "hidden",
+                    }}
+                  >
+                    {page.name}
+                  </Button>
+                </NavLink>
+              ))}
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+
+      {/* Ensure content is not hidden behind fixed navbar */}
+      <Box sx={{ height: "80px" }} />
+    </>
   );
 }
 
