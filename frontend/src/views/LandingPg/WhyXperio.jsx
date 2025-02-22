@@ -46,15 +46,19 @@ function WhyXperio() {
       <h1>Why Xperio!</h1>
       <div className={Style.gridContainer}>
         {sections.map((section, index) => (
-          <div className={Style.card} key={index}>
-            <a href={section.link} target="_blank" rel="noopener noreferrer">
-              <img src={section.img} alt={section.alt} />
-            </a>
+          <a
+            className={Style.card}
+            key={index}
+            href={section.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={section.img} alt={section.alt} />
             <div className={Style.cardContent}>
               <h2>{section.title}</h2>
               <p>{section.description}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

@@ -54,21 +54,26 @@
 
 /* Catchy Line styling */
 .catchyLine {
-  display: block;
-  padding-top: 10px; /* Default top padding for larger screens */
   text-align: center;
-  line-height: 1;
+  padding-top: 20px; /* Adjust overall top padding as needed */
 }
 
-/* Highlight text styling with simple black font */
 .highlight {
-  display: block; /* Each word on its own line */
-  font-weight: bold;
-  color: #000; /* Simple black font */
-  transition: all 0.3s ease-in-out;
-  margin: 5px 0;
-  line-height: 1;
+  display: block;           /* Each word on its own line */
+  font-size: 2.5rem;         /* Increase font size for impact */
+  font-weight: 700;          /* Bold weight */
+  color: #333;              /* Dark tone */
+  text-transform: uppercase;/* Uppercase letters for a modern look */
+  letter-spacing: 2px;       /* Extra spacing between letters */
+  margin: 10px 0;           /* Vertical spacing between words */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
+
+.highlight:hover {
+  transform: scale(1.05);   /* Slight scale effect on hover */
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
