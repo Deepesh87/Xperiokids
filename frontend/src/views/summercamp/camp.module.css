@@ -2,7 +2,7 @@
 
 .demo-page {
   width: 100%;
-  padding: 20px 0;
+  padding: 5px 0;
   background: #ffffff;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .pic {
-  width: 80%;
+  width: 90%;
   max-width: 600px;
   margin: 10px auto 20px;
   display: block;
@@ -101,3 +101,4 @@
     padding-bottom: 110%;
   }
 }
+

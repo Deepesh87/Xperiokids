@@ -51,9 +51,12 @@ function Nav() {
     <>
       <AppBar
         style={{
-          background: scrolling ? "white" : "#faf2fe",
+          // background: scrolling ? "white" : "#FFDE21",
+          // transition: "background 0.3s ease-in-out",
+          // boxShadow: scrolling ? "0 2px 10px rgba(0,0,0,0.1)" : "none",
+          background: "#FFDE21",
           transition: "background 0.3s ease-in-out",
-          boxShadow: scrolling ? "0 2px 10px rgba(0,0,0,0.1)" : "none",
+          boxShadow: "none",
         }}
         position="fixed"
       >

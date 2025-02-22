@@ -9,15 +9,14 @@ function Landing() {
       <div className={Style.main}>
         <div className={Style.content}>
           <div>
-            <h1>
+            <h1 className={Style.heading}>
               <span className={Style.catchyLine}>
-                Unlock Your Child’s Full Potential with 
-                <span className={Style.highlight}> Science</span>, 
-                <span className={Style.highlight}> Robotics</span>, 
-                <span className={Style.highlight}> Public Speaking</span> & More!
+                <span className={Style.highlight}>Science</span>
+                <span className={Style.highlight}>Robotics</span>
+                <span className={Style.highlight}>Public Speaking</span>
+                <span className={Style.highlight}>& more!</span>
               </span>
             </h1>
-            <p>Empowering young minds to Xperiment, Xplore and Xperience</p>
           </div>
         </div>
         <div className={Style.experiment}>

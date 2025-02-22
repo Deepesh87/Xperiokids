@@ -11,7 +11,7 @@ function Camp() {
       <section className={styles["demo-page"]}>
         <div className={styles.about}>
           <div className={styles.text}>
-            <h5><span>Xperio Learning Summer Camp 2025:</span></h5>
+            <h5><span>Summer Camp 2025:</span></h5>
 
             <img src={camp_new} className={styles.pic} alt="Summer Camp 2025" />
 

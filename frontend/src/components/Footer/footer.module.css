@@ -4,11 +4,10 @@
 .footer {
   position: relative;
   width: auto;
-  background: #2cd192;
+  background: #FFDE21;
   min-height: 100px;
   padding: 10px 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -26,10 +25,11 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Aligns items to the left */
-  align-items: flex-start;
+  justify-content: center; /* Center the menu items horizontally */
+  align-items: center;
   margin: 10px 0;
-  width: 100%; /* Ensure the menu spans the full width */
+  width: 100%;
+  text-align: center; /* Ensure text inside is centered */
 }
 
 .social-icon__item{
@@ -38,8 +38,9 @@
 
 .menu__item {
   list-style: none;
-  width: 50%; /* Makes two equal columns */
-  margin-bottom: 10px; /* Adds space between rows */
+  width: 50%; /* Keeps two equal columns; adjust if necessary */
+  margin-bottom: 10px;
+  text-align: center; /* Center the content within each menu item */
 }
 
 .social-icon__link {
@@ -145,7 +146,7 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  background-color: #f8d210;
+  background-color: #06f05c;
   color: #000;
   font-size: 12px;
   font-weight: bold;

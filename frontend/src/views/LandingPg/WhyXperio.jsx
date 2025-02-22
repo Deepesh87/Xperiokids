@@ -43,7 +43,7 @@ function WhyXperio() {
 
   return (
     <div className={Style.main}>
-      <h1>Why choose Xperio Learning!</h1>
+      <h1>Why Xperio!</h1>
       <div className={Style.gridContainer}>
         {sections.map((section, index) => (
           <div className={Style.card} key={index}>
