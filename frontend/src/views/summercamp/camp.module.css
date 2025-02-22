@@ -16,10 +16,11 @@
   flex-direction: column;
 }
 
+/* Remove any extra top margin for the header */
 .text h5 {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;  /* No top margin, 15px bottom margin */
   color: #4070f4;
 }
 
@@ -57,7 +58,8 @@
   gap: 10px; /* Space between videos */
   flex-wrap: wrap; /* Allows stacking on smaller screens */
 }
-/* Video Wrapper for Portrait Video (YouTube Shorts) */
+
+/* Video Wrapper for YouTube videos */
 .videoWrapper {
   position: relative;
   width: 40%; /* Keeps width constant */
@@ -80,25 +82,26 @@
   border-radius: 10px;
 }
 
-/* Adjust for PC - Reduce height by 20% */
+/* Adjust for PC - reduce vertical height by 15% (from 70% to ~59.5%) */
 @media (min-width: 1024px) {
   .videoWrapper {
-    padding-bottom: 56%; /* Reduced height by ~20% */
+    padding-bottom: 50%; 
   }
 }
 
-/* Mobile Optimization */
+/* Mobile Optimization: Increase vertical height (making it taller)
+   Here we set it to about 81% for devices up to 768px wide */
 @media (max-width: 768px) {
   .videoWrapper {
     width: 60%;
-    padding-bottom: 90%;
+    padding-bottom: 81%;
   }
 }
 
+/* For very small mobile devices */
 @media (max-width: 480px) {
   .videoWrapper {
     width: 80%;
-    padding-bottom: 110%;
+    padding-bottom: 95%;
   }
 }
-
