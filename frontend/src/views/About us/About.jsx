@@ -18,12 +18,12 @@ function About() {
               <span>Dr. Kislay Singh: Founder Xperio Learning</span>
             </h5>
             <p>
-              Hello Everyone. Having taught students from Primary school to Engineering & Masters,
+              Having taught students from Primary school to Masters,
                I have come to realize how broken our Education system is. We focus more
-              on theory and very little on hands on and esp for Sciences
+              on theory and very little on hands on and esp. for Sciences
               where it is most needed. I started Xperio Learning so students can learn
-              by experiencing. I have set up a classroom cum lab to help young minds see, try and
-              learn Science rather then just read from books.
+              by experiencing. I also teach at Symbiosis, Bangalore and in the past have 
+              held roles at Byjus, Bangalore and Galgotias University, NCR.
             </p>
             <div className={styles.data}>
               <a href="https://www.linkedin.com/in/kislaysingh/" target="_blank" className={styles.hire}>

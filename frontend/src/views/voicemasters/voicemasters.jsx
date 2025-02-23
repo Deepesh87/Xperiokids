@@ -15,9 +15,9 @@ function Voice() {
           <div className={styles.text}>
             <img src={logo} className={styles.pic2} alt="pricing" />
             <h5>
-              <span>VoiceMasters by Xperio Learning | Grade 3 Onwards</span>
+              <span>Public Speaking Course for Children | Grade 3 Onwards</span>
             </h5>
-            <p>
+            {/* <p>
               <i>
               Strong communication and public speaking skills are vital for success in various aspects of life,
                and the sooner one starts, the easier it is to develop these abilities.
@@ -27,47 +27,49 @@ Although public speaking can be intimidating for many adults, children can conqu
  fostering exceptional self-confidence and leadership skills. <br/>
               Our carefully curated course by Experts trains young minds to not just master Communication but also 
               helps them develop Leadership skills. At VoiceMasters, we offer 3 comprehensive modules designed to cultivate essential skills in young learners.</i> 
-            </p>
+            </p> */}
 
             <h5>
-              <span>🚀 Creative Expression Track</span>
+              <span>🚀 3 Modules to help your child master Public Speaking</span>
             </h5>
-      <p>
+      {/* <p>
       This track comprises Book reading, Impromptu Speaking, Creative Storytelling and 
       engaging Audio Visual rounds. This is designed to spark creativity and enhance quick thinking..
-            </p>
+            </p> */}
 
       <h5>
-              <span>🚀 Communication Track</span>
+              <span>🚀 Every Sunday, 10 AM to 12:30 PM.</span>
             </h5>
-      <p>
+      {/* <p>
       Our Communication Milestones module focuses on developing effective public speaking skills.
        Through a series of engaging projects, children will learn to structure their speeches,
         enhance their vocal variety, and master the art of storytelling, all aimed at building
          confidence and clarity in their communication.
-            </p>
+            </p> */}
       <h5>
-            <span>🚀 Leadership Track</span>
+            <span>🚀 First Class is Free! Register now to experience the course before you decide to enroll.</span>
       </h5>
-            <p>
+      <h5>
+            <span>🚀 Pls download the Brochure/call us to know more.</span>
+      </h5>
+            {/* <p>
              The Leadership Milestones module is designed to nurture leadership abilities. Participants will gain 
             hands-on experience in organizing events, leading teams, and providing constructive feedback, 
             equipping them with the skills necessary to become confident and inspiring leaders.
-            </p>
-            <h5>
-            <span>For more information, please download the brochure here.</span>
-      </h5>
-      <strong> Click to <a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1LhXuOwZIFcIRNJEwJQ_hvzd84jdlbK0R/view?usp=sharing" target="_blank">
+            </p> */}
+            {/* <h5>
+            <span>Please download the brochure here.</span>
+      </h5> */}
+      <strong><a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1LhXuOwZIFcIRNJEwJQ_hvzd84jdlbK0R/view?usp=sharing" target="_blank">
       Download Brochure <br/></a> </strong>
             <br/>
             <img src={pricing} className={styles.pic} alt="pricing" />
 
-            <p>
-            ⦿ VoiceMasters Timings: Pls contact us to learn more about the pedagogy.
+            {/* <p>
+            ⦿ VoiceMasters Timings: Every Sunday, 10 AM to 12:30 PM
             </p>
             <p>
-            ⦿ The first month of emrollment is the trial month. We offer full refund of fees within the trial period
-            after deducting the fees for the current month. No refund is available after the trial period.
+            ⦿ First Class is Free! Register now to experience the course before you decide to enroll.
             </p>
             <p>
             ⦿ If we are closed on any Sunday on account of a Public Holiday or other reasons, we will extend the course period
@@ -75,7 +77,7 @@ Although public speaking can be intimidating for many adults, children can conqu
             </p>
       <p>
             ⦿ We are here to help you. Please contact us if you need any other information to help decide the best for your child.
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
