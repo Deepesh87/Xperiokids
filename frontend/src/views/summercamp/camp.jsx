@@ -27,6 +27,10 @@ function Camp() {
             <p>
               Building on our successful Science Camp 2024, we’re adding more experiments this year. Join us for an exciting summer of learning and making new friends!
             </p>
+            <br/>
+            
+      <strong><a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1mpLov7byLD8pOay75fg8I5v9_lDkoiOG/view?usp=sharing" target="_blank">
+      Download Brochure <br/></a> </strong>
 
             <div className={styles.videoContainer}>
               <div className={styles.videoWrapper}>
