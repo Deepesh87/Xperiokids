@@ -52,14 +52,21 @@ Although public speaking can be intimidating for many adults, children can conqu
       <h5>
             <span>🚀 Pls download the Brochure/call us to know more.</span>
       </h5>
-            {/* <p>
-             The Leadership Milestones module is designed to nurture leadership abilities. Participants will gain 
-            hands-on experience in organizing events, leading teams, and providing constructive feedback, 
-            equipping them with the skills necessary to become confident and inspiring leaders.
-            </p> */}
-            {/* <h5>
-            <span>Please download the brochure here.</span>
-      </h5> */}
+
+
+   <div className={styles.videoContainer}>
+  <div className={styles.videoWrapper}>
+    <iframe
+      src="https://www.youtube.com/embed/iENkJyxFUsA?start=0"
+      title="Xperio Learning Public Speaking Course for Children"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
+
       <strong><a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1LhXuOwZIFcIRNJEwJQ_hvzd84jdlbK0R/view?usp=sharing" target="_blank">
       Download Brochure <br/></a> </strong>
             <br/>
