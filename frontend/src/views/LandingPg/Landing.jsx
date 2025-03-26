@@ -14,7 +14,7 @@ function Landing() {
     <span className={Style.highlight}>Science</span>
     <span className={Style.highlight}>Robotics</span>
     <span className={Style.highlight}>Public Speaking</span>
-    <span className={Style.highlight}>& more!</span>
+    <span className={Style.kpiValue}>& more!</span>
   </span>
 </h1>
 
