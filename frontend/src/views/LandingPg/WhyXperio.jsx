@@ -6,9 +6,10 @@ import voice from "../../assets/voicemasters.jpeg";
 import hobby3 from "../../assets/robotics.png";
 
 function WhyXperio() {
+
   const sections = [
     {
-      title: "Robotics & Coding 🤖",
+      title: "Robotics & Coding 🤖 for Children",
       description:
         "In today's tech-driven world, learning robotics is essential. Kids who explore robotics now become tomorrow's innovators and problem-solvers. Build, explore, and shape the future today!",
       img: hobby3,
@@ -46,19 +47,16 @@ function WhyXperio() {
       <h1>Why Xperio!</h1>
       <div className={Style.gridContainer}>
         {sections.map((section, index) => (
-          <a
-            className={Style.card}
-            key={index}
-            href={section.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <div className={Style.card} key={index}>
             <img src={section.img} alt={section.alt} />
             <div className={Style.cardContent}>
               <h2>{section.title}</h2>
-              <p>{section.description}</p>
+              <p>{section.description.slice(0, 80)}...</p>
+              <a className={Style.knowMoreBtn} href={section.link} target="_blank" rel="noopener noreferrer">
+                Know More
+              </a>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </div>

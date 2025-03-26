@@ -86,3 +86,30 @@
   max-height: 300px; /* Adjust this value as needed to fully display the description */
 }
 
+
+/* Remove hover reveal for p */
+.cardContent p {
+  opacity: 1;
+  max-height: none;
+  overflow: visible;
+  transition: none;
+  margin-bottom: 10px;
+}
+
+/* Add button style */
+.knowMoreBtn {
+  display: inline-block;
+  background-color: #ec0ba9;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.knowMoreBtn:hover {
+  background-color: #c3098f;
+}
+
+
