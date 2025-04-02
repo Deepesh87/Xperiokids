@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaYoutube, FaLinkedin, FaInstagram } from 'react-icons/fa'; // Import from react-icons
 import styles from './footer.module.css';
 import whatsapp_image from "../../assets/whatsapp.svg";
 
@@ -9,17 +10,17 @@ const Footer = () => {
       <ul className={`${styles['social-icon']}`}>
   <li className={`${styles['social-icon__item']}`} style={{ marginRight: '30px' }}>
     <a href="https://www.youtube.com/@Xperio-learning" target="_blank" rel="noopener noreferrer">
-      <ion-icon name="logo-youtube" style={{ color: '#FF0000', fontSize: '2rem' }}></ion-icon>
+    <FaYoutube size={32} color="#FF0000" />
     </a>
   </li>
   <li className={`${styles['social-icon__item']}`} style={{ marginRight: '30px' }}>
     <a href="https://www.linkedin.com/company/xperio-learning" target="_blank" rel="noopener noreferrer">
-      <ion-icon name="logo-linkedin" style={{ color: '#0077B5', fontSize: '2rem' }}></ion-icon>
+      <FaLinkedin size={32} color="#0077B5" />
     </a>
   </li>
   <li className={`${styles['social-icon__item']}`}>
     <a href="#" target="_blank" rel="noopener noreferrer">
-      <ion-icon name="logo-instagram" style={{ color: '#E1306C', fontSize: '2rem' }}></ion-icon>
+    <FaInstagram size={32} color="#E1306C" />
     </a>
   </li>
 </ul>

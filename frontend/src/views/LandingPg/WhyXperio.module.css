@@ -46,7 +46,7 @@
 
 .cardContent h2 {
   font-size: 1.4rem;
-  color: #ec0ba9;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -99,7 +99,8 @@
 /* Add button style */
 .knowMoreBtn {
   display: inline-block;
-  background-color: #ec0ba9;
+  background-color: #2cd192;
+  /* #ec0ba9 */
   color: #fff;
   padding: 8px 16px;
   border-radius: 6px;
@@ -109,7 +110,7 @@
 }
 
 .knowMoreBtn:hover {
-  background-color: #c3098f;
+  background-color: #21654e;
 }
 
 

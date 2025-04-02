@@ -54,7 +54,7 @@ function Nav() {
           // background: scrolling ? "white" : "#FFDE21",
           // transition: "background 0.3s ease-in-out",
           // boxShadow: scrolling ? "0 2px 10px rgba(0,0,0,0.1)" : "none",
-          background: "#FFDE21",
+          background: "#FFFFFF",
           transition: "background 0.3s ease-in-out",
           boxShadow: "none",
         }}
