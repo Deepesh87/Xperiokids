@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./camp.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import camp_new from "../../assets/camp_new.png";
+import camp_new from "../../assets/may.jpeg";
 
 function Camp() {
   return (
