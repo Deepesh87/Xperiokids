@@ -94,10 +94,9 @@ function Robotics() {
           </div>
         </div>
       </section>
-
       <div className={styles.docFrame}>
         <iframe
-          src="https://drive.google.com/file/d/1sGXI3ioTg5_LWzF3-SJ8pk7F0rs3xDZE/preview"
+          src="https://drive.google.com/file/d/1inB1J7JYRNy5z826rTnRMee0LEFZrSRO/preview"
           frameBorder="0"
           title="Course Brochure"
         />
