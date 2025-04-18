@@ -1,77 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 .footer {
   position: relative;
   width: auto;
-  background: #ffff; 
-  /* #FFDE21; */
-  min-height: 100px;
-  padding: 10px 50px;
+  background: #ffffff;
+  border-top: 2px solid #eee;
+  min-height: 120px;
+  padding: 30px 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.social-icon{
-  position: relative;
+.social-icon {
   display: flex;
-  justify-content: center; /* Centers the icons in a row */
+  justify-content: center;
   align-items: center;
-  margin: 10px 0;
-  flex-wrap: nowrap; /* Prevents wrapping to a new row */
+  gap: 30px;
+  margin: 15px 0;
+}
+
+.social-icon__item {
+  list-style: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon__item:hover {
+  transform: translateY(-6px) scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the menu items horizontally */
-  align-items: center;
-  margin: 10px 0;
+  justify-content: center;
+  margin: 20px 0;
   width: 100%;
-  text-align: center; /* Ensure text inside is centered */
+  text-align: center;
 }
-
 
 .menu__item {
   list-style: none;
-  width: 50%; /* Keeps two equal columns; adjust if necessary */
-  margin-bottom: 10px;
-  text-align: left; /* Center the content within each menu item */
-}
-
-.social-icon__link {
-  font-size: 2rem;
-  color: #d54545;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-.social-icon__link:hover {
-  transform: translateY(-10px);
+  width: 50%;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 .menu__link {
-  font-size: 1.1rem;
-  color: #0c0000;
+  font-size: 1rem;
+  color: #222;
   text-decoration: none;
-  transition: 0.5s;
-  opacity: 0.75;
   font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .menu__link:hover {
   opacity: 1;
+  transform: scale(1.05);
+  color: #000;
 }
 
 .footer p {
-  color: #070000;
+  color: #444;
   margin: 15px 0 10px 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 400;
+  text-align: center;
 }
-
 
 .whatsapp_float {
   position: fixed;
@@ -80,33 +78,30 @@
   bottom: 120px;
   left: 50px;
   background-color: #25d366;
-  color: #070000;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
+  border-radius: 50%;
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .whatsappicon {
   margin-top: 16px;
 }
 
-
 @media screen and (max-width: 767px) {
   .whatsappicon {
-      margin-top: 10px;
+    margin-top: 10px;
   }
-
   .whatsapp_float {
-      width: 40px;
-      height: 40px;
-      bottom: 70px;
-      left: 30px;
-      font-size: 22px;
-      
+    width: 40px;
+    height: 40px;
+    bottom: 70px;
+    left: 30px;
+    font-size: 22px;
   }
-} 
+}
 
 .summer_camp_notification {
   position: fixed;
@@ -127,18 +122,15 @@
   color: white;
   text-transform: uppercase;
   text-align: center;
-  line-height: normal;
   animation: glowing 1.5s infinite;
 }
 
-/* Glowing effect */
 @keyframes glowing {
   0% { background-color: #ff5722; box-shadow: 0 0 5px #ff5722; }
   50% { background-color: #ff784e; box-shadow: 0 0 15px #ff784e; }
   100% { background-color: #ff5722; box-shadow: 0 0 5px #ff5722; }
 }
 
-/* NEW Flag */
 .summer_camp_notification::after {
   content: "NEW!";
   position: absolute;
@@ -150,17 +142,14 @@
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 4px;
-  transform-origin: top right;
   animation: waving 1s infinite alternate;
 }
 
-/* Waving Animation */
 @keyframes waving {
   0% { transform: rotate(0deg) translateY(0); }
   100% { transform: rotate(-10deg) translateY(-3px); }
 }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 767px) {
   .summer_camp_notification {
     width: 100px;
@@ -169,22 +158,10 @@
     right: 10px;
     font-size: 14px;
   }
-
   .summer_camp_notification::after {
     font-size: 10px;
     padding: 3px 8px;
     top: -8px;
     right: -8px;
   }
-}
-
-
-
-.social-icon__item {
-  list-style: none;
-  margin-right: 30px; /* Adds 30px space between icons */
-}
-
-.social-icon__item:last-child {
-  margin-right: 0; /* Removes extra margin from the last icon */
 }

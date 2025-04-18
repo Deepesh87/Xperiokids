@@ -25,6 +25,9 @@ function Terms() {
             ⚫ Xperio Learning reserves the right to use photos/videos clicked during our Demos/Classes for publishing 
             on our websites or on our YouTube channel.
             </p>
+            <p>
+            ⚫ Upon Cancellation of a course enrollment, a charge of ₹1000 will be deducted from the total fees paid.
+            </p>
             <br/>
             <br/>  
             <p>
