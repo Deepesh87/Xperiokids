@@ -155,7 +155,7 @@ body, html {
 /* Ensure container does not exceed viewport */
 .kpiContainer {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   max-width: 100%;
   overflow: hidden;
 }

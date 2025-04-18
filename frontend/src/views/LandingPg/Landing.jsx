@@ -1,6 +1,6 @@
-import React from "react";
+import CurvedSlider from "./CurvedSlider";
 import Style from "./Landing.module.css";
-import experiment from "../../assets/dp1.png";
+import React from "react";
 import KPI from "./KPI";
 
 function Landing() {
@@ -20,9 +20,13 @@ function Landing() {
 
           </div>
         </div>
-        <div className={Style.experiment}>
+        {/* <div className={Style.experiment}>
           <img src={experiment} alt="Experiment" />
-        </div>
+        </div> */}
+
+        {/* ⬇️ Image Slider Here ⬇️ */}
+        <CurvedSlider />
+        
       </div>
       <KPI />
     </>
