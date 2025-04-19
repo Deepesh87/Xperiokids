@@ -2,7 +2,11 @@ import React from "react";
 import styles from "./camp.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import camp_new from "../../assets/may.jpeg";
+import s1 from "../../assets/s1.jpeg";
+import s2 from "../../assets/s2.jpg";
+import s3 from "../../assets/s3.jpg";
+import s4 from "../../assets/s4.jpg";
+import s5 from "../../assets/s5.jpg";
 
 function Camp() {
   return (
@@ -12,25 +16,24 @@ function Camp() {
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
-              <span>Summer Camp 2025:</span>
+              <span>Science Camp 2025:</span>
             </h5>
+            <br />
 
-            <img src={camp_new} className={styles.pic} alt="Summer Camp 2025" />
+            <strong>
+              <a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1mpLov7byLD8pOay75fg8I5v9_lDkoiOG/view?usp=sharing" target="_blank">
+                Download Brochure <br />
+              </a>
+            </strong>
 
-            <p>
-              <strong>Months:</strong> April to July <br />
-              <strong>Boards:</strong> CBSE, ICSE, IB <br />
-              <strong>Grades:</strong> 2 to 9 (separate batches) <br />
-              <strong>Topics:</strong> Science Experiments, Sudoku, Journaling & Public Speaking
-            </p>
+            <div className={styles.galleryGrid}>
+              <img className={styles.galleryImg} src={s1} alt="Camp Activity 1" />
+              <img className={styles.galleryImg} src={s2} alt="Camp Activity 2" />
+              <img className={styles.galleryImg} src={s3} alt="Camp Activity 3" />
+              <img className={styles.galleryImg} src={s4} alt="Camp Activity 4" />
+              <img className={styles.galleryImg} src={s5} alt="Camp Activity 5" />
+            </div>
 
-            <p>
-              Building on our successful Science Camp 2024, we’re adding more experiments this year. Join us for an exciting summer of learning and making new friends!
-            </p>
-            <br/>
-            
-      <strong><a className={`${styles.menu__link}`} href="https://drive.google.com/file/d/1mpLov7byLD8pOay75fg8I5v9_lDkoiOG/view?usp=sharing" target="_blank">
-      Download Brochure <br/></a> </strong>
 
             <div className={styles.videoContainer}>
               <div className={styles.videoWrapper}>
@@ -52,27 +55,13 @@ function Camp() {
                 ></iframe>
               </div>
             </div>
-
-            <p>
-              View photos & activities from last year's camp:{" "}
-              <a className={styles.menu__link} href="/camp24" target="_blank" rel="noopener noreferrer">
-                Summer Camp 2024
-              </a>.
-            </p>
-
-            <p>
-              To join an exclusive Robotics Camp during Summer Vacation, please visit here{" "}
-              <a className={styles.menu__link} href="/robotics" target="_blank" rel="noopener noreferrer">
-                Robotics Summer Camp
-              </a>.
-            </p>
           </div>
         </div>
       </section>
-      <a href="/summer" className={styles.floatingBackButton}>
-  ← Back to Summer Camp
-</a>
 
+      <a href="/summer" className={styles.floatingBackButton}>
+        ← Back to Summer Camp
+      </a>
 
       <Footer />
     </>

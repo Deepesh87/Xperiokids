@@ -153,3 +153,36 @@
     transform: translateY(0) scale(1);
   }
 }
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galleryImg:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 10px;
+  }
+
+  .galleryImg {
+    max-height: 150px; /* even smaller on mobile */
+  }
+}
