@@ -45,10 +45,10 @@ const Footer = () => {
       </div>
 
       <div className={styles.summer_camp_notification}>
-        <a href="/camp" className="summer_camp_notification" target="_blank" rel="noopener noreferrer">
-          <p><b>Summer Camp25</b></p>
-        </a>
-      </div>
+  <a href="/camp" target="_blank" rel="noopener noreferrer">
+  <p>🚀 <b>Summer Camp'25</b></p>
+  </a>
+</div>
     </footer>
   );
 };
