@@ -1,0 +1,207 @@
+.container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f97316;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefitsSection {
+  background-color: #fff7ed;
+  border-left: 6px solid #f97316;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+.benefitsSection h2 {
+  font-size:  2rem;
+  margin-bottom: 0.2rem;
+}
+
+.benefitsSection ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefitsSection li {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+/* Track Cards */
+.trackCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .trackCards {
+    flex-direction: row;
+  }
+}
+
+.trackCard {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease-in-out;
+  background: #fff;
+}
+
+.trackCard:hover {
+  transform: translateY(-5px);
+}
+
+.thumbImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.trackCard h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.trackCard p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.trackCard button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.trackCard button:hover {
+  background-color: #ea580c;
+}
+
+/* Calendar Section */
+.calendarWrapper {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.calendarTitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.highlight {
+  background-color: #f97316 !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+/* Final CTA */
+.finalCTA {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.finalCTA h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.finalCTA button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.finalCTA button:hover {
+  background-color: #ea580c;
+}
+
+.scheduleBox {
+  background-color: #fef9c3; /* soft yellow */
+  border-left: 6px solid #facc15; /* yellow-400 */
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.scheduleBox h2 {
+  font-size: 2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  color: #92400e; /* warm brown */
+}
+
+.scheduleBox ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.scheduleBox li {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.scheduleBox p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.contactNote a {
+  color: #f97316;
+  text-decoration: underline;
+  font-weight: 500;
+}

@@ -1,9 +1,12 @@
+import { useLocation } from "react-router-dom";
 import React from 'react';
 import { FaYoutube, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import styles from './footer.module.css';
 import whatsapp_image from "../../assets/whatsapp.svg";
 
 const Footer = () => {
+  const location = useLocation(); 
+  const hiddenRoutes = ["/robotics", "/camp", "/summer", "/terms"];
   return (
     <footer className={`${styles.footer}`}>
       <ul className={`${styles['social-icon']}`}>
@@ -44,11 +47,22 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className={styles.summer_camp_notification}>
-  <a href="/camp" target="_blank" rel="noopener noreferrer">
+
+      {/* <div className={styles.summer_camp_notification}>
+  <a href="/summer" target="_blank" rel="noopener noreferrer">
   <p>🚀 <b>Summer Camp'25</b></p>
   </a>
-</div>
+</div> */}
+{!hiddenRoutes.includes(location.pathname) && (
+  <div className={styles.summer_camp_notification}>
+    <a href="/summer" target="_blank" rel="noopener noreferrer">
+      <p>🚀 <b>Summer Camp'25</b></p>
+    </a>
+  </div>
+)}
+
+
+
     </footer>
   );
 };

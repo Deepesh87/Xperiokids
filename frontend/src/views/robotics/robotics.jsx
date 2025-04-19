@@ -86,7 +86,7 @@ function Robotics() {
               <br />
               <strong>Course Timings: Pls contact us!</strong>
               <br />
-              <strong>Course Fees: ₹ 16,000 (includes Robotics kit worth 4k)</strong>
+              <strong>Course Fees: ₹ 18,000 (includes Robotics kit worth 4k)</strong>
               <br />
               <br />
               The topics that will be covered and more finer details are mentioned in the camp brochure.
@@ -109,16 +109,10 @@ function Robotics() {
         ))}
       </section>
 
-      {/* <div className={styles.formSection}>
-        <p className={styles.formText}>
-          Please fill this form to complete Student Registration & receive a callback.
-        </p>
-        <iframe
-          src="https://forms.gle/W1Y4RwTp9EE8oH2a7"
-          frameBorder="0"
-          title="Google Form"
-        />
-      </div> */}
+      <a href="/summer" className={styles.floatingBackButton}>
+  ← Back to Summer Camp
+</a>
+
       <Footer />
     </>
   );

@@ -69,6 +69,11 @@ function Camp() {
           </div>
         </div>
       </section>
+      <a href="/summer" className={styles.floatingBackButton}>
+  ← Back to Summer Camp
+</a>
+
+
       <Footer />
     </>
   );

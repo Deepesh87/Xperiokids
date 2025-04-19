@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
-
 .demo-page{
   height: auto;
   width: 100%;
@@ -288,5 +287,53 @@ cursor: pointer;
 
   .imageContainer img {
     width: 90%; /* Wider images on mobile */
+  }
+}
+
+.floatingBackButton {
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
+  background-color: #f97316;
+  color: white;
+  padding: 0 1.25rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  height: 30px;
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: pulseBounce 1.8s infinite ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+.floatingBackButton:hover {
+  background-color: #ea580c;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .floatingBackButton {
+    bottom: 70px;
+    right: 30px;
+    height: 26px;
+    font-size: 0.85rem;
+    padding: 0 1rem;
+  }
+}
+
+@keyframes pulseBounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
   }
 }
