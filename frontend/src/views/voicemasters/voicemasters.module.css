@@ -37,21 +37,25 @@
     border-radius: 10px;
 }
 
-.text{
+.text {
   width: 80%;
+  padding-bottom: 40px;
 }
+
 .text h2{
   font-size: 35px;
   font-weight: 1000;
   margin-bottom: 10px;
 }
-.text h5{
+.text h5 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
+  line-height: 1.4; /* makes it cleaner */
 }
-.text span{
+.text span {
   color: #4070f4;
+  font-weight: 600;
 }
 .text p{
   font-size: 18px;
@@ -90,6 +94,12 @@
   text-decoration: underline;
 }
 
+.menu__link:hover {
+  text-decoration: underline wavy;
+  color: #b3008f;
+  transition: 0.3s ease;
+}
+
 @media (max-width: 800px ){
 
    .about{
@@ -102,10 +112,12 @@
     text-align: center;
    }
 
-   .text>h5{
-      font-size: 20px;
-      text-align: left;
-   }
+   .text > h5 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
    .pic{
     width: 80%;
     margin: 20px auto 10px;
@@ -167,3 +179,217 @@
       padding-bottom: 75%;
     }
   }
+
+  .container {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 0.5rem;
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Schedule Section */
+  .scheduleBox {
+    background-color: #fef9c3;
+    border-left: 6px solid #facc15;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .scheduleBox h2 {
+    font-size: 2rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    color: #92400e;
+  }
+  
+  .scheduleBox ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .scheduleBox li {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+/* Container for both videos */
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between videos */
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+  
+/* Video Wrapper for YouTube videos */
+.videoWrapper {
+  position: relative;
+  width: 70%;              /* Wider video */
+  max-width: 720px;        /* Increased max-width */
+  margin: 20px auto;
+  padding-bottom: 56.25%;  /* 16:9 aspect ratio = 9/16 = 0.5625 */
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Adjust for PC - reduce vertical height by 15% (from 70% to ~59.5%) */
+@media (min-width: 1024px) {
+  .videoWrapper {
+    padding-bottom: 30%; 
+  }
+}
+
+/* Mobile Optimization: Increase vertical height (making it taller)
+   Here we set it to about 81% for devices up to 768px wide */
+   @media (max-width: 768px) {
+    .videoWrapper {
+      width: 90%;
+      padding-bottom: 75%; /* Keep landscape ratio even on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .videoWrapper {
+      width: 100%;
+      padding-bottom: 75%;
+    }
+  } 
+  /* Track Cards */
+  .trackCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+
+  .trackCard {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease-in-out;
+    background: #fff;
+  }
+  
+  .trackCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .thumbImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .trackCard h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .trackCard p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+  
+  .trackCard button {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .trackCard button:hover {
+    background-color: #ea580c;
+  }
+  
+  /* Final CTA */
+  .finalCTA {
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  .finalCTA h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .finalCTA button {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .finalCTA button:hover {
+    background-color: #ea580c;
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #100199;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgb(83, 229, 141);
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+  
