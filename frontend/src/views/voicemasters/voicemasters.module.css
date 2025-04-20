@@ -126,17 +126,16 @@
 /* Video Wrapper for YouTube videos */
 .videoWrapper {
   position: relative;
-  width: 40%; /* Keeps width constant */
-  max-width: 360px;
+  width: 70%;              /* Wider video */
+  max-width: 720px;        /* Increased max-width */
   margin: 20px auto;
-  padding-bottom: 70%; /* Default aspect ratio for portrait */
+  padding-bottom: 56.25%;  /* 16:9 aspect ratio = 9/16 = 0.5625 */
   height: 0;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -155,17 +154,16 @@
 
 /* Mobile Optimization: Increase vertical height (making it taller)
    Here we set it to about 81% for devices up to 768px wide */
-@media (max-width: 768px) {
-  .videoWrapper {
-    width: 60%;
-    padding-bottom: 81%;
+   @media (max-width: 768px) {
+    .videoWrapper {
+      width: 90%;
+      padding-bottom: 75%; /* Keep landscape ratio even on mobile */
+    }
   }
-}
-
-/* For very small mobile devices */
-@media (max-width: 480px) {
-  .videoWrapper {
-    width: 80%;
-    padding-bottom: 95%;
+  
+  @media (max-width: 480px) {
+    .videoWrapper {
+      width: 100%;
+      padding-bottom: 75%;
+    }
   }
-}

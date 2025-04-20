@@ -56,13 +56,15 @@ Although public speaking can be intimidating for many adults, children can conqu
 
    <div className={styles.videoContainer}>
   <div className={styles.videoWrapper}>
-    <iframe
-      src="https://www.youtube.com/embed/iENkJyxFUsA?start=0"
-      title="Xperio Learning Public Speaking Course for Children"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
+
+  <iframe
+  src="https://www.youtube.com/embed/tDgXq10xNGI"
+  title="VoiceMasters Public Speaking"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
   </div>
 </div>
 
