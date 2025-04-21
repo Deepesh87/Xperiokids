@@ -18,7 +18,7 @@ const pages = [
   { to: "/gallery", name: "Gallery📷" },
   { to: "/robotics", name: "Robotics" },
   { to: "/voicemasters", name: "VoiceMasters🎤" },
-  { to: "/camp", name: "Summer Camp 2025🏄" },
+  { to: "/science", name: "Summer Camp 2025🏄" },
 ];
 
 function Nav() {

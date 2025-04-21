@@ -5,7 +5,7 @@ import Main from "../views/LandingPg/Main";
 import About from "../views/About us/About";
 import Gallery from "../views/gallery/gallery";
 import Voice from "../views/voicemasters/voicemasters";
-import Camp from "../views/summercamp/camp";
+import Science from "../views/summercamp/science";
 import Sudoku from "../views/sudoku/sudoku";
 import OlympiadFinalist from "../views/olympiad/olympiad";
 import Robotics from "../views/robotics/robotics";
@@ -21,7 +21,7 @@ function MainRoutes() {
       <Route path="/about" element={<About />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/voicemasters" element={<Voice />} />
-      <Route path="/camp" element={<Camp />} />
+      <Route path="/science" element={<Science />} />
       <Route path="/sudoku" element={<Sudoku />} />
       <Route path="/olympiad" element={<OlympiadFinalist />} />
       <Route path="/robotics" element={<Robotics />} />

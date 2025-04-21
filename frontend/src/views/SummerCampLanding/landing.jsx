@@ -67,7 +67,7 @@ const SummerCampLanding = () => {
             <img src={scienceThumb} className={styles.thumbImage} alt="Science Camp" />
             <h3>Science Track ₹11,000</h3>
             <p>Wanna be Doctors, Chemists, Physicists, Xperiment, Xplore and have lots of fun</p>
-            <button onClick={() => navigate('/camp')}>Explore Science</button>
+            <button onClick={() => navigate('/science')}>Explore Science</button>
           </div>
 
           <div className={styles.trackCard}>

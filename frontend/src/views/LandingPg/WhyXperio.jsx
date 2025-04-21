@@ -21,7 +21,7 @@ function WhyXperio() {
       description:
         "At Xperio Learning, we go beyond textbooks with hands-on learning. Students engage in experiments across subjects like Robotics, Coding, Physics, Chemistry, and Biology. This interactive approach fosters critical thinking, creativity, and confidence.",
       img: lab,
-      link: "https://www.xperiolearning.com/camp",
+      link: "https://www.xperiolearning.com/science",
       alt: "Laboratory",
     },
     {

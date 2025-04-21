@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "./camp.module.css";
+import styles from "./science.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import s1 from "../../assets/s1.jpeg";
 import s2 from "../../assets/s2.jpg";
-import s3 from "../../assets/s3.jpg";
+import s3 from "../../assets/s5.jpeg";
 import s4 from "../../assets/s4.jpg";
-import s5 from "../../assets/s5.jpg";
+import s5 from "../../assets/s3.jpg";
 
-function Camp() {
+function Science() {
   return (
     <>
       <Nav />
@@ -68,4 +68,4 @@ function Camp() {
   );
 }
 
-export default Camp;
+export default Science;

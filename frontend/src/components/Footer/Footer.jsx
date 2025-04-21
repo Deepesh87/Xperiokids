@@ -6,7 +6,7 @@ import whatsapp_image from "../../assets/whatsapp.svg";
 
 const Footer = () => {
   const location = useLocation(); 
-  const hiddenRoutes = ["/robotics", "/camp", "/summer", "/terms"];
+  const hiddenRoutes = ["/robotics", "/science", "/summer", "/terms"];
   return (
     <footer className={`${styles.footer}`}>
       <ul className={`${styles['social-icon']}`}>
