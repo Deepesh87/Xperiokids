@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./science.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import s1 from "../../assets/s1.jpeg";
+import s1 from "../../assets/map.jpg";
 import s2 from "../../assets/s2.jpg";
 import s3 from "../../assets/s5.jpeg";
 import s4 from "../../assets/s4.jpg";
 import s5 from "../../assets/s3.jpg";
+import s6 from "../../assets/tyndall.jpg";
 
 function Science() {
   return (
@@ -27,11 +28,11 @@ function Science() {
             </strong>
 
             <div className={styles.galleryGrid}>
-              <img className={styles.galleryImg} src={s1} alt="Camp Activity 1" />
+              <img className={styles.galleryImg} src={s6} alt="Camp Activity 1" />
               <img className={styles.galleryImg} src={s2} alt="Camp Activity 2" />
               <img className={styles.galleryImg} src={s3} alt="Camp Activity 3" />
               <img className={styles.galleryImg} src={s4} alt="Camp Activity 4" />
-              <img className={styles.galleryImg} src={s5} alt="Camp Activity 5" />
+              <img className={styles.galleryImg} src={s1} alt="Camp Activity 5" />
             </div>
 
 
