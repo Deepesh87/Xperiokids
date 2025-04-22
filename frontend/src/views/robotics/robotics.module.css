@@ -1,36 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
-.demo-page{
-  height: auto;
+
+.demo-page {
   width: 100%;
-  padding: 20px 0;
+  padding: 5px 0;
   background: #ffffff;
 }
 
-.pic{
-  padding: 5px;
-  height: auto;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+
+.pic {
+  width: 90%;
+  max-width: 600px;
+  margin: 10px auto 20px;
+  display: block;
+  border-radius: 10px;
 }
 
-.pic2{
-  width: 30%;
-  margin: 0px auto 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
-}
 
-.about{
-  width: 1130px;
+.about {
   max-width: 85%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .about> img {
@@ -45,10 +39,12 @@
   font-weight: 1000;
   margin-bottom: 10px;
 }
-.text h5{
+/* Remove any extra top margin for the header */
+.text h5 {
   font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-weight: 600;
+  margin: 0 0 15px 0;  /* No top margin, 15px bottom margin */
+  color: #4070f4;
 }
 .text span{
   color: #4070f4;
@@ -93,88 +89,142 @@
 }
 
 
-.about2> img {
+/* Container for both videos */
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between videos */
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+/* Video Wrapper for YouTube videos */
+.videoWrapper {
+  position: relative;
+  width: 40%; /* Keeps width constant */
+  max-width: 360px;
+  margin: 20px auto;
+  padding-bottom: 70%; /* Default aspect ratio for portrait */
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
+/* Adjust for PC - reduce vertical height by 15% (from 70% to ~59.5%) */
+@media (min-width: 1024px) {
+  .videoWrapper {
+    padding-bottom: 50%; 
+  }
+}
 
-.img_gallery{
-  width: 80%;
-  margin: 100px auto 50px;
+/* Mobile Optimization: Increase vertical height (making it taller)
+   Here we set it to about 81% for devices up to 768px wide */
+@media (max-width: 768px) {
+  .videoWrapper {
+    width: 60%;
+    padding-bottom: 81%;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .videoWrapper {
+    width: 80%;
+    padding-bottom: 95%;
+  }
+}
+
+.floatingBackButton {
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
+  background-color: #f97316;
+  color: white;
+  padding: 0 1.25rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  height: 30px;
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: pulseBounce 1.8s infinite ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+.floatingBackButton:hover {
+  background-color: #ea580c;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .floatingBackButton {
+    bottom: 70px;
+    right: 30px;
+    height: 26px;
+    font-size: 0.85rem;
+    padding: 0 1rem;
+  }
+}
+
+@keyframes pulseBounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.galleryGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.img_gallery img{
-width: 100%;
-cursor: pointer;
+.galleryImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.img_gallery img:hover{
-  transform: scale(1.2) rotate(-10deg);
-  border-radius: 20px;
-  box-shadow: 0 32px 75px rgba(68,77,136,0.2); 
-  }
-
-@media (max-width: 800px ){
-
-   .about{
-     display: flex;
-     flex-direction: column;
-   }
-
-   .text{
-    width: 100%;
-    text-align: center;
-   }
-
-   .text>h2{
-      font-size: 45px;
-   }
-
-   .pic{ 
-    display: none;
+.galleryImg:hover {
+  transform: scale(1.13);
 }
+
+@media (max-width: 600px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 10px;
   }
 
-
-  .videowrapper {
-    display: flex;
-    flex-wrap: wrap; /* Allows the videos to wrap to the next line if there's no space */
-    gap: 20px; /* Space between the videos */
-    justify-content: center; /* Center the videos horizontally */
-    margin: 20px 0;
+  .galleryImg {
+    max-height: 150px; /* even smaller on mobile */
   }
-  .videocontainer {
-    position: relative;
-    padding-bottom: 177.77%; /* 9:16 Aspect ratio (vertical video) */
-    height: 0;
-    overflow: hidden;
-    width: 48%; /* This makes each video take 48% of the container's width */
-    background: #000;
-  }
-  
-  .video-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Mobile view - Stack the videos vertically */
-  @media (max-width: 768px) {
-    .videowrapper {
-      flex-direction: column; /* Stack the videos vertically */
-      align-items: center; /* Center the videos */
-    }
-  
-    .videocontainer {
-      width: 90%; /* Videos take up 90% of the screen width on mobile */
-      margin-bottom: 20px; /* Space between stacked videos */
-    }
-  }
+}
 
   .faqSection {
     padding: 2px;

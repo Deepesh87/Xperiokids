@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import styles from "./robotics.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import pujo from "../../assets/roboticskitbox.png";
-import pujo2 from "../../assets/Robotics_certificate.png";
+import s2 from "../../assets/r1.jpg";
+import s3 from "../../assets/r2.jpg";
+import s4 from "../../assets/r3.jpg";
+import s5 from "../../assets/r4.jpg";
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className={styles.faqItem}>
       <button className={styles.faqQuestion} onClick={() => setIsOpen(!isOpen)}>
-        {question}
-        <span>{isOpen ? "-" : "+"}</span>
+        {question} <span>{isOpen ? "-" : "+"}</span>
       </button>
       {isOpen && <p className={styles.faqAnswer}>{answer}</p>}
     </div>
@@ -24,7 +24,7 @@ function Robotics() {
     {
       question: "What is Robotics?",
       answer:
-        "Robotics for kids is a hands-on way for children to learn about science, technology, engineering, and math (STEM). It involves designing, programming, and building robots, and can help kids develop skills like problem-solving, creativity, and critical thinking. Robotics empower children to create projects from their own concepts, fostering self-assurance and a positive 'can-do' mindset.",
+        "Robotics for kids is a hands-on way for children to learn about STEM. It involves designing, programming, and building robots, helping kids develop problem-solving, creativity, and critical thinking skills.",
     },
     {
       question: "What prior knowledge is required for this course?",
@@ -33,35 +33,35 @@ function Robotics() {
     },
     {
       question: "What materials or tools are needed?",
-      answer: "All necessary materials, including a Very cool Robotics Kit as per the course will be provided.",
+      answer: "All materials, including a very cool Robotics Kit, will be provided.",
     },
     {
       question: "Is there any certification after course completion?",
-      answer: "Yes, participants will receive a certificate of completion at the end of the course.",
+      answer: "Yes, participants receive a certificate at the end of the course.",
     },
     {
       question: "Can I pay the course fee in installments?",
-      answer: "Yes, the course fee can be paid in two installments. Pls contact us for more details.",
+      answer: "Yes, fee can be paid in two installments. Contact us for details.",
     },
     {
       question: "How can Robotics benefit young children?",
       answer:
-        "Robotics can also enhance academic performance in children by creating an interest in Mathematics and Science, leading to improved outcomes in these subjects.",
+        "Robotics enhances interest in Maths and Science, leading to better academic performance.",
     },
     {
       question: "What is the future of Robotics?",
       answer:
-        "In the future, various fields such as medicine, psychology, law enforcement, and agriculture that currently have limited technology integration will become increasingly dependent on technology. AI added to Robotics can make wonders like how Elon has done.",
+        "Fields like medicine, agriculture, and law enforcement will increasingly rely on robotics. AI + Robotics can make wonders!",
     },
     {
       question: "Is Robotics and Programming doable by Children?",
       answer:
-        "Yes, robotics and programming are doable by children, and can be a fun and rewarding experience for both children and parents. Our course and faculty are designed to break down difficult concepts into easy digestible chunks and abstract what is not needed.",
+        "Yes! Our course breaks concepts into easy chunks. Kids love it, and so do the parents.",
     },
     {
-      question: "What if I miss a few days of class due to travel plan or sickness?",
+      question: "What if I miss a few days of class?",
       answer:
-        "We will try our best to accomodate you by arranging an extra class over a weekend or extending the course by a few days. However, we recommend you to attend all classes to get the best out of the course.",
+        "We'll try to accommodate with weekend catchups or extending the course slightly.",
     },
   ];
 
@@ -71,36 +71,42 @@ function Robotics() {
       <section className={styles["demo-page"]}>
         <div className={styles.about}>
           <div className={styles.text}>
-
-          <div className={styles.imageContainer}>
-          <img src={pujo} className={styles.pic2} alt="Robotics Kit" />
-          <img src={pujo2} className={styles.pic2} alt="Robotics Certificate" />
-        </div>
-
-
             <h5>
-              <span>Summer Robotics Course</span>
+              <span>Robotics Camp 2025:</span>
             </h5>
-            <p>
-              <strong>Course Duration: 4 Weeks (Monday to Fri)</strong>
-              <br />
-              <strong>Course Timings: Pls contact us!</strong>
-              <br />
-              <strong>Course Fees: ₹ 18,000 (includes Robotics kit worth 4k)</strong>
-              <br />
-              <br />
-              The topics that will be covered and more finer details are mentioned in the camp brochure.
-            </p>
+            <br />
+            <strong>
+              <a
+                className={styles.menu__link}
+                href="https://drive.google.com/file/d/1inB1J7JYRNy5z826rTnRMee0LEFZrSRO/view?usp=sharing"
+                target="_blank"
+              >
+                Download Brochure <br />
+              </a>
+            </strong>
+
+            <div className={styles.galleryGrid}>
+              {/* <img className={styles.galleryImg} src={s1} alt="Robotics Kit" /> */}
+              <img className={styles.galleryImg} src={s2} alt="Certificate" />
+              <img className={styles.galleryImg} src={s3} alt="Child with Robot" />
+              <img className={styles.galleryImg} src={s4} alt="Child Building" />
+              <img className={styles.galleryImg} src={s5} alt="LED Project" />
+            </div>
+
+            <div className={styles.videoContainer}>
+              <div className={styles.videoWrapper}>
+                <iframe
+                  src="https://www.youtube.com/embed/9mlJ1iogVmg"
+                  title="Robotics YouTube Shorts"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <div className={styles.docFrame}>
-        <iframe
-          src="https://drive.google.com/file/d/1inB1J7JYRNy5z826rTnRMee0LEFZrSRO/preview"
-          frameBorder="0"
-          title="Course Brochure"
-        />
-      </div>
 
       <section className={styles.faqSection}>
         <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
@@ -110,8 +116,8 @@ function Robotics() {
       </section>
 
       <a href="/summer" className={styles.floatingBackButton}>
-  ← Back to Summer Camp
-</a>
+        ← Back to Summer Camp
+      </a>
 
       <Footer />
     </>
