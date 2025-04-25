@@ -16,6 +16,16 @@
   border-radius: 10px;
 }
 
+.menu__link {
+  font-size: 1.2rem;
+  color: #100199;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: rgb(83, 229, 141); /* Added yellow background */
+  padding: 2px 5px; /* Added slight padding for better readability */
+  border-radius: 4px; /* Slightly rounded corners for a smoother look */
+}
 
 .about {
   max-width: 85%;
