@@ -23,7 +23,7 @@ const CurvedSlider = () => {
     if (!isHovered) {
       const interval = setInterval(() => {
         setCurrentIndex((prev) => (prev + 1) % images.length);
-      }, 3000);
+      }, 1500);
       return () => clearInterval(interval);
     }
   }, [isHovered, currentIndex]);
