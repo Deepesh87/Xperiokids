@@ -18,12 +18,7 @@ function About() {
               <span>Dr. Kislay Singh: Founder Xperio Learning</span>
             </h5>
             <p>
-              Having taught students from Primary school to Masters,
-               I have come to realize how broken our Education system is. We focus more
-              on theory and very little on hands on and esp. for Sciences
-              where it is most needed. I started Xperio Learning so students can learn
-              by experiencing. I also teach at Symbiosis, Bangalore and in the past have 
-              held roles at Byjus, Bangalore and Galgotias University, NCR.
+            "Having taught students ranging from primary school to master's level, I've witnessed firsthand how deeply broken our education system is. There's an overwhelming focus on theory, with far too little emphasis on hands-on learning — especially in the sciences, where it’s needed the most. I founded Xperio Learning to change that: to help students truly experience their learning. Alongside this initiative, I also teach at Symbiosis, Bangalore, and have previously held roles at Byju’s, Bangalore, and Galgotias University, NCR."
             </p>
             <div className={styles.data}>
               <a href="https://www.linkedin.com/in/kislaysingh/" target="_blank" className={styles.hire}>
@@ -43,11 +38,7 @@ function About() {
               <span>Deepesh Singh, Mentor Xperio Learning</span>
             </h5>
             <p>
-            I am a full time Lead Data Scientist at a Leading Logistic Company. 
-            I have worked for over 12 years in the Data Science/Software Industry. I have also taught Data Science and ML to over 3000+ 
-            Working professionals at Great Learning, Scaler,
-             Upgrad, Imarticus and several other top institutes that provide Data Science Courses. My Role at
-             Xperio Learning is to oversee the pedagogy and bring in my learnings from the Tech Industry.
+            "As a Lead Data Scientist at a global logistics leader, I bring over 12 years of experience building data-driven solutions at scale. I have also trained more than 3,000 working professionals in Data Science and Machine Learning through top institutions like Great Learning, Scaler, UpGrad, and Imarticus. At Xperio Learning, I drive the academic vision — blending industry-grade practices with experiential learning to prepare students for real-world challenges."
             </p>
             <div className={styles.data}>
               <a href="https://www.linkedin.com/in/connectdeepesh/" target="_blank" className={styles.hire}>
