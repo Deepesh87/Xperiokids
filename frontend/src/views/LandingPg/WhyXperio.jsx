@@ -3,6 +3,7 @@ import Style from "./WhyXperio.module.css";
 import lab from "../../assets/lab1.jpg";
 import goals from "../../assets/goals1.jpg";
 import voice from "../../assets/voicemasters3.png";
+import voice2 from "../../assets/voicemasters_new.jpeg";
 import hobby3 from "../../assets/robotics.png";
 
 function WhyXperio() {
@@ -36,7 +37,7 @@ function WhyXperio() {
       title: "VoiceMasters for Public Speaking 🎤",
       description:
         "Imagine your child excelling in presentations, interviews, and collaborative projects, all thanks to the foundational skills they will gain with VoiceMasters. Join us to empower your child with skills for success and personal growth.",
-      img: voice,
+      img: voice2,
       link: "/voicemasters",
       alt: "VoiceMasters",
     },
