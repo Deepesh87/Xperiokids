@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./CurvedSlider.module.css";
 import img4 from "../../assets/dp1.png";
 import img1 from "../../assets/1.jpg";
+import v2 from "../../assets/voicemasters_new.jpeg";
 import img2 from "../../assets/2.jpg";
 import img3 from "../../assets/3.jpg";
 import img5 from "../../assets/5.jpg";
@@ -13,7 +14,7 @@ import img10 from "../../assets/10.jpg";
 import s6 from "../../assets/tyndall.jpg";
 import s5 from "../../assets/s5.jpeg";
 
-const images = [img1, img2, s6, img4, img5, img6, img7, s5, img9, img10];
+const images = [img1, v2, img2, s6, img4, img5, img6, img7, s5, img9, img10];
 
 const CurvedSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

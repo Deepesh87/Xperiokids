@@ -35,14 +35,10 @@ function Robotics() {
       question: "What materials or tools are needed?",
       answer: "All materials, including a very cool Robotics Kit, will be provided.",
     },
-    {
-      question: "Is there any certification after course completion?",
-      answer: "Yes, participants receive a certificate at the end of the course.",
-    },
-    {
-      question: "Can I pay the course fee in installments?",
-      answer: "Yes, fee can be paid in two installments. Contact us for details.",
-    },
+    // {
+    //   question: "Can I pay the course fee in installments?",
+    //   answer: "Yes, fee can be paid in two installments. Contact us for details.",
+    // },
     {
       question: "How can Robotics benefit young children?",
       answer:

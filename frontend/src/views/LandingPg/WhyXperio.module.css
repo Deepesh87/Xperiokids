@@ -1,5 +1,5 @@
 .main {
-  margin: 10px auto;
+  margin: 1px auto;
   text-align: center;
   max-width: 1200px;
 }
@@ -34,11 +34,6 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
 
 .cardContent {
   padding: 15px;
@@ -68,9 +63,10 @@
   grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
 }
 
-/* Card image: reduce height by 15% (from 180px to ~153px) */
 .card img {
+  width: 100%;
   height: 153px;
+  object-fit: cover; /* 👈 This causes the image to crop/zoom to fill the box */
 }
 
 /* Hide description by default and reveal it on hover */

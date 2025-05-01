@@ -1,28 +1,33 @@
 .sliderWrapper {
   width: 100%;
   max-width: 900px;
-  margin: 10px auto;
+  margin: 1px auto;
   overflow: hidden;
   position: relative;
 }
 .slider {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  height: 480px;
   gap: 10px;
+  width: 100%;
+  padding: 2rem 0;
+  height: auto;
+  min-height: 250px;
 }
 
 .slide {
-  height: 100%;
-  width: 60%;
-  max-width: 400px;
-  object-fit: cover;
-  border-radius: 50px; /* <- This gives you nicely rounded corners */
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 40%;
+  max-width: 320px;
+  height: auto;
+  aspect-ratio: 4 / 3; /* ✅ Maintains consistent aspect ratio */
+  border-radius: 24px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   position: absolute;
   opacity: 0;
+  object-fit: cover;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
 .carousel {
@@ -47,21 +52,21 @@
 }
 
 .center {
-  transform: translateX(0) scale(1.1);
+  transform: translateX(0) scale(1.05);
   z-index: 3;
   opacity: 1;
 }
 
 .left {
-  transform: translateX(-90%) scale(0.92) rotateY(20deg);
+  transform: translateX(-80%) scale(0.95) rotateY(12deg);
   z-index: 2;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .right {
-  transform: translateX(90%) scale(0.92) rotateY(-20deg);
+  transform: translateX(80%) scale(0.95) rotateY(-12deg);
   z-index: 2;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .hidden {

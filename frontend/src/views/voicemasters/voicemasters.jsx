@@ -3,7 +3,10 @@ import styles from "./voicemasters.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import pricing from "../../assets/pricing_voicemasters.jpeg";
-import logo from "../../assets/voice_logo.jpg";
+
+import v2 from "../../assets/voicemasters_new.jpeg";
+import v3 from "../../assets/voicemasters_new2.jpeg";
+import v4 from "../../assets/voicemasters_new3.jpeg";
 
 function Voice() {
   return (
@@ -18,6 +21,13 @@ function Voice() {
             improves <strong>communication</strong>, and nurtures <strong>leadership</strong> skills — one speech at a time.
           </p>
         </div>
+            <div className={styles.galleryGrid}>
+              <img className={styles.galleryImg} src={v2} alt="Camp Activity 1" />
+              <img className={styles.galleryImg} src={v3} alt="Camp Activity 2" />
+              <img className={styles.galleryImg} src={v4} alt="Camp Activity 3" />
+              {/* <img className={styles.galleryImg} src={v5} alt="Camp Activity 4" /> */}
+            </div>
+
 
         <div className={styles.scheduleBox}>
           <h2>🗓️ How It Works</h2>
