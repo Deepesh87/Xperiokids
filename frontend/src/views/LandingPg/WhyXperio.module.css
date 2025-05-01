@@ -1,7 +1,8 @@
 .main {
   margin: 1px auto;
   text-align: center;
-  max-width: 1200px;
+  max-width: 1080px; /* was 1200px => 10% smaller */
+  width: 90%;        /* ensures it adapts on smaller screens too */
 }
 
 .main > h1 {
@@ -13,9 +14,9 @@
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 12px;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .card {
@@ -36,17 +37,17 @@
 
 
 .cardContent {
-  padding: 15px;
+  padding: 10px;
 }
 
 .cardContent h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #000000;
   margin-bottom: 10px;
 }
 
 .cardContent p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #444;
   line-height: 1.5;
 }
@@ -65,7 +66,7 @@
 
 .card img {
   width: 100%;
-  height: 153px;
+  height: 123px;
   object-fit: cover; /* 👈 This causes the image to crop/zoom to fill the box */
 }
 
@@ -96,9 +97,10 @@
 .knowMoreBtn {
   display: inline-block;
   background-color: #2cd192;
+  font-size: 0.9rem;
   /* #ec0ba9 */
   color: #fff;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
