@@ -59,13 +59,14 @@
 }
 
 .highlight {
-  display: block;           /* Each word on its own line */
-  font-size: 2.5rem;         /* Increase font size for impact */
-  font-weight: 700;          /* Bold weight */
-  color: #333;              /* Dark tone */
-  text-transform: uppercase;/* Uppercase letters for a modern look */
-  letter-spacing: 2px;       /* Extra spacing between letters */
-  margin: 10px 0;           /* Vertical spacing between words */
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 4px 0;              /* ⬅️ Reduced vertical spacing */
+  line-height: 1.2;           /* ⬅️ More compact line height */
   transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -201,4 +202,9 @@ img {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.tightWrap {
+  line-height: 1;       /* Reduce vertical spacing between lines */
+  margin: 2px 0;         /* Slightly tighter margin */
 }

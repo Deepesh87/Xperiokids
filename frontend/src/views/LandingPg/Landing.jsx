@@ -13,7 +13,7 @@ function Landing() {
   <span className={Style.catchyLine}>
     <span className={Style.highlight}>Science</span>
     <span className={Style.highlight}>Robotics</span>
-    <span className={Style.highlight}>Public Speaking</span>
+    <span className={`${Style.highlight} ${Style.tightWrap}`}>Public&#8209;Speaking</span>
     <span className={Style.kpiValue}>& more!</span>
   </span>
 </h1>
