@@ -11,7 +11,7 @@ function WhyXperio() {
 
   const sections = [
     {
-      title: "Robotics & Coding 🤖 for Children",
+      title: "Robotics & Coding for Children",
       description:
         "In today's tech-driven world, learning robotics is essential. Kids who explore robotics now become tomorrow's innovators and problem-solvers. Build, explore, and shape the future today!",
       img: hobby3,
@@ -19,7 +19,7 @@ function WhyXperio() {
       alt: "Robotics",
     },
     {
-      title: "Science Laboratory, not just a Classroom",
+      title: "Laboratory, not just a Classroom",
       description:
         "At Xperio Learning, we go beyond textbooks with hands-on learning. Students engage in experiments across subjects like Robotics, Coding, Physics, Chemistry, and Biology. This interactive approach fosters critical thinking, creativity, and confidence.",
       img: lab,
@@ -35,7 +35,7 @@ function WhyXperio() {
     //   alt: "Birthday Bash",
     // },
     {
-      title: "VoiceMasters for Public Speaking 🎤",
+      title: "VoiceMasters for Public Speaking",
       description:
         "Imagine your child excelling in presentations, interviews, and collaborative projects, all thanks to the foundational skills they will gain with VoiceMasters. Join us to empower your child with skills for success and personal growth.",
       img: voice,
