@@ -4,6 +4,7 @@ import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import s2 from "../../assets/r1.jpg";
 import s3 from "../../assets/r2.jpg";
+import s8 from "../../assets/akarsh.jpeg";
 import s4 from "../../assets/r3.jpg";
 import s5 from "../../assets/r4.jpg";
 import s7 from "../../assets/kit.jpg";
@@ -85,7 +86,7 @@ function Robotics() {
             <div className={styles.galleryGrid}>
               {/* <img className={styles.galleryImg} src={s1} alt="Robotics Kit" /> */}
               <img className={styles.galleryImg} src={s2} alt="Certificate" />
-              <img className={styles.galleryImg} src={s7} alt="Child with Robot" />
+              <img className={styles.galleryImg} src={s8} alt="Child with Robot" />
               <img className={styles.galleryImg} src={s4} alt="Child Building" />
               <img className={styles.galleryImg} src={s5} alt="LED Project" />
             </div>

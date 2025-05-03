@@ -4,6 +4,7 @@ import image_3 from "../../assets/image_folder/c.jpeg";
 import image_4 from "../../assets/image_folder/d.jpeg";
 import image_5 from "../../assets/image_folder/e.jpeg";
 import s7 from "../../assets/kit.jpg";
+import s8 from "../../assets/akarsh.jpeg";
 import image_6 from "../../assets/image_folder/f.jpeg";
 import image_7 from "../../assets/image_folder/g.jpeg";
 import image_8 from "../../assets/image_folder/h.jpeg";
@@ -43,7 +44,7 @@ import g6 from "../../assets/g6.jpg";
 import g7 from "../../assets/g7.jpg";
 
 const images = [
-s3, s4, s6,s7,
+s3, s4, s6,s7,s8,
   img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
   g1, g2, g3, g4, g5, g6, g7,
   image_1, image_3, image_4, image_5, image_6, 
