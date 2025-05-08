@@ -12,10 +12,13 @@ import img8 from "../../assets/8.jpg";
 import img9 from "../../assets/9.jpg";
 import img10 from "../../assets/10.jpg";
 import s6 from "../../assets/tyndall.jpg";
+import s11 from "../../assets/tyndall2.jpeg";
 import s5 from "../../assets/s5.jpeg";
-import s7 from "../../assets/kit.jpg";
+import s7 from "../../assets/connect.jpeg";
+import g15 from "../../assets/chaser.jpeg";
+import s8 from "../../assets/kit_2.jpeg";
 
-const images = [img1, v2, s7, img2, s6, img4, img5, img6, img7, s5, img9, img10];
+const images = [img1, v2, s7, s11,s8, img2, s6, s11, g15, img4, img5, img6, img7, s5, img9, img10];
 
 const CurvedSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

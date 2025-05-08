@@ -8,6 +8,9 @@ import s3 from "../../assets/s5.jpeg";
 import s4 from "../../assets/s4.jpg";
 import s5 from "../../assets/s3.jpg";
 import s6 from "../../assets/tyndall.jpg";
+import s11 from "../../assets/tyndall2.jpeg";
+import s18 from "../../assets/tir.jpeg";
+import s12 from "../../assets/erosion.jpeg";
 
 function Science() {
   return (
@@ -28,11 +31,11 @@ function Science() {
             </strong>
 
             <div className={styles.galleryGrid}>
-              <img className={styles.galleryImg} src={s6} alt="Camp Activity 1" />
+              <img className={styles.galleryImg} src={s12} alt="Camp Activity 1" />
               <img className={styles.galleryImg} src={s2} alt="Camp Activity 2" />
-              <img className={styles.galleryImg} src={s3} alt="Camp Activity 3" />
+              <img className={styles.galleryImg} src={s18} alt="Camp Activity 3" />
               <img className={styles.galleryImg} src={s4} alt="Camp Activity 4" />
-              <img className={styles.galleryImg} src={s1} alt="Camp Activity 5" />
+              <img className={styles.galleryImg} src={s11} alt="Camp Activity 5" />
             </div>
 
 

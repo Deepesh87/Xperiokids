@@ -4,6 +4,7 @@ import image_3 from "../../assets/image_folder/c.jpeg";
 import image_4 from "../../assets/image_folder/d.jpeg";
 import image_5 from "../../assets/image_folder/e.jpeg";
 import s7 from "../../assets/kit.jpg";
+import s118 from "../../assets/tir.jpeg";
 import s8 from "../../assets/akarsh.jpeg";
 import image_6 from "../../assets/image_folder/f.jpeg";
 import image_7 from "../../assets/image_folder/g.jpeg";
@@ -37,16 +38,31 @@ import img9 from "../../assets/9.jpg";
 import img10 from "../../assets/10.jpg";
 import g1 from "../../assets/g1.jpg";
 import g2 from "../../assets/g2.jpg";
+import s17 from "../../assets/connect.jpeg";
 import g3 from "../../assets/g3.jpg";
 import g4 from "../../assets/g4.jpg";
 import g5 from "../../assets/g5.jpg";
+import g15 from "../../assets/chaser.jpeg";
 import g6 from "../../assets/g6.jpg";
 import g7 from "../../assets/g7.jpg";
+import s11 from "../../assets/tyndall2.jpeg";
+import s18 from "../../assets/kit_2.jpeg";
+
+
+import v1 from "../../assets/v1.jpeg";
+import v2 from "../../assets/v2.jpeg";
+import v3 from "../../assets/v3.jpeg";
+import v4 from "../../assets/v4.jpeg";
+import v5 from "../../assets/v5.jpeg";
+import v6 from "../../assets/v6.jpeg";
+
+
+
 
 const images = [
-s3, s4, s6,s7,s8,
+s3, s4, s6,s7,s8,s18,v1,v2,v3,v4,v5,v6,
   img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-  g1, g2, g3, g4, g5, g6, g7,
+  g1, g2, g3, g4, g5, g6, g7,s17,g15,s11,s118,
   image_1, image_3, image_4, image_5, image_6, 
   image_8, image_9, image_10, image_11, image_12, 
   image_14, image_15, image_16, image_17, image_18, image_19,

@@ -8,6 +8,10 @@ import s8 from "../../assets/akarsh.jpeg";
 import s4 from "../../assets/r3.jpg";
 import s5 from "../../assets/r4.jpg";
 import s7 from "../../assets/kit.jpg";
+import s18 from "../../assets/kit_2.jpeg";
+import s11 from "../../assets/leds_seq.jpeg";
+
+
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -87,8 +91,8 @@ function Robotics() {
               {/* <img className={styles.galleryImg} src={s1} alt="Robotics Kit" /> */}
               <img className={styles.galleryImg} src={s2} alt="Certificate" />
               <img className={styles.galleryImg} src={s8} alt="Child with Robot" />
-              <img className={styles.galleryImg} src={s4} alt="Child Building" />
-              <img className={styles.galleryImg} src={s5} alt="LED Project" />
+              <img className={styles.galleryImg} src={s18} alt="Child Building" />
+              <img className={styles.galleryImg} src={s11} alt="LED Project" />
             </div>
 
             <div className={styles.videoContainer}>
