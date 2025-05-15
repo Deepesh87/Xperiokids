@@ -11,6 +11,7 @@ import s6 from "../../assets/tyndall.jpg";
 import s11 from "../../assets/tyndall2.jpeg";
 import s18 from "../../assets/tir.jpeg";
 import s12 from "../../assets/erosion.jpeg";
+import s9 from "../../assets/ph2.jpeg";
 
 function Science() {
   return (
@@ -34,7 +35,7 @@ function Science() {
               <img className={styles.galleryImg} src={s12} alt="Camp Activity 1" />
               <img className={styles.galleryImg} src={s2} alt="Camp Activity 2" />
               <img className={styles.galleryImg} src={s18} alt="Camp Activity 3" />
-              <img className={styles.galleryImg} src={s4} alt="Camp Activity 4" />
+               <img className={styles.galleryImg} src={s9} alt="Camp Activity 4" />
               <img className={styles.galleryImg} src={s11} alt="Camp Activity 5" />
             </div>
 
