@@ -27,7 +27,7 @@ const SummerCampLanding = () => {
         <div className={styles.heroSection}>
           <h1 className={styles.title}>🎉 Welcome to Xperio’s Summer Camp 2025</h1>
           <p className={styles.subtitle}>
-            📍 In-Centre Classes | Upcoming Batch: 🗓️ May 5th – 30th | Monday to Friday
+            📍 In-Centre Classes | Upcoming Batch: 🗓️ June 16th – July 9th | Monday to Friday
           </p>
           <p className={styles.description}>
             This year’s camp offers two exciting tracks — <strong>Science</strong> and <strong>Robotics</strong> <br/>
