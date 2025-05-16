@@ -56,17 +56,24 @@ import v4 from "../../assets/v4.jpeg";
 import v5 from "../../assets/v5.jpeg";
 import v6 from "../../assets/v6.jpeg";
 
+import l1 from "../../assets/lab1.jpeg";
+import l2 from "../../assets/lab2.jpeg";
+import l3 from "../../assets/lab3.jpeg";
+import l4 from "../../assets/lab4.jpeg";
+import l5 from "../../assets/lab5.jpeg";
+import l6 from "../../assets/lab8.jpeg";
+import l7 from "../../assets/lab7.jpeg";
 
 
 
 const images = [
-s3, s4, s6,s7,s8,s18,v1,v2,v3,v4,v5,v6,
+s3, s4, s6,s7,l1,s8,s18,v1,v2,v3,v4,v5,v6,
   img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-  g1, g2, g3, g4, g5, g6, g7,s17,g15,s11,s118,
-  image_1, image_3, image_4, image_5, image_6, 
+  g1, g2, g3, g4, g5, g6, g7,s17,g15,s11,s118,l2,
+  image_1, image_3, image_4,l4, image_5, image_6, 
   image_8, image_9, image_10, image_11, image_12, 
-  image_14, image_15, image_16, image_17, image_18, image_19,
-   image_13,s5, image_2, image_7,s2
+  image_14,l5, image_15, image_16,l3, image_17, image_18, image_19,
+   image_13,s5,l6,image_2, image_7,s2,l7
 ];
 
 export default images;
