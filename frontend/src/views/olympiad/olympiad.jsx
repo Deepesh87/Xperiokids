@@ -91,6 +91,19 @@ function OlympiadPage() {
                 uncontrolled cell growth—a key factor in cancer.
               </p>
             </div>
+                    <div className={styles.videoContainer}>
+          <div className={styles.videoWrapper}>
+            <iframe
+              src="https://www.youtube.com/embed/2r6YWT6DfQE"
+              title="VoiceMasters Public Speaking"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+
 
             {/* <img src={igo2} className={styles.pic} alt="Research" /> */}
 
