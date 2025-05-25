@@ -59,7 +59,7 @@ function Voice() {
             href="https://drive.google.com/file/d/1LhXuOwZIFcIRNJEwJQ_hvzd84jdlbK0R/view?usp=sharing"
             target="_blank"
           >
-            Download Brochure
+            Download Course Outline
           </a>
         </div>
 

@@ -62,7 +62,7 @@ const VoiceMastersLanding = () => {
         </div>
 
         <div className={styles.finalCTA}>
-          <h3>📞 Call us to find the right track or schedule your free trial</h3>
+          <h3>📞 Call or Visit us to find out more or book a free trial</h3>
           <a href="https://wa.me/918904749795" target="_blank" rel="noopener noreferrer">
             <button>Book Your Trial Class</button>
           </a>

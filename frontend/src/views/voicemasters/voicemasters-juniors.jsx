@@ -35,9 +35,9 @@ Through <strong>games, stories, roleplay, and imagination</strong>, children gen
         <div className={styles.scheduleBox}>
           <h2>🗓️ How It Works</h2>
           <ul>
-            <li>🎯 <strong>3 Unique Modules:</strong> Communication Milestones, Creative Expression, Leadership Lab</li>
-            <li>🧠 <strong>Activities Include:</strong> Storytelling, Impromptu Speaking, Audio-Visual Rounds, Role Plays</li>
-            <li>🎁 <strong>First Class is Free:</strong> Attend a trial before you decide</li>
+            <li>🎯 <strong>3 Unique Modules:</strong> Little Speakers, Creative Talkers, Confidence Builders</li>
+            <li>🧠 <strong>Activities Include:</strong> Story Cubes, Show & Tell, Picture Talks, Audio-Visual Rounds, Role Plays</li>
+            <li>🎁 <strong>First Class is Free:</strong> Join a playful trial before you enroll</li>
             <li>📞 <strong>Need Help?</strong> Call us or download the brochure below</li>
           </ul>
         </div>
@@ -58,10 +58,10 @@ Through <strong>games, stories, roleplay, and imagination</strong>, children gen
           <h3>📥 Download the Brochure to Know More</h3>
           <a
             className={styles.menu__link}
-            href="https://drive.google.com/file/d/1LhXuOwZIFcIRNJEwJQ_hvzd84jdlbK0R/view?usp=sharing"
+            href="https://drive.google.com/file/d/1hCd-_P1GTGXcceaUP2TyFUcAcf0XMZi7/view?usp=sharing" 
             target="_blank"
           >
-            Download Brochure
+            Download Course Outline
           </a>
         </div>
 
