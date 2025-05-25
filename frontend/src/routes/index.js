@@ -4,7 +4,9 @@ import FalseRoute from "../common/FalseRoute";
 import Main from "../views/LandingPg/Main";
 import About from "../views/About us/About";
 import Gallery from "../views/gallery/gallery";
-import Voice from "../views/voicemasters/voicemasters";
+import Voice from "../views/voicemasters/voicemasters-seniors";
+import VoiceJ from "../views/voicemasters/voicemasters-juniors";
+import VoiceMastersLanding from "../views/voicemasters_all/voicemasters";
 import Science from "../views/summercamp/science";
 import Sudoku from "../views/sudoku/sudoku";
 import OlympiadFinalist from "../views/olympiad/olympiad";
@@ -20,7 +22,9 @@ function MainRoutes() {
       <Route path="/" element={<Main />} />
       <Route path="/about" element={<About />} />
       <Route path="/gallery" element={<Gallery />} />
-      <Route path="/voicemasters" element={<Voice />} />
+      <Route path="/voicemasters-seniors" element={<Voice />} />
+      <Route path="/voicemasters-juniors" element={<VoiceJ />} />
+      <Route path="/voicemasters" element={<VoiceMastersLanding/>} />
       <Route path="/science" element={<Science />} />
       <Route path="/sudoku" element={<Sudoku />} />
       <Route path="/olympiad" element={<OlympiadFinalist />} />

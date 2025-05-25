@@ -1,31 +1,34 @@
 import React from "react";
-import styles from "./voicemasters.module.css";
+import styles from "./voicemasters-seniors.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import pricing from "../../assets/pricing_voicemasters.jpeg";
+import pricing from "../../assets/fees_voicemasters.png";
 
 import v2 from "../../assets/voicemasters_new.jpeg";
 import v3 from "../../assets/voicemasters_new2.jpeg";
 import v4 from "../../assets/voicemasters_new3.jpeg";
+import v5 from "../../assets/voicemasters_new4.jpeg";
 
-function Voice() {
+function VoiceJ() {
   return (
     <>
       <Nav />
       <div className={styles.container}>
         <div className={styles.heroSection}>
-          <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 3+</h1>
-          <p className={styles.subtitle}>📍 In-Centre Classes | Every Sunday | 10:00 AM – 12:30 PM</p>
+          <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 1 to 3</h1>
+          <p className={styles.subtitle}>📍 In-Centre Classes | Every Saturday | 10:00 AM – 11:30 PM</p>
           <p className={styles.description}>
-            A transformative course that builds <strong>confidence</strong>,
-            improves <strong>communication</strong>, and nurtures <strong>leadership</strong> skills — one speech at a time.
+
+Voicemasters Juniors is a  <strong>playful, engaging public speaking </strong>program designed just for Grades 1 – 3. 
+Through <strong>games, stories, roleplay, and imagination</strong>, children gently build confidence, vocabulary, and stage presence.
+
           </p>
         </div>
             <div className={styles.galleryGrid}>
               <img className={styles.galleryImg} src={v2} alt="Camp Activity 1" />
               <img className={styles.galleryImg} src={v3} alt="Camp Activity 2" />
               <img className={styles.galleryImg} src={v4} alt="Camp Activity 3" />
-              {/* <img className={styles.galleryImg} src={v5} alt="Camp Activity 4" /> */}
+              <img className={styles.galleryImg} src={v5} alt="Camp Activity 4" />
             </div>
 
 
@@ -75,4 +78,4 @@ function Voice() {
   );
 }
 
-export default Voice;
+export default VoiceJ;

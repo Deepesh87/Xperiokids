@@ -1,0 +1,202 @@
+.container {
+  background-color: #ffffff;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.05rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Schedule Section */
+.scheduleBox {
+  background-color: #fef9c3;
+  border-left: 6px solid #facc15;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.scheduleBox h2 {
+  font-size: 1.6rem;
+  color: #92400e;
+  margin-bottom: 0.8rem;
+}
+
+.scheduleBox ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Benefits Section */
+.benefitsSection {
+  background-color: #e0f2fe;
+  padding: 1.5rem;
+  border-left: 6px solid #0284c7;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.benefitsSection h2 {
+  font-size: 1.5rem;
+  color: #0369a1;
+  margin-bottom: 0.8rem;
+}
+
+.benefitsSection ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Track Cards */
+.trackCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.trackCard {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
+  background: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trackCard:hover {
+  transform: translateY(-5px);
+}
+
+.thumbImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.trackCard h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #1e3a8a;
+}
+
+.trackCard p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.trackCard button {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.trackCard button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Final CTA */
+.finalCTA {
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
+
+.finalCTA h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #dc2626;
+}
+
+.finalCTA button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.finalCTA button:hover {
+  background-color: #ea580c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trackCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trackCard {
+    width: 90%;
+  }
+}
+
+.headerImage {
+  display: block;
+  margin: 0 auto .5rem;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .curvedTitleSVG text {
+    font-size: 24px;
+    stroke-width: 1.2;
+  }
+}
+
+
+
+
