@@ -63,11 +63,17 @@ import l4 from "../../assets/lab4.jpeg";
 import l5 from "../../assets/lab5.jpeg";
 import l6 from "../../assets/lab8.jpeg";
 import l7 from "../../assets/lab7.jpeg";
+import s1118 from "../../assets/group.jpg";
+import s19 from "../../assets/s19.jpg";
+import s20 from "../../assets/s20.jpg";
+import s21 from "../../assets/s21.jpg";
+import s22 from "../../assets/s22.jpg";
 
 
 
-const images = [
-s3, s4, s6,s7,l1,s8,s18,v1,v2,v3,v4,v5,v6,
+
+const images = [s22, s19,s21,
+s3, s4, s6,s7,l1,s8,s18,v1,v2,v3,v4,v5,v6,s20,s1118,
   img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
   g1, g2, g3, g4, g5, g6, g7,s17,g15,s11,s118,l2,
   image_1, image_3, image_4,l4, image_5, image_6, 
