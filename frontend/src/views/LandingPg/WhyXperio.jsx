@@ -1,11 +1,10 @@
 import React from "react";
 import Style from "./WhyXperio.module.css";
-import lab from "../../assets/science_thumb.png";
+import lab from "../../assets/science_thumb2.png";
 import goals from "../../assets/goals1.jpg";
 // import voice from "../../assets/voicemasters3.png";
-import voice from "../../assets/voicemasters4.png";
-import voice2 from "../../assets/voicemasters_new.jpeg";
-import hobby3 from "../../assets/robotics.png";
+import voice from "../../assets/voicemasters5.png";
+import hobby3 from "../../assets/robotics2.png";
 
 function WhyXperio() {
 
