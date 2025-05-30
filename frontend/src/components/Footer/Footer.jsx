@@ -37,6 +37,7 @@ const Footer = () => {
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/sudoku" target="_blank">Sudoku</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="https://maps.app.goo.gl/2nkiPgKQfWt7qHzk6" target="_blank">Locate Us</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/terms" target="_blank">Terms of Services</a></li>
+        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/bday" target="_blank">Birthday bash</a></li>
       </ul>
 
       <p>&copy;2025 xperiolearning.com | All Rights Reserved</p>
