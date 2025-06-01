@@ -16,7 +16,7 @@ function VoiceJ() {
       <div className={styles.container}>
         <div className={styles.heroSection}>
           <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 1 to 3</h1>
-          <p className={styles.subtitle}>📍 In-Centre Classes | Every Saturday | 10:00 AM – 11:30 PM</p>
+          <p className={styles.subtitle}>📍 In-Centre Classes | Every Saturday | 10:00 AM – 12:15 PM</p>
           <p className={styles.description}>
 
 Voicemasters Juniors is a  <strong>playful, engaging public speaking </strong>program designed just for Grades 1 – 3. 
@@ -25,10 +25,10 @@ Through <strong>games, stories, roleplay, and imagination</strong>, children gen
           </p>
         </div>
             <div className={styles.galleryGrid}>
-              <img className={styles.galleryImg} src={v2} alt="Camp Activity 1" />
+              <img className={styles.galleryImg} src={v5} alt="Camp Activity 1" />
               <img className={styles.galleryImg} src={v3} alt="Camp Activity 2" />
               <img className={styles.galleryImg} src={v4} alt="Camp Activity 3" />
-              <img className={styles.galleryImg} src={v5} alt="Camp Activity 4" />
+              <img className={styles.galleryImg} src={v2} alt="Camp Activity 4" />
             </div>
 
 

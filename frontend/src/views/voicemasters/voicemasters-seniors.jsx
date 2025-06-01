@@ -8,6 +8,7 @@ import v2 from "../../assets/voicemasters_new.jpeg";
 import v3 from "../../assets/voicemasters_new2.jpeg";
 import v4 from "../../assets/voicemasters_new3.jpeg";
 import v5 from "../../assets/voicemasters_new4.jpeg";
+import v6 from "../../assets/voicemasters_new5.jpeg";
 
 function Voice() {
   return (
@@ -23,10 +24,11 @@ function Voice() {
           </p>
         </div>
             <div className={styles.galleryGrid}>
+              <img className={styles.galleryImg} src={v5} alt="Camp Activity 4" />
               <img className={styles.galleryImg} src={v2} alt="Camp Activity 1" />
               <img className={styles.galleryImg} src={v3} alt="Camp Activity 2" />
-              <img className={styles.galleryImg} src={v4} alt="Camp Activity 3" />
-              <img className={styles.galleryImg} src={v5} alt="Camp Activity 4" />
+              <img className={styles.galleryImg} src={v6} alt="Camp Activity 3" />
+
             </div>
 
 
