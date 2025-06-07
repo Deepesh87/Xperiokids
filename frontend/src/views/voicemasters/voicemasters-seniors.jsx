@@ -24,10 +24,10 @@ function Voice() {
           </p>
         </div>
             <div className={styles.galleryGrid}>
-              <img className={styles.galleryImg} src={v5} alt="Camp Activity 4" />
+              <img className={styles.galleryImg} src={v6} alt="Camp Activity 4" />
               <img className={styles.galleryImg} src={v2} alt="Camp Activity 1" />
               <img className={styles.galleryImg} src={v3} alt="Camp Activity 2" />
-              <img className={styles.galleryImg} src={v6} alt="Camp Activity 3" />
+              <img className={styles.galleryImg} src={v5} alt="Camp Activity 3" />
 
             </div>
 

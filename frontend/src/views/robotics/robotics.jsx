@@ -30,16 +30,16 @@ function Robotics() {
     {
       question: "What is Robotics?",
       answer:
-        "Robotics for kids is a hands-on way for children to learn about STEM. It involves designing, programming, and building robots, helping kids develop problem-solving, creativity, and critical thinking skills.",
+        "Robotics for kids is a hands-on way for children to learn about STEM. It involves designing, programming, and building robots, helping kids develop problem-solving, creativity, and critical thinking skills. The Course at Xperio Learning is designed to be fun and engaging, making complex concepts accessible to young learners.",
     },
     {
       question: "What prior knowledge is required for this course?",
       answer:
-        "No prior knowledge is required. The course is beginner-friendly and designed to teach you from scratch.",
+        "No prior knowledge is required. The course is beginner-friendly and designed to teach you from scratch. We start with the basics of robotics and programming, ensuring that all students, regardless of their background, can follow along and learn effectively.",
     },
     {
       question: "What materials or tools are needed?",
-      answer: "All materials, including a very cool Robotics Kit, will be provided.",
+      answer: "All materials, including a very cool Robotics Kit, will be provided. The kit includes everything needed for the course, such as sensors, motors, and a microcontroller. Students will also need a laptop to run the programming software, which we will guide you on how to set up.",
     },
     // {
     //   question: "Can I pay the course fee in installments?",
@@ -48,7 +48,7 @@ function Robotics() {
     {
       question: "How can Robotics benefit young children?",
       answer:
-        "Robotics enhances interest in Maths and Science, leading to better academic performance.",
+        "Robotics enhances interest in Maths and Science, leading to better academic performance. It also develops critical skills like problem-solving, creativity, and teamwork. Kids learn to think logically and work collaboratively, which are essential skills for the future.",
     },
     {
       question: "What is the future of Robotics?",
@@ -58,12 +58,12 @@ function Robotics() {
     {
       question: "Is Robotics and Programming doable by Children?",
       answer:
-        "Yes! Our course breaks concepts into easy chunks. Kids love it, and so do the parents.",
+        "Yes! Our course breaks concepts into easy chunks. Kids love it, and so do the parents. We have seen students as young as 8 years old successfully complete the course and build their own robots.",
     },
     {
       question: "What if I miss a few days of class?",
       answer:
-        "We'll try to accommodate with weekend catchups or extending the course slightly.",
+        "We'll try to accommodate with catchups on alternate days at your convenience or extending the course slightly. ",
     },
   ];
 
@@ -98,7 +98,8 @@ function Robotics() {
             <div className={styles.videoContainer}>
               <div className={styles.videoWrapper}>
                 <iframe
-                  src="https://www.youtube.com/embed/9mlJ1iogVmg"
+                  src="https://www.youtube.com/embed/vEpjvq6E3pM"
+
                   title="Robotics YouTube Shorts"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

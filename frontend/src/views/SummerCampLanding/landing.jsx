@@ -25,7 +25,7 @@ const SummerCampLanding = () => {
       <Nav />
       <div className={styles.container}>
         <div className={styles.heroSection}>
-          <h1 className={styles.title}>🎉 Welcome to Xperio’s Summer Camp 2025</h1>
+          <h1 className={styles.title}>🎉 Welcome to Xperio’s Summer Camp 2025 | IB curriculum</h1>
           <p className={styles.subtitle}>
             📍 In-Centre Classes | Upcoming Batch: 🗓️ June 16th – July 9th | Monday to Friday
           </p>
