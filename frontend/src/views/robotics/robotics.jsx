@@ -70,12 +70,25 @@ function Robotics() {
   return (
     <>
       <Nav />
+      
       <section className={styles["demo-page"]}>
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
               <span>Robotics Camp 2025:</span>
             </h5>
+
+
+          <h1 className={styles.title}>Weeday Batch for IB Cirriculum | Weekends Batch for Everyone</h1>
+          <p className={styles.subtitle}>
+            📍 In-Centre Classes | Upcoming Batch: 🗓️ June 13th | Monday to Friday <br/>
+            📍 In-Centre Classes | Upcoming Batch: 🗓️ June 21st | Sat & Sundays <br/>
+          </p>
+          <p className={styles.description}>
+            Please contact us for timings and more details.
+          </p>
+
+
             <br />
             <strong>
               <a
