@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import logo from "../../assets/logo_.svg";
+import logo from "../../assets/new_logo_transparent_svg.svg";
 import { NavLink } from 'react-router-dom';
 
 const pages = [
