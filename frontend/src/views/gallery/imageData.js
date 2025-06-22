@@ -55,6 +55,7 @@ import v3 from "../../assets/v3.jpeg";
 import v4 from "../../assets/v4.jpeg";
 import v5 from "../../assets/v5.jpeg";
 import v6 from "../../assets/v6.jpeg";
+import v7 from "../../assets/voicemasters_new6.jpeg";
 
 import l1 from "../../assets/lab1.jpeg";
 import l2 from "../../assets/lab2.jpeg";
@@ -72,7 +73,8 @@ import v16 from "../../assets/voicemasters_new5.jpeg";
 
 
 
-const images = [s22, s19,s21,
+
+const images = [v7, s22, s19,s21,
 s3, s4, s6,s7,l1,s8,s18,v1,v2,v3,v4,v5,v6,v16,s20,s1118,
   img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
   g1, g2, g3, g4, g5, g6, g7,s17,g15,s11,s118,l2,
