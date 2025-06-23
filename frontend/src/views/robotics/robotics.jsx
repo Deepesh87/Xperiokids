@@ -3,11 +3,7 @@ import styles from "./robotics.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import s2 from "../../assets/r1.jpg";
-import s3 from "../../assets/r2.jpg";
 import s8 from "../../assets/akarsh.jpeg";
-import s4 from "../../assets/r3.jpg";
-import s5 from "../../assets/r4.jpg";
-import s7 from "../../assets/kit.jpg";
 import s18 from "../../assets/kit_2.jpeg";
 import s11 from "../../assets/leds_seq.jpeg";
 
@@ -74,15 +70,15 @@ function Robotics() {
       <section className={styles["demo-page"]}>
         <div className={styles.about}>
           <div className={styles.text}>
-            <h5>
+            {/* <h5>
               <span>Robotics Camp 2025:</span>
-            </h5>
+            </h5> */}
 
 
           <h1 className={styles.title}>Weeday Batch for IB Cirriculum | Weekends Batch for Everyone</h1>
           <p className={styles.subtitle}>
-            📍 In-Centre Classes | Upcoming Batch: 🗓️ June 13th | Monday to Friday <br/>
-            📍 In-Centre Classes | Upcoming Batch: 🗓️ June 21st | Sat & Sundays <br/>
+            📍 Ongoing Batch: 🗓️ June 13th - July 9th | Monday to Friday <br/>
+            📍 Upcoming Batch: 🗓️ July 12th | Sat & Sundays <br/>
           </p>
           <p className={styles.description}>
             Please contact us for timings and more details.

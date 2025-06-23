@@ -20,7 +20,7 @@ const VoiceMastersLanding = () => {
 
           <p className={styles.subtitle}>Public Speaking Courses for Grades 1 onwards</p>
           <p className={styles.description}>
-            Two exciting tracks – <strong>Juniors</strong> and <strong>Seniors</strong>. 
+            Age Specific Learning in 2 batches – <strong>Juniors</strong> and <strong>Seniors</strong>.
             Build confidence, articulation, and leadership through engaging formats.
           </p>
         </div>

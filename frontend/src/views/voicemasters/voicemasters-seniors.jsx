@@ -4,9 +4,7 @@ import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import pricing from "../../assets/fees_voicemasters.png";
 
-import v2 from "../../assets/voicemasters_new.jpeg";
 import v3 from "../../assets/voicemasters_new2.jpeg";
-import v4 from "../../assets/voicemasters_new3.jpeg";
 import v5 from "../../assets/voicemasters_new4.jpeg";
 import v6 from "../../assets/voicemasters_new5.jpeg";
 import v7 from "../../assets/voicemasters_new6.jpeg";
@@ -17,7 +15,7 @@ function Voice() {
       <Nav />
       <div className={styles.container}>
         <div className={styles.heroSection}>
-          <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 3+</h1>
+          <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 4 onwards</h1>
           <p className={styles.subtitle}>📍 In-Centre Classes | Every Sunday | 10:00 AM – 12:30 PM</p>
           <p className={styles.description}>
             A transformative course that builds <strong>confidence</strong>,
@@ -69,8 +67,8 @@ function Voice() {
         <div className={styles.trackCards}>
           <div className={styles.trackCard}>
             <img src={pricing} className={styles.thumbImage} alt="Pricing Details" />
-            <h3>Need Help Choosing?</h3>
-            <p>Call us to explore what's best for your child</p>
+            <h3>Fees is payable in single installment.</h3>
+            <p>Please call us to schedule a free first class!</p>
           </div>
         </div>
       </div>

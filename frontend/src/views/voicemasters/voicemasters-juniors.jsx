@@ -68,8 +68,8 @@ Through <strong>games, stories, roleplay, and imagination</strong>, children gen
         <div className={styles.trackCards}>
           <div className={styles.trackCard}>
             <img src={pricing} className={styles.thumbImage} alt="Pricing Details" />
-            <h3>Need Help Choosing?</h3>
-            <p>Call us to explore what's best for your child</p>
+            <h3>Fees is payable in single installment.</h3>
+            <p>Please call us to schedule a free first class!</p>
           </div>
         </div>
       </div>
