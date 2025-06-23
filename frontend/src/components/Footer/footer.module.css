@@ -43,9 +43,16 @@
 
 .menu__item {
   list-style: none;
-  width: 50%;
   margin-bottom: 12px;
   text-align: center;
+  width: 50%; /* default for mobile */
+}
+
+@media screen and (min-width: 768px) {
+  .menu__item {
+    width: auto; /* allow items to shrink to content */
+    margin: 6px 15px; /* better spacing */
+  }
 }
 
 .menu__link {
@@ -111,7 +118,7 @@
   height: 50px;
   bottom: 120px;
   right: 40px;
-  background-color: #070706; /* ff5722 */
+  background-color: #00455b; /* ff5722 */
   border-radius: 25px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 100;
@@ -135,10 +142,10 @@
 .summer_camp_notification p {
   font-weight: bold;
   color: #ff5722;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: color 0.3s ease;
   text-decoration: none;
   margin: 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); */
 }
 
 /* @keyframes glowing {

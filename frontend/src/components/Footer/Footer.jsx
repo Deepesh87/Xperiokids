@@ -40,7 +40,7 @@ const Footer = () => {
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/bday" target="_blank">Birthday bash</a></li>
       </ul>
 
-      <p>&copy;2025 xperiolearning.com | All Rights Reserved</p>
+      <p>&copy;2025 xperiolearning.com | All rights Reserved</p>
 
       <div className={styles.whatsapp_float}>
         <a href="https://wa.me/918904749795" className="whatsapp_float" target="_blank" rel="noopener noreferrer">
@@ -49,19 +49,22 @@ const Footer = () => {
       </div>
 
 
-      {/* <div className={styles.summer_camp_notification}>
-  <a href="/summer" target="_blank" rel="noopener noreferrer">
-  <p>🚀 <b>Summer Camp'25</b></p>
-  </a>
-</div> */}
-{!hiddenRoutes.includes(location.pathname) && (
+
+{/* {!hiddenRoutes.includes(location.pathname) && (
   <div className={styles.summer_camp_notification}>
     <a href="/summer" target="_blank" rel="noopener noreferrer">
       <p>🚀 <b>Summer Camp'25</b></p>
     </a>
   </div>
-)}
+)} */}
 
+{!hiddenRoutes.includes(location.pathname) && (
+  <div className={styles.summer_camp_notification}>
+    <a href="/voicemasters" target="_blank" rel="noopener noreferrer">
+      <p>🎤 <b> Public Speaking</b></p>
+    </a>
+  </div>
+)}
 
 
     </footer>
