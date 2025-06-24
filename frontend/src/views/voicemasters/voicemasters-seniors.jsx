@@ -44,7 +44,7 @@ function Voice() {
         <div className={styles.videoContainer}>
           <div className={styles.videoWrapper}>
             <iframe
-              src="https://www.youtube.com/embed/tDgXq10xNGI"
+              src="https://www.youtube.com/embed/XhMnFIeyBAw"
               title="VoiceMasters Public Speaking"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
