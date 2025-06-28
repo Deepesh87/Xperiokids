@@ -1,8 +1,10 @@
 import React from "react";
+import { useEffect, useState } from "react";
+import MeetingCounter from "./meeting_number";
 import styles from "./voicemasters-seniors.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import pricing from "../../assets/fees_voicemasters.png";
+import pricing from "../../assets/Voicemasters_fees.png";
 
 import v3 from "../../assets/voicemasters_new2.jpeg";
 import v5 from "../../assets/voicemasters_new4.jpeg";
@@ -22,6 +24,10 @@ function Voice() {
             improves <strong>communication</strong>, and nurtures <strong>leadership</strong> skills — one speech at a time.
           </p>
         </div>
+
+        <MeetingCounter />
+
+
             <div className={styles.galleryGrid}>
               <img className={styles.galleryImg} src={v6} alt="Camp Activity 4" />
               <img className={styles.galleryImg} src={v7} alt="Camp Activity 1" />
@@ -29,8 +35,6 @@ function Voice() {
               <img className={styles.galleryImg} src={v5} alt="Camp Activity 3" />
 
             </div>
-
-
         <div className={styles.scheduleBox}>
           <h2>🗓️ How It Works</h2>
           <ul>

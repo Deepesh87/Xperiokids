@@ -418,3 +418,67 @@
 .galleryImg:hover {
   transform: scale(1.1);
 }
+
+
+.meetingCounter {
+  background: #f0fdfa;
+  border-left: 6px solid #14b8a6;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 650px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.meetingCounterTitle {
+  font-size: 1.8rem;
+  color: #0f766e;
+  margin-bottom: 0.6rem;
+}
+
+.meetingCounterItem {
+  font-size: 1.1rem;
+  color: #134e4a;
+  margin-bottom: 0.5rem;
+}
+
+.meetingCounterItem em {
+  font-style: normal;
+  color: #0c4a6e;
+  font-weight: 500;
+}
+
+
+.countdownLine {
+  font-size: 1rem;
+  color: #166534;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+.pastMeetings {
+  margin-top: 2rem;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0 1rem;
+  background: #fdf4ff;
+  border: 1px solid #e879f9;
+  border-radius: 8px;
+}
+
+.pastMeetingsTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #a21caf;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.pastMeetingsList {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0.95rem;
+  color: #4a044e;
+  line-height: 1.6;
+}
+

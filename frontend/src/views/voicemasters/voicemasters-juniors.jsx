@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./voicemasters-seniors.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import pricing from "../../assets/fees_voicemasters.png";
+import pricing from "../../assets/Voicemasters_fees.png";
 
 import v2 from "../../assets/voicemasters_new.jpeg";
 import v3 from "../../assets/voicemasters_new2.jpeg";
