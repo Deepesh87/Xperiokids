@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./olympiad.module.css";
-import igo from "../../assets/igo.jpeg";
+import igo from "../../assets/bronze.png";
 import igo2 from "../../assets/igo2.jpeg"; // Add more if you have more slides
 import igo3 from "../../assets/igo3.jpg";
 import igo4 from "../../assets/igo4.jpg";
@@ -25,13 +25,30 @@ function OlympiadPage() {
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
-              <span>International Greenwich Olympiad Finalists 🎉</span>
+              <span>Bronze Winner – International Greenwich Olympiad 2025 🥉</span>
+
             </h5>
+<div
+  style={{
+    backgroundColor: "#fff5e1",
+    border: "2px dashed #c72d60",
+    padding: "15px 20px",
+    borderRadius: "10px",
+    marginTop: "15px",
+    fontSize: "20px",
+    fontWeight: "600",
+    color: "#c72d60",
+    boxShadow: "0 4px 10px rgba(0, 0, 0, 0.05)",
+  }}
+>
+  🥉 We are thrilled to announce that our student has won the <strong>Bronze Award</strong> at the IGO 2025!
+</div>
 
             <img src={igo} className={styles.pic} alt="IGO Olympiad Logo" />
 
             <p>
-              We are proud to be selected as finalists in the prestigious{" "}
+We are proud to share that our student was awarded the <strong>Bronze Prize</strong> in the prestigious...
+
               <a
                 className={styles.menu__link}
                 href="https://igolondon.co.uk/"
@@ -189,7 +206,7 @@ function OlympiadPage() {
 </div>
 
             <p>
-              <strong>Meet the Team:</strong> Naomi Razdan (Grade 8, The
+              <strong>🥉 Meet the Bronze-Winning Team:</strong> Naomi Razdan (Grade 8, The
               International School Bangalore) led the research under the
               mentorship of Dr. Kislay Singh.
             </p>
@@ -211,8 +228,8 @@ function OlympiadPage() {
             </p>
 
             <p>
-              <a href="/" className={styles.menu__link}>
-                &larr; Back to Home
+              <a href="https://igolondon.co.uk/igo-2025-awards/" target="_blank"  className={styles.menu__link}>
+                &larr; Download the IGO 2025 Awards Booklet
               </a>
             </p>
           </div>
