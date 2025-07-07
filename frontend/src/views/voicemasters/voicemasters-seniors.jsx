@@ -10,6 +10,7 @@ import v3 from "../../assets/voicemasters_new2.jpeg";
 import v5 from "../../assets/voicemasters_new4.jpeg";
 import v6 from "../../assets/voicemasters_new5.jpeg";
 import v7 from "../../assets/voicemasters_new6.jpeg";
+import v8 from "../../assets/voicemasters_new7.jpeg";
 
 function Voice() {
   return (
@@ -32,7 +33,7 @@ function Voice() {
               <img className={styles.galleryImg} src={v6} alt="Camp Activity 4" />
               <img className={styles.galleryImg} src={v7} alt="Camp Activity 1" />
               <img className={styles.galleryImg} src={v3} alt="Camp Activity 2" />
-              <img className={styles.galleryImg} src={v5} alt="Camp Activity 3" />
+              <img className={styles.galleryImg} src={v8} alt="Camp Activity 3" />
 
             </div>
         <div className={styles.scheduleBox}>
@@ -44,6 +45,13 @@ function Voice() {
             <li>📞 <strong>Need Help?</strong> Call us or download the brochure below</li>
           </ul>
         </div>
+
+<div className={styles.backButtonWrapper}>
+  <button className={styles.backButton} onClick={() => window.location.href = "/voicemasters-juniors"}>
+    ← Switch to Juniors (Grade 1 to 3)
+  </button>
+</div>
+
 
         <div className={styles.videoContainer}>
           <div className={styles.videoWrapper}>

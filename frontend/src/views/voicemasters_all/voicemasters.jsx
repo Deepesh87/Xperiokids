@@ -29,7 +29,7 @@ const VoiceMastersLanding = () => {
           <h2>📅 Program Schedule</h2>
           <ul>
             <li>🗣️ <strong>VoiceMasters Juniors (Grade 1–3):</strong> SAT 10:00 AM </li>
-            <li>🎓 <strong>VoiceMasters Seniors (Grade 4+):</strong> SUN 10:00 AM</li>
+            <li>🎓 <strong>VoiceMasters Seniors (Grade 4+ ):</strong> SUN 10:00 AM</li>
             <li>🎁 First class FREE. Attend a trial session before you decide.</li>
             <li>📍 In-centre classes every Sat/Sun at Xperio</li>
           </ul>

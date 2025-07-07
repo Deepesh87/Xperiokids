@@ -42,6 +42,12 @@ Through <strong>games, stories, roleplay, and imagination</strong>, children gen
           </ul>
         </div>
 
+<div className={styles.backButtonWrapper}>
+  <button className={styles.backButton} onClick={() => window.location.href = "/voicemasters-seniors"}>
+    ← Switch to Seniors (Grade 4 onwards)
+  </button>
+</div>
+
         <div className={styles.videoContainer}>
           <div className={styles.videoWrapper}>
             <iframe

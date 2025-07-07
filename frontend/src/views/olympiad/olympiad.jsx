@@ -41,7 +41,7 @@ function OlympiadPage() {
     boxShadow: "0 4px 10px rgba(0, 0, 0, 0.05)",
   }}
 >
-  🥉 We are thrilled to announce that our student has won the <strong>Bronze Award</strong> at the IGO 2025!
+  🥉 We are thrilled to announce that our student has won the <strong>Bronze Award</strong> at the IGO' 2025 held in London!
 </div>
 
             <img src={igo} className={styles.pic} alt="IGO Olympiad Logo" />

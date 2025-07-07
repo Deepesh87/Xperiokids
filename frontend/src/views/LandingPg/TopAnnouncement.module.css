@@ -1,0 +1,49 @@
+.topBar {
+  background-color: #fff1d6;
+  color: #333;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 12px 20px;
+  transition: opacity 0.5s ease-in-out; /* 🔄 fade transition */
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.topBarInner {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.topBarInner p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+  padding-right: 40px;
+}
+
+.link {
+  color: #004aad;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.dismissBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: #666;
+  cursor: pointer;
+  padding: 0 10px;
+  line-height: 1;
+}
