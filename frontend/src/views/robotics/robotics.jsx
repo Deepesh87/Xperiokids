@@ -77,8 +77,8 @@ function Robotics() {
 
           <h1 className={styles.title}>Weeday Batch for IB Cirriculum | Weekends Batch for Everyone</h1>
           <p className={styles.subtitle}>
-            📍 Ongoing Batch: 🗓️ June 13th - July 9th | Monday to Friday <br/>
-            📍 Upcoming Batch: 🗓️ July 12th | Sat & Sundays <br/>
+            {/* 📍 Ongoing Batch: 🗓️ June 13th - July 9th | Monday to Friday <br/> */}
+            📍 Upcoming Batch: 🗓️ July 19th | Sat & Sundays <br/>
           </p>
           <p className={styles.description}>
             Please contact us for timings and more details.
@@ -89,7 +89,7 @@ function Robotics() {
             <strong>
               <a
                 className={styles.menu__link}
-                href="https://drive.google.com/file/d/1inB1J7JYRNy5z826rTnRMee0LEFZrSRO/view?usp=sharing"
+                href="https://drive.google.com/file/d/1OfbF9o7VFz_dj_GBG0libGEg6nhzp5f4/view?usp=sharing"
                 target="_blank"
               >
                 Download Brochure <br />
