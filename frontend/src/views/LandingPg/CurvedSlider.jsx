@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./CurvedSlider.module.css";
-import img4 from "../../assets/dp1.png";
+import img4 from "../../assets/dp1.webp";
 import img1 from "../../assets/1.jpg";
 import v2 from "../../assets/voicemasters_new.jpeg";
 import img2 from "../../assets/2.jpg";
@@ -11,7 +11,7 @@ import img7 from "../../assets/7.jpg";
 import img8 from "../../assets/8.jpg";
 import img9 from "../../assets/9.jpg";
 import img10 from "../../assets/10.jpg";
-import s6 from "../../assets/tyndall.jpg";
+import s6 from "../../assets/tyndall.webp";
 import s11 from "../../assets/tyndall2.jpeg";
 import s5 from "../../assets/s5.jpeg";
 import s7 from "../../assets/connect.jpeg";

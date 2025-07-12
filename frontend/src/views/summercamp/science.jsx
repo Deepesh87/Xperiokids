@@ -7,7 +7,7 @@ import s2 from "../../assets/s2.jpg";
 import s3 from "../../assets/s5.jpeg";
 import s4 from "../../assets/s4.jpg";
 import s5 from "../../assets/s3.jpg";
-import s6 from "../../assets/tyndall.jpg";
+import s6 from "../../assets/tyndall.webp";
 import s11 from "../../assets/tyndall2.jpeg";
 import s18 from "../../assets/tir.jpeg";
 import s12 from "../../assets/erosion.jpeg";
