@@ -1,77 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Language" content="English" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="robots" content="index,follow" />
-    <meta name="revisit-after" content="30 days" />
-    
-    <title>Science | Robotics | Public Speaking</title>
-    <meta name="description" content="Where curious kids become confident creators—join the learning revolution!" />
-    <meta name="keywords" content="Xperio Learning, Robotics, Xperio, Xperio Kids, Science Tuitions, Science Summer Camp, Xperiokids, Arduino, Science Coaching, Public Speaking, Chemistry Classes, Biology Classes, Debate Classes, NEET coaching, Robotics, Coding for Kids" />
-
-    <link rel="icon" href="%PUBLIC_URL%/new_logo_transparent.png" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/new_logo_transparent.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="canonical" href="https://www.xperiolearning.com/" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Language" content="English" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="robots" content="index,follow" />
+  <meta name="revisit-after" content="30 days" />
+  
+  <title>Science | Robotics | Public Speaking</title>
+  <meta name="description" content="Where curious kids become confident creators—join the learning revolution!" />
+  <meta name="keywords" content="Xperio Learning, Robotics, Xperio, Xperio Kids, Science Tuitions, Science Summer Camp, Xperiokids, Arduino, Science Coaching, Public Speaking, Chemistry Classes, Biology Classes, Debate Classes, NEET coaching, Coding for Kids" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Xperio Learning" />
-    <meta property="og:description" content="Science | Robotics | Public Speaking & more" />
-    <meta property="og:image" content="https://xperiolearning.com/webpage1.png" />
-    <meta property="og:url" content="https://xperiolearning.com" />
-    <meta property="og:site_name" content="Xperio Learning" />
-    <meta property="fb:app_id" content="544470955105202" />
+  <!-- ✅ Favicon Optimization -->
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/xperio_favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/new_logo_transparent.png" />
+  <link rel="manifest" href="/manifest.json" />
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Xperio Learning" />
-    <meta name="twitter:description" content="Science | Robotics | Public Speaking & more" />
-    <meta name="twitter:image" content="https://xperiolearning.com/webpage1.png" />
+  <!-- ✅ Font Preload Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCWQT2QD40"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-JCWQT2QD40');
-    </script>
+  <!-- ✅ Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Xperio Learning" />
+  <meta property="og:description" content="Science | Robotics | Public Speaking & more" />
+  <meta property="og:image" content="https://xperiolearning.com/webpage1.png" />
+  <meta property="og:url" content="https://xperiolearning.com" />
+  <meta property="og:site_name" content="Xperio Learning" />
+  <meta property="fb:app_id" content="544470955105202" />
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Xperio Learning",
-  "url": "https://www.xperiolearning.com",
-  "logo": "https://www.xperiolearning.com/new_logo.png",
-  "sameAs": [
-    "https://www.instagram.com/xperiolearning",
-    "https://www.youtube.com/@Xperio-learning",
-    "https://www.linkedin.com/company/xperio-learning"
-  ]
-}
-</script>
+  <!-- ✅ Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Xperio Learning" />
+  <meta name="twitter:description" content="Science | Robotics | Public Speaking & more" />
+  <meta name="twitter:image" content="https://xperiolearning.com/webpage1.png" />
+
+  <!-- ✅ Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCWQT2QD40"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-JCWQT2QD40');
+  </script>
+</head>
 
 
-  </head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  
+  <div id="root"></div>
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <!-- Ionicons (deferred to avoid render-blocking) -->
+  <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
 
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </body>
+
 </html>

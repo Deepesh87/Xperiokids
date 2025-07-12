@@ -3,6 +3,7 @@ import styles1 from "./gallery.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 
+
 import images from "./imageData";
 
 function Gallery() {
