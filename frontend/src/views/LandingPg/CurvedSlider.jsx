@@ -19,7 +19,7 @@ import g15 from "../../assets/chaser.jpeg";
 import s8 from "../../assets/kit_2.jpeg";
 import s9 from "../../assets/ph.jpg";
 import s111 from "../../assets/ph3.jpeg";
-import s22 from "../../assets/s22.jpg";
+import s22 from "../../assets/s22.webp";
 
 const images = [img1, img2, v2, s7, s9, s11,s8,s11, s22, g15,s111, s6, img4, img5, img6, img7, s5, img9, img10];
 

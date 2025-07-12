@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./bday.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import camp_pic from "../../assets/bday.png";
+import camp_pic from "../../assets/bday.webp";
 
 
 function Bday() {

@@ -3,7 +3,7 @@ import image_2 from "../../assets/image_folder/b.jpeg";
 import image_3 from "../../assets/image_folder/c.jpeg";
 import image_4 from "../../assets/image_folder/d.jpeg";
 import image_5 from "../../assets/image_folder/e.jpeg";
-import s7 from "../../assets/kit.jpg";
+import s7 from "../../assets/kit.webp";
 import s118 from "../../assets/tir.jpeg";
 import s8 from "../../assets/akarsh.jpeg";
 import image_6 from "../../assets/image_folder/f.jpeg";
@@ -68,7 +68,7 @@ import s1118 from "../../assets/group.jpg";
 import s19 from "../../assets/s19.jpg";
 import s20 from "../../assets/s20.jpg";
 import s21 from "../../assets/s21.jpg";
-import s22 from "../../assets/s22.jpg";
+import s22 from "../../assets/s22.webp";
 import v16 from "../../assets/voicemasters_new5.jpeg";
 
 
