@@ -78,6 +78,18 @@
   transition: 0.5s;
  
 }
+.description {
+  font-size: clamp(0.85rem, 2.5vw, 1.1rem); /* Responsive font size */
+  color: #333;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 10px 5px;
+  text-align: justify; /* Better readability on mobile */
+  line-height: 1.7;
+  word-wrap: break-word;
+}
+
+
 .hire:hover{
   background: #1a1818;
   border: 1px solid #4070f4;

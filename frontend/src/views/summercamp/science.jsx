@@ -64,9 +64,9 @@ function Science() {
         </div>
       </section>
 
-      <a href="/summer" className={styles.floatingBackButton}>
+      {/* <a href="/summer" className={styles.floatingBackButton}>
         ← Back to Summer Camp
-      </a>
+      </a> */}
 
       <Footer />
     </>

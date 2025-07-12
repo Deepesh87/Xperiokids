@@ -75,13 +75,15 @@ function Robotics() {
             </h5> */}
 
 
-          <h1 className={styles.title}>Weeday Batch for IB Cirriculum | Weekends Batch for Everyone</h1>
+          <h1 className={styles.title}>Weekends Batch Grade 4 onwards..</h1>
           <p className={styles.subtitle}>
             {/* 📍 Ongoing Batch: 🗓️ June 13th - July 9th | Monday to Friday <br/> */}
             📍 Upcoming Batch: 🗓️ July 19th | Sat & Sundays <br/>
           </p>
           <p className={styles.description}>
-            Please contact us for timings and more details.
+            This course will introduce students to the exciting world of robotics and programming. They will learn how to build and program robots using a variety of sensors and motors. The course is designed to be hands-on, with students working individually to complete projects and challenges.
+            Programming will be in C++ using Arduino IDE, which is a great way to learn programming concepts in a fun and engaging way. Students will also learn about the different types of robots and how they are used in various industries. All materials, including a very cool Robotics Kit, will be provided.
+
           </p>
 
 
@@ -127,9 +129,9 @@ function Robotics() {
         ))}
       </section>
 
-      <a href="/summer" className={styles.floatingBackButton}>
+      {/* <a href="/summer" className={styles.floatingBackButton}>
         ← Back to Summer Camp
-      </a>
+      </a> */}
 
       <Footer />
     </>
