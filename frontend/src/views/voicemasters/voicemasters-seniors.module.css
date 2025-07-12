@@ -309,7 +309,7 @@
   }
 
   .thumbImage {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -319,7 +319,7 @@
   }
   
   .thumbImage {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 0.75rem;
@@ -328,7 +328,7 @@
   /* On large screens only */
 @media (min-width: 1024px) {
   .thumbImage {
-    width: 150%;
+    width: 100%;
   }
 }
 
