@@ -1,23 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://www.xperiolearning.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.xperiolearning.com/robotics</loc>
-    <priority>0.8</priority>
+    <loc>https://www.xperiolearning.com/about</loc>
+  </url>
+  <url>
+    <loc>https://www.xperiolearning.com/gallery</loc>
+  </url>
+  <url>
+    <loc>https://www.xperiolearning.com/voicemasters</loc>
   </url>
   <url>
     <loc>https://www.xperiolearning.com/voicemasters-seniors</loc>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xperiolearning.com/voicemasters-juniors</loc>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xperiolearning.com/science</loc>
-    <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.xperiolearning.com/robotics</loc>
+  </url>
+  <url>
+    <loc>https://www.xperiolearning.com/sudoku</loc>
+  </url>
+  <url>
+    <loc>https://www.xperiolearning.com/olympiad</loc>
+  </url>
+  <url>
+    <loc>https://www.xperiolearning.com/camp24</loc>
+  </url>
+  <url>
+    <loc>https://www.xperiolearning.com/summer</loc>
+  </url>
+  <url>
+    <loc>https://www.xperiolearning.com/bday</loc>
+  </url>
+  <url>
+    <loc>https://www.xperiolearning.com/terms</loc>
+  </url>
+
 </urlset>
+
