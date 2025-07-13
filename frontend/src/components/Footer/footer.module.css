@@ -118,7 +118,7 @@
   height: 50px;
   bottom: 120px;
   right: 40px;
-  background-color: #00455b; /* ff5722 */
+  background-color: #ffffff; /* ff5722 */
   border-radius: 25px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 100;
@@ -133,6 +133,7 @@
   margin: 0;
   text-align: center;
   animation: glowing 1.5s infinite;
+  border: 2px solid black;
 }
 
 .summer_camp_notification a {
@@ -208,7 +209,7 @@
 }
 
 .summer_camp_notification:hover p {
-  color: #fff700; /* Yellowish glow */
+  color: #090909; /* Yellowish glow */
   text-shadow: 0 0 8px rgba(255, 255, 0, 0.8);
 }
 
