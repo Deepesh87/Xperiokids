@@ -6,11 +6,13 @@ import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import pricing from "../../assets/Voicemasters_fees.png";
 
-import v3 from "../../assets/voicemasters_new2.jpeg";
-import v5 from "../../assets/voicemasters_new4.jpeg";
+// import v5 from "../../assets/voicemasters_new4.jpeg";
 import v6 from "../../assets/voicemasters_new5.jpeg";
 import v7 from "../../assets/voicemasters_new6.jpeg";
 import v8 from "../../assets/voicemasters_new7.jpeg";
+import v9 from "../../assets/voice_latest.webp";
+
+
 
 function Voice() {
   return (
@@ -32,7 +34,7 @@ function Voice() {
             <div className={styles.galleryGrid}>
               <img className={styles.galleryImg} src={v6} alt="Camp Activity 4" />
               <img className={styles.galleryImg} src={v7} alt="Camp Activity 1" />
-              <img className={styles.galleryImg} src={v3} alt="Camp Activity 2" />
+              <img className={styles.galleryImg} src={v9} alt="Camp Activity 2" />
               <img className={styles.galleryImg} src={v8} alt="Camp Activity 3" />
 
             </div>
