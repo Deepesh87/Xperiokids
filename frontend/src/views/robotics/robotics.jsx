@@ -75,10 +75,10 @@ function Robotics() {
             </h5> */}
 
 
-          <h1 className={styles.title}>Weekends Batch Grade 4 onwards..</h1>
+          <h1 className={styles.title}>Weekend Sunday Batch Grade 4 onwards..</h1>
           <p className={styles.subtitle}>
             {/* 📍 Ongoing Batch: 🗓️ June 13th - July 9th | Monday to Friday <br/> */}
-            📍 Upcoming Batch: 🗓️ July 19th | Sat & Sundays <br/>
+            📍 Upcoming Batch: 🗓️ July 20th | Sundays <br/>
           </p>
           <p className={styles.description}>
             This course will introduce students to the exciting world of robotics and programming. They will learn how to build and program robots using a variety of sensors and motors. The course is designed to be hands-on, with students working individually to complete projects and challenges.
