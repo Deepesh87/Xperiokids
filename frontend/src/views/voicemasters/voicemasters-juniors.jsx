@@ -15,7 +15,7 @@ function VoiceJ() {
       <Nav />
       <div className={styles.container}>
         <div className={styles.heroSection}>
-          <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 1 to 3</h1>
+          <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 2 to 4</h1>
           <p className={styles.subtitle}>📍 In-Centre Classes | Every Saturday | 10:00 AM – 12:15 PM</p>
           <p className={styles.description}>
 
@@ -44,7 +44,7 @@ Through <strong>games, stories, roleplay, and imagination</strong>, children gen
 
 <div className={styles.backButtonWrapper}>
   <button className={styles.backButton} onClick={() => window.location.href = "/voicemasters-seniors"}>
-    ← Switch to Seniors (Grade 4 onwards)
+    ← Switch to Seniors (Grade 5 onwards)
   </button>
 </div>
 

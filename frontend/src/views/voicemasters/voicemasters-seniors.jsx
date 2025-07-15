@@ -20,7 +20,7 @@ function Voice() {
       <Nav />
       <div className={styles.container}>
         <div className={styles.heroSection}>
-          <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 4 onwards</h1>
+          <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 5 onwards</h1>
           <p className={styles.subtitle}>📍 In-Centre Classes | Every Sunday | 10:00 AM – 12:30 PM</p>
           <p className={styles.description}>
             A transformative course that builds <strong>confidence</strong>,
@@ -50,7 +50,7 @@ function Voice() {
 
 <div className={styles.backButtonWrapper}>
   <button className={styles.backButton} onClick={() => window.location.href = "/voicemasters-juniors"}>
-    ← Switch to Juniors (Grade 1 to 3)
+    ← Switch to Juniors (Grade 2 to 4)
   </button>
 </div>
 

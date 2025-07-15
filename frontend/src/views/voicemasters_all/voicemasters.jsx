@@ -28,8 +28,8 @@ const VoiceMastersLanding = () => {
         <div className={styles.scheduleBox}>
           <h2>📅 Program Schedule</h2>
           <ul>
-            <li>🗣️ <strong>VoiceMasters Juniors (Grade 1–3):</strong> SAT 10:00 AM </li>
-            <li>🎓 <strong>VoiceMasters Seniors (Grade 4+ ):</strong> SUN 10:00 AM</li>
+            <li>🗣️ <strong>VoiceMasters Juniors (Grade 2–4):</strong> SAT 10:00 AM </li>
+            <li>🎓 <strong>VoiceMasters Seniors (Grade 5+ ):</strong> SUN 10:00 AM</li>
             <li>🎁 First class FREE. Attend a trial session before you decide.</li>
             <li>📍 In-centre classes every Sat/Sun at Xperio</li>
           </ul>
@@ -49,14 +49,14 @@ const VoiceMastersLanding = () => {
           <div className={styles.trackCard}>
             <img src={juniorThumb} className={styles.thumbImage} alt="Juniors Track" />
             <h3>VoiceMasters Juniors</h3>
-            <p>Perfect for Grades 1 to 3. Games, stories, drawing & mini speeches to build early confidence.</p>
+            <p>Perfect for Grades 1 to 4. Games, stories, drawing & mini speeches to build early confidence.</p>
             <button onClick={() => navigate('/voicemasters-juniors')}>Explore Juniors</button>
           </div>
 
           <div className={styles.trackCard}>
             <img src={seniorThumb} className={styles.thumbImage} alt="Seniors Track" />
             <h3>VoiceMasters Seniors</h3>
-            <p>Grades 4+. Formal speeches, leadership roles, evaluations & Toastmasters-style projects.</p>
+            <p>Grades 5+. Formal speeches, leadership roles, evaluations & Toastmasters-style projects.</p>
             <button onClick={() => navigate('/voicemasters-seniors')}>Explore Seniors</button>
           </div>
         </div>
