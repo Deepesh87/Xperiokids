@@ -47,6 +47,8 @@ const VoiceMastersLanding = () => {
 
         <div className={styles.trackCards}>
           <div className={styles.trackCard}>
+            <div className={styles.ribbon}>NEW</div>
+
             <img src={juniorThumb} className={styles.thumbImage} alt="Juniors Track" />
             <h3>VoiceMasters Juniors</h3>
             <p>Perfect for Grades 1 to 4. Games, stories, drawing & mini speeches to build early confidence.</p>
