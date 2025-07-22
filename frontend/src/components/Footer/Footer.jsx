@@ -5,8 +5,9 @@ import styles from './footer.module.css';
 import whatsapp_image from "../../assets/whatsapp.svg";
 
 const Footer = () => {
-  const location = useLocation(); 
+  const location = useLocation();
   const hiddenRoutes = ["/voicemasters", "/olympiad", "/summer", "/terms"];
+
   return (
     <footer className={`${styles.footer}`}>
       <ul className={`${styles['social-icon']}`}>
@@ -38,8 +39,19 @@ const Footer = () => {
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="https://maps.app.goo.gl/2nkiPgKQfWt7qHzk6" target="_blank">Locate Us</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/terms" target="_blank">Terms of Services</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/bday" target="_blank">Birthday bash</a></li>
-         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/summer" target="_blank">Summer Camp 2025</a></li>
+        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/summer" target="_blank">Summer Camp 2025</a></li>
       </ul>
+
+      {/* 📍 SEO Boosting Contact Section */}
+      <section className={styles.contactDetails}>
+        <h3>Contact Us</h3>
+        <p><strong>Xperio Learning</strong></p>
+        <p>First Floor,  Above Biggies Burger</p>
+        <p>Near Fisherman's Wharf, Haralur Main Road, Bengaluru, Karnataka 560102</p>
+        <p>📞 <a href="https://wa.me/918904749795">+91 89047 49795</a></p>
+        <p>📧 <a href="mailto:xperiolearning@gmail.com">xperiolearning@gmail.com</a></p>
+        <p>🕒 Mon–Sun: 10:00 AM – 5:00 PM</p>
+      </section>
 
       <p>&copy;2025 xperiolearning.com | All rights Reserved</p>
 
@@ -49,25 +61,13 @@ const Footer = () => {
         </a>
       </div>
 
-
-
-{/* {!hiddenRoutes.includes(location.pathname) && (
-  <div className={styles.summer_camp_notification}>
-    <a href="/summer" target="_blank" rel="noopener noreferrer">
-      <p>🚀 <b>Summer Camp'25</b></p>
-    </a>
-  </div>
-)} */}
-
-{!hiddenRoutes.includes(location.pathname) && (
-  <div className={styles.summer_camp_notification}>
-    <a href="/voicemasters" target="_blank" rel="noopener noreferrer">
-      <p>🎤 <b> Public Speaking</b></p>
-    </a>
-  </div>
-)}
-
-
+      {!hiddenRoutes.includes(location.pathname) && (
+        <div className={styles.summer_camp_notification}>
+          <a href="/voicemasters" target="_blank" rel="noopener noreferrer">
+            <p>🎤 <b> Public Speaking</b></p>
+          </a>
+        </div>
+      )}
     </footer>
   );
 };

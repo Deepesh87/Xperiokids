@@ -233,3 +233,29 @@
     transform: scale(1);
   }
 }
+
+.contactDetails {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.contactDetails h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.contactDetails p {
+  margin: 4px 0;
+}
+
+.contactDetails a {
+  color: #0077B5;
+  text-decoration: none;
+}
+
+.contactDetails a:hover {
+  text-decoration: underline;
+}
