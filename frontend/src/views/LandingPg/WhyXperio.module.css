@@ -1,77 +1,142 @@
 .gridContainer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  padding: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
 }
 
-.card {
-  position: relative;
-  width: 250px;
-  height: 200px;
-  background: #fafbfa;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.cardWrapper {
   text-decoration: none;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.card {
+  perspective: 1000px;
+  width: 310px;
+  height: 250px;
 }
 
-/* Shimmer effect */
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  height: 100%;
+.cardInner {
+  position: relative;
   width: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .cardInner {
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cardFront {
+  background: #fff;
   z-index: 2;
-  pointer-events: none;
 }
 
-.card:hover::before {
-  animation: shimmer 1.2s infinite;
-}
-
-@keyframes shimmer {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-.card img {
+.cardFront img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
   border-radius: 12px;
-  z-index: 1;
-  position: relative;
 }
 
-/* Responsive for smaller screens */
+.cardBack {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; /* 10% larger */
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+  color: white;
+}
+
+/* Color-coded backs */
+.cardBack_robotics {
+  background-color: #14949d;
+}
+
+.cardBack_science {
+  background-color: #f19c16;
+}
+
+.cardBack_speaking {
+  background-color: #c72d60;
+}
+
 @media (max-width: 480px) {
-  .card {
-    width: 90%;
-    height: auto;
+  .gridContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
 
-  .card img {
-    height: auto;
+  .card {
+    width: 100%;
+    max-width: 302px; /* 275px + 10% = 302px */
+    height: 242px;     /* 220px + 10% */
+  }
+
+  .cardFront img,
+  .cardBack {
+    height: 100%;
+  }
+
+  .cardFront img {
+    object-fit: contain;
+  }
+}
+
+
+
+/* Shadow glow for each card on hover */
+.cardWrapper:hover .cardBack_robotics,
+.cardWrapper:hover .cardFront img[src*="robotics"] {
+  box-shadow: 0 0 15px #14949d66;
+}
+
+.cardWrapper:hover .cardBack_science,
+.cardWrapper:hover .cardFront img[src*="science"] {
+  box-shadow: 0 0 15px #f19c1666;
+}
+
+.cardWrapper:hover .cardBack_speaking,
+.cardWrapper:hover .cardFront img[src*="voicemasters"] {
+  box-shadow: 0 0 15px #c72d6066;
+}
+
+@media (max-width: 768px) {
+  .cardInner {
+    transform: none !important;
+  }
+
+  .card:hover .cardInner {
+    transform: none !important;
+  }
+
+  .cardBack {
+    display: none !important;
+  }
+
+  .cardFront {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cardFront img {
+    box-shadow: none !important;
   }
 }
