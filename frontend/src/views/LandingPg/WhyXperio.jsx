@@ -1,66 +1,40 @@
 import React from "react";
 import Style from "./WhyXperio.module.css";
-import lab from "../../assets/science_thumb2.png";
-import goals from "../../assets/goals1.jpg";
-// import voice from "../../assets/voicemasters3.png";
-import voice from "../../assets/voicemasters4.png";
-import hobby3 from "../../assets/robotics2.png";
+import lab from "../../assets/science_thumb3.png";
+import voice from "../../assets/voicemasters5.png";
+import hobby3 from "../../assets/robotics3.png";
 
 function WhyXperio() {
-
   const sections = [
     {
-      title: "Robotics & Coding for Children",
-      description:
-        "In today's tech-driven world, learning robotics is essential. Kids who explore robotics now become tomorrow's innovators and problem-solvers. Build, explore, and shape the future today!",
       img: hobby3,
       link: "/robotics",
-      alt: "Robotics",
+      alt: "Robotics and Coding Course for Kids",
     },
     {
-      title: "Laboratory, not just a Classroom",
-      description:
-        "At Xperio Learning, we go beyond textbooks with hands-on learning. Students engage in experiments across subjects like Robotics, Coding, Physics, Chemistry, and Biology. This interactive approach fosters critical thinking, creativity, and confidence.",
       img: lab,
-      link: "https://www.xperiolearning.com/science",
-      alt: "Laboratory",
+      link: "/science",
+      alt: "Children doing hands-on science experiments",
     },
-    // {
-    //   title: "Xperiokids Birthday Bash! 🎉",
-    //   description:
-    //     "Celebrate your child's special day with an unforgettable Xperiokids Birthday Bash! Enjoy science-filled experiments, customizable themes, and lasting memories. Book now for a unique celebration!",
-    //   img: goals,
-    //   link: "/bday",
-    //   alt: "Birthday Bash",
-    // },
     {
-      title: "VoiceMasters for Public Speaking",
-      description:
-        "Imagine your child excelling in presentations, interviews, and collaborative projects, all thanks to the foundational skills they will gain with VoiceMasters. Join us to empower your child with skills for success and personal growth.",
       img: voice,
       link: "/voicemasters",
-      alt: "VoiceMasters",
+      alt: "Public speaking program for students",
     },
   ];
 
   return (
-    <div className={Style.main}>
-      {/* <h1>Why Xperio!</h1> */}
+    <section className={Style.main} aria-label="Xperio Learning Programs">
       <div className={Style.gridContainer}>
         {sections.map((section, index) => (
-          <div className={Style.card} key={index}>
-            <img src={section.img} alt={section.alt} />
-            <div className={Style.cardContent}>
-              <h2>{section.title}</h2>
-              <p>{section.description.slice(0, 80)}...</p>
-              <a className={Style.knowMoreBtn} href={section.link} target="_blank" rel="noopener noreferrer">
-                Know More
-              </a>
-            </div>
-          </div>
+          <article className={Style.card} key={index}>
+            <a href={section.link} aria-label={`Explore ${section.alt}`}>
+              <img src={section.img} alt={section.alt} />
+            </a>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

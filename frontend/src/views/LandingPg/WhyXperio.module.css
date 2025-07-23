@@ -1,114 +1,77 @@
-.main {
-  margin: 1px auto;
-  text-align: center;
-  max-width: 1080px; /* was 1200px => 10% smaller */
-  width: 90%;        /* ensures it adapts on smaller screens too */
-}
-
-.main > h1 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
 .gridContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 16px;
   padding: 10px;
 }
 
 .card {
-  display: block;
-  background: #ffffff;
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background: #fafbfa;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
-  color: inherit;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-.cardContent {
-  padding: 10px;
+/* Shimmer effect */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
 }
 
-.cardContent h2 {
-  font-size: 1.2rem;
-  color: #000000;
-  margin-bottom: 10px;
+.card:hover::before {
+  animation: shimmer 1.2s infinite;
 }
 
-.cardContent p {
-  font-size: 0.9rem;
-  color: #444;
-  line-height: 1.5;
-}
-
-/* Responsive Design */
-@media (max-width: 800px) {
-  .gridContainer {
-    grid-template-columns: 1fr;
+@keyframes shimmer {
+  0% {
+    left: -100%;
   }
-}
-
-/* Grid container: reduce minimum width by 15% (from 280px to ~238px) */
-.gridContainer {
-  grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+  100% {
+    left: 100%;
+  }
 }
 
 .card img {
   width: 100%;
-  height: 123px;
-  object-fit: cover; /* 👈 This causes the image to crop/zoom to fill the box */
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 12px;
+  z-index: 1;
+  position: relative;
 }
 
-/* Hide description by default and reveal it on hover */
-.cardContent p {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.3s ease;
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card img {
+    height: auto;
+  }
 }
-
-.card:hover .cardContent p {
-  opacity: 1;
-  max-height: 300px; /* Adjust this value as needed to fully display the description */
-}
-
-
-/* Remove hover reveal for p */
-.cardContent p {
-  opacity: 1;
-  max-height: none;
-  overflow: visible;
-  transition: none;
-  margin-bottom: 10px;
-}
-
-/* Add button style */
-.knowMoreBtn {
-  display: inline-block;
-  background-color: #004aad;
-  font-size: 0.9rem;
-  /* #ec0ba9 */
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.knowMoreBtn:hover {
-  background-color: #21654e;
-}
-
-
