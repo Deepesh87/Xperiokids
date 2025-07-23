@@ -3,6 +3,7 @@ import Style from "./WhyXperio.module.css";
 import lab from "../../assets/science_thumb3.png";
 import voice from "../../assets/voicemasters5.png";
 import hobby3 from "../../assets/robotics3.png";
+import finance from "../../assets/finance.png";
 
 function WhyXperio() {
 const sections = [
@@ -11,21 +12,28 @@ const sections = [
     img: hobby3,
     link: "/robotics",
     alt: "Robotics and Coding Course for Kids",
-    label: "Coding & Robotics",
+    label: "Engineer with Code, Sensors & Logic",
   },
   {
     id: "science",
     img: lab,
     link: "/science",
     alt: "Children doing hands-on science experiments",
-    label: "Science",
+    label: "Experiment with Ideas, Curiosity & Wonder",
   },
   {
     id: "speaking",
     img: voice,
     link: "/voicemasters",
     alt: "Public speaking program for students",
-    label: "Public Speaking",
+    label: "Express Ideas, Emotions & Stories",
+  },
+    {
+    id: "finance",
+    img: finance,
+    link: "/finance-for-kids",
+    alt: "Financial literacy for Children",
+    label: "Grow Smart with Money",
   },
 ];
 
@@ -42,16 +50,22 @@ const sections = [
       className={Style.cardWrapper}
       aria-label={`Explore ${section.alt}`}
     >
-      <article className={Style.card}>
-        <div className={Style.cardInner}>
-          <div className={Style.cardFront}>
-            <img src={section.img} alt={section.alt} />
-          </div>
-          <div className={`${Style.cardBack} ${Style["cardBack_" + section.id]}`}>
-            <p>{section.label}</p>
-          </div>
-        </div>
-      </article>
+<article className={Style.cardContainer}>
+  {section.id === "finance" && (
+    <div className={Style.comingSoonTag}>Coming Soon</div>
+  )}
+  <div className={Style.card}>
+    <div className={Style.cardInner}>
+      <div className={Style.cardFront}>
+        <img src={section.img} alt={section.alt} />
+      </div>
+      <div className={`${Style.cardBack} ${Style["cardBack_" + section.id]}`}>
+        <p>{section.label}</p>
+      </div>
+    </div>
+  </div>
+</article>
+
     </a>
   ))}
 </div>

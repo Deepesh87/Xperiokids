@@ -13,6 +13,7 @@ const Science = lazy(() => import("../views/summercamp/science"));
 const Sudoku = lazy(() => import("../views/sudoku/sudoku"));
 const OlympiadFinalist = lazy(() => import("../views/olympiad/olympiad"));
 const Robotics = lazy(() => import("../views/robotics/robotics"));
+const Finance = lazy(() => import("../views/finance/finance"));
 const Terms = lazy(() => import("../views/terms/terms"));
 const Bday = lazy(() => import("../views/bday/bday"));
 const Camp24 = lazy(() => import("../views/summercamp24/camp24"));
@@ -32,6 +33,7 @@ function MainRoutes() {
         <Route path="/sudoku" element={<Sudoku />} />
         <Route path="/olympiad" element={<OlympiadFinalist />} />
         <Route path="/robotics" element={<Robotics />} />
+        <Route path="/finance-for-kids" element={<Finance />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/bday" element={<Bday />} />
         <Route path="/camp24" element={<Camp24 />} />

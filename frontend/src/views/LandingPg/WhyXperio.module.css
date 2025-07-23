@@ -77,6 +77,32 @@
   background-color: #c72d60;
 }
 
+.cardBack_finance {
+  background-color: #004aad;
+}
+
+.cardContainer {
+  position: relative;
+  width: 275px;
+  height: 220px;
+}
+
+.comingSoonTag {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-8deg);
+}
+
+
 @media (max-width: 480px) {
   .gridContainer {
     flex-direction: column;
@@ -116,6 +142,12 @@
 .cardWrapper:hover .cardBack_speaking,
 .cardWrapper:hover .cardFront img[src*="voicemasters"] {
   box-shadow: 0 0 15px #c72d6066;
+}
+
+.cardWrapper:hover .cardBack_finance,
+.cardWrapper:hover .cardFront img[src*="finance"] {
+  box-shadow: 0 0 15px #004aad;
+
 }
 
 @media (max-width: 768px) {
