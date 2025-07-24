@@ -46,8 +46,8 @@ const Footer = () => {
       <section className={styles.contactDetails}>
         <h3>Contact Us</h3>
         <p><strong>Xperio Learning</strong></p>
-        <p>First Floor,  Above Biggies Burger</p>
-        <p>Near Fisherman's Wharf, Haralur Main Road, Bengaluru, Karnataka 560102</p>
+        <p>Haralur Main Road</p>
+        <p>First Floor, Above Biggies Burger, Near Fisherman's Wharf</p>
         <p>📞 <a href="https://wa.me/918904749795">+91 89047 49795</a></p>
         <p>📧 <a href="mailto:xperiolearning@gmail.com">xperiolearning@gmail.com</a></p>
         <p>🕒 Mon–Sun: 10:00 AM – 5:00 PM</p>
