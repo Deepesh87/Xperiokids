@@ -21,7 +21,7 @@ function Science() {
         <div className={styles.about}>
           <div className={styles.text}>
             <h5>
-              <span>Science Camp 2025:</span>
+              <span>Science for Grade 2 onwards</span>
             </h5>
             <br />
 
