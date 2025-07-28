@@ -32,7 +32,7 @@ const Footer = () => {
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/">Home</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/about">About Us</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/gallery">Gallery</a></li>
-        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/voicemasters" target="_blank">VoiceMasters</a></li>
+        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/voicemasters" target="_blank">Public Speaking</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/olympiad" target="_blank">Olympiad</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/">Careers</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/sudoku" target="_blank">Sudoku</a></li>
@@ -40,6 +40,7 @@ const Footer = () => {
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/terms" target="_blank">Terms of Services</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/bday" target="_blank">Birthday bash</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/summer" target="_blank">Summer Camp 2025</a></li>
+        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/finance-for-kids" target="_blank">Financial Literacy for Kids</a></li>
       </ul>
 
       {/* 📍 SEO Boosting Contact Section */}

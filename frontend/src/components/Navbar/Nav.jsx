@@ -13,11 +13,11 @@ import logo from "../../assets/new_full_logo_learning.png";
 import { NavLink } from 'react-router-dom';
 
 const pages = [
-  { to: "/", name: "Home🏠" },
-  { to: "/about", name: "About us 👨‍👨‍👦‍👦" },
-  { to: "/gallery", name: "Gallery📷" },
+  { to: "/", name: "Home" },
+  { to: "/about", name: "About us" },
+  { to: "/gallery", name: "Gallery" },
   { to: "/robotics", name: "Robotics" },
-  { to: "/voicemasters", name: "VoiceMasters🎤" },
+  { to: "/voicemasters", name: "Public Speaking" },
   { to: "/finance-for-kids", name: "Finance" },
 ];
 
