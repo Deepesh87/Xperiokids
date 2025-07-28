@@ -33,7 +33,7 @@ const sections = [
     img: finance,
     link: "/finance-for-kids",
     alt: "Financial literacy for Children",
-    label: "Grow Smart with Money",
+    label: "Smart Money habits start early",
   },
 ];
 

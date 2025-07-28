@@ -1,33 +1,100 @@
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 60px 20px;
+/* ---------- HERO CONTAINER ---------- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+/* ---------- OPTIONAL: Maintain 16:9 Ratio for Consistency ---------- */
+/* If you prefer strict 16:9 ratio instead of fixed height, uncomment this instead:
+.hero {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; 
+  overflow: hidden;
+}
+*/
+
+/* ---------- GRADIENT OVERLAY ---------- */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+
+/* ---------- IMAGE STYLING ---------- */
+.bannerImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(1); /* use 1 since overlay is darkening */
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.hero:hover .bannerImg {
+  transform: scale(1.02);
+}
+
+/* ---------- TEXT OVERLAY ---------- */
+.heroCopy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
+  max-width: 90%;
+  padding: 0 5px;
+  z-index: 2;
 }
 
 .title {
-  font-size: 2.2rem;
-  color: #004aad;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: inherit;
   margin-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 40px;
+  font-size: 2.3rem;
+  color: inherit;
+  margin-bottom: 0;
 }
 
-.messageBox {
-  background-color: #f7faff;
-  padding: 30px 20px;
-  border: 2px solid #004aad22;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+@media (min-width: 1024px) {
+  .hero {
+    height: 45vh;
+    max-height: 400px;
+  }
 }
 
-.message {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 15px;
-  line-height: 1.6;
+@media (max-width: 768px) {
+  .hero {
+    height: 55vh;
+  }
+  .heroCopy {
+    max-width: 80%;      /* 📱 More width on small screens */
+    padding: 0 0px;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;   /* ⬆ Slightly larger than before */
+    line-height: 1.6;    /* 👓 Better readability */
+  }
 }
