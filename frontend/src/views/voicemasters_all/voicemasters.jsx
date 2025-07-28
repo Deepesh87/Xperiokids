@@ -109,7 +109,11 @@ Also check out our <a href="/science">Science coaching</a> and <a href="/robotic
   <h3>Is a free trial available?</h3>
   <p>Yes, your first class is completely free!</p>
 
+    <h3>We have some holidays planned. We dont want to loose out on some part of the enrollment due to this.</h3>
+  <p>We understand! We provide the option to pause the course for a duration of 1- month anytime during your tenure and the tenure gets extended accordingly. For example, if you have enrolled for 6 months and you choose to pause, in this case your tenure will be entended by another month at no cost.</p>
+
     <h3>My child is very shy and hesitant to join the trial class.</h3>
+
   <p>
 We understand! Many kids feel shy at first. Our friendly instructors create a warm, welcoming environment where every child can express themselves at their own pace.
  The trial class is designed to be fun and engaging, with no pressure to perform. We encourage parents to come 5-10 minutes early so we can make the child comfortable. Many kids who start shy end up loving the program!
