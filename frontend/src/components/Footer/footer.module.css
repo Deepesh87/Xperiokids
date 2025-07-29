@@ -272,7 +272,7 @@
 
 .coloredBrand {
   font-weight: 800;
-  font-size: 2.1rem;
+  font-size: 1.5rem;
   margin-bottom: 8px;
 }
 
@@ -280,6 +280,7 @@
 .x2 { color: #f19c16; }   /* Orange */
 .x3 { color: #14949d; }   /* Teal */
 .x4 { color: #004aad; }   /* Royal Blue for "Learning" */
+.x4 { color: #000000; }   /* black for "Learning" */
 
 .contactDetails .coloredBrand {
   font-weight: 800;
@@ -288,3 +289,12 @@
   text-align: center;
   line-height: 1.3;
 }
+
+.stemLogo {
+  width: 120px; /* adjust based on your preference */
+  height: auto;
+  margin-bottom: 1px;
+  display: block;
+  margin: 2px auto 1px auto;
+}
+
