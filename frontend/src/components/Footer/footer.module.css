@@ -269,3 +269,14 @@
 .contactDetails a:hover {
   text-decoration: underline;
 }
+
+.coloredBrand {
+  font-weight: 800;
+  font-size: 2.1rem;
+  margin-bottom: 8px;
+}
+
+.x1 { color: #c72d60; }   /* Magenta */
+.x2 { color: #f19c16; }   /* Orange */
+.x3 { color: #14949d; }   /* Teal */
+.x4 { color: #004aad; }   /* Royal Blue for "Learning" */

@@ -44,15 +44,25 @@ const Footer = () => {
       </ul>
 
       {/* 📍 SEO Boosting Contact Section */}
-      <section className={styles.contactDetails}>
-        <h3>Contact Us</h3>
-        <p><strong>Xperio Learning</strong></p>
-        <p>Haralur Main Road</p>
-        <p>First Floor, Above Biggies Burger, Near Fisherman's Wharf</p>
-        <p>📞 <a href="https://wa.me/918904749795">+91 89047 49795</a></p>
-        <p>📧 <a href="mailto:xperiolearning@gmail.com">xperiolearning@gmail.com</a></p>
-        <p>🕒 Mon–Sun: 10:00 AM – 5:00 PM</p>
-      </section>
+<section className={styles.contactDetails}>
+  <h3>Contact Us</h3>
+
+  <p className={styles.coloredBrand}>
+    <strong>
+      <span className={styles.x1}>X</span>
+      <span className={styles.x2}>per</span>
+      <span className={styles.x3}>io</span>
+      <span className={styles.x4}> Learning</span>
+    </strong>
+  </p>
+
+  <p>Haralur Main Road</p>
+  <p>First Floor, Above Biggies Burger, Near Fisherman's Wharf</p>
+  <p>📞 <a href="https://wa.me/918904749795">+91 89047 49795</a></p>
+  <p>📧 <a href="mailto:xperiolearning@gmail.com">xperiolearning@gmail.com</a></p>
+  <p>🕒 Mon–Sun: 10:00 AM – 5:00 PM</p>
+</section>
+
 
       <p>&copy;2025 xperiolearning.com | All rights Reserved</p>
 
