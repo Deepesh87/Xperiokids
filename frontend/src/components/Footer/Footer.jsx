@@ -53,9 +53,8 @@ const Footer = () => {
     <strong>
       <span className={styles.x1}>X</span>
       <span className={styles.x2}>pe</span>
-      <span className={styles.x3}>r</span>
-      <span className={styles.x4}> io</span>
-      <span className={styles.x5}> Learning</span>
+      <span className={styles.x3}>rio</span>
+      <span className={styles.x4}> Learning</span>
     </strong>
   </p>
 
