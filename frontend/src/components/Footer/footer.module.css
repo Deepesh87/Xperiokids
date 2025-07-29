@@ -6,7 +6,7 @@
   background: #ffffff;
   border-top: 2px solid #eee;
   min-height: 120px;
-  padding: 30px 20px;
+  padding: 30px 16px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -20,12 +20,18 @@
   align-items: center;
   gap: 30px;
   margin: 15px 0;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap; /* just in case for very small screens */
 }
 
 .social-icon__item {
   list-style: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .social-icon__item:hover {
   transform: translateY(-6px) scale(1.1);
@@ -39,14 +45,18 @@
   margin: 20px 0;
   width: 100%;
   text-align: center;
+  padding: 0;
 }
+
 
 .menu__item {
   list-style: none;
   margin-bottom: 12px;
-  text-align: center;
-  width: 50%; /* default for mobile */
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
+
 
 @media screen and (min-width: 768px) {
   .menu__item {
