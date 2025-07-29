@@ -3,7 +3,7 @@ import React from 'react';
 import { FaYoutube, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import styles from './footer.module.css';
 import whatsapp_image from "../../assets/whatsapp.svg";
-import stemLogo from "../../assets/stem.png";
+import stemLogo from "../../assets/stem.webp";
 
 
 const Footer = () => {
