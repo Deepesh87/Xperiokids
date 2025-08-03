@@ -18,7 +18,12 @@ function About() {
               <span>Dr. Kislay Singh: Founder Xperio Learning</span>
             </h5>
             <p>
-            "Having taught students ranging from primary school to master's level, I've witnessed firsthand how deeply broken our education system is. There's an overwhelming focus on theory, with far too little emphasis on hands-on learning — especially in the sciences, where it’s needed the most. I founded Xperio Learning to change that: to help students truly experience their learning. Alongside this initiative, I also teach at Symbiosis, Bangalore, and have previously held roles at Byju’s, Bangalore, and Galgotias University, NCR."
+            Having taught students from primary school to postgraduate levels, I’ve seen just how flawed our education system can
+             be — especially in its heavy reliance on theory over hands-on application. This gap is most evident in science education,
+              where experiential learning is crucial but often neglected. I started Xperio Learning to change that — to help students 
+              truly engage with and experience what they learn. In parallel, I teach at Symbiosis, Bangalore, and conduct corporate 
+              training sessions in SQL, Power BI, and Data Analysis for working professionals. My past roles include positions 
+              at Byju’s and Galgotias University in NCR.
             </p>
             <div className={styles.data}>
               <a href="https://www.linkedin.com/in/kislaysingh/" target="_blank" className={styles.hire}>
