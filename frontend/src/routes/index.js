@@ -18,6 +18,8 @@ const Terms = lazy(() => import("../views/terms/terms"));
 const Bday = lazy(() => import("../views/bday/bday"));
 const Camp24 = lazy(() => import("../views/summercamp24/camp24"));
 const SummerCampLanding = lazy(() => import("../views/SummerCampLanding/landing"));
+const VoiceMasterLeaderboard = lazy(() => import("../views/voicemasters/VoiceMasterLeaderboard"));
+
 
 function MainRoutes() {
   return (
@@ -39,6 +41,7 @@ function MainRoutes() {
         <Route path="/camp24" element={<Camp24 />} />
         <Route path="/summer" element={<SummerCampLanding />} />
         <Route path="*" element={<FalseRoute />} />
+        <Route path="/voicemasters-leaderboard" element={<VoiceMasterLeaderboard />} />
       </Routes>
     </Suspense>
   );
