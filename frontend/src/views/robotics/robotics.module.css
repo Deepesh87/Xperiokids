@@ -35,6 +35,8 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  color: #14949d;
+  ;
 }
 
 .about> img {
@@ -80,7 +82,7 @@
 }
 .description {
   font-size: clamp(0.85rem, 2.5vw, 1.1rem); /* Responsive font size */
-  color: #333;
+  color: #000000;
   max-width: 95%;
   margin: 0 auto;
   padding: 10px 5px;

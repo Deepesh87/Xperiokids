@@ -39,7 +39,7 @@ const VoiceMastersLanding = () => {
 
 
 <h1 className={styles.subtitle}>
-  Public Speaking Classes for Kids in Bengaluru – Voicemasters
+  Public Speaking Classes for children in Bengaluru – Voicemasters
 </h1>
 <p className={styles.description}>
 Looking for the best <strong>public speaking classes for kids in Bengaluru</strong>? Voicemasters by Xperio Learning offers age-specific weekend programs designed to build <strong>confidence, communication, and creativity</strong> in children from Grades 1 and up. Based in <strong>Haralur</strong>, we’re loved by parents and students.
