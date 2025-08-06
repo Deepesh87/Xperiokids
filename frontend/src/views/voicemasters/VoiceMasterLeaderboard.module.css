@@ -72,7 +72,7 @@
 
 .menu__link {
   font-size: 2.0rem;
-  color: #ec0ba9;
+  color: #c72960;
   /* margin: 0 10px; */
   display: inline-block;
   text-decoration: underline;
@@ -80,7 +80,7 @@
 
 .menu__link:hover {
   text-decoration: underline wavy;
-  color: #b3008f;
+  color: #c72960;
   transition: 0.3s ease;
 }
 
@@ -179,7 +179,7 @@
   .title {
     font-size: 2rem;
     font-weight: bold;
-    color: #f97316;
+    color: #c72960;
     margin-bottom: 0.5rem;
   }
   
@@ -590,7 +590,7 @@
 
 /* 1️⃣  NO glow → delete the old animation if still present */
 .mainWinnerBorder {
-  border: 3px solid #fbbf24;   /* thin golden frame */
+  border: 3px solid #f8f0db;   /* thin golden frame */
   border-radius: 16px;
   padding: 5px;
   /* make sure there's NO animation or box-shadow here */
@@ -598,7 +598,7 @@
 
 /* 2️⃣  bright card background just for the winner */
 .mainWinnerCard {
-  background: #fff7d6;                       /* soft yellow */
+  background: #f0ebd3;                       /* soft yellow */
   box-shadow: 0 0 10px rgba(251, 191, 36, .25);
 }
 
@@ -642,4 +642,42 @@
   .winnerCard {
     width: 300px;         /* was 600px */
   }
+}
+
+
+/* Month badge in hero */
+.monthBadge {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.35rem 0.9rem;
+  background: #f97316;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+/* Past winners box */
+.pastSection {
+  background: #fdf4ff;
+  border-left: 6px solid #c72960;
+  padding: 1.5rem;
+  margin: 3rem auto 2rem;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.pastSection h2 {
+  font-size: 1.4rem;
+  color: #c72960;
+  margin-bottom: 0.8rem;
+}
+
+.pastSection ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  color: #4a044e;
+  line-height: 1.7;
 }

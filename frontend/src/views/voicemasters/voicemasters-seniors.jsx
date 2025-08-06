@@ -38,6 +38,13 @@ function Voice() {
               <img className={styles.galleryImg} src={v8} alt="Camp Activity 3" />
 
             </div>
+
+        <div className={styles.backButtonWrapper}>
+          <button className={styles.backButton} onClick={() => window.location.href="/voicemasters-leaderboard"}>
+            Show the Leaderboard
+          </button>
+        </div>
+
         <div className={styles.scheduleBox}>
           <h2>🗓️ How It Works</h2>
           <ul>

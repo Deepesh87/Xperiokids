@@ -1,84 +1,77 @@
+// pages/VoiceMasterLeaderboard.jsx
 import React from "react";
-import Nav from "../../components/Navbar/Nav";
+import Nav   from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import styles from "./VoiceMasterLeaderboard.module.css";
-import winnerImg from "../../assets/kislay.jpg";
-import runnerUp1Img from "../../assets/s21.jpg";
-import runnerUp2Img from "../../assets/v5.jpeg";
 
+import winnerImg    from "../../assets/winner.png";
+import runnerUp1Img from "../../assets/winner.png";
+import runnerUp2Img from "../../assets/winner.png";
 
-
+/* ① current winners */
 const winners = [
-  {
-    badge: "🏆",
-    title: "VoiceMaster of the Month",
-    name:  "Aarav Mehta",
-    grade: "6",
-    month: "August 2025",
-    highlight: "Led roles confidently, always punctual, and delivered a powerful final speech.",
-    img: winnerImg,
-    main: true            // flag so we can add the glow ring
-  },
-  {
-    badge: "🥈",
-    title: "1st Runner-up",
-    name:  "Tanya Kapoor",
-    grade: "5",
-    month: "August 2025",
-    highlight: "Strong evaluator, consistent speeches, and maintained decorum throughout.",
-    img: runnerUp1Img
-  },
-  {
-    badge: "🥉",
-    title: "2nd Runner-up",
-    name:  "Vivaan Sharma",
-    grade: "7",
-    month: "August 2025",
-    highlight: "Took multiple roles and gave quality peer feedback.",
-    img: runnerUp2Img
-  }
+  { badge:"🏆", title:"VoiceMaster of the Month", name:"Aarav Mehta", grade:"6",
+    month:"August 2025", highlight:"Led roles confidently, always punctual...", img:winnerImg, main:true },
+  { badge:"🥈", title:"1st Runner-up", name:"Tanya Kapoor",  grade:"5", month:"August 2025",
+    highlight:"Strong evaluator, consistent speeches…", img:runnerUp1Img },
+  { badge:"🥉", title:"2nd Runner-up", name:"Vivaan Sharma", grade:"7", month:"August 2025",
+    highlight:"Took multiple roles, gave quality peer feedback.", img:runnerUp2Img }
+];
+
+/* ② lightweight past-months list (only main winner names) */
+const pastWinners = [
+  { month:"July 2025",   name:"Riya Singh"   },
+  { month:"June 2025",   name:"Aditya Rao"   },
+  { month:"May 2025",    name:"Mehak Iyer"   },
+  { month:"April 2025",  name:"Kabir Patel"  }
 ];
 
 export default function VoiceMasterLeaderboard() {
+  const currentMonth = winners[0].month;   // all three share the same month label
+
   return (
     <>
       <Nav />
 
       <div className={styles.container}>
-        {/* Hero */}
+        {/* ───── Hero ───── */}
         <div className={styles.heroSection}>
           <h1 className={styles.title}>🎤 VoiceMaster Leaderboard</h1>
           <p className={styles.subtitle}>Our shining stars for public speaking & leadership</p>
           <p className={styles.description}>
-            Each month we celebrate students who excel on stage, listen with intent and
-            uphold class decorum. Congratulations to our latest champions!
+            Each month we celebrate students who excel on stage, listen with intent
+            and uphold class decorum. Congratulations to our latest champions!
           </p>
+          <span className={styles.monthBadge}>{currentMonth}</span>
         </div>
 
-        {/* Winner Gallery */}
+        {/* ───── Winner Gallery ───── */}
         <div className={styles.galleryGrid}>
           {winners.map((w, i) => (
-           <div key={i} className={`${styles.trackCard} ${styles.winnerCard}`}>
-              {/* image wrapper: add glow for main winner */}
-              <div
-                className={w.main ? styles.mainWinnerCard : ""}
-                style={{ display: "inline-block" }}
-              >
-                <img
-                  src={w.img}
-                  alt={w.name}
-                  className={styles.portraitImage}
-                />
+            <div key={i} className={`${styles.trackCard} ${styles.winnerCard}`}>
+              <div className={w.main ? styles.mainWinnerCard : ""}>
+                <img src={w.img} alt={w.name} className={styles.portraitImage} />
               </div>
-
               <h3>{w.badge} {w.title}</h3>
-              <p><strong>{w.name}</strong> — Grade {w.grade}</p>
-              <p style={{ fontSize: "0.9rem", color: "#555" }}>{w.highlight}</p>
+              <p><strong>{w.name}</strong> — Grade&nbsp;{w.grade}</p>
+              <p style={{ fontSize:"0.9rem", color:"#555" }}>{w.highlight}</p>
             </div>
           ))}
         </div>
 
-        {/* Metrics box (styled like scheduleBox) */}
+        {/* ───── Past Winners ───── */}
+        <div className={styles.pastSection}>
+          <h2>🏅 Previous VoiceMasters</h2>
+          <ul>
+            {pastWinners.map(p => (
+              <li key={p.month}>
+                <strong>{p.month}:</strong> {p.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* ───── Scoring Metrics ───── */}
         <div className={styles.scheduleBox}>
           <h2>📊 How Points Are Earned</h2>
           <ul>
@@ -92,12 +85,9 @@ export default function VoiceMasterLeaderboard() {
           </ul>
         </div>
 
-        {/* Back-to-courses button */}
+        {/* ───── Back button ───── */}
         <div className={styles.backButtonWrapper}>
-          <button
-            className={styles.backButton}
-            onClick={() => window.location.href = "/voicemasters"}
-          >
+          <button className={styles.backButton} onClick={() => window.location.href="/voicemasters-seniors"}>
             ← Back to VoiceMasters Home
           </button>
         </div>
