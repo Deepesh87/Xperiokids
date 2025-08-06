@@ -4,7 +4,7 @@ import MeetingCounter from "./meeting_number";
 import styles from "./voicemasters-seniors.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import pricing from "../../assets/Voicemasters_fees.png";
+
 
 // import v5 from "../../assets/voicemasters_new4.jpeg";
 import v6 from "../../assets/voicemasters_new5.jpeg";
@@ -77,14 +77,17 @@ function Voice() {
             Download Course Outline
           </a>
         </div>
+                <div className={styles.finalCTA}>
+                  <h3>📞 Call or Visit us to find out more or book a free trial</h3>
+                  <a href="https://wa.me/918904749795" target="_blank" rel="noopener noreferrer">
+                    <button>Book Your Trial Class</button>
+                  </a>
+                  <p style={{ fontSize: "0.95rem", marginTop: "1rem" }}>
+                    Also check out our <a href="/science">Science coaching</a> and <a href="/robotics">Robotics programs</a> for
+                    kids in Bengaluru.
+                  </p>
+                </div>
 
-        <div className={styles.trackCards}>
-          <div className={styles.trackCard}>
-            <img src={pricing} className={styles.thumbImage} alt="Pricing Details" />
-            <h3>Fees is payable in single installment.</h3>
-            <p>Please call us to schedule a free first class!</p>
-          </div>
-        </div>
       </div>
       <Footer />
     </>
