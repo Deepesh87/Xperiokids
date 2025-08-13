@@ -1,95 +1,106 @@
-.sliderWrapper {
+.scroller {
+  /* Tunables via inline style vars from JSX */
+  --duration: 20s;
+  --gap: 16px;
+  --dir: reverse; /* reverse = left→right; normal = right→left */
+
+  position: relative;
   width: 100%;
-  max-width: 900px;
-  margin: 1px auto;
+  max-width: 1100px;
+  margin: 8px auto;
   overflow: hidden;
-  position: relative;
-}
-.slider {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 1rem 0;
-  height: auto;
-  min-height: 250px;
+
+  /* Soft edge fade so cards “emerge”/“disappear” nicely */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+
+  /* A bit of depth for the subtle curve */
+  perspective: 1200px;
 }
 
-.slide {
-  width: 40%;
-  max-width: 320px;
-  height: auto;
+.track {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  will-change: transform;
+  animation: scroll var(--duration) linear infinite;
+  animation-direction: var(--dir);
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+/* Card styling with gentle “arched” feel via rotateY */
+.card {
+  flex: 0 0 auto;
+  width: clamp(180px, 26vw, 280px);
   aspect-ratio: 5 / 6;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, width 0.3s ease-in-out;
-  position: absolute;
-  opacity: 0;
-  object-fit: cover;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-}
-
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  height: 480px;
-  gap: 20px;
+  border-radius: 18px;
   overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transform: translateZ(0) rotateY(8deg) scale(0.96);
+  transform-origin: center center;
+  backface-visibility: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.image {
+.card:nth-child(odd) {
+  transform: translateZ(0) rotateY(-8deg) scale(0.96);
+}
+
+.card:hover {
+  transform: rotateY(0deg) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+}
+
+.card img {
+  width: 100%;
   height: 100%;
-  border-radius: 20px;
-  transition: all 0.2s ease;
   object-fit: cover;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  opacity: 0.5;
-  transform: scale(0.85);
+  display: block; /* avoid inline gaps */
 }
 
-.center {
-  transform: translateX(0); /* Removed scale(1.25) */
-  z-index: 3;
-  opacity: 1;
-  width: 48%; /* 20% larger than base width */
+/* Smooth infinite loop:
+   Since we render images * 2, shifting by -50% (or +50% with reverse)
+   lines up perfectly at the loop point, so there’s no jump. */
+@keyframes scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
 }
 
-.left {
-  transform: translateX(-100%) scale(0.95) rotateY(12deg);
-  z-index: 2;
-  opacity: 0.85;
-}
-
-.right {
-  transform: translateX(100%) scale(0.95) rotateY(-12deg);
-  z-index: 2;
-  opacity: 0.85;
-}
-
-.hidden {
-  opacity: 0;
+/* Optional: subtle white fades at edges for non-mask browsers (harmless fallback) */
+.scroller::before,
+.scroller::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 10%;
   pointer-events: none;
-  z-index: 1;
 }
 
-.arrow {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #333;
-  z-index: 10;
+.scroller::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
 }
 
+.scroller::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .slide {
-    width: 80%; /* Originally 60%, increased by ~10% */
+  .scroller {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
   }
+  .card {
+    width: clamp(160px, 72vw, 260px);
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .track { animation: none; }
 }
