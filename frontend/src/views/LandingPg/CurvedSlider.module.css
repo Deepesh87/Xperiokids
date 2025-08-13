@@ -1,8 +1,8 @@
 .scroller {
-  /* Tunables via inline style vars from JSX */
-  --duration: 20s;
+  /* Speeds: desktop vs mobile (duration = time to travel the full track) */
+  --duration: 12s;   /* desktop default; adjust to taste */
   --gap: 16px;
-  --dir: reverse; /* reverse = left→right; normal = right→left */
+  --dir: reverse;    /* reverse = left→right; normal = right→left */
 
   position: relative;
   width: 100%;
@@ -10,11 +10,10 @@
   margin: 8px auto;
   overflow: hidden;
 
-  /* Soft edge fade so cards “emerge”/“disappear” nicely */
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-          mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  /* Softer edge fade so images are fully visible before exiting */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
 
-  /* A bit of depth for the subtle curve */
   perspective: 1200px;
 }
 
@@ -27,11 +26,9 @@
   animation-direction: var(--dir);
 }
 
-.paused {
-  animation-play-state: paused;
-}
+.paused { animation-play-state: paused; }
 
-/* Card styling with gentle “arched” feel via rotateY */
+/* Cards with a gentle “curve” via rotateY */
 .card {
   flex: 0 0 auto;
   width: clamp(180px, 26vw, 280px);
@@ -58,18 +55,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; /* avoid inline gaps */
+  display: block;
 }
 
-/* Smooth infinite loop:
-   Since we render images * 2, shifting by -50% (or +50% with reverse)
-   lines up perfectly at the loop point, so there’s no jump. */
+/* IMPORTANT: travel the FULL track width so every image passes the viewport */
 @keyframes scroll {
   from { transform: translate3d(0, 0, 0); }
-  to   { transform: translate3d(-50%, 0, 0); }
+  to   { transform: translate3d(-100%, 0, 0); } /* full track (we doubled the list) */
 }
 
-/* Optional: subtle white fades at edges for non-mask browsers (harmless fallback) */
+/* Optional: light white vignette fallback in non-mask browsers */
 .scroller::before,
 .scroller::after {
   content: "";
@@ -89,18 +84,17 @@
   background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
 }
 
-/* Responsive tweaks */
+/* Mobile: faster so it doesn’t feel sluggish */
 @media (max-width: 768px) {
+  .scroller { --duration: 8s; }  /* try 6–10s to taste */
+  .card { width: clamp(160px, 72vw, 260px); }
   .scroller {
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
-            mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
-  }
-  .card {
-    width: clamp(160px, 72vw, 260px);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
   }
 }
 
-/* Respect reduced motion preferences */
+/* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .track { animation: none; }
 }
