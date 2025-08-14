@@ -4,14 +4,14 @@ import styles from "./CurvedSlider.module.css";
 import img4 from "../../assets/dp1.webp";
 import img24 from "../../assets/voice_latest.webp";
 import img44 from "../../assets/voice.webp";
-import img1 from "../../assets/1.jpg";
-import v2 from "../../assets/voicemasters_new.jpeg";
-import s11 from "../../assets/tyndall2.jpeg";
-import s7 from "../../assets/connect.jpeg";
-import g15 from "../../assets/chaser.jpeg";
-import s8 from "../../assets/kit_2.jpeg";
-import s9 from "../../assets/ph.jpg";
-import s111 from "../../assets/ph3.jpeg";
+import img1 from "../../assets/1.webp";
+import v2 from "../../assets/voicemasters_new.webp";
+import s11 from "../../assets/tyndall2.webp";
+import s7 from "../../assets/connect.webp";
+import g15 from "../../assets/chaser.webp";
+import s8 from "../../assets/kit_2.webp";
+import s9 from "../../assets/ph.webp";
+import s111 from "../../assets/ph3.webp";
 
 /* Your images */
 const images = [

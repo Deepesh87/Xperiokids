@@ -1,87 +1,152 @@
-import image_1 from "../../assets/image_folder/a.jpeg";
-import image_2 from "../../assets/image_folder/b.jpeg";
-import image_3 from "../../assets/image_folder/c.jpeg";
-import image_4 from "../../assets/image_folder/d.jpeg";
-import image_5 from "../../assets/image_folder/e.jpeg";
-import s7 from "../../assets/kit.webp";
-import s118 from "../../assets/tir.jpeg";
-import s8 from "../../assets/akarsh.jpeg";
-import image_6 from "../../assets/image_folder/f.jpeg";
-import image_7 from "../../assets/image_folder/g.jpeg";
-import image_8 from "../../assets/image_folder/h.jpeg";
-import image_9 from "../../assets/image_folder/i.jpeg";
-import image_10 from "../../assets/image_folder/j.jpeg";
-import image_11 from "../../assets/image_folder/k.jpeg";
-import image_12 from "../../assets/image_folder/l.jpeg";
-import image_13 from "../../assets/image_folder/m.jpeg";
-import image_14 from "../../assets/image_folder/abc.jpeg";
-import image_15 from "../../assets/image_folder/def.jpeg";
-import image_16 from "../../assets/image_folder/ghi.jpeg";
-import image_17 from "../../assets/image_folder/ib.jpeg";
-import image_18 from "../../assets/image_folder/ib2.jpeg";
-import image_19 from "../../assets/image_folder/ib3.jpeg";
-import s1 from "../../assets/map.jpg";
-import s2 from "../../assets/r1.jpg";
-import s3 from "../../assets/s5.jpeg";
-import s4 from "../../assets/s4.jpg";
-import s5 from "../../assets/s3.jpg";
-import s6 from "../../assets/tyndall.webp";
-import img1 from "../../assets/1.jpg";
-import img2 from "../../assets/2.jpg";
-import img3 from "../../assets/3.jpg";
-import img4 from "../../assets/dp1.webp";
-import img5 from "../../assets/5.jpg";
-import img6 from "../../assets/6.jpg";
-import img7 from "../../assets/7.jpg";
-import img8 from "../../assets/8.jpg";
-import img9 from "../../assets/9.jpg";
-import img10 from "../../assets/10.jpg";
-import g1 from "../../assets/g1.jpg";
-import g2 from "../../assets/g2.jpg";
-import s17 from "../../assets/connect.jpeg";
-import g3 from "../../assets/g3.jpg";
-import g4 from "../../assets/g4.jpg";
-import g5 from "../../assets/g5.jpg";
-import g15 from "../../assets/chaser.jpeg";
-import g6 from "../../assets/g6.jpg";
-import g7 from "../../assets/g7.jpg";
-import s11 from "../../assets/tyndall2.jpeg";
-import s18 from "../../assets/kit_2.jpeg";
+// ✅ Overwritten with latest .webp versions
+import img_028 from "../../assets/1.webp";                // was 1.jpg
+import img_031 from "../../assets/dp1.webp";              // was dp1.webp (older)
+import img_040 from "../../assets/connect.webp";          // was connect.jpeg
+import img_044 from "../../assets/chaser.webp";           // was chaser.jpeg
+import img_047 from "../../assets/tyndall2.webp";         // was tyndall2.jpeg
+import img_006 from "../../assets/kit_2.webp";            // was kit.webp
+import img_050 from "../../assets/voice_latest.webp";     // new addition
+import img_051 from "../../assets/voicemasters_new.webp"; // was voicemasters_new.jpeg
+import img_052 from "../../assets/voice.webp";            // new addition
+import img_048 from "../../assets/ph.webp";               // new addition
+import img_049 from "../../assets/ph3.webp";              // new addition
 
 
-import v1 from "../../assets/v1.jpeg";
-import v2 from "../../assets/v2.jpeg";
-import v3 from "../../assets/v3.jpeg";
-import v4 from "../../assets/v4.jpeg";
-import v5 from "../../assets/v5.jpeg";
-import v6 from "../../assets/v6.jpeg";
-import v7 from "../../assets/voicemasters_new6.jpeg";
+import img_001 from "../../assets/image_folder/a.jpeg";
+import img_002 from "../../assets/image_folder/b.jpeg";
+import img_003 from "../../assets/image_folder/c.jpeg";
+import img_004 from "../../assets/image_folder/d.jpeg";
+import img_005 from "../../assets/image_folder/e.jpeg";
+import img_009 from "../../assets/image_folder/f.jpeg";
+import img_010 from "../../assets/image_folder/g.jpeg";
+import img_011 from "../../assets/image_folder/h.jpeg";
+import img_012 from "../../assets/image_folder/i.jpeg";
+import img_013 from "../../assets/image_folder/j.jpeg";
+import img_014 from "../../assets/image_folder/k.jpeg";
+import img_015 from "../../assets/image_folder/l.jpeg";
+import img_016 from "../../assets/image_folder/m.jpeg";
+import img_017 from "../../assets/image_folder/abc.jpeg";
+import img_018 from "../../assets/image_folder/def.jpeg";
+import img_019 from "../../assets/image_folder/ghi.jpeg";
+import img_020 from "../../assets/image_folder/ib.jpeg";
+import img_021 from "../../assets/image_folder/ib2.jpeg";
+import img_022 from "../../assets/image_folder/ib3.jpeg";
 
-import l1 from "../../assets/lab1.jpeg";
-import l2 from "../../assets/lab2.jpeg";
-import l3 from "../../assets/lab3.jpeg";
-import l4 from "../../assets/lab4.jpeg";
-import l5 from "../../assets/lab5.jpeg";
-import l6 from "../../assets/lab8.jpeg";
-import l7 from "../../assets/lab7.jpeg";
-import s1118 from "../../assets/group.jpg";
-import s19 from "../../assets/s19.jpg";
-import s20 from "../../assets/s20.jpg";
-import s21 from "../../assets/s21.jpg";
-import s22 from "../../assets/s22.webp";
-import v16 from "../../assets/voicemasters_new5.jpeg";
+import img_007 from "../../assets/tir.jpeg";
+import img_008 from "../../assets/akarsh.jpeg";
+import img_023 from "../../assets/r1.jpg";
+import img_024 from "../../assets/s5.jpeg";
+import img_025 from "../../assets/s4.jpg";
+import img_026 from "../../assets/s3.jpg";
+import img_027 from "../../assets/tyndall.webp";
+import img_029 from "../../assets/2.jpg";
+import img_030 from "../../assets/3.jpg";
+import img_032 from "../../assets/5.jpg";
+import img_033 from "../../assets/6.jpg";
+import img_034 from "../../assets/7.jpg";
+import img_035 from "../../assets/8.jpg";
+import img_036 from "../../assets/9.jpg";
+import img_037 from "../../assets/10.jpg";
+import img_038 from "../../assets/g1.jpg";
+import img_039 from "../../assets/g2.jpg";
+import img_041 from "../../assets/g3.jpg";
+import img_042 from "../../assets/g4.jpg";
+import img_043 from "../../assets/g5.jpg";
+import img_045 from "../../assets/g6.jpg";
+import img_046 from "../../assets/g7.jpg";
+import img_053 from "../../assets/v2.jpeg";
+import img_054 from "../../assets/v3.jpeg";
+import img_055 from "../../assets/v4.jpeg";
+import img_056 from "../../assets/v5.jpeg";
+import img_057 from "../../assets/v6.jpeg";
+import img_058 from "../../assets/voicemasters_new6.jpeg";
+import img_059 from "../../assets/lab1.jpeg";
+import img_060 from "../../assets/lab2.jpeg";
+import img_061 from "../../assets/lab3.jpeg";
+import img_062 from "../../assets/lab4.jpeg";
+import img_063 from "../../assets/lab5.jpeg";
+import img_064 from "../../assets/lab8.jpeg";
+import img_065 from "../../assets/lab7.jpeg";
+import img_066 from "../../assets/group.jpg";
+import img_067 from "../../assets/s19.jpg";
+import img_068 from "../../assets/s20.jpg";
+import img_069 from "../../assets/s21.jpg";
+import img_070 from "../../assets/s22.webp";
+import img_071 from "../../assets/voicemasters_new5.jpeg";
 
+const images = [
+    img_006,
+    img_028,
+    img_031,
+    img_040,
+    img_044,
+    img_047,
+    img_048,
+    img_049,
+    img_050,
+    img_051,
+    img_052,
 
-
-
-const images = [v7, s22, s19,s21,
-s3, s4, s6,s7,l1,s8,s18,v1,v2,v3,v4,v5,v6,v16,s20,s1118,
-  img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-  g1, g2, g3, g4, g5, g6, g7,s17,g15,s11,s118,l2,
-  image_1, image_3, image_4,l4, image_5, image_6, 
-  image_8, image_9, image_10, image_11, image_12, 
-  image_14,l5, image_15, image_16,l3, image_17, image_18, image_19,
-   image_13,s5,l6,image_2, image_7,s2,l7
+    img_001,
+    img_002,
+    img_003,
+    img_004,
+    img_005,
+    img_007,
+    img_008,
+    img_009,
+    img_010,
+    img_011,
+    img_012,
+    img_013,
+    img_014,
+    img_015,
+    img_016,
+    img_017,
+    img_018,
+    img_019,
+    img_020,
+    img_021,
+    img_022,
+    img_023,
+    img_024,
+    img_025,
+    img_026,
+    img_027,
+    img_029,
+    img_030,
+    img_032,
+    img_033,
+    img_034,
+    img_035,
+    img_036,
+    img_037,
+    img_038,
+    img_039,
+    img_041,
+    img_042,
+    img_043,
+    img_045,
+    img_046,
+    img_053,
+    img_054,
+    img_055,
+    img_056,
+    img_057,
+    img_058,
+    img_059,
+    img_060,
+    img_061,
+    img_062,
+    img_063,
+    img_064,
+    img_065,
+    img_066,
+    img_067,
+    img_068,
+    img_069,
+    img_070,
+    img_071
 ];
 
 export default images;
