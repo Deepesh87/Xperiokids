@@ -51,7 +51,7 @@ Through <strong>games, stories, roleplay, and imagination</strong>, children gen
         <div className={styles.videoContainer}>
           <div className={styles.videoWrapper}>
             <iframe
-              src="https://www.youtube.com/embed/tDgXq10xNGI"
+              src="https://www.youtube.com/embed/yoXrngUSfDw"
               title="VoiceMasters Public Speaking"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
