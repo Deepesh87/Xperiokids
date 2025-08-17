@@ -11,7 +11,7 @@ import runnerUp2Img from "../../assets/winner.png";
 /* ① current winners */
 const winners = [
   { badge:"🏆", title:"VoiceMaster of the Month", name:"Aarav Mehta", grade:"6",
-    month:"August 2025", highlight:"Led roles confidently, always punctual...", img:winnerImg, main:true },
+    month:"September 2025", highlight:"Led roles confidently, always punctual...", img:winnerImg, main:true },
   { badge:"🥈", title:"1st Runner-up", name:"Tanya Kapoor",  grade:"5", month:"August 2025",
     highlight:"Strong evaluator, consistent speeches…", img:runnerUp1Img },
   { badge:"🥉", title:"2nd Runner-up", name:"Vivaan Sharma", grade:"7", month:"August 2025",
@@ -60,7 +60,7 @@ export default function VoiceMasterLeaderboard() {
         </div>
 
         {/* ───── Past Winners ───── */}
-        <div className={styles.pastSection}>
+        {/* <div className={styles.pastSection}>
           <h2>🏅 Previous VoiceMasters</h2>
           <ul>
             {pastWinners.map(p => (
@@ -69,7 +69,7 @@ export default function VoiceMasterLeaderboard() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* ───── Scoring Metrics ───── */}
         <div className={styles.scheduleBox}>
