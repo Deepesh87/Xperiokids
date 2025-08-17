@@ -4,6 +4,7 @@ import styles from "./CurvedSlider.module.css";
 import img4 from "../../assets/dp1.webp";
 import img24 from "../../assets/voice_latest.webp";
 import img44 from "../../assets/voice.webp";
+import img444 from "../../assets/new_voice.webp";
 import img1 from "../../assets/1.webp";
 import v2 from "../../assets/voicemasters_new.webp";
 import s11 from "../../assets/tyndall2.webp";
@@ -15,7 +16,7 @@ import s111 from "../../assets/ph3.webp";
 
 /* Your images */
 const images = [
-  img4, img1, img24,img44, v2, s7, s9, s11, s8, s11, g15, s111,
+  img4, img1, img444, img24,img44, v2, s7, s9, s11, s8, s11, g15, s111,
 ];
 
 /* Pause animation when out of view (battery/CPU win) */
