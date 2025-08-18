@@ -1,6 +1,6 @@
 .scroller {
   /* Speeds: desktop vs mobile (duration = time to travel the full track) */
-  --duration: 12s;   /* desktop default; adjust to taste */
+  --duration: 18s;   /* desktop default; adjust to taste */
   --gap: 16px;
   --dir: reverse;    /* reverse = left→right; normal = right→left */
 
