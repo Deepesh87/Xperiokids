@@ -268,11 +268,6 @@
     color: #333;
   }
   
-  .faqItem {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-  }
   
   .faqQuestion {
     font-size: 14px;
@@ -291,14 +286,6 @@
     font-weight: bold;
     font-size: 12px;
   }
-  
-  .faqAnswer {
-    font-size: 12px;
-    color: #555;
-    margin-top: 10px;
-    padding-left: 10px;
-  }
-  
 
   .docFrame iframe,
   .formSection iframe {
@@ -410,4 +397,51 @@
   100% {
     transform: translateY(0) scale(1);
   }
+}
+
+
+/* master FAQ toggle button */
+.faqToggle {
+  width: 100%;
+  text-align: left;
+  background: #c7d2fe;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+}
+
+.faqToggle span {
+  font-size: 0.95rem;
+}
+
+/* FAQ items */
+.faqItem {
+  margin-top: 0.8rem;
+}
+
+.faqButton {
+  width: 88%;
+  text-align: left;
+  background: #e0e7ff;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a8a; 
+}
+
+.faqAnswer {
+  padding: 0.6rem 1rem 0.8rem;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
 }

@@ -8,20 +8,8 @@ import s18 from "../../assets/kit_2.jpeg";
 import s11 from "../../assets/leds_seq.jpeg";
 
 
-
-function FAQItem({ question, answer }) {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <div className={styles.faqItem}>
-      <button className={styles.faqQuestion} onClick={() => setIsOpen(!isOpen)}>
-        {question} <span>{isOpen ? "-" : "+"}</span>
-      </button>
-      {isOpen && <p className={styles.faqAnswer}>{answer}</p>}
-    </div>
-  );
-}
-
 function Robotics() {
+  const [faqOpen, setFaqOpen] = useState(false);
   const faqs = [
     {
       question: "What is Robotics?",
@@ -122,12 +110,25 @@ function Robotics() {
         </div>
       </section>
 
-      <section className={styles.faqSection}>
-        <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
-        {faqs.map((faq, index) => (
-          <FAQItem key={index} question={faq.question} answer={faq.answer} />
-        ))}
-      </section>
+<section className={styles.faqSection}>
+  <button
+    onClick={() => setFaqOpen(!faqOpen)}
+    className={styles.faqToggle}
+  >
+    ❓ Frequently Asked Questions <span>{faqOpen ? "▲" : "▼"}</span>
+  </button>
+
+  {faqOpen && (
+    <div className={styles.faqList}>
+      {faqs.map((faq, i) => (
+        <div key={i} className={styles.faqItem}>
+          <div className={styles.faqButton}>{faq.question}</div>
+          <p className={styles.faqAnswer}>{faq.answer}</p>
+        </div>
+      ))}
+    </div>
+  )}
+</section>
 
       {/* <a href="/summer" className={styles.floatingBackButton}>
         ← Back to Summer Camp
