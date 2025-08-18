@@ -36,7 +36,7 @@ export default function VoiceMasterLeaderboard() {
       <div className={styles.container}>
         {/* ───── Hero ───── */}
         <div className={styles.heroSection}>
-          <h1 className={styles.title}>🎤 VoiceMaster Leaderboard</h1>
+          <h1 className={styles.title}>🎤 VoiceMaster Leaderboard (WIP)</h1>
           <p className={styles.subtitle}>Our shining stars for public speaking & leadership</p>
           <p className={styles.description}>
             Each month we celebrate students who excel on stage, listen with intent
