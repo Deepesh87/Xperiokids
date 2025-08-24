@@ -39,6 +39,12 @@ function Voice() {
 
             </div>
 
+  <div className={styles.container}>
+      <p className={styles.description}>
+        We also reward consistent effort and improvement with badges and certificates.We have a monthly leaderboard to celebrate our top speakers.
+      </p>
+    </div>
+
         <div className={styles.backButtonWrapper}>
           <button className={styles.backButton} onClick={() => window.location.href="/voicemasters-leaderboard"}>
             Show the Leaderboard
