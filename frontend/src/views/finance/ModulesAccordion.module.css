@@ -1,0 +1,104 @@
+:root {
+  --royal: #004aad;        /* Xperio Royal Blue */
+  --royal-ink: #1e3a8a;    /* deep blue for headings (used on VM page) */
+  --ink: #111;
+  --sub: #555;
+  --ring: rgba(0,74,173,.12);
+  --edge: #eef1f6;
+  --bg-soft: #f7fbff;
+}
+
+.wrap { max-width: 980px; margin: 48px auto; padding: 0 16px; }
+.heading {
+  font-size: clamp(1.4rem, 1.2vw + 1rem, 2rem);
+  margin: 0 0 6px;
+  color: var(--royal-ink);
+}
+.kicker { color: #495266; margin: 0 0 16px; }
+
+
+/* Accordion list */
+.listWrap { display: grid; gap: 12px; }
+
+/* Module shell */
+.module {
+  border: 1px solid var(--edge);
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(0,0,0,.03);
+}
+
+/* Header */
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(0deg, #f6f9ff, #fff);
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: background .15s ease;
+}
+.header:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* Blue pill */
+.badge {
+  font-weight: 800;
+  font-size: .85rem;
+  letter-spacing: .3px;
+  color: var(--royal);
+  background: #e7f0ff;
+  border: 1px solid #d5e4ff;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.title {
+  font-size: 1.02rem;
+  margin: 0;
+  color: var(--ink);
+}
+
+.chev { transition: transform .2s ease; color: var(--royal-ink); }
+.open .chev { transform: rotate(180deg); }
+
+/* Body */
+.contentWrap { border-top: 1px solid var(--edge); background: #fff; }
+.list { margin: 0; padding: 12px 18px 16px 42px; list-style: disc; }
+.item { margin: 6px 0; line-height: 1.6; color: #212a3a; }
+
+/* Soft CTA */
+.cta {
+  margin: 20px 0 0;
+  background: var(--bg-soft);
+  border: 1px solid #e6f1ff;
+  padding: 14px 16px;
+  border-radius: 14px;
+  display:flex; gap:12px; justify-content:space-between; align-items:center; flex-wrap:wrap;
+  color: #234;
+}
+.ctaBtn {
+  background: var(--royal);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.ctaBtn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+
+/* Responsive tweaks */
+@media (min-width: 992px) {
+  .title { font-size: 1.08rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chev, .tocLink, .ctaBtn { transition: none; }
+}

@@ -1,23 +1,6 @@
 /* ---------- HERO CONTAINER ---------- */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  max-height: 500px;
-  overflow: hidden;
-}
+.hero { position: relative; width:100%; aspect-ratio: 16/9; max-height: 500px; overflow: hidden;}
 
-/* ---------- OPTIONAL: Maintain 16:9 Ratio for Consistency ---------- */
-/* If you prefer strict 16:9 ratio instead of fixed height, uncomment this instead:
-.hero {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; 
-  overflow: hidden;
-}
-*/
-
-/* ---------- GRADIENT OVERLAY ---------- */
 .hero::before {
   content: "";
   position: absolute;
@@ -60,18 +43,14 @@
   z-index: 2;
 }
 
-.title {
-  font-size: 2.6rem;
-  font-weight: 600;
-  color: inherit;
-  margin-bottom: 10px;
-}
+.title   {
+   font-size: clamp(1.6rem, 2.2vw + 1rem, 2.6rem); 
+  }
 
-.subtitle {
-  font-size: 2.3rem;
-  color: inherit;
-  margin-bottom: 0;
-}
+.subtitle{
+   font-size: clamp(1rem, 1.2vw + .6rem, 2.3rem); line-height: 1.6;
+   }
+
 
 /* ---------- RESPONSIVE BREAKPOINTS ---------- */
 @media (min-width: 1024px) {
@@ -97,4 +76,28 @@
     font-size: 1.1rem;   /* ⬆ Slightly larger than before */
     line-height: 1.6;    /* 👓 Better readability */
   }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .hero:hover .bannerImg { transform: none; }
+}
+.heroCopy { text-shadow: 0 2px 8px rgba(0,0,0,.45); } /* improves contrast on busy images */
+
+/* Make <picture> fill the hero just like the old <img> */
+.hero picture,
+.heroPicture { display: block; width: 100%; height: 100%; }
+.hero picture > img,
+.heroPicture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 5% left/right padding, with a sane floor on small screens */
+.xpad {
+  padding-inline: 5%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .xpad { padding-inline: 16px; } /* ~5% can feel too tight on phones */
 }
