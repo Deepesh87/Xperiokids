@@ -64,7 +64,7 @@ const Finance = () => {
 <div className={`${styles.container} ${styles.xpad}`}>
   <div className={styles.messageBox}>
     <p className={styles.message}>
-      Designed for students from Grade 5 to 10, this Financial Literacy course blends short,
+      Designed for students from Grade 5 to 12, this Financial Literacy course blends short,
       easy-to-follow lessons with real-world-inspired activities. From creating budgets to
       running mock businesses, students explore money concepts through hands-on projects,
       roleplays, and interactive challenges — making finance fun, relatable, and unforgettable.
