@@ -107,7 +107,7 @@ export default function ModulesAccordionFinance() {
         "Certificates / Showcase",
       ],
       id: "module-7"
-    },
+    }
   ];
 
   return (
@@ -127,6 +127,21 @@ export default function ModulesAccordionFinance() {
           />
         ))}
       </div>
+
+<div className={styles.bonusWrap}>
+  <span className={styles.bonusBadge}>🌟 Bonus · Optional</span>
+  <h3 className={styles.bonusTitle}>The Young Entrepreneur Challenge</h3>
+  <ul className={styles.bonusList}>
+    <li>Plan & Budget: Estimate costs for simple flyers/posters</li>
+    <li>Outreach & Marketing: Talk to a printing shop; explore real outreach</li>
+    <li>Teamwork & Execution: Work in small groups with assigned roles</li>
+    <li>Reflection: Present learnings on money decisions & outcomes</li>
+  </ul>
+  <p className={styles.bonusNote}>
+    💡 This is an <strong>optional, internship-style project</strong> that gives students
+    a real taste of entrepreneurship and financial decision-making.
+  </p>
+</div>
 
       {/* Soft CTA */}
       <div className={styles.cta}>
