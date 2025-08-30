@@ -9,6 +9,9 @@ import styles from "./library.module.css";
 import cover1 from "../../assets/wimpy_kid.webp";
 import cover2 from "../../assets/TheaStilton.webp";
 
+/* =========================
+   Data
+========================= */
 const BOOKS = [
   {
     id: "b1",
@@ -315,6 +318,10 @@ export default function Library() {
     });
   }, [query, activeGrade, tag]);
 
+  // Empty-state helpers
+  const noResultsCoverOnly = filtered.length === 0 && remainingFiltered.length > 0;
+  const noResultsAll = filtered.length === 0 && remainingFiltered.length === 0;
+
   return (
     <>
       <Helmet>
@@ -425,8 +432,8 @@ export default function Library() {
             {filtered.map((b) => (
               <BookCard key={b.id} book={b} />
             ))}
-            {filtered.length === 0 && (
-              <p className={styles.empty}>No matches. Try a different grade or theme.</p>
+            {noResultsCoverOnly && (
+              <p className={styles.empty}>No image-card matches. Scroll down for more titles.</p>
             )}
           </div>
 
@@ -453,6 +460,9 @@ export default function Library() {
                 </li>
               ))}
             </ul>
+            {noResultsAll && (
+              <p className={styles.empty}>No matches. Try a different grade or theme.</p>
+            )}
           </section>
         </section>
 
