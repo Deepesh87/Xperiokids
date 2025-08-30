@@ -306,3 +306,57 @@ a:hover {
    style still works nicely as a heading */
 
 
+.libraryTeaser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0 0;           /* sits right under FAQ */
+  padding: 1.25rem 1rem;
+  border: 1px solid #e9eef5;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+.libraryText h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  color: #004aad;             /* your royal blue */
+}
+
+.libraryText p {
+  margin: 0;
+  line-height: 1.5;
+  color: #333;
+  max-width: 100ch;
+}
+
+.libraryButton {
+  white-space: nowrap;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #004aad;        /* royal blue */
+  color: #fff;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.libraryButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 74, 173, 0.25);
+  background: #003a88;
+}
+
+@media (max-width: 720px) {
+  .libraryTeaser {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .libraryButton {
+    width: 100%;
+    text-align: center;
+  }
+}

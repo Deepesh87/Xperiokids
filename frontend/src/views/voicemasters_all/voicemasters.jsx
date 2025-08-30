@@ -132,6 +132,28 @@ export default function VoiceMastersLanding() {
           )}
         </div>
 
+{/* ─────────── Library Teaser ─────────── */}
+<div className={styles.libraryTeaser}>
+  <div className={styles.libraryText}>
+    <h2>📚 Xperio Children’s Library</h2>
+    <p>
+      We’ve curated a cozy, growing library for young readers—picture books, STEM picks, classics,
+      and inspiring biographies to spark ideas for speeches and projects.
+    </p>
+  </div>
+  <button
+    className={styles.libraryButton}
+    onClick={() => navigate("/library")}
+    aria-label="Browse Xperio Children’s Library"
+  >
+    Browse the Library
+  </button>
+</div>
+
+
+
+
+
         {/* ─────────── Pricing Card (enlarged image) ─────────── */}
         <div className={styles.trackCards}>
           <div className={styles.trackCard}>
