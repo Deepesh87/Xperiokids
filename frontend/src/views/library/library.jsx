@@ -155,13 +155,33 @@ const BOOKS = [
     cover: require("../../assets/Unfinished.webp"),
     blurb:
       "The memoir of global icon Priyanka Chopra Jonas — tracing her journey from India to Hollywood, and the lessons of resilience, ambition, and identity she learned along the way. A candid, inspiring read for older teens."
-  }
+  },
+    {
+    id: "b20",
+    title: "The Secret",
+    author: "Rhonda Byrne",
+    gradeFrom: 8,
+    gradeTo: null, // open-ended (10+)
+    tags: [ "inspiration", "values"],
+    cover: require("../../assets/secret.webp"),
+    blurb:
+      "A transformative book that explores the power of positive thinking and the law of attraction. Encourages readers to harness their thoughts and beliefs to create a fulfilling life."
+  },
+    {
+    id: "b21",
+    title: "The Kid who came from Space",
+    author: "Ross Welford",
+    gradeFrom: 5,
+    gradeTo: 10, // open-ended (10+)
+    tags: ["science","inspiration"],
+    cover: require("../../assets/space.webp"),
+    blurb:
+      "A small village in the wilds of northumberland is rocked by the disappearance of twelve-year-old Tammy. Only her twin brother, Ethan, knows she is safe  and the extraordinary truth of where she is. It is a secret he must keep, or risk never seeing her again." 
+  }  
 ];
 
 // Text-only list to avoid images
 const REMAINING_BOOKS = [
-  { title: "The Secret", author: "Rhonda Byrne", gradeFrom: 8, gradeTo: null, tags: ["inspiration","values"] },
-  { title: "Space Oddity", author: "Ross Welford", gradeFrom: 5, gradeTo: 8, tags: ["science","inspiration"] },
   { title: "Puzzles to Puzzle You", author: "Shakuntala Devi", gradeFrom: 6, gradeTo: 10, tags: ["STEM","values"] },
   { title: "Princess Mirror-Belle", author: "Julia Donaldson", gradeFrom: 3, gradeTo: 6, tags: ["values","inspiration"] },
   { title: "100 Maths Puzzles with Answers", author: "Gikso", gradeFrom: 5, gradeTo: 9, tags: ["STEM","values"] },
