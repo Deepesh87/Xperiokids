@@ -177,12 +177,33 @@ const BOOKS = [
     cover: require("../../assets/space.webp"),
     blurb:
       "A small village in the wilds of northumberland is rocked by the disappearance of twelve-year-old Tammy. Only her twin brother, Ethan, knows she is safe  and the extraordinary truth of where she is. It is a secret he must keep, or risk never seeing her again." 
-  }  
+  },
+    { id: "b22",
+      title: "Puzzles to Puzzle You",
+      author: "Shakuntala Devi",
+      gradeFrom: 6,
+      gradeTo: null,
+      tags: ["STEM","values"] ,
+          cover: require("../../assets/puzzles.webp"),
+    blurb:
+      "Discover the adventure and excitement of mathematical puzzles. Match your wits with the human computer. Sharpen your intellect, delight your friends and enjoy hours of purposeful entertainment." 
+    
+    },
+        { id: "b22",
+      title: "Puzzles to Puzzle You",
+      author: "Shakuntala Devi",
+      gradeFrom: 6,
+      gradeTo: null,
+      tags: ["STEM","values"] ,
+          cover: require("../../assets/puzzles.webp"),
+    blurb:
+      "Discover the adventure and excitement of mathematical puzzles. Match your wits with the human computer. Sharpen your intellect, delight your friends and enjoy hours of purposeful entertainment." 
+    
+    }
 ];
 
 // Text-only list to avoid images
 const REMAINING_BOOKS = [
-  { title: "Puzzles to Puzzle You", author: "Shakuntala Devi", gradeFrom: 6, gradeTo: 10, tags: ["STEM","values"] },
   { title: "Princess Mirror-Belle", author: "Julia Donaldson", gradeFrom: 3, gradeTo: 6, tags: ["values","inspiration"] },
   { title: "100 Maths Puzzles with Answers", author: "Gikso", gradeFrom: 5, gradeTo: 9, tags: ["STEM","values"] },
   { title: "Dictionary of Common Errors", author: "Longman", gradeFrom: 9, gradeTo: null, tags: ["public speaking","classics"] },
