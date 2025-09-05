@@ -5,13 +5,10 @@ import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import styles from "./library.module.css";
 
-// ---- Sample covers (replace with your assets or remote URLs) ----
 import cover1 from "../../assets/wimpy_kid.webp";
 import cover2 from "../../assets/TheaStilton.webp";
 
-/* =========================
-   Data
-========================= */
+
 const BOOKS = [
     {
     id: "b10",
