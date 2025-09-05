@@ -13,40 +13,7 @@ import cover2 from "../../assets/TheaStilton.webp";
    Data
 ========================= */
 const BOOKS = [
-  {
-    id: "b1",
-    title: "Diary of a Wimpy Kid – The Complete Collection",
-    author: "Jeff Kinney",
-    gradeFrom: 4,
-    gradeTo: 9,
-    tags: ["inspiration", "values", "classics"],
-    cover: cover1,
-    blurb:
-      "Laugh-out-loud adventures of Greg Heffley. This bestselling series captures the ups and downs of middle school life with humor, heart, and relatable lessons."
-  },
-  {
-    id: "b8",
-    title: "Thea Stilton Magical Adventures Collection",
-    author: "Thea Stilton",
-    gradeFrom: 4,
-    gradeTo: 8,
-    tags: ["values", "inspiration", "classics"],
-    cover: cover2,
-    blurb:
-      "A delightful set of Thea Stilton stories — These magical adventures blend friendship, courage, and imagination to inspire young readers."
-  },
-  {
-    id: "b9",
-    title: "Fing",
-    author: "David Walliams",
-    gradeFrom: 3,
-    gradeTo: 7,
-    tags: ["values", "inspiration", "classics"],
-    cover: require("../../assets/Fing.webp"),
-    blurb:
-      "Meet Myrtle Meek and her outlandish demand for a pet ‘Fing’. A wildly funny story about imagination, greed, and learning what truly matters."
-  },
-  {
+    {
     id: "b10",
     title: "Slime",
     author: "David Walliams",
@@ -101,6 +68,40 @@ const BOOKS = [
     blurb:
       "Join Peter, Janet, Jack, Barbara, George, Pam, Colin, and Scamper the dog in this classic detective series. The Secret Seven solve mysteries, uncover clues, and celebrate teamwork and friendship across fifteen timeless adventures."
   },
+  {
+    id: "b1",
+    title: "Diary of a Wimpy Kid – The Complete Collection",
+    author: "Jeff Kinney",
+    gradeFrom: 4,
+    gradeTo: 9,
+    tags: ["inspiration", "values", "classics"],
+    cover: cover1,
+    blurb:
+      "Laugh-out-loud adventures of Greg Heffley. This bestselling series captures the ups and downs of middle school life with humor, heart, and relatable lessons."
+  },
+  {
+    id: "b8",
+    title: "Thea Stilton Magical Adventures Collection",
+    author: "Thea Stilton",
+    gradeFrom: 4,
+    gradeTo: 8,
+    tags: ["values", "inspiration", "classics"],
+    cover: cover2,
+    blurb:
+      "A delightful set of Thea Stilton stories — These magical adventures blend friendship, courage, and imagination to inspire young readers."
+  },
+  {
+    id: "b9",
+    title: "Fing",
+    author: "David Walliams",
+    gradeFrom: 3,
+    gradeTo: 7,
+    tags: ["values", "inspiration", "classics"],
+    cover: require("../../assets/Fing.webp"),
+    blurb:
+      "Meet Myrtle Meek and her outlandish demand for a pet ‘Fing’. A wildly funny story about imagination, greed, and learning what truly matters."
+  },
+
   {
     id: "b15",
     title: "The Little Prince",
@@ -189,15 +190,15 @@ const BOOKS = [
       "Discover the adventure and excitement of mathematical puzzles. Match your wits with the human computer. Sharpen your intellect, delight your friends and enjoy hours of purposeful entertainment." 
     
     },
-        { id: "b22",
-      title: "Puzzles to Puzzle You",
-      author: "Shakuntala Devi",
-      gradeFrom: 6,
+        { id: "b23",
+      title: "Selected Short Stories",
+      author: "Rabindranath Tagore",
+      gradeFrom: 9,
       gradeTo: null,
-      tags: ["STEM","values"] ,
-          cover: require("../../assets/puzzles.webp"),
+      tags: ["classics","values","inspiration"] ,
+          cover: require("../../assets/short.webp"),
     blurb:
-      "Discover the adventure and excitement of mathematical puzzles. Match your wits with the human computer. Sharpen your intellect, delight your friends and enjoy hours of purposeful entertainment." 
+      "Beautifully depicting the essence of human relationships, Tagore's stories are set in rural Bengali villages which further emanate the spirit of the wider Indian culture." 
     
     }
 ];
@@ -207,7 +208,6 @@ const REMAINING_BOOKS = [
   { title: "Princess Mirror-Belle", author: "Julia Donaldson", gradeFrom: 3, gradeTo: 6, tags: ["values","inspiration"] },
   { title: "100 Maths Puzzles with Answers", author: "Gikso", gradeFrom: 5, gradeTo: 9, tags: ["STEM","values"] },
   { title: "Dictionary of Common Errors", author: "Longman", gradeFrom: 9, gradeTo: null, tags: ["public speaking","classics"] },
-  { title: "Selected Short Stories", author: "Rabindranath Tagore", gradeFrom: 9, gradeTo: null, tags: ["classics","values","inspiration"] },
   { title: "The Almanack of Naval Ravikant", author: "Eric Jorgenson", gradeFrom: 10, gradeTo: null, tags: ["biography","inspiration","values"] },
   { title: "The Psychology of Money", author: "Morgan Housel", gradeFrom: 9, gradeTo: null, tags: ["inspiration","values"] },
   { title: "Impatient Optimist: Bill Gates in His Own Words", author: "Bill Gates (Biography)", gradeFrom: 9, gradeTo: null, tags: ["biography","inspiration"] },
