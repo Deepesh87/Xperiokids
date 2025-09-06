@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./robotics.module.css";
 import Nav from "../../components/Navbar/Nav";
+import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer/Footer";
 import s2 from "../../assets/r1.jpg";
 import s8 from "../../assets/akarsh.jpeg";
@@ -53,6 +54,18 @@ function Robotics() {
 
   return (
     <>
+      <Helmet>
+        <title>Robotics Classes for Kids in Haralur, Bengaluru</title>
+        <meta
+          name="description"
+          content="Join Xperio Learning’s robotics program for children in Bengaluru. Build Science and Technology skills through structured classes."
+        />
+        <meta
+          name="keywords"
+          content="Robotics for Kids, Robotics Classes Haralur, Kids Robotics, Robotics Classes Bengaluru"
+        />
+        <link rel="canonical" href="https://www.xperiolearning.com/robotics" />
+      </Helmet>
       <Nav />
       
       <section className={styles["demo-page"]}>
