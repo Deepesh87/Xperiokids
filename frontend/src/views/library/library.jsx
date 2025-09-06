@@ -198,6 +198,17 @@ const BOOKS = [
       "Beautifully depicting the essence of human relationships, Tagore's stories are set in rural Bengali villages which further emanate the spirit of the wider Indian culture." 
     
     }
+    ,
+        { id: "b24",
+      title: "Charlie and the Chocolate Factory",
+      author: "Roald Dahl",
+      gradeFrom: 4,
+      gradeTo: 9,
+      tags: ["classics","values","inspiration"] ,
+          cover: require("../../assets/charlie.webp"),
+    blurb:
+      "Charlie Bucket loves chocolate. And Mr Willy Wonka, the most wondrous inventor in the world, is opening the gates of his amazing chocolate factory to five lucky children. It's the prize of a lifetime! Charlie needs just one Golden Ticket and these delicious treats could all be his." 
+    }
 ];
 
 // Text-only list to avoid images
@@ -212,7 +223,6 @@ const REMAINING_BOOKS = [
   { title: "House Arrest", author: "K.A. Holt (likely)", gradeFrom: 6, gradeTo: 9, tags: ["values","inspiration"] },
   { title: "The Hardy Boys", author: "Franklin W. Dixon", gradeFrom: 4, gradeTo: 9, tags: ["classics","values","inspiration"] },
   { title: "Tuesdays with Morrie", author: "Mitch Albom", gradeFrom: 9, gradeTo: null, tags: ["biography","inspiration","values"] },
-  { title: "Charlie and the Chocolate Factory", author: "Roald Dahl", gradeFrom: 3, gradeTo: 7, tags: ["classics","values","inspiration"] },
   { title: "The Road Less Traveled", author: "M. Scott Peck", gradeFrom: 10, gradeTo: null, tags: ["inspiration","values"] },
   { title: "The Mouse That Roared", author: "Ramanathan & Gupta", gradeFrom: 9, gradeTo: null, tags: ["classics","values"] },
   { title: "The Aristocats", author: "Disney", gradeFrom: 3, gradeTo: 6, tags: ["values","inspiration"] },
