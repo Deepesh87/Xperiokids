@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./voicemasters-seniors.module.css";
+import styles from "./public-speaking-seniors.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import pricing from "../../assets/Voicemasters_fees.png";
@@ -43,7 +43,7 @@ Through <strong>games, stories, roleplay, and imagination</strong>, children gen
         </div>
 
 <div className={styles.backButtonWrapper}>
-  <button className={styles.backButton} onClick={() => window.location.href = "/voicemasters-seniors"}>
+  <button className={styles.backButton} onClick={() => window.location.href = "/public-speaking-seniors"}>
     ← Switch to Seniors (Grade 5 onwards)
   </button>
 </div>

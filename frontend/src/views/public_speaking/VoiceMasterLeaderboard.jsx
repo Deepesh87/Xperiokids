@@ -87,7 +87,7 @@ export default function VoiceMasterLeaderboard() {
 
         {/* ───── Back button ───── */}
         <div className={styles.backButtonWrapper}>
-          <button className={styles.backButton} onClick={() => window.location.href="/voicemasters-seniors"}>
+          <button className={styles.backButton} onClick={() => window.location.href="/public-speaking-seniors"}>
             ← Back to VoiceMasters Home
           </button>
         </div>

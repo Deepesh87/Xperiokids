@@ -404,7 +404,7 @@ export default function Library() {
               </button>
               <button
                 className={styles.ctaGhost}
-                onClick={() => navigate("/voicemasters")}
+                onClick={() => navigate("/public-speaking")}
               >
                 Back to Voicemasters
               </button>

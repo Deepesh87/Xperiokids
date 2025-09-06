@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import pricing      from "../../assets/Voicemasters_fees.png";
 import juniorThumb  from "../../assets/juniors_voicemasters.png";
 import seniorThumb  from "../../assets/seniors_voicemasters.png";
-import styles       from "./voicemasters.module.css";
+import styles       from "./public-speaking.module.css";
 
 /* Mini helper for each Q-A pair (no toggle inside now) */
 const FAQItem = ({ q, a }) => (
@@ -35,7 +35,7 @@ export default function VoiceMastersLanding() {
           name="keywords"
           content="Public Speaking for Kids, Communication Classes Haralur, Kids Debate, Voicemasters Bengaluru, Public Speaking Classes Bengaluru"
         />
-        <link rel="canonical" href="https://www.xperiolearning.com/voicemasters" />
+        <link rel="canonical" href="https://www.xperiolearning.com/public-speaking" />
       </Helmet>
 
       <Nav />
@@ -89,7 +89,7 @@ export default function VoiceMastersLanding() {
             <img src={juniorThumb} className={styles.thumbImage} alt="Juniors Track" />
             <h3>VoiceMasters Juniors</h3>
             <p>Perfect for Grades 1–4. Games, stories, drawing & mini-speeches to build early confidence.</p>
-            <button onClick={() => navigate("/voicemasters-juniors")}>Explore Juniors</button>
+            <button onClick={() => navigate("/public-speaking-juniors")}>Explore Juniors</button>
           </div>
 
           {/* Seniors */}
@@ -97,7 +97,7 @@ export default function VoiceMastersLanding() {
             <img src={seniorThumb} className={styles.thumbImage} alt="Seniors Track" />
             <h3>VoiceMasters Seniors</h3>
             <p>Grades 5+. Formal speeches, leadership roles, evaluations & Toastmasters-style projects.</p>
-            <button onClick={() => navigate("/voicemasters-seniors")}>Explore Seniors</button>
+            <button onClick={() => navigate("/public-speaking-seniors")}>Explore Seniors</button>
           </div>
         </div>
 

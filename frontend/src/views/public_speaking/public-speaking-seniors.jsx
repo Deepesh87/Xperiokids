@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import MeetingCounter from "./meeting_number";
-import styles from "./voicemasters-seniors.module.css";
+import styles from "./public-speaking-seniors.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 
@@ -60,7 +60,7 @@ function Voice() {
         </div>
 
 <div className={styles.backButtonWrapper}>
-  <button className={styles.backButton} onClick={() => window.location.href = "/voicemasters-juniors"}>
+  <button className={styles.backButton} onClick={() => window.location.href = "/public-speaking-juniors"}>
     ← Switch to Juniors (Grade 2 to 4)
   </button>
 </div>

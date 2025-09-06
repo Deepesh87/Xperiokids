@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import styles from "./voicemasters-seniors.module.css";
+import styles from "./public-speaking-seniors.module.css";
 
 const MeetingCounter = () => {
   const START_DATE = new Date("2025-03-02");

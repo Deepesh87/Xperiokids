@@ -6,9 +6,9 @@ import FalseRoute from "../common/FalseRoute";
 const Main = lazy(() => import("../views/LandingPg/Main"));
 const About = lazy(() => import("../views/About us/About"));
 const Gallery = lazy(() => import("../views/gallery/gallery"));
-const Voice = lazy(() => import("../views/voicemasters/voicemasters-seniors"));
-const VoiceJ = lazy(() => import("../views/voicemasters/voicemasters-juniors"));
-const VoiceMastersLanding = lazy(() => import("../views/voicemasters_all/voicemasters"));
+const Voice = lazy(() => import("../views/public_speaking/public-speaking-seniors"));
+const VoiceJ = lazy(() => import("../views/public_speaking/public-speaking-juniors"));
+const VoiceMastersLanding = lazy(() => import("../views/public_speaking_all/public-speaking"));
 const Library = lazy(() => import("../views/library/library"));
 const Science = lazy(() => import("../views/summercamp/science"));
 const Sudoku = lazy(() => import("../views/sudoku/sudoku"));
@@ -19,7 +19,7 @@ const Terms = lazy(() => import("../views/terms/terms"));
 const Bday = lazy(() => import("../views/bday/bday"));
 const Camp24 = lazy(() => import("../views/summercamp24/camp24"));
 const SummerCampLanding = lazy(() => import("../views/SummerCampLanding/landing"));
-const VoiceMasterLeaderboard = lazy(() => import("../views/voicemasters/VoiceMasterLeaderboard"));
+const VoiceMasterLeaderboard = lazy(() => import("../views/public_speaking/VoiceMasterLeaderboard"));
 
 
 function MainRoutes() {
@@ -29,9 +29,9 @@ function MainRoutes() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/voicemasters-seniors" element={<Voice />} />
-        <Route path="/voicemasters-juniors" element={<VoiceJ />} />
-        <Route path="/voicemasters" element={<VoiceMastersLanding />} />
+        <Route path="/public-speaking-seniors" element={<Voice />} />
+        <Route path="/public-speaking-juniors" element={<VoiceJ />} />
+        <Route path="/public-speaking" element={<VoiceMastersLanding />} />
         <Route path="/library" element={<Library />} />
         <Route path="/science" element={<Science />} />
         <Route path="/sudoku" element={<Sudoku />} />

@@ -8,7 +8,7 @@ import stemLogo from "../../assets/stem.webp";
 
 const Footer = () => {
   const location = useLocation();
-  const hiddenRoutes = ["/voicemasters", "/olympiad", "/summer", "/terms"];
+  const hiddenRoutes = ["/public-speaking", "/olympiad", "/summer", "/terms"];
 
   return (
     <footer className={`${styles.footer}`}>
@@ -34,7 +34,7 @@ const Footer = () => {
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/">Home</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/about">About Us</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/gallery">Gallery</a></li>
-        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/voicemasters" target="_blank">Public Speaking</a></li>
+        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/public-speaking" target="_blank">Public Speaking</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/olympiad" target="_blank">Olympiad</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/">Careers</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/sudoku" target="_blank">Sudoku</a></li>
@@ -77,7 +77,7 @@ const Footer = () => {
 
       {!hiddenRoutes.includes(location.pathname) && (
         <div className={styles.summer_camp_notification}>
-          <a href="/voicemasters" target="_blank" rel="noopener noreferrer">
+          <a href="/public-speaking" target="_blank" rel="noopener noreferrer">
             <p>🎤 <b> Public Speaking</b></p>
           </a>
         </div>
