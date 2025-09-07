@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import styles from "./all-blogs.module.css"; // shared blog CSS
+import styles from "./all-blog.module.css"; // shared blog CSS
 
 const READING_MINUTES = 4;
 const PUBLISHED = "2025-09-07";

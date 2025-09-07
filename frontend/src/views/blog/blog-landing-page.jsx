@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import styles from "./all-blogs.module.css";
+import styles from "./blog-landing-page.module.css";
 import hero1 from "../../assets/robotics-problem-solving-hero.webp";
 import hero2 from "../../assets/public-speaking-confidence.webp";
 import hero3 from "../../assets/lego-robotics-beginners.webp";
