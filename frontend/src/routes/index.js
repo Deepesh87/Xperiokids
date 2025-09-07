@@ -20,6 +20,8 @@ const Bday = lazy(() => import("../views/bday/bday"));
 const Camp24 = lazy(() => import("../views/summercamp24/camp24"));
 const SummerCampLanding = lazy(() => import("../views/SummerCampLanding/landing"));
 const VoiceMasterLeaderboard = lazy(() => import("../views/public_speaking/VoiceMasterLeaderboard"));
+const Blog = lazy(() => import("../views/blog/blog"));
+const WhyRoboticsProblemSolving = lazy(() => import("../views/blog/why-robotics-classes-build-problem-solving"));
 
 
 function MainRoutes() {
@@ -44,6 +46,8 @@ function MainRoutes() {
         <Route path="/summer" element={<SummerCampLanding />} />
         <Route path="*" element={<FalseRoute />} />
         <Route path="/voicemasters-leaderboard" element={<VoiceMasterLeaderboard />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="blog/why-robotics-classes-build-problem-solving" element={<WhyRoboticsProblemSolving />} />
       </Routes>
     </Suspense>
   );
