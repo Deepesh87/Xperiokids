@@ -23,7 +23,7 @@ const ALL_POSTS = [
     readingMinutes: 4
   },
   {
-    slug: "public-speaking-confidence-kids",
+    slug: "public-speaking-for-kids",
     title: "Public Speaking: A Simple Path to Confidence for Kids",
     description:
       "Practical activities and tips from VoiceMasters to help children speak clearly and confidently.",
