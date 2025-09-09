@@ -41,7 +41,7 @@ const ALL_POSTS = [
     image: hero3,
     datePublished: "2025-09-10",
     dateModified: "2025-09-20",
-    tags: ["Robotics", "LEGO", "Beginners"],
+    tags: ["Robotics", "LEGO", "Problem Solving"],
     readingMinutes: 3
   },
   {
