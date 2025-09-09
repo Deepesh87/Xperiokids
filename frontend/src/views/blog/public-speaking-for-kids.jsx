@@ -167,35 +167,52 @@ export default function PublicSpeakingBlog() {
           <div className={styles.tocBody}>
             <strong>In this article</strong>
             <ul className={styles.tocList}>
-              <li className={styles.tocItem}><a href="#why-speaking">Why Public Speaking Matters</a></li>
-              <li className={styles.tocItem}><a href="#how-we-teach">How We Teach (Simple & Supportive)</a></li>
-              <li className={styles.tocItem}><a href="#pathway">Age-Wise Learning Pathway</a></li>
-              <li className={styles.tocItem}><a href="#real-world">Real-World Practice & Showcases</a></li>
-              <li className={styles.tocItem}><a href="#faq">FAQ</a></li>
-              <li className={styles.tocItem}><a href="#cta">Enroll Near You</a></li>
+              <li className={styles.tocItemMagenta}><a href="#why-speaking">Why Public Speaking Matters</a></li>
+              <li className={styles.tocItemMagenta}><a href="#how-we-teach">How We Teach (Simple & Supportive)</a></li>
+              <li className={styles.tocItemMagenta}><a href="#pathway">Age-Wise Learning Pathway</a></li>
+              <li className={styles.tocItemMagenta}><a href="#real-world">Real-World Practice & Showcases</a></li>
+              <li className={styles.tocItemMagenta}><a href="#faq">FAQ</a></li>
+              <li className={styles.tocItemMagenta}><a href="#cta">Enroll Near You</a></li>
             </ul>
           </div>
         </nav>
 
         {/* Sections */}
-        <section id="why-speaking" className={styles.main}>
-          <h2 className={styles.h2}>Why Public Speaking Matters</h2>
+        <section id="why-speaking" className={styles.mainMagenta}>
+          <h2 className={styles.h2Magenta}>Why Public Speaking Matters</h2>
           <p className={styles.p}>
             Clear speaking helps children do better in school presentations, interviews, and everyday conversations.
             Confidence grows when kids learn how to control their voice, manage their nerves, and organize ideas into
-            simple structures that any audience can follow.
+            simple structures that any audience can follow. Children alos learn storytelling skills that boost reading comprehension
+            and writing ability. Plus, Storytelling is fun! Storytelling is a powerful tool for connection and influence,
+            and mastering it early sets kids up for success in school and beyond. Afterall Storytelling is everywhere—in
+            books, movies, ads, speeches, and conversations. And of course at Offices where presentations and pitches are
+            part of daily life.
           </p>
           <blockquote className={styles.quote} style={{ borderLeftColor: "var(--x-magenta)", background: "#fff5f8", color: "#7a1238" }}>
             “Confidence is a skill—build it with small wins, often.”
           </blockquote>
         </section>
 
-        <section id="how-we-teach" className={styles.main}>
-          <h2 className={styles.h2}>How We Teach (Simple & Supportive)</h2>
+        <section id="how-we-teach" className={styles.mainMagenta}>
+          <h2 className={styles.h2Magenta}>How We Teach (Simple & Supportive)</h2>
           <p className={styles.p}>
-            We keep practice short, frequent, and fun. Students speak in low-pressure settings first (pairs and small
-            groups), then move to larger audiences as their comfort rises. Each activity targets one focus at a time:
-            <em> voice clarity</em>, <em>structure</em>, <em>body language</em>, or <em>persuasion</em>.
+            The Course follows a Club Structure and every student is free to go at their own pace. Each session includes
+            Prepared Speeches that can be 3 to 6 minutes long, and Impromptu Speeches that are 1 to 3 minutes long. Then, we have an
+          Evaluation segment where each student receives positive, specific feedback on what they did well and clear actionable steps
+          to improve. This encourages a growth mindset and helps students see progress over time. The Prepared Speeches are practiced at 
+          home and presented in class, while Impromptu Speeches are done on the spot to build quick thinking skills. Each Prepared speech (called Projects P1 to P8)
+          target a specific skill, such as <em> Body Laungauge</em>, <em>Vocal Variety</em>, <em>Humour</em>, or <em>Persuasion</em> so children develop every aspect of public speaking. The Projects 
+          are progressively more challenging, but every child can go at their own pace and choose to present when ready.
+<br />
+          They meetings are almost entirely conducted by children with coaches providing gentle guidance and support. One Meeting every month is 
+          about Book Reading where children share their favourite books and the story with the class. Through this we encourage a love for reading and books and every child 
+          is encouraged to read at least 1 book a month. This builds reading fluency, vocabulary, and comprehension skills.
+
+<br />
+          Each session is fun and engaging, with games, activities, and friendly competition to keep kids motivated. The
+          supportive environment helps even shy kids open up and enjoy speaking in front of others. Children take turns to take various pre-deicded roles in each meeting such as
+          Timer, Ah-Counter, Grammarian, Mood-Watcher, MC, Table Topic Master, Giggle Master, General Evaluator and more. This builds leadership skills and encourages active listening and critical thinking.
           </p>
           <ul className={styles.badges} aria-label="Skill focus">
             <li><span className={styles.badge}>Voice & Pace</span></li>
@@ -205,21 +222,22 @@ export default function PublicSpeakingBlog() {
           </ul>
         </section>
 
-        <section id="pathway" className={styles.main}>
-          <h2 className={styles.h2}>Age-Wise Learning Pathway</h2>
+        <section id="pathway" className={styles.mainMagenta}>
+          <h2 className={styles.h2Magenta}>Age-Wise Learning Pathway</h2>
           <p className={styles.p}>
-            <strong>Grades 1–4:</strong> games for clarity, expression, and posture; mini-talks of 30–60 seconds.<br />
-            <strong>Grades 5–7:</strong> storytelling arcs, debate basics, visual aids; 1–2 minute speeches.<br />
-            <strong>Grades 8–10:</strong> persuasive speaking, extempore, interviews, and panel formats; 2–4 minute talks.
+            <strong>Juniors: Grades 2–4:</strong> games for clarity, expression, and posture; playful & engaging. <br />
+            <strong>Seniors: Grades 5–10:</strong> persuasive speaking, storytelling arcs, Book Reading and more.<br />
           </p>
         </section>
 
-        <section id="real-world" className={styles.main}>
-          <h2 className={styles.h2}>Real-World Practice & Showcases</h2>
+        <section id="real-world" className={styles.mainMagenta}>
+          <h2 className={styles.h2Magenta}>Real-World Practice & Showcases</h2>
           <p className={styles.p}>
             Kids apply skills in class showcases, school events, and recorded presentations. They learn preparation habits:
             planning points, practicing aloud, and using simple notes to stay on track. Feedback is concrete and positive,
-            so every child knows exactly what to try next.
+            so every child knows exactly what to try next. This builds real-world confidence and competence. The Feedback from Parents 
+            has been overwhelmingly positive with many parents reporting noticeable improvements in their child's confidence and communication skills.
+            Many of our students have also won awards in school speech competitions and hosted event in their apartment complexes and schools.
           </p>
         </section>
 
@@ -234,7 +252,7 @@ export default function PublicSpeakingBlog() {
         </aside>
 
         {/* Internal links */}
-        <section className={styles.main}>
+        <section className={styles.mainMagenta}>
           <h3 className={styles.h3}>Explore programs</h3>
           <ul className={styles.badges}>
             <li><Link to="/public-speaking" className={`${styles.cta} ${styles.ctaMagenta}`}>Public Speaking (VoiceMasters)</Link></li>
@@ -243,32 +261,33 @@ export default function PublicSpeakingBlog() {
         </section>
 
         {/* FAQ */}
-        <section id="faq" className={`${styles.main} ${styles.faq}`}>
-          <h2 className={styles.h2}>FAQ</h2>
+        <section id="faq" className={`${styles.mainMagenta} ${styles.faq}`}>
+          <h2 className={styles.h2Magenta}>FAQ</h2>
           <details>
             <summary>My child is shy—will this help?</summary>
             <p className={styles.p}>
-              Yes. We begin with friendly pair activities and predictable formats, then gradually add audience size and
-              time. Small wins add up to real confidence.
+              Yes. The Course is self paced and there is no pressure to speak until the child is ready. Every Child is free to observe and learn until they feel comfortable to speak.
+              Besides, we also offer additional assistence and coaching to shy kids to help them open up and gain confidence.
             </p>
           </details>
           <details>
             <summary>Do you give feedback?</summary>
             <p className={styles.p}>
-              Every session includes simple, specific feedback (what went well + one next step) so students always know
+              Every session includes simple, specific feedback (what went well + what can be improved) so students always know
               how to improve.
             </p>
           </details>
           <details>
             <summary>Do you conduct showcases?</summary>
             <p className={styles.p}>
-              Yes—short class showcases and occasional parent sessions give kids authentic practice without pressure.
+              Every meeting is recorded and shared with parents. Plus, we have in-person showcases once every year where
+              students present to family and friends. [ More on this soon ] 
             </p>
           </details>
         </section>
 
         {/* CTA */}
-        <section id="cta" className={styles.main}>
+        <section id="cta" className={styles.mainMagenta}>
           <div className={styles.cardBody}>
             <p className={styles.lead}>Ready to help your child speak with confidence? Book a free trial.</p>
             <p>

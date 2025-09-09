@@ -188,6 +188,30 @@ html {
   margin-right: 0.5rem;
 }
 
+
+.mainMagenta {
+  position: relative;
+  padding-left: 1.5rem;
+}
+.mainMagenta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.4rem;
+  width: 2px;
+  height: 100%;
+  background: var(--x-magenta);
+}
+
+.h2Magenta::before {
+  content: "•";
+  color: var(--x-magenta);
+  margin-right: 0.5rem;
+}
+
+
+
+
 .h3 {
   font-size: clamp(1.05rem, .6vw + 1rem, 1.3rem);
   margin: .8rem 0 .4rem;
@@ -275,6 +299,21 @@ a:focus-visible {
 .tocItem a:hover {
   border-color: var(--x-teal);
   color: var(--x-teal);
+}
+
+
+
+.tocItemMagenta a {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px dashed var(--line);
+  padding: .35rem .6rem;
+  border-radius: 999px;
+}
+
+.tocItemMagenta a:hover {
+  border-color: var(--x-magenta);
+  color: var(--x-magenta);
 }
 
 /* Quotes */
