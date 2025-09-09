@@ -3,6 +3,7 @@
   --x-orange:  #f19c16; /* Science */
   --x-teal:    #14949d; /* Robotics / STEM / Problem Solving / LEGO */
   --x-blue:    #004aad; /* Finance / Money */
+  --x-mix:     #2add06;
   --text:      #000000;
   --muted:     #475569;
   --line:      #e2e8f0;
@@ -115,7 +116,8 @@
 
 .cardTitle { font-size: clamp(1.05rem, .8vw + 1rem, 1.35rem); line-height: 1.2; margin: 0; }
 .cardTitleLink { text-decoration: none; color: #0f172a; }
-.cardTitleLink:hover { color: var(--x-teal); }
+.cardTitleLink:hover { color: var(--x-mix); }
+
 
 .cardDesc { color: #475569; margin: 0; }
 
