@@ -103,7 +103,7 @@
   box-shadow: var(--shadow);
   transition: transform .2s ease, box-shadow .2s ease;
 }
-.card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+.card:hover { transform: translateY(-8px); box-shadow: 0 8px 24px rgba(0,0,0,.06); }
 
 .cardMediaWrap { display: block; aspect-ratio: 16/9; background: #f1f5f9; }
 .cardImg { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -116,7 +116,7 @@
 
 .cardTitle { font-size: clamp(1.05rem, .8vw + 1rem, 1.35rem); line-height: 1.2; margin: 0; }
 .cardTitleLink { text-decoration: none; color: #0f172a; }
-.cardTitleLink:hover { color: var(--x-mix); }
+/* .cardTitleLink:hover { color: var(--x-mix); } */
 
 
 .cardDesc { color: #475569; margin: 0; }
