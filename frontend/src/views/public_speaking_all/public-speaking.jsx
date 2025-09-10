@@ -168,6 +168,19 @@ export default function VoiceMastersLanding() {
         </div>
       </div>
 
+<section className={styles.blogSection}>
+  <h2 className={styles.blogHeading}>📚 Explore More on Public Speaking</h2>
+  <p className={styles.blogText}>
+    Want to dive deeper into how Public Speaking at Xperio Learning helps children develop confidence and communication skills? 
+    Check out our detailed articles and guides.
+  </p>
+  <a href="/blog" className={styles.blogLink}>
+    👉 Visit our Blog
+  </a>
+</section>
+
+
+
       <Footer />
     </>
   );

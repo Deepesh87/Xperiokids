@@ -360,3 +360,34 @@ a:hover {
     text-align: center;
   }
 }
+
+
+.blogSection {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background: #f9f9f9;
+  margin-top: .5rem;
+  border-radius: 12px;
+}
+
+.blogHeading {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #004aad; /* Royal blue from your palette */
+}
+
+.blogText {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.blogLink {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #c72d60; /* Magenta */
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
