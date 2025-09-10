@@ -78,7 +78,7 @@ const Finance = () => {
       </div>
 
 <section className={styles.blogSection}>
-  <h2 className={styles.blogHeading}>📚 Explore More on Public Speaking</h2>
+  <h2 className={styles.blogHeading}>📚 Explore More on Finance for Kids</h2>
   <p className={styles.blogText}>
     Want to dive deeper into how the Financial Literacy Course at Xperio Learning helps children develop money skills? 
     Check out our detailed articles and guides.
