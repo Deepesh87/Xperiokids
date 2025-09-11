@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-import pic from "../../assets/kislay.jpg";
+import pic from "../../assets/kislay.webp";
 import deepesh from "../../assets/deepesh.jpeg";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
@@ -55,82 +55,67 @@ function About() {
         </div>
       </section>
 
-{/* ✅ Brand Colors section (lightweight, semantic, SEO-friendly) */}
-      <section id="brand-colors" className={styles.brandColors} aria-labelledby="brand-colors-title">
-        <div className={styles.brandWrap}>
-          <h2 id="brand-colors-title" className={styles.sectionTitle}>Our Brand Colors & Meaning</h2>
-          <p className={styles.sectionLead}>
-            The Xperio Learning logo uses four colors to express our learning philosophy. Each color signals a pillar of what and how we teach:
-            creativity, energy, curiosity, and trust.
-          </p>
+{/* ✅ Brand Colors section (full-color subject cards) */}
+<section id="brand-colors" className={styles.brandColors} aria-labelledby="brand-colors-title">
+  <div className={styles.brandWrap}>
+    <h2 id="brand-colors-title" className={styles.sectionTitle}>
+      Logo Colors & Subjects We Teach
+    </h2>
+    <p className={styles.sectionLead}>
+      Each Xperio Learning color maps to a core subject—so parents and students can instantly connect the
+      program with its learning outcome.
+    </p>
 
-          <ul className={styles.colorGrid}>
-            <li className={styles.colorCard}>
-              <span
-                className={styles.swatch}
-                style={{ backgroundColor: "#c72d60" }}
-                aria-label="Magenta color swatch"
-              />
-              <div className={styles.colorText}>
-                <h3 className={styles.colorName}>Public Speaking</h3>
-                <p>
-                  Represents creativity, confidence, and self-expression. Perfectly aligned with our VoiceMasters Public Speaking program for children.
-                </p>
-                {/* <small className={styles.hex}>#c72d60</small> */}
-              </div>
-            </li>
-
-            <li className={styles.colorCard}>
-              <span
-                className={styles.swatch}
-                style={{ backgroundColor: "#f19c16" }}
-                aria-label="Golden orange color swatch"
-              />
-              <div className={styles.colorText}>
-                <h3 className={styles.colorName}>Science</h3>
-                <p>
-                  Symbolizes energy, curiosity, and discovery. It reflects our hands-on Science experiments where students learn by doing.
-                </p>
-                {/* <small className={styles.hex}>#f19c16</small> */}
-              </div>
-            </li>
-
-            <li className={styles.colorCard}>
-              <span
-                className={styles.swatch}
-                style={{ backgroundColor: "#14949d" }}
-                aria-label="Teal color swatch"
-              />
-              <div className={styles.colorText}>
-                <h3 className={styles.colorName}>Robotics</h3>
-                <p>
-                  Stands for innovation, logic, and building. It highlights our Robotics courses, where children design, code, and test real machines.
-                </p>
-                {/* <small className={styles.hex}>#14949d</small> */}
-              </div>
-            </li>
-
-            <li className={styles.colorCard}>
-              <span
-                className={styles.swatch}
-                style={{ backgroundColor: "#004aad" }}
-                aria-label="Royal blue color swatch"
-              />
-              <div className={styles.colorText}>
-                <h3 className={styles.colorName}>Financial Literacy</h3>
-                <p>
-                  Represents trust, stability, and smart decision-making- Our Financial Literacy program, where students learn money management for life.
-                </p>
-                {/* <small className={styles.hex}>#004aad</small> */}
-              </div>
-            </li>
-          </ul>
-
-          <p className={styles.sectionFootnote}>
-            Together, these four colors tell the story of Xperio Learning — connecting Science, Robotics, Public Speaking, and Financial Literacy into a unified learning journey.
+    <ul className={styles.colorGrid}>
+      <li className={`${styles.colorCard} ${styles.magenta}`} aria-label="Public Speaking — Magenta">
+        <div className={styles.cardInner}>
+          {/* <span className={styles.badge}>#c72d60</span> */}
+          <h3>Public Speaking</h3>
+          <p>
+            Creativity, confidence, and self-expression. Our <strong>VoiceMasters</strong> program builds real,
+            on-stage speaking skills.
           </p>
         </div>
-      </section>
+      </li>
+
+      <li className={`${styles.colorCard} ${styles.orange}`} aria-label="Science — Golden Orange">
+        <div className={styles.cardInner}>
+          {/* <span className={styles.badge}>#f19c16</span> */}
+          <h3>Science</h3>
+          <p>
+            Energy, curiosity, and discovery—hands-on experiments that make concepts stick through doing.
+          </p>
+        </div>
+      </li>
+
+      <li className={`${styles.colorCard} ${styles.teal}`} aria-label="Robotics — Teal">
+        <div className={styles.cardInner}>
+          {/* <span className={styles.badge}>#14949d</span> */}
+          <h3>Robotics</h3>
+          <p>
+            Innovation, logic, and building—students design, code, and test functional robots step by step.
+          </p>
+        </div>
+      </li>
+
+      <li className={`${styles.colorCard} ${styles.blue}`} aria-label="Financial Literacy — Royal Blue">
+        <div className={styles.cardInner}>
+          {/* <span className={styles.badge}>#004aad</span> */}
+          <h3>Financial Literacy</h3>
+          <p>
+            Trust, stability, and smart decision-making. Practical money skills for life.
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <p className={styles.sectionFootnote}>
+      Together, these four colors tell the story of Xperio Learning—connecting Science, Robotics, Public Speaking,
+      and Financial Literacy into a unified learning journey.
+    </p>
+  </div>
+</section>
+
     </>
   );
 }
