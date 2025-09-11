@@ -119,7 +119,7 @@ function About() {
               <div className={styles.colorText}>
                 <h3 className={styles.colorName}>Financial Literacy</h3>
                 <p>
-                  Represents trust, stability, and smart decision-making. This is the foundation of our Financial Literacy program, where students learn money management for life.
+                  Represents trust, stability, and smart decision-making- Our Financial Literacy program, where students learn money management for life.
                 </p>
                 {/* <small className={styles.hex}>#004aad</small> */}
               </div>
