@@ -53,13 +53,87 @@ function About() {
             </div>
           </div>
         </div>
-
-
-
       </section>
-      <Footer/>
+
+{/* ✅ Brand Colors section (lightweight, semantic, SEO-friendly) */}
+      <section id="brand-colors" className={styles.brandColors} aria-labelledby="brand-colors-title">
+        <div className={styles.brandWrap}>
+          <h2 id="brand-colors-title" className={styles.sectionTitle}>Our Brand Colors & Meaning</h2>
+          <p className={styles.sectionLead}>
+            The Xperio Learning logo uses four colors to express our learning philosophy. Each color signals a pillar of what and how we teach:
+            creativity, energy, curiosity, and trust.
+          </p>
+
+          <ul className={styles.colorGrid}>
+            <li className={styles.colorCard}>
+              <span
+                className={styles.swatch}
+                style={{ backgroundColor: "#c72d60" }}
+                aria-label="Magenta color swatch"
+              />
+              <div className={styles.colorText}>
+                <h3 className={styles.colorName}>Public Speaking</h3>
+                <p>
+                  Represents creativity, confidence, and self-expression. Perfectly aligned with our VoiceMasters Public Speaking program for children.
+                </p>
+                {/* <small className={styles.hex}>#c72d60</small> */}
+              </div>
+            </li>
+
+            <li className={styles.colorCard}>
+              <span
+                className={styles.swatch}
+                style={{ backgroundColor: "#f19c16" }}
+                aria-label="Golden orange color swatch"
+              />
+              <div className={styles.colorText}>
+                <h3 className={styles.colorName}>Science</h3>
+                <p>
+                  Symbolizes energy, curiosity, and discovery. It reflects our hands-on Science experiments where students learn by doing.
+                </p>
+                {/* <small className={styles.hex}>#f19c16</small> */}
+              </div>
+            </li>
+
+            <li className={styles.colorCard}>
+              <span
+                className={styles.swatch}
+                style={{ backgroundColor: "#14949d" }}
+                aria-label="Teal color swatch"
+              />
+              <div className={styles.colorText}>
+                <h3 className={styles.colorName}>Robotics</h3>
+                <p>
+                  Stands for innovation, logic, and building. It highlights our Robotics courses, where children design, code, and test real machines.
+                </p>
+                {/* <small className={styles.hex}>#14949d</small> */}
+              </div>
+            </li>
+
+            <li className={styles.colorCard}>
+              <span
+                className={styles.swatch}
+                style={{ backgroundColor: "#004aad" }}
+                aria-label="Royal blue color swatch"
+              />
+              <div className={styles.colorText}>
+                <h3 className={styles.colorName}>Financial Literacy</h3>
+                <p>
+                  Represents trust, stability, and smart decision-making. This is the foundation of our Financial Literacy program, where students learn money management for life.
+                </p>
+                <small className={styles.hex}>#004aad</small>
+              </div>
+            </li>
+          </ul>
+
+          <p className={styles.sectionFootnote}>
+            Together, these four colors tell the story of Xperio Learning — connecting Science, Robotics, Public Speaking, and Financial Literacy into a unified learning journey.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
+      <Footer/>
 
 export default About;

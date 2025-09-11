@@ -86,3 +86,99 @@
       font-size: 45px;
    }
   }
+
+/* --- Fix tiny selector issue --- */
+.data > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- Brand Colors Section --- */
+.brandColors {
+  background: #ffffff;
+  padding: 40px 0 50px;
+  border-top: 1px solid #eee;
+}
+
+.brandWrap {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.sectionLead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.colorGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0;
+  margin: 0 0 14px 0;
+}
+
+.colorCard {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 12px;
+  align-items: start;
+  background: #fafafa;              /* light & fast; no shadows for perf */
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.swatch {
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.08);
+  display: inline-block;
+}
+
+.colorText {
+  display: grid;
+  gap: 4px;
+}
+
+.colorName {
+  font-size: 16px;
+  margin: 0;
+}
+
+.hex {
+  color: #666;
+}
+
+/* Small closing paragraph */
+.sectionFootnote {
+  font-size: 16px;
+  color: #444;
+  margin-top: 6px;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .colorGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .colorGrid {
+    grid-template-columns: 1fr;
+  }
+}
