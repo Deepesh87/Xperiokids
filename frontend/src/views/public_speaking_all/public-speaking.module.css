@@ -266,9 +266,9 @@ a {
   font-weight: 500;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 /* Optional: Fine-tune paragraph spacing in CTA or description */
 .description p,

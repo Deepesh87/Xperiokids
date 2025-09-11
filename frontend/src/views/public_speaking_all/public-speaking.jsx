@@ -179,8 +179,6 @@ export default function VoiceMastersLanding() {
   </a>
 </section>
 
-
-
       <Footer />
     </>
   );
