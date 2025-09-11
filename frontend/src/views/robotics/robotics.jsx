@@ -64,7 +64,7 @@ function Robotics() {
           name="keywords"
           content="Robotics for Kids, Robotics Classes Haralur, Kids Robotics, Robotics Classes Bengaluru"
         />
-        <link rel="canonical" href="https://www.xperiolearning.com/robotics" />
+        <link rel="canonical" href="https://www.xperiolearning.com/robotics-for-children" />
       </Helmet>
       <Nav />
       

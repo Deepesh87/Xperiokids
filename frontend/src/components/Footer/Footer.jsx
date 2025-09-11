@@ -44,7 +44,7 @@ const Footer = () => {
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/bday" target="_blank">Birthday bash</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/summer" target="_blank">Summer Camp 2025</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/science" target="_blank">Science for Kids</a></li>
-        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/robotics" target="_blank">Robotics for Kids</a></li>
+        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/robotics-for-children" target="_blank">Robotics for Kids</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/finance-for-kids" target="_blank">Financial Literacy for Kids</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/blog" target="_blank">Blog</a></li>
       </ul>

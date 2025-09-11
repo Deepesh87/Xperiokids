@@ -74,7 +74,7 @@ const SummerCampLanding = () => {
             <img src={roboticsThumb} className={styles.thumbImage} alt="Robotics Camp" />
             <h3>Robotics Track ₹18,000</h3>
             <p>For the Builders, Become an Engineer before Engineering</p>
-            <button onClick={() => navigate('/robotics')}>Explore Robotics</button>
+            <button onClick={() => navigate('/robotics-for-children')}>Explore Robotics</button>
           </div>
         </div>
 

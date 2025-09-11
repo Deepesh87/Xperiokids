@@ -77,7 +77,7 @@ Through <strong>games, stories, roleplay, and imagination</strong>, children gen
                     <button>Book Your Trial Class</button>
                   </a>
                   <p style={{ fontSize: "0.95rem", marginTop: "1rem" }}>
-                    Also check out our <a href="/science">Science coaching</a> and <a href="/robotics">Robotics programs</a> for
+                    Also check out our <a href="/science">Science coaching</a> and <a href="/robotics-for-children">Robotics programs</a> for
                     kids in Bengaluru.
                   </p>
                 </div>

@@ -12,7 +12,7 @@ import hero4 from "../../assets/financial-literacy-kids.webp";
 
 const ALL_POSTS = [
   {
-    slug: "why-robotics-classes-build-problem-solving",
+    slug: "what-is-robotics-for-kids",
     title: "Why Robotics Classes Help Kids Build Problem-Solving Skills",
     description:
       "Discover how LEGO, Arduino, and advanced robotics build creativity and problem-solving for Grades 1–10 in Bengaluru.",

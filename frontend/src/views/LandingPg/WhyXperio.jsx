@@ -10,7 +10,7 @@ const sections = [
   {
     id: "robotics",
     img: hobby3,
-    link: "/robotics",
+    link: "/robotics-for-children",
     alt: "Robotics and Coding Course for Kids",
     label: "Engineer with Code, Sensors & Logic",
   },

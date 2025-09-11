@@ -16,7 +16,7 @@ const pages = [
   { to: "/", name: "Home" },
   { to: "/about", name: "About us" },
   { to: "/gallery", name: "Gallery" },
-  { to: "/robotics", name: "Robotics" },
+  { to: "/robotics-for-children", name: "Robotics" },
   { to: "/public-speaking", name: "Public Speaking" },
   { to: "/finance-for-kids", name: "Finance" },
 ];

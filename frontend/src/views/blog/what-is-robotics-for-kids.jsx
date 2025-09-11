@@ -10,7 +10,7 @@ const READING_MINUTES = 4;
 const PUBLISHED = "2025-09-07";
 const MODIFIED = "2025-09-07";
 const TITLE = "Why Robotics Classes Help Kids Build Problem-Solving Skills";
-const SLUG = "why-robotics-classes-build-problem-solving";
+const SLUG = "what-is-robotics-for-kids";
 const URL = `https://www.xperiolearning.com/blog/${SLUG}`;
 
 export default function WhyRoboticsProblemSolving() {
@@ -108,7 +108,7 @@ export default function WhyRoboticsProblemSolving() {
       "@type": "ListItem",
       "position": 3,
       "name": "Why Robotics Classes Help Kids Build Problem-Solving Skills",
-      "item": "https://www.xperiolearning.com/blog/why-robotics-classes-build-problem-solving"
+      "item": "https://www.xperiolearning.com/blog/what-is-robotics-for-kids"
     }
   ]
 })}
@@ -251,7 +251,7 @@ Children integrate multiple sensors, motors, and microcontrollers into a single 
         <section className={styles.main}>
           <h3 className={styles.h3}>Explore programs</h3>
           <ul className={styles.badges}>
-            <li><Link to="/robotics" className={`${styles.cta} ${styles.ctaTeal}`}>Robotics Classes</Link></li>
+            <li><Link to="/robotics-for-children" className={`${styles.cta} ${styles.ctaTeal}`}>Robotics Classes</Link></li>
             <li><Link to="/public-speaking" className={`${styles.cta} ${styles.ctaMagenta}`}>Public Speaking</Link></li>
           </ul>
         </section>
