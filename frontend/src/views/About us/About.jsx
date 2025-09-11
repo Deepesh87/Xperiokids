@@ -121,7 +121,7 @@ function About() {
                 <p>
                   Represents trust, stability, and smart decision-making. This is the foundation of our Financial Literacy program, where students learn money management for life.
                 </p>
-                <small className={styles.hex}>#004aad</small>
+                {/* <small className={styles.hex}>#004aad</small> */}
               </div>
             </li>
           </ul>
