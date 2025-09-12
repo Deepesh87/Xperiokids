@@ -110,7 +110,7 @@ export default function VoiceMastersLanding() {
             <div className={styles.faqList}>
               <FAQItem
                 q="What age group is this for?"
-                a="We offer two batches – Juniors (Grade 1 to 4) and Seniors (Grade 5+)."
+                a="We offer two batches – Juniors (Grade 1 to 4) and Seniors (Grade 5+). On a rare occasion, we may elevate a younger child to the Seniors batch if they show advanced skills."
               />
               <FAQItem
                 q="Where are the classes conducted?"
@@ -118,15 +118,15 @@ export default function VoiceMastersLanding() {
               />
               <FAQItem
                 q="Is a free trial available?"
-                a="Yes, your first class is completely free!"
+                a="Yes, your first class is completely free! Your Child is free to attend one trial class before enrolling. Parents will be provided a recording of the entire class"
               />
               <FAQItem
                 q="We have holidays planned—will we lose classes?"
-                a="You can pause once for up to 1 month during your tenure; the end date extends accordingly."
+                a="For every enrollment, we offer additional tenure to accommodate absences due to sickness/holidays planned. We also provide recorded sessions for missed classes."
               />
               <FAQItem
                 q="My child is very shy about a trial class."
-                a="Our friendly instructors create a warm, low-pressure environment. Arrive 10 min early so we can settle them in."
+                a="Our friendly instructors create a warm, low-pressure environment. Arrive 10 min early so we can settle them in. Participation in the trial class is totally optional and wont be beyond introductions."
               />
             </div>
           )}
