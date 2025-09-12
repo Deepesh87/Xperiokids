@@ -5,9 +5,9 @@ import { useNavigate } from "react-router-dom";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 
-import pricing      from "../../assets/Voicemasters_fees.png";
-import juniorThumb  from "../../assets/juniors_voicemasters.png";
-import seniorThumb  from "../../assets/seniors_voicemasters.png";
+// import pricing      from "../../assets/Voicemasters_fees.png";
+import juniorThumb  from "../../assets/juniors_voicemasters.webp";
+import seniorThumb  from "../../assets/seniors_voicemasters.webp";
 import styles       from "./public-speaking.module.css";
 
 /* Mini helper for each Q-A pair (no toggle inside now) */
@@ -151,22 +151,22 @@ export default function VoiceMastersLanding() {
 </div>
 
 
-
-
-
         {/* ─────────── Pricing Card (enlarged image) ─────────── */}
-        <div className={styles.trackCards}>
+        {/* <div className={styles.trackCards}>
           <div className={styles.trackCard}>
             <img
               src={pricing}
-              className={`${styles.thumbImage} ${styles.pricing}`}   /* enlarged via CSS */
+              className={`${styles.thumbImage} ${styles.pricing}`}   
               alt="Pricing Details"
             />
             <h3>Fees is payable in single instalment.</h3>
             <p>Please call us to schedule a free first class!</p>
           </div>
-        </div>
-      </div>
+        </div> */}
+
+
+
+</div>
 
 <section className={styles.blogSection}>
   <h2 className={styles.blogHeading}>📚 Explore More on Public Speaking</h2>

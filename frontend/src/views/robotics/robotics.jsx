@@ -3,10 +3,10 @@ import styles from "./robotics.module.css";
 import Nav from "../../components/Navbar/Nav";
 import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer/Footer";
-import s2 from "../../assets/r1.jpg";
-import s8 from "../../assets/akarsh.jpeg";
-import s18 from "../../assets/kit_2.jpeg";
-import s11 from "../../assets/leds_seq.jpeg";
+import s2 from "../../assets/r1.webp";
+import s8 from "../../assets/akarsh.webp";
+import s18 from "../../assets/kit_2.webp";
+import s11 from "../../assets/leds_seq.webp";
 
 
 function Robotics() {

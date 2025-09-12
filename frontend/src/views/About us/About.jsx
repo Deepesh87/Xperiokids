@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import pic from "../../assets/kislay.webp";
-import deepesh from "../../assets/deepesh.jpeg";
+import deepesh from "../../assets/deepesh.webp";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 

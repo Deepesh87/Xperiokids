@@ -1,9 +1,9 @@
 import React from "react";
 import Style from "./WhyXperio.module.css";
-import lab from "../../assets/science_thumb3.png";
-import voice from "../../assets/voicemasters5.png";
-import hobby3 from "../../assets/robotics3.png";
-import finance from "../../assets/finance.png";
+import lab from "../../assets/science_thumb3.webp";
+import voice from "../../assets/voicemasters5.webp";
+import hobby3 from "../../assets/robotics3.webp";
+import finance from "../../assets/finance.webp";
 
 function WhyXperio() {
 const sections = [
