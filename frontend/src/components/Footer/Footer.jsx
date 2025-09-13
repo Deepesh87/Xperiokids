@@ -47,6 +47,7 @@ const Footer = () => {
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/robotics-for-children" target="_blank">Robotics for Kids</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/finance-for-kids" target="_blank">Financial Literacy for Kids</a></li>
         <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/blog" target="_blank">Blog</a></li>
+        <li className={`${styles.menu__item}`}><a className={`${styles.menu__link}`} href="/cancellation-refunds" target="_blank">Cancellation & Refunds</a></li>
       </ul>
 
       {/* 📍 SEO Boosting Contact Section */}
