@@ -16,10 +16,32 @@ const BOOKS = [
     author: "David Walliams",
     gradeFrom: 3,
     gradeTo: 7,
-    tags: ["values", "inspiration", "classics"],
+    tags: ["values", "inspiration", "classics","fiction"],
     cover: require("../../assets/Slime.webp"),
     blurb:
       "A mischievous tale of Ned, a boy who discovers a magical slime that helps him stand up to the meanest grown-ups on his island."
+  },
+  {
+    id: "b2",
+    title: "The Hunger Games Collection",
+    author: "Suzanne Collins",
+    gradeFrom: 5,
+    gradeTo: 10,
+    tags: ["inspiration", "values", "classics","fiction"],
+    cover: require("../../assets/hunger_games.webp"),
+    blurb:
+      "A gripping dystopian trilogy where Katniss Everdeen fights for survival and sparks a revolution in a world of oppression and televised death games."
+  },
+    {
+    id: "b3",
+    title: "A wrinkle in Time",
+    author: "Madeleine L'Engle",
+    gradeFrom: 5,
+    gradeTo: 10,
+    tags: ["inspiration", "values", "classics","fiction"],
+    cover: require("../../assets/time.webp"),
+    blurb:
+      "A mind-bending adventure through space and time, where Meg Murry and her friends battle dark forces to save her father and the universe itself."
   },
   {
     id: "b11",
@@ -27,7 +49,7 @@ const BOOKS = [
     author: "David Walliams",
     gradeFrom: 4,
     gradeTo: 8,
-    tags: ["values", "inspiration", "classics"],
+    tags: ["values", "inspiration", "classics","fiction"],
     cover: require("../../assets/BeastBuckingham.webp"),
     blurb:
       "Set in a dark future, Prince Alfred must save his mother, the Queen, from terrifying beasts and uncover hidden secrets in Buckingham Palace."
@@ -38,7 +60,7 @@ const BOOKS = [
     author: "David Walliams",
     gradeFrom: 4,
     gradeTo: 8,
-    tags: ["values", "inspiration", "classics"],
+    tags: ["values", "inspiration", "classics","fiction"],
     cover: require("../../assets/CodeNameBananas.webp"),
     blurb:
       "An epic WWII adventure where 11-year-old Eric and his gorilla friend, Gertrude, embark on a daring journey to protect freedom."
@@ -60,7 +82,7 @@ const BOOKS = [
     author: "Enid Blyton",
     gradeFrom: 3,
     gradeTo: 8,
-    tags: ["values", "inspiration", "classics"],
+    tags: ["values", "inspiration", "classics","fiction"],
     cover: require("../../assets/SecretSeven.webp"),
     blurb:
       "Join Peter, Janet, Jack, Barbara, George, Pam, Colin, and Scamper the dog in this classic detective series. The Secret Seven solve mysteries, uncover clues, and celebrate teamwork and friendship across fifteen timeless adventures."
@@ -82,7 +104,7 @@ const BOOKS = [
     author: "Thea Stilton",
     gradeFrom: 4,
     gradeTo: 8,
-    tags: ["values", "inspiration", "classics"],
+    tags: ["values", "inspiration", "classics","fiction"],
     cover: cover2,
     blurb:
       "A delightful set of Thea Stilton stories — These magical adventures blend friendship, courage, and imagination to inspire young readers."
@@ -93,7 +115,7 @@ const BOOKS = [
     author: "David Walliams",
     gradeFrom: 3,
     gradeTo: 7,
-    tags: ["values", "inspiration", "classics"],
+    tags: ["values", "inspiration", "classics","fiction"],
     cover: require("../../assets/Fing.webp"),
     blurb:
       "Meet Myrtle Meek and her outlandish demand for a pet ‘Fing’. A wildly funny story about imagination, greed, and learning what truly matters."
@@ -105,7 +127,7 @@ const BOOKS = [
     author: "Antoine de Saint-Exupéry",
     gradeFrom: 6,
     gradeTo: 10,
-    tags: ["values", "inspiration", "classics"],
+    tags: ["values", "inspiration", "classics","fiction"],
     cover: require("../../assets/LittlePrince.webp"),
     blurb:
       "A timeless fable about a young prince who travels from planet to planet, discovering the nature of love, friendship, and what it means to see with the heart. A must-read classic that continues to inspire children and adults alike."
@@ -171,7 +193,7 @@ const BOOKS = [
     author: "Ross Welford",
     gradeFrom: 5,
     gradeTo: 10, // open-ended (10+)
-    tags: ["science","inspiration"],
+    tags: ["science","inspiration","fiction"],
     cover: require("../../assets/space.webp"),
     blurb:
       "A small village in the wilds of northumberland is rocked by the disappearance of twelve-year-old Tammy. Only her twin brother, Ethan, knows she is safe  and the extraordinary truth of where she is. It is a secret he must keep, or risk never seeing her again." 
@@ -204,7 +226,7 @@ const BOOKS = [
       author: "Roald Dahl",
       gradeFrom: 4,
       gradeTo: 9,
-      tags: ["classics","values","inspiration"] ,
+      tags: ["classics","values","inspiration","fiction"] ,
           cover: require("../../assets/charlie.webp"),
     blurb:
       "Charlie Bucket loves chocolate. And Mr Willy Wonka, the most wondrous inventor in the world, is opening the gates of his amazing chocolate factory to five lucky children. It's the prize of a lifetime! Charlie needs just one Golden Ticket and these delicious treats could all be his." 
@@ -213,27 +235,27 @@ const BOOKS = [
 
 // Text-only list to avoid images
 const REMAINING_BOOKS = [
-  { title: "Princess Mirror-Belle", author: "Julia Donaldson", gradeFrom: 3, gradeTo: 6, tags: ["values","inspiration"] },
+  { title: "Princess Mirror-Belle", author: "Julia Donaldson", gradeFrom: 3, gradeTo: 6, tags: ["values","inspiration","fiction"] },
   { title: "100 Maths Puzzles with Answers", author: "Gikso", gradeFrom: 5, gradeTo: 9, tags: ["STEM","values"] },
   { title: "Dictionary of Common Errors", author: "Longman", gradeFrom: 9, gradeTo: null, tags: ["public speaking","classics"] },
   { title: "The Almanack of Naval Ravikant", author: "Eric Jorgenson", gradeFrom: 10, gradeTo: null, tags: ["biography","inspiration","values"] },
   { title: "The Psychology of Money", author: "Morgan Housel", gradeFrom: 9, gradeTo: null, tags: ["inspiration","values"] },
   { title: "Impatient Optimist: Bill Gates in His Own Words", author: "Bill Gates (Biography)", gradeFrom: 9, gradeTo: null, tags: ["biography","inspiration"] },
   { title: "The Bedside Book of Humorous Literary Quotations", author: "Fred Metcalf (Ed.)", gradeFrom: 9, gradeTo: null, tags: ["classics","inspiration"] },
-  { title: "House Arrest", author: "K.A. Holt (likely)", gradeFrom: 6, gradeTo: 9, tags: ["values","inspiration"] },
+  { title: "House Arrest", author: "K.A. Holt (likely)", gradeFrom: 6, gradeTo: 9, tags: ["values","inspiration","fiction"] },
   { title: "The Hardy Boys", author: "Franklin W. Dixon", gradeFrom: 4, gradeTo: 9, tags: ["classics","values","inspiration"] },
   { title: "Tuesdays with Morrie", author: "Mitch Albom", gradeFrom: 9, gradeTo: null, tags: ["biography","inspiration","values"] },
   { title: "The Road Less Traveled", author: "M. Scott Peck", gradeFrom: 10, gradeTo: null, tags: ["inspiration","values"] },
-  { title: "The Mouse That Roared", author: "Ramanathan & Gupta", gradeFrom: 9, gradeTo: null, tags: ["classics","values"] },
+  { title: "The Mouse That Roared", author: "Ramanathan & Gupta", gradeFrom: 9, gradeTo: null, tags: ["classics","values","fiction"] },
   { title: "The Aristocats", author: "Disney", gradeFrom: 3, gradeTo: 6, tags: ["values","inspiration"] },
   { title: "365 Science Experiments", author: "Alka Publications", gradeFrom: 3, gradeTo: 8, tags: ["science","STEM","inspiration"] },
-  { title: "Classic Starts – Gulliver’s Travels", author: "Classic Starts Series", gradeFrom: 5, gradeTo: 8, tags: ["classics","inspiration"] },
-  { title: "Classic Starts – The Prince and the Pauper", author: "Classic Starts Series", gradeFrom: 5, gradeTo: 8, tags: ["classics","inspiration"] },
-  { title: "Classic Starts – The Treasure Seekers", author: "Classic Starts Series", gradeFrom: 5, gradeTo: 8, tags: ["classics","inspiration"] },
-  { title: "Classic Starts – Oliver Twist", author: "Classic Starts Series", gradeFrom: 5, gradeTo: 8, tags: ["classics","inspiration"] },
-  { title: "Thea Stilton – Satellite Meltdown", author: "Thea Stilton", gradeFrom: 4, gradeTo: 8, tags: ["values","inspiration"] },
-  { title: "Thea Stilton – The Cloud Castle", author: "Thea Stilton", gradeFrom: 4, gradeTo: 8, tags: ["values","inspiration"] },
-  { title: "Transformers", author: "Hasbro / Novelization", gradeFrom: 4, gradeTo: 8, tags: ["values","inspiration"] },
+  { title: "Classic Starts – Gulliver’s Travels", author: "Classic Starts Series", gradeFrom: 5, gradeTo: 8, tags: ["classics","inspiration","fiction"] },
+  { title: "Classic Starts – The Prince and the Pauper", author: "Classic Starts Series", gradeFrom: 5, gradeTo: 8, tags: ["classics","inspiration","fiction"] },
+  { title: "Classic Starts – The Treasure Seekers", author: "Classic Starts Series", gradeFrom: 5, gradeTo: 8, tags: ["classics","inspiration","fiction"] },
+  { title: "Classic Starts – Oliver Twist", author: "Classic Starts Series", gradeFrom: 5, gradeTo: 8, tags: ["classics","inspiration","fiction"] },
+  { title: "Thea Stilton – Satellite Meltdown", author: "Thea Stilton", gradeFrom: 4, gradeTo: 8, tags: ["values","inspiration","fiction"] },
+  { title: "Thea Stilton – The Cloud Castle", author: "Thea Stilton", gradeFrom: 4, gradeTo: 8, tags: ["values","inspiration","fiction"] },
+  { title: "Transformers", author: "Hasbro / Novelization", gradeFrom: 4, gradeTo: 8, tags: ["values","inspiration","fiction"] },
   { title: "Encyclopedia of Earth", author: "Reference", gradeFrom: 5, gradeTo: 10, tags: ["science","inspiration"] },
   // Family/Adult items (optional to show)
   { title: "Good Moms Have Scary Thoughts", author: "Karen Kleiman / Karen Kishan (likely)", gradeFrom: null, gradeTo: null, tags: ["parents","wellbeing"] },
@@ -255,7 +277,8 @@ const TAGS = [
   "picture books",
   "classics",
   "values",
-  "inspiration"
+  "inspiration",
+  "fiction"
 ];
 
 /* =========================
@@ -519,16 +542,16 @@ export default function Library() {
           <div className={styles.nookCard}>
             <h3 className={styles.nookTitle}>☕ Reading Book Etiquette</h3>
             <ul className={styles.nookList}>
+              <li>Library is free to use for all Xperio Learning Students</li>
+              <li>If you wish to read a book not available here, please speak to us and we will try our best to arrange the book soon</li>
               <li>Handle books with care; return them to the labeled shelf.</li>
-              <li>Keep voices soft — let readers immerse in their worlds.</li>
-              <li>Food outside the library zone; capped water bottles are okay.</li>
             </ul>
           </div>
           <div className={styles.nookCard}>
             <h3 className={styles.nookTitle}>📦 Borrowing & Returns</h3>
             <ul className={styles.nookList}>
-              <li>Borrow up to <strong>2 books</strong> for <strong>14 days</strong>.</li>
-              <li>Late? Just let us know — we’re flexible with genuine needs.</li>
+              <li>Borrow 1 book at a time for <strong>upto 14 days</strong>.</li>
+              <li>Please dont forget to make an entry into the library register.</li>
               <li>Lost or damaged? Kindly replace or speak to the team.</li>
             </ul>
           </div>
