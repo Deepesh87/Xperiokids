@@ -128,15 +128,6 @@ mindset in young minds.
         )}
       </section>
 
-      <section className={styles.blogSection}>
-        <h2 className={styles.blogHeading}>📚 Explore More on Robotics</h2>
-        <p className={styles.blogText}>
-          Curious how early robotics supports problem-solving and creativity? Browse our short reads.
-        </p>
-        <a href="/blog" className={styles.blogLink}>
-          👉 Visit our Blog
-        </a>
-      </section>
 
       <Footer />
     </>

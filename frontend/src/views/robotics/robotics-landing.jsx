@@ -71,11 +71,15 @@ export default function RoboticsLanding() {
           </article>
         </section>
 
-        <section className={styles.infoStrip}>
-          <p>
-            📍 Haralur / HSR / Sarjapur Road • Weekend batches • Small groups • All materials provided
-          </p>
-        </section>
+      <section className={styles.blogSection}>
+        <h2 className={styles.blogHeading}>📚 Explore More on Robotics</h2>
+        <p className={styles.blogText}>
+          Want to dive deeper into how Robotics helps children develop problem-solving and creativity? Check out our detailed articles and guides.
+        </p>
+        <a href="/blog" className={styles.blogLink}>
+          👉 Visit our Blog
+        </a>
+      </section>
       </main>
 
       <Footer />

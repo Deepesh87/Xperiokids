@@ -124,14 +124,7 @@ allowFullScreen
 </div>
 )}
 </section>
-<section className={styles.blogSection}>
-<h2 className={styles.blogHeading}>📚 Explore More on Robotics</h2>
-<p className={styles.blogText}>
-Want to dive deeper into how Robotics helps children develop problem-solving and creativity?
-Check out our detailed articles and guides.
-</p>
-<a href="/blog" className={styles.blogLink}>👉 Visit our Blog</a>
-</section>
+
 
 
 <Footer />
