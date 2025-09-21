@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+--magenta: #c72d60;
+--orange: #f19c16;
+--teal: #14949d;
+--blue: #004aad;
+--teal-gradient: linear-gradient(135deg, var(--blue) 0%, var(--teal) 100%);
+}
+
+.wrap { font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+.hero {
+background: #14949d; /* linear-gradient(135deg, var(--blue) 0%, var(--teal) 100%) */
+color: #fff;
+padding: clamp(1rem, 4vw + 1rem, 2rem) 1rem;
+text-align: center;
+}
+.title {
+font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
+font-weight: 800;
+letter-spacing: 0.2px;
+}
+.subtitle {
+margin: 0.6rem auto 0;
+max-width: 900px;
+font-size: clamp(1rem, 1.2vw + 0.8rem, 1.25rem);
+line-height: 1.6;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1.2rem;
+max-width: 1100px;
+margin: 1.5rem auto;
+padding: 0 1rem;
+}
+.card {
+background: #fff;
+border-radius: 16px;
+box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+.cardImg {
+width: 100%;
+aspect-ratio: 16/9;
+object-fit: cover;
+}
+.cardBody { padding: 1rem 1rem 1.25rem; }
+.cardTitle { font-size: 1.3rem; font-weight: 800; color: #000000; margin: 0.2rem 0 0.4rem; }
+.cardText { color: #222; line-height: 1.6; }
+.bullets { margin: 0.6rem 0 1rem 1.1rem; }
+
+
+.ctaPrimary, .ctaSecondary {
+display: inline-block;
+padding: 0.65rem 1rem;
+border-radius: 10px;
+text-decoration: none;
+font-weight: 700;
+}
+.ctaPrimary { background: var(--teal-gradient); color: #fff; }
+.ctaPrimary:hover { filter: brightness(0.95); }
+.ctaSecondary { background: var(--teal-gradient); color: #ffffff; }
+.ctaSecondary:hover { filter: brightness(0.95); }
+.infoStrip { text-align: center; padding: 1rem; color: #333; }

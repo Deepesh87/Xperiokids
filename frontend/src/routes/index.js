@@ -13,7 +13,9 @@ const Library = lazy(() => import("../views/library/library"));
 const Science = lazy(() => import("../views/summercamp/science"));
 const Sudoku = lazy(() => import("../views/sudoku/sudoku"));
 const OlympiadFinalist = lazy(() => import("../views/olympiad/olympiad"));
-const Robotics = lazy(() => import("../views/robotics/robotics"));
+const RoboticsLanding = lazy(() => import("../views/robotics/robotics-landing"));
+const RoboticsSenior = lazy(() => import("../views/robotics/robotics-senior"));
+const RoboticsJunior = lazy(() => import("../views/robotics/robotics-junior"));
 const Finance = lazy(() => import("../views/finance/finance"));
 const Terms = lazy(() => import("../views/terms/terms"));
 const Bday = lazy(() => import("../views/bday/bday"));
@@ -40,7 +42,9 @@ function MainRoutes() {
         <Route path="/science" element={<Science />} />
         <Route path="/sudoku" element={<Sudoku />} />
         <Route path="/olympiad" element={<OlympiadFinalist />} />
-        <Route path="/robotics-for-children" element={<Robotics />} />
+        <Route path="/robotics-for-children" element={<RoboticsLanding />} />
+        <Route path="/robotics/senior" element={<RoboticsSenior />} />
+        <Route path="/robotics/junior" element={<RoboticsJunior />} />
         <Route path="/finance-for-kids" element={<Finance />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/bday" element={<Bday />} />
