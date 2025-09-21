@@ -43,6 +43,39 @@ const BOOKS = [
     blurb:
       "A mind-bending adventure through space and time, where Meg Murry and her friends battle dark forces to save her father and the universe itself."
   },
+      {
+    id: "b4",
+    title: "Dork Diaries – Spectacular Superstar",
+    author: "Rachel Renée Russell",
+    gradeFrom: 4,
+    gradeTo: 9,
+    tags: ["inspiration", "values", "classics","fiction"],
+    cover: require("../../assets/dork.webp"),
+    blurb:
+      "Nikki Maxwell's hilarious diary chronicles her trials and triumphs as she navigates middle school, friendships, and her dreams of stardom."
+  },
+        {
+    id: "b5",
+    title: "The Danger Gang, Its Danger Time!",
+    author: "Tom Fletcher",
+    gradeFrom: 4,
+    gradeTo: 9,
+    tags: ["inspiration", "values", "classics","fiction"],
+    cover: require("../../assets/danger.webp"),
+    blurb:
+      "Join the Danger Gang – a group of adventurous kids who solve mysteries, fight bullies, and embark on thrilling escapades in their neighborhood."
+  },
+          {
+    id: "b6",
+    title: "Percy Jackson Ultimate Collection- Complete Series",
+    author: "Rick Riordan",
+    gradeFrom: 4,
+    gradeTo: 9,
+    tags: ["inspiration", "values", "classics","fiction"],
+    cover: require("../../assets/percy.webp"),
+    blurb:
+      "Dive into the world of Greek mythology with Percy Jackson, a demigod who embarks on epic quests, battles monsters, and discovers his true heritage."
+  },
   {
     id: "b11",
     title: "The Beast of Buckingham Palace",
