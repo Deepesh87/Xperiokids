@@ -1,183 +1,93 @@
-// src/pages/VoiceMastersLanding.jsx
-import React, { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
+import styles from "./public-speaking.module.css";
 
-// import pricing      from "../../assets/Voicemasters_fees.png";
-import juniorThumb  from "../../assets/juniors_voicemasters.webp";
-import seniorThumb  from "../../assets/seniors_voicemasters.webp";
-import styles       from "./public-speaking.module.css";
+// Reuse your thumbnails
+import juniorThumb from "../../assets/juniors_voicemasters.webp";
+import seniorThumb from "../../assets/seniors_voicemasters.webp";
 
-/* Mini helper for each Q-A pair (no toggle inside now) */
-const FAQItem = ({ q, a }) => (
-  <div className={styles.faqItem}>
-    <div className={styles.faqButton}>{q}</div>
-    <p className={styles.faqAnswer}>{a}</p>
-  </div>
-);
-
-export default function VoiceMastersLanding() {
-  const navigate  = useNavigate();
-  const [faqOpen, setFaqOpen] = useState(false);
-
+export default function PublicSpeakingLanding() {
   return (
     <>
-      {/* SEO */}
       <Helmet>
-        <title>Public Speaking Classes for Kids in Bengaluru | Voicemasters</title>
+        <title>Public Speaking at Xperio – VoiceMasters Juniors & Seniors</title>
         <meta
           name="description"
-          content="Join Xperio Learning’s Voicemasters – a public speaking program for children in Bengaluru. Build confidence, creativity, and communication skills through structured weekend classes."
-        />
-        <meta
-          name="keywords"
-          content="Public Speaking for Kids, Communication Classes Haralur, Kids Debate, Voicemasters Bengaluru, Public Speaking Classes Bengaluru"
+          content="Choose your path: VoiceMasters Juniors (Grades 1–4) and VoiceMasters Seniors (Grade 5+). Structured weekend public speaking programs in Bengaluru."
         />
         <link rel="canonical" href="https://www.xperiolearning.com/public-speaking" />
       </Helmet>
 
       <Nav />
 
-      <div className={styles.container}>
-        {/* ─────────── Hero ─────────── */}
-        <div className={styles.heroSection}>
-          <img
-            src={require("../../assets/voicemasters_logo_new.png")}
-            alt="VOICEMASTERS Title"
-            className={styles.headerImage}
-          />
-          <h1 className={styles.subtitle}>
-            Public Speaking Classes for children in Bengaluru – Voicemasters
-          </h1>
-          <p className={styles.description}>
-            Looking for the best <strong>public speaking classes for kids in Bengaluru</strong>? Voicemasters by
-            Xperio Learning offers age-specific weekend programs designed to build
-            <strong> confidence, communication, and creativity</strong> in children from Grades&nbsp;1 and up. Based in
-            <strong> Haralur</strong>, we’re loved by parents and students.
-          </p>
-        </div>
-
-        {/* ─────────── Schedule ─────────── */}
-        <div className={styles.scheduleBox}>
-          <h2>📅 Weekend Public Speaking Program Schedule in Haralur, Bengaluru</h2>
-          <ul>
-            <li>🗣️ <strong>VoiceMasters Juniors (Grade 2–4):</strong> SAT 10:00 AM</li>
-            <li>🎓 <strong>VoiceMasters Seniors (Grade 5+):</strong> SUN 10:00 AM</li>
-            <li>🎁 First class FREE. Attend a trial session before you decide.</li>
-            <li>📍 In-centre classes every Sat/Sun at Xperio</li>
-          </ul>
-        </div>
-
-        {/* ─────────── Benefits ─────────── */}
-        <div className={styles.benefitsSection}>
-          <h2>✨ Why Parents in Bengaluru Choose Voicemasters for Public Speaking</h2>
-          <ul>
-            <li>🎤 Structured speech curriculum tailored by grade level</li>
-            <li>🧠 Focus on creative thinking, vocal confidence, and stage presence</li>
-            <li>🏅 Milestones, badges, and evaluations for goal tracking</li>
-            <li>👪 Loved by parents, fun for kids, results that show in school</li>
-          </ul>
-        </div>
-
-        {/* ─────────── Track Cards ─────────── */}
-        <div className={styles.trackCards}>
-          {/* Juniors */}
-          <div className={styles.trackCard}>
-            <div className={styles.ribbon}>NEW</div>
-            <img src={juniorThumb} className={styles.thumbImage} alt="Juniors Track" />
-            <h3>VoiceMasters Juniors</h3>
-            <p>Perfect for Grades 1–4. Games, stories, drawing & mini-speeches to build early confidence.</p>
-            <button onClick={() => navigate("/public-speaking-juniors")}>Explore Juniors</button>
+      <main className={styles.wrap}>
+        {/* Hero */}
+        <section className={styles.hero}>
+          <div className={styles.heroInner}>
+            <h1 className={styles.title}>VoiceMasters – Public Speaking</h1>
+            <p className={styles.subtitle}>
+              Two learner-friendly tracks – <strong>Juniors (Grades 1–4)</strong> and{" "}
+              <strong>Seniors (Grade 5+)</strong>. Build confidence, clarity and stage presence.
+            </p>
           </div>
+        </section>
+
+        {/* Cards */}
+        <section className={styles.cards}>
+          {/* Juniors */}
+          <article className={styles.card}>
+            <img className={styles.cardImg} src={juniorThumb} alt="VoiceMasters Juniors" />
+            <div className={styles.cardBody}>
+              <h2 className={styles.cardTitle}>VoiceMasters Juniors</h2>
+              <p className={styles.cardText}>
+                Grades 1–4. Games, stories, drawing & mini-speeches to build early confidence,
+                listening skills, and expressive vocabulary.
+              </p>
+              <ul className={styles.bullets}>
+                <li>Fun prompts & table topics</li>
+                <li>Body language & voice basics</li>
+                <li>Gentle evaluations and badges</li>
+              </ul>
+              <Link to="/public-speaking-juniors" className={styles.ctaPrimary}>
+                Explore Juniors →
+              </Link>
+            </div>
+          </article>
 
           {/* Seniors */}
-          <div className={styles.trackCard}>
-            <img src={seniorThumb} className={styles.thumbImage} alt="Seniors Track" />
-            <h3>VoiceMasters Seniors</h3>
-            <p>Grades 5+. Formal speeches, leadership roles, evaluations & Toastmasters-style projects.</p>
-            <button onClick={() => navigate("/public-speaking-seniors")}>Explore Seniors</button>
-          </div>
-        </div>
-
-        <div className={styles.faqSection}>
-          <button onClick={() => setFaqOpen(!faqOpen)} className={styles.faqToggle}>
-            ❓ Frequently Asked Questions <span>{faqOpen ? "▲" : "▼"}</span>
-          </button>
-
-          {faqOpen && (
-            <div className={styles.faqList}>
-              <FAQItem
-                q="What age group is this for?"
-                a="We offer two batches – Juniors (Grade 1 to 4) and Seniors (Grade 5+). On a rare occasion, we may elevate a younger child to the Seniors batch if they show advanced skills."
-              />
-              <FAQItem
-                q="Where are the classes conducted?"
-                a="At our Haralur Road centre in Bengaluru – every weekend."
-              />
-              <FAQItem
-                q="Is a free trial available?"
-                a="Yes, your first class is completely free! Your Child is free to attend one trial class before enrolling. Parents will be provided a recording of the entire class"
-              />
-              <FAQItem
-                q="We have holidays planned—will we lose classes?"
-                a="For every enrollment, we offer additional tenure to accommodate absences due to sickness/holidays planned. We also provide recorded sessions for missed classes."
-              />
-              <FAQItem
-                q="My child is very shy about a trial class."
-                a="Our friendly instructors create a warm, low-pressure environment. Arrive 10 min early so we can settle them in. Participation in the trial class is totally optional and wont be beyond introductions."
-              />
+          <article className={styles.card}>
+            <img className={styles.cardImg} src={seniorThumb} alt="VoiceMasters Seniors" />
+            <div className={styles.cardBody}>
+              <h2 className={styles.cardTitle}>VoiceMasters Seniors</h2>
+              <p className={styles.cardText}>
+                Grade 5+. Structured speeches, leadership roles, evaluations & Toastmasters-style
+                projects to level up communication.
+              </p>
+              <ul className={styles.bullets}>
+                <li>Prepared & impromptu speeches</li>
+                <li>Stage presence & vocal variety</li>
+                <li>Goal tracking & milestones</li>
+              </ul>
+              <Link to="/public-speaking-seniors" className={styles.ctaSecondary}>
+                Explore Seniors →
+              </Link>
             </div>
-          )}
-        </div>
+          </article>
+        </section>
 
-{/* ─────────── Library Teaser ─────────── */}
-<div className={styles.libraryTeaser}>
-  <div className={styles.libraryText}>
-    <h2>📚 Xperio Children’s Library</h2>
-    <p>
-      We’ve curated a cozy, growing library for young readers—picture books, STEM picks, classics,
-      and inspiring biographies to spark ideas for speeches and projects.
-    </p>
-  </div>
-  <button
-    className={styles.libraryButton}
-    onClick={() => navigate("/library")}
-    aria-label="Browse Xperio Children’s Library"
-  >
-    Browse the Library
-  </button>
-</div>
-
-
-        {/* ─────────── Pricing Card (enlarged image) ─────────── */}
-        {/* <div className={styles.trackCards}>
-          <div className={styles.trackCard}>
-            <img
-              src={pricing}
-              className={`${styles.thumbImage} ${styles.pricing}`}   
-              alt="Pricing Details"
-            />
-            <h3>Fees is payable in single instalment.</h3>
-            <p>Please call us to schedule a free first class!</p>
-          </div>
-        </div> */}
-
-
-
-</div>
-
-<section className={styles.blogSection}>
-  <h2 className={styles.blogHeading}>📚 Explore More on Public Speaking</h2>
-  <p className={styles.blogText}>
-    Want to dive deeper into how Public Speaking at Xperio Learning helps children develop confidence and communication skills? 
-    Check out our detailed articles and guides.
-  </p>
-  <a href="/blog" className={styles.blogLink}>
-    👉 Visit our Blog
-  </a>
-</section>
+      <section className={styles.blogSection}>
+        <h2 className={styles.blogHeading}>📚 Explore More on Public Speaking</h2>
+        <p className={styles.blogText}>
+          Curious how early public speaking builds confidence and communication skills? Browse our short reads.
+        </p>
+        <a href="/blog" className={styles.blogLink}>
+          👉 Visit our Blog
+        </a>
+      </section>
+      </main>
 
       <Footer />
     </>
