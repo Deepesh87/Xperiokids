@@ -5,7 +5,7 @@ import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 
 // Base + larger hero sources
-import banner1100 from "../../assets/finance.webp";          // existing 1100×750
+import banner1100 from "../../assets/finance1.webp";          // existing 1100×750
 import banner1600 from "../../assets/finance_1600.webp";     // export this ~1600w
 import banner2200 from "../../assets/finance_2200.webp";     // export this ~2200w
 
