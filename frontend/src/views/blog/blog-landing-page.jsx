@@ -34,7 +34,7 @@ const ALL_POSTS = [
     readingMinutes: 5
   },
   {
-    slug: "lego-robotics-beginners-guide",
+    slug: "lego-robotics-for-children",
     title: "LEGO Robotics: The Perfect Start for Young Makers",
     description:
       "Why Grades 1–4 love LEGO Robotics and how it builds early engineering habits.",

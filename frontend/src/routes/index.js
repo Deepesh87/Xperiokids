@@ -25,6 +25,7 @@ const VoiceMasterLeaderboard = lazy(() => import("../views/public_speaking/Voice
 const Blog = lazy(() => import("../views/blog/blog-landing-page"));
 const WhyRoboticsProblemSolving = lazy(() => import("../views/blog/what-is-robotics-for-kids"));
 const PublicSpeakingBlog = lazy(() => import("../views/blog/public-speaking-for-kids"));
+const LegoRoboticsBlog = lazy(() => import("../views/blog/lego-robotics-for-children"));
 const CancellationRefunds = lazy(() => import("../views/terms/refunds"));
 const PrivacyPolicy = lazy(() => import("../views/terms/privacy"));
 
@@ -55,6 +56,7 @@ function MainRoutes() {
         <Route path="/blog" element={<Blog />} />
         <Route path="blog/what-is-robotics-for-kids" element={<WhyRoboticsProblemSolving />} />
         <Route path="blog/public-speaking-for-kids" element={<PublicSpeakingBlog />} />
+        <Route path="blog/lego-robotics-for-children" element={<LegoRoboticsBlog />} />
         <Route path="/cancellation-refunds" element={<CancellationRefunds />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
