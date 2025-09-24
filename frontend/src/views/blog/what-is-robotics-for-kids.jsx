@@ -252,7 +252,7 @@ Children integrate multiple sensors, motors, and microcontrollers into a single 
           <h3 className={styles.h3}>Explore programs</h3>
           <ul className={styles.badges}>
             <li><Link to="/robotics-for-children" className={`${styles.cta} ${styles.ctaTeal}`}>Robotics Classes</Link></li>
-            <li><Link to="/public-speaking" className={`${styles.cta} ${styles.ctaMagenta}`}>Public Speaking</Link></li>
+            <li><Link to="/public-speaking-for-children" className={`${styles.cta} ${styles.ctaMagenta}`}>Public Speaking</Link></li>
           </ul>
         </section>
 

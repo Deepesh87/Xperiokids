@@ -37,7 +37,7 @@ function MainRoutes() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/public-speaking-seniors" element={<Voice />} />
         <Route path="/public-speaking-juniors" element={<VoiceJ />} />
-        <Route path="/public-speaking" element={<VoiceMastersLanding />} />
+        <Route path="/public-speaking-for-children" element={<VoiceMastersLanding />} />
         <Route path="/library" element={<Library />} />
         <Route path="/science" element={<Science />} />
         <Route path="/sudoku" element={<Sudoku />} />

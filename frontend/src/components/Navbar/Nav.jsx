@@ -17,7 +17,7 @@ const pages = [
   { to: "/about", name: "About us" },
   { to: "/gallery", name: "Gallery" },
   { to: "/robotics-for-children", name: "Robotics" },
-  { to: "/public-speaking", name: "Public Speaking" },
+  { to: "/public-speaking-for-children", name: "Public Speaking" },
   { to: "/finance-for-kids", name: "Finance" },
 ];
 

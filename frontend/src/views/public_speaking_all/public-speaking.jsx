@@ -18,7 +18,7 @@ export default function PublicSpeakingLanding() {
           name="description"
           content="Choose your path: VoiceMasters Juniors (Grades 1–4) and VoiceMasters Seniors (Grade 5+). Structured weekend public speaking programs in Bengaluru."
         />
-        <link rel="canonical" href="https://www.xperiolearning.com/public-speaking" />
+        <link rel="canonical" href="https://www.xperiolearning.com/public-speaking-for-children" />
       </Helmet>
 
       <Nav />

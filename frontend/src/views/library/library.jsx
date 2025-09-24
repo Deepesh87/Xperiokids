@@ -460,7 +460,7 @@ export default function Library() {
               </button>
               <button
                 className={styles.ctaGhost}
-                onClick={() => navigate("/public-speaking")}
+                onClick={() => navigate("/public-speaking-for-children")}
               >
                 Back to Voicemasters
               </button>

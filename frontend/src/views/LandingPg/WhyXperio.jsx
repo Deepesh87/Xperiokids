@@ -24,7 +24,7 @@ const sections = [
   {
     id: "speaking",
     img: voice,
-    link: "/public-speaking",
+    link: "/public-speaking-for-children",
     alt: "Public speaking program for students",
     label: "Express Ideas, Emotions & Stories",
   },
