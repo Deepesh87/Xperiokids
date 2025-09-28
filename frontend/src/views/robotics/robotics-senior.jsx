@@ -47,6 +47,11 @@ question: "What if I miss a few days of class?",
 answer:
 "We'll try to accommodate with catchups on alternate days at your convenience or extending the course slightly. ",
 },
+{
+question: "What id the duration of the course?",
+answer:
+"The Course duration is about 30 hours, spread over 7-8 weekends with 2-hour sessions each Sat and Sundays.",
+},
 ];
 
 return (
@@ -64,10 +69,10 @@ content="Build and program robots with Arduino (C++). Sensors, motors, and weekl
 <section className={styles["demo-page"]}>
 <div className={styles.about}>
 <div className={styles.text}>
-<h1 className={styles.title}>Weekend Sunday Batch – Grade 4 onwards</h1>
+<h1 className={styles.title}>Weekend Beginners Batch – Grade 4 onwards</h1>
 <p className={styles.subtitle}>
-📍 Ongoing Batch: 🗓️ July – Sept | Sundays only<br />
-📍 Upcoming Batch: 🗓️ October
+📍 Ongoing Batch: 🗓️ Aug – Oct | Sundays only<br />
+📍 Upcoming Batch: 🗓️ Nov - Jan | Sat & Sundays
 </p>
 <p className={styles.description}>
 This course will introduce students to the exciting world of robotics and programming. They will learn how to build and program robots using a variety of sensors and motors. The course is designed to be hands-on, with students working individually to complete projects and challenges. Programming will be in C++ using Arduino IDE. All materials, including a very cool Robotics Kit, will be provided.
@@ -78,7 +83,8 @@ This course will introduce students to the exciting world of robotics and progra
 <strong>
 <a
 className={styles.menu__link}
-href="https://drive.google.com/file/d/1OfbF9o7VFz_dj_GBG0libGEg6nhzp5f4/view?usp=sharing"
+href="https://drive.google.com/file/d/1mmJm3-rBnXNYe6L4SvluVxoozq225ZxM/view?usp=sharing"
+
 target="_blank"
 rel="noreferrer"
 >

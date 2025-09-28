@@ -272,7 +272,7 @@
   .faqQuestion {
     font-size: 14px;
     font-weight: 500;
-    color: #4070f4;
+    color: #14949d;
     background: none;
     border: none;
     cursor: pointer;
@@ -410,7 +410,7 @@
   border-radius: 8px;
   font-size: 1.15rem;
   font-weight: 700;
-  color: #1e3a8a;
+  color: #14949d;
   display: flex;
   justify-content: space-between;
   align-items: center;
