@@ -404,13 +404,13 @@
 .faqToggle {
   width: 100%;
   text-align: left;
-  background: #14949d;
+  background: #6fa6aa;
   border: none;
   padding: 0.8rem 1rem;
   border-radius: 8px;
   font-size: 1.15rem;
   font-weight: 700;
-  color: #ffffff; /* Royal blue from your palette */
+  color: #0a0000; /* Royal blue from your palette */
   display: flex;
   justify-content: space-between;
   align-items: center;
