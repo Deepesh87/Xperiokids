@@ -114,6 +114,12 @@ allowFullScreen
 </div>
 </div>
 </section>
+{/* add the return to robotics homepage button here */}
+<div className={styles.backButtonWrapper}>
+  <button className={styles.backButton} onClick={() => window.location.href = "/robotics-for-children"}>
+    ← Robotics Home page
+  </button>
+</div>
 
 <section className={styles.faqSection}>
 <button onClick={() => setFaqOpen(!faqOpen)} className={styles.faqToggle}>

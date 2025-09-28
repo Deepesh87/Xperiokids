@@ -476,3 +476,24 @@
   transition: background 0.3s;
 }
 
+
+.backButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.backButton {
+  background-color: #14949d;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #1e40af;
+}
