@@ -152,7 +152,7 @@
 
 .summer_camp_notification p {
   font-weight: bold;
-  color: #ff5722;
+  color: #FFBF00;
   transition: color 0.3s ease;
   text-decoration: none;
   margin: 0;
@@ -219,7 +219,7 @@
 }
 
 .summer_camp_notification:hover p {
-  color: #ffffff; /* Yellowish glow */
+  color: #ff5722;; /* Yellowish glow */
   text-shadow: 0 0 8px rgba(230, 12, 223, 0.8);
 }
 
