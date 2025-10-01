@@ -72,7 +72,7 @@ suggest the right phrases and pauses for effective delivery. This way, every scr
         <h4>3-Month Program</h4>
         <p className={styles.amount}>₹ <span>10,000</span></p>
         <p>
-          One flat fee covers all role coaching support for a 3-month tenure. You will see visible growth within this period, and often students gain enough confidence that PLUSrenewal may no longer be necessary.
+          One flat fee covers all role coaching support for a 3-month tenure. You will see visible growth within this period, and often students gain enough confidence that PLUS renewal may no longer be necessary.
         </p>
       </div>
     </div>
@@ -83,8 +83,10 @@ suggest the right phrases and pauses for effective delivery. This way, every scr
         <summary className={styles.accSummary}>❓ FAQs</summary>
         <div className={styles.accPanel}>
           <p><strong>Is this mandatory?</strong> No—it's an optional add‑on.</p>
-          <p><strong>Will my child rely on scripts?</strong> We use scripts as scaffolds and reduce them gradually.</p>
-          <p><strong>How are practice slots scheduled?</strong> Before the meeting; we confirm the time on WhatsApp.</p>
+          <p><strong>Is individual attention not paid in the regular meetings</strong> During the evaluation section of every Voicemasters meeting, all role takers receive individual feedback. However, due to time limitations, this feedback may not always be very detailed, and applying it is left to the student’s own effort.
+
+With Voicemasters Plus, we go a step further. Each Plus student gets multiple touchpoints to ensure that feedback is not only understood but also implemented effectively—helping them grow faster and with greater confidence.</p>
+          <p><strong>How are practice slots scheduled?</strong> At a time confortable to the Student and the Faculty, we can discuss and fix slots.</p>
         </div>
       </details>
     </div>
