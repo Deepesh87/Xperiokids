@@ -9,6 +9,7 @@ const Gallery = lazy(() => import("../views/gallery/gallery"));
 const Voice = lazy(() => import("../views/public_speaking/public-speaking-seniors"));
 const VoiceJ = lazy(() => import("../views/public_speaking/public-speaking-juniors"));
 const VoiceMastersLanding = lazy(() => import("../views/public_speaking_all/public-speaking"));
+const VoicemastersPlus = lazy(() => import("../views/public_speaking/public-speaking-voicemasters-plus"));
 const Library = lazy(() => import("../views/library/library"));
 const Science = lazy(() => import("../views/summercamp/science"));
 const Sudoku = lazy(() => import("../views/sudoku/sudoku"));
@@ -39,6 +40,7 @@ function MainRoutes() {
         <Route path="/public-speaking-seniors" element={<Voice />} />
         <Route path="/public-speaking-juniors" element={<VoiceJ />} />
         <Route path="/public-speaking-for-children" element={<VoiceMastersLanding />} />
+        <Route path="/public-speaking-voicemasters-plus" element={<VoicemastersPlus />} />
         <Route path="/library" element={<Library />} />
         <Route path="/science" element={<Science />} />
         <Route path="/sudoku" element={<Sudoku />} />

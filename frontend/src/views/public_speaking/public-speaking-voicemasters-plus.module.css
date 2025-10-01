@@ -1,0 +1,67 @@
+:root{
+  --magenta:#c72d60; /* Public Speaking */
+  --orange:#f19c16;  /* CTA accents */
+  --teal:#14949d;    /* info accents */
+  --blue:#004aad;    /* headings */
+}
+
+/* Hero */
+.hero{ position:relative; }
+.heroPicture{ display:block; width:100%; height:auto }
+.bannerImg{ width:100%; height:clamp(260px, 48vw, 560px); object-fit:cover }
+.heroCopy{ position:absolute; inset:0; display:grid; place-items:center; text-align:center; padding:1rem; background:linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.25) 100%); }
+.title{ color:#85042f; font-size:clamp(1.0rem, 4vw, 3rem); font-weight:900; margin:0 }
+.subtitle{ color:#eef; font-size:clamp(.95rem, 1.6vw, 1.25rem); max-width:980px; margin:.5rem auto 0 }
+
+/* Containers */
+.container{ width:min(1100px, 92%); margin:0 auto }
+.xpad{ padding:1rem 0 }
+
+/* Message box */
+.messageBox{ background:#fff7fb; border-left:6px solid var(--magenta); border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,.06); padding:1rem; }
+.message{ color:#333; line-height:1.7; font-size:1.05rem }
+
+/* Accordion */
+.accordion{ margin:1rem 0 2rem }
+.accItem{ background:#fff; border:1px solid #e5e7eb; border-radius:12px; margin:.6rem 0; overflow:hidden; box-shadow:0 6px 16px rgba(0,0,0,.04) }
+.accSummary{ padding:.9rem 1rem; cursor:pointer; font-weight:700; color:#0f172a }
+.accPanel{ padding:.9rem 1rem; color:#334155; border-top:1px dashed #e5e7eb }
+
+/* Pricing inside accordion */
+.priceGrid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-top:.5rem }
+.priceCard{ background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:1rem; text-align:center }
+.priceCard h4{ margin:.2rem 0 .4rem; color:#0f172a }
+.highlight{ border-color:var(--magenta); box-shadow:0 8px 18px rgba(199,45,96,.15) }
+.amount{ font-size:1.1rem; color:#111 }
+.amount span{ font-size:1.8rem; font-weight:900 }
+.priceNote{ margin-top:.6rem; color:#475569 }
+
+/* Blog link */
+.blogSection{ background:#f8fafc; padding:1.6rem 0; margin:1rem 0 0; border-top:1px solid #e5e7eb }
+.blogHeading{ width:min(1100px,92%); margin:0 auto .2rem; color:#0f172a; font-size:1.4rem }
+.blogText{ width:min(1100px,92%); margin:0 auto .6rem; color:#334155 }
+.blogLink{ width:min(1100px,92%); display:block; margin:0 auto; color:#0b49a6; text-decoration:underline; font-weight:600 }
+
+@media (prefers-reduced-motion:no-preference){
+  .accItem[open] .accSummary{ background:#fff0f6 }
+}
+.backButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.backButton {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #1e40af;
+}
