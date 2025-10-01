@@ -8,6 +8,7 @@ import styles from "./public-speaking.module.css";
 // Reuse your thumbnails
 import juniorThumb from "../../assets/juniors_voicemasters.webp";
 import seniorThumb from "../../assets/seniors_voicemasters.webp";
+import plus from "../../assets/plus.webp";
 
 export default function PublicSpeakingLanding() {
   return (
@@ -76,6 +77,32 @@ export default function PublicSpeakingLanding() {
               </Link>
             </div>
           </article>
+ {/* Plus */}
+<article className={styles.card}>
+            <img
+              className={styles.cardImg}
+              src={plus}
+              alt="Voicemasters Plus – 1:1 support"
+            />
+            <div className={styles.cardBody}>
+              <h2 className={styles.cardTitle}>Voicemasters Plus (Add-On)</h2>
+              <p className={styles.cardText}>
+                1:1 support: script templates, guided practice, feedback & short
+                1:1 writing sessions to deliver fuller role reports with confidence.
+              </p>
+              <ul className={styles.bullets}>
+                <li>help prepare personalised scripts</li>
+                <li>guided practice sessions</li>
+                <li>6-8 session per month</li>
+              </ul>
+              <Link to="/public-speaking-voicemasters-plus" className={styles.ctaPrimary}>
+                Explore Voicemasters Plus →
+              </Link>
+            </div>
+          </article>
+
+
+
         </section>
 
       <section className={styles.blogSection}>
