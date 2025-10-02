@@ -48,8 +48,14 @@
 .cardImg { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
 .cardBody { padding: 1rem 1rem 1.25rem; }
 .cardTitle { font-size: 1.3rem; font-weight: 800; color: var(--blue); margin: 0.2rem 0 0.4rem; }
+
 .cardText { color: #222; line-height: 1.6; }
-.bullets { margin: 0.6rem 0 1rem 1.1rem; }
+.bullets { margin: 0.6rem 0 1rem 0.1rem; }
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(199, 45, 96, 0.18);
+}
 
 /* CTAs */
 .ctaPrimary, .ctaSecondary {

@@ -48,7 +48,7 @@ export default function PublicSpeakingLanding() {
                 listening skills, and expressive vocabulary.
               </p>
               <ul className={styles.bullets}>
-                <li>Fun prompts, Games & table topics</li>
+                <li>Fun Games & table topics</li>
                 <li>Body language & voice basics</li>
                 <li>Gentle evaluations and badges</li>
               </ul>
@@ -70,7 +70,7 @@ export default function PublicSpeakingLanding() {
               <ul className={styles.bullets}>
                 <li>Prepared & impromptu speeches</li>
                 <li>Stage presence & vocal variety</li>
-                <li>Goal tracking & milestones</li>
+                <li>Role Plays & Individual feedback</li>
               </ul>
               <Link to="/public-speaking-seniors" className={styles.ctaSecondary}>
                 Explore Seniors →
@@ -85,14 +85,14 @@ export default function PublicSpeakingLanding() {
               alt="Voicemasters Plus – 1:1 support"
             />
             <div className={styles.cardBody}>
-              <h2 className={styles.cardTitle}>Voicemasters Plus (Add-On)</h2>
+              <h2 className={styles.cardTitle}>Voicemasters Plus</h2>
               <p className={styles.cardText}>
                 1:1 support, script writing sessions, guided practice, feedback & rehearsal sessions to deliver fuller roles with confidence.
               </p>
               <ul className={styles.bullets}>
                 <li>help prepare personalised scripts</li>
                 <li>guided practice sessions</li>
-                <li>6-8 session per month</li>
+                <li>5 extra 1:1 sessions per month</li>
               </ul>
               <Link to="/public-speaking-voicemasters-plus" className={styles.ctaPrimary}>
                 Explore Voicemasters Plus →

@@ -18,9 +18,11 @@ function PlusAccordion() {
         <summary className={styles.accSummary}>📝 1:1 Script Writing sessions</summary>
         <div className={styles.accPanel}>
           <p>
-We engage <strong>1:1 with students</strong>, listen to their stories and ideas, and help them shape these into clear, engaging scripts. 
-Together, we refine the content, add personal touches or anecdotes, check for accurate vocabulary and grammar, and 
-suggest the right phrases and pauses for effective delivery. This way, every script feels authentic, polished, and ready for confident presentation.
+We engage <strong>1:1 with your child</strong> across <strong>5 focused sessions</strong>—listening to their stories and ideas, 
+and shaping them into a clear, engaging script.<br/><br/>
+Together, we refine content, add personal touches and anecdotes, check vocabulary and grammar, 
+and suggest the right phrases, pacing, and pauses.<br/><br/>
+The result is a script that feels <strong>authentic, polished, and ready</strong> for confident delivery.
           </p>
         </div>
       </details>
@@ -29,19 +31,22 @@ suggest the right phrases and pauses for effective delivery. This way, every scr
         <summary className={styles.accSummary}>🎤 Guided Practice</summary>
         <div className={styles.accPanel}>
           <p>
-            Some students feel challenged when practicing on their own. That’s where we step in — acting as their mirror,
-             guiding them through multiple rehearsals and practice rounds. Together, we work on pace, pauses, articulation, 
-             and body language, helping each delivery become natural, confident, and complete.
+In our guided <strong>1:1 sessions</strong>, we act as your child’s mirror—leading focused rehearsals and practice rounds.<br/><br/>
+Together, we refine <strong>pace</strong>, <strong>purposeful pauses</strong>, <strong>articulation</strong>, and <strong>body language</strong>,
+so every delivery becomes natural, confident, and complete.
+
           </p>
         </div>
       </details>
 
       <details className={styles.accItem}>
-        <summary className={styles.accSummary}>🤝 6-8 session per month</summary>
+        <summary className={styles.accSummary}>🤝 FIVE 1:1 session per month</summary>
         <div className={styles.accPanel}>
           <p>
-            There will be 1-2 sessions per week, depending on the number of roles your child takes on. The timings for the sessions 
-            will be coordinated with you in advance, based on your child's & Teachers availability.
+Your bundle includes <strong>5 individual 1:1 sessions each month</strong>—
+with <strong>at least one every week</strong>—scheduled outside the regular Sunday meetings.<br/><br/>
+Session timings will be coordinated in advance based on your child’s and the teacher’s availability.
+
           </p>
         </div>
       </details>
@@ -70,26 +75,47 @@ suggest the right phrases and pauses for effective delivery. This way, every scr
   <div className={styles.accPanel}>
     <div className={styles.priceGrid}>
       <div className={`${styles.priceCard} ${styles.highlight}`}>
-        <h4>3-Month Program</h4>
-        <p className={styles.amount}>₹ <span>10,000</span></p>
+        <h4>4-Month Program</h4>
+        {/* <p className={styles.amount}>₹ <span>10,000</span></p> */}
         <p>
-          One flat fee covers all role coaching support for a 3-month tenure. You will see visible growth within this period, and often students gain enough confidence that PLUS renewal may no longer be necessary.
+One flat fee covers <strong>all role-coaching support for a 4-month tenure</strong>.<br/>
+Most families see visible growth within this period, and many students gain enough confidence that renewing the bundle may not be necessary.
+
         </p>
       </div>
     </div>
   </div>
 </details>
 
-      <details className={styles.accItem}>
-        <summary className={styles.accSummary}>❓ FAQs</summary>
-        <div className={styles.accPanel}>
-          <p><strong>Is this mandatory?</strong> No—it's an optional add‑on.</p>
-          <p><strong>Is individual attention not paid in the regular meetings</strong> During the evaluation section of every Voicemasters meeting, all role takers receive individual feedback. However, due to time limitations, this feedback may not always be very detailed, and applying it is left to the student’s own effort.
+<details className={styles.accItem}>
+  <summary className={styles.accSummary}>
+    Is individual attention provided in the regular meetings?
+  </summary>
+  <div className={styles.accPanel}>
+    <p>
+      Yes. During the evaluation section of every Voicemasters meeting, each role taker
+      receives individual feedback. However, due to time limits, this feedback can be brief,
+      and applying it is often left to the student.
+    </p>
+    <p>
+      With our combined bundle (regular meetings + <strong>5 one-on-one sessions</strong>),
+      we add multiple touchpoints to ensure feedback is understood and implemented—helping
+      students progress faster and with greater confidence.
+    </p>
+  </div>
+</details>
 
-With Voicemasters Plus, we go a step further. Each Plus student gets multiple touchpoints to ensure that feedback is not only understood but also implemented effectively—helping them grow faster and with greater confidence.</p>
-          <p><strong>How are practice slots scheduled?</strong> At a time confortable to the Student and the Faculty, we can discuss and fix slots.</p>
-        </div>
-      </details>
+<details className={styles.accItem}>
+  <summary className={styles.accSummary}>How are practice slots scheduled?</summary>
+  <div className={styles.accPanel}>
+    <p>
+      Sessions are scheduled <strong>outside</strong> the regular Sunday meetings. We coordinate
+      timings in advance based on your child’s and the teacher’s availability, and confirm each
+      slot over WhatsApp.
+    </p>
+  </div>
+</details>
+
     </div>
   );
 }
@@ -139,12 +165,13 @@ const VoicemastersPlus = () => {
         <div className={styles.messageBox}>
           <p className={styles.message}>
 
-            Some students in our Voicemasters program are still building their confidence in speaking during meetings. While they begin with shorter roles like
-             Timer, Ah-Counter, or Grammarian, they often keep their speeches brief. With the right support and encouragement,
-              these roles can become stepping stones that prepare them to take on bigger speaking opportunities in the future—helping
-               them grow steadily as confident communicators. <br/> <br/> 
-            Voicemasters Plus gives them a simple structure and pre‑meeting 1:1 rehearsal so they
-            can deliver complete, confident reports—and build real public speaking momentum week by week.
+Some learners in our Voicemasters program are still building confidence in meeting roles like  
+<strong>Timer</strong>, <strong>Ah-Counter</strong>, or <strong>Grammarian</strong>, and often keep their reports brief. 
+With the right structure and encouragement, these roles become stepping stones to bigger speaking opportunities—helping 
+children grow steadily as confident communicators.<br/><br/>
+Our <strong>combined bundle</strong> includes all regular Voicemasters meetings <strong>plus 5 focused 1:1 sessions</strong>. 
+In these sessions, we plan the role, co-write a clear script/structure, and rehearse delivery—so children present complete, 
+confident reports and build real public-speaking momentum week by week.
           </p>
         </div>
       </div>
