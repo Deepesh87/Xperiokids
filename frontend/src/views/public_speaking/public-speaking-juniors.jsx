@@ -2,90 +2,121 @@ import React from "react";
 import styles from "./public-speaking-seniors.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
-import pricing from "../../assets/Voicemasters_fees.png";
+import { Link } from "react-router-dom";
+import v2 from "../../assets/voicemasters_new.webp";
+import v3 from "../../assets/voicemasters_new2.webp";
+import v4 from "../../assets/voicemasters_new3.webp";
+import v5 from "../../assets/voicemasters_new4.webp";
 
-import v2 from "../../assets/voicemasters_new.jpeg";
-import v3 from "../../assets/voicemasters_new2.jpeg";
-import v4 from "../../assets/voicemasters_new3.jpeg";
-import v5 from "../../assets/voicemasters_new4.jpeg";
-
-function VoiceJ() {
+export default function VoiceJ() {
   return (
     <>
       <Nav />
-      <div className={styles.container}>
-        <div className={styles.heroSection}>
-          <h1 className={styles.title}>🎤 VoiceMasters: Public Speaking for Grade 2 to 4</h1>
-          <p className={styles.subtitle}>📍 In-Centre Classes | Every Saturday | 10:00 AM – 12:15 PM</p>
-          <p className={styles.description}>
+      <main className={styles.shell}>
+        {/* HERO */}
+        <header className={`${styles.card} ${styles.hero}`}>
+          <h1 className={styles.title1}>🎤 VoiceMasters Juniors:</h1>
+          <h1 className={styles.title}>Public Speaking for Grades 2–4</h1>
 
-Voicemasters Juniors is a  <strong>playful, engaging public speaking </strong>program designed just for Grades 1 – 3. 
-Through <strong>games, stories, roleplay, and imagination</strong>, children gently build confidence, vocabulary, and stage presence.
-
+          <p className={styles.subtitle}>📍 In-Centre | Saturdays | 10:00 AM – 12:15 PM</p>
+          <p className={styles.lead}>
+            A <strong>playful, engaging</strong> program where children build confidence,
+            vocabulary, and stage presence through <strong>games</strong>, <strong>stories</strong>, and
+            <strong> role-play</strong>.
           </p>
-        </div>
-            <div className={styles.galleryGrid}>
-              <img className={styles.galleryImg} src={v5} alt="Camp Activity 1" />
-              <img className={styles.galleryImg} src={v3} alt="Camp Activity 2" />
-              <img className={styles.galleryImg} src={v4} alt="Camp Activity 3" />
-              <img className={styles.galleryImg} src={v2} alt="Camp Activity 4" />
-            </div>
 
+          <div className={styles.actions}>
+            <a
+              className={`${styles.btn} ${styles.btnPrimary}`}
+              href="https://wa.me/918904749795"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book Trial
+            </a>
+            <a
+              className={`${styles.btn} ${styles.btnOutline}`}
+              href="https://drive.google.com/file/d/1hCd-_P1GTGXcceaUP2TyFUcAcf0XMZi7/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Course Outline
+            </a>
+            {/* <Link className={`${styles.btn} ${styles.btnGhost}`} to="/voicemasters-leaderboard">
+              View Leaderboard
+            </Link> */}
+            <Link className={styles.linkSwitch} to="/public-speaking-seniors">
+              ← Switch to Seniors (Grade 5 onwards)
+            </Link>
+          </div>
+        </header>
 
-        <div className={styles.scheduleBox}>
-          <h2>🗓️ How It Works</h2>
-          <ul>
-            <li>🎯 <strong>3 Unique Modules:</strong> Little Speakers, Creative Talkers, Confidence Builders</li>
-            <li>🧠 <strong>Activities Include:</strong> Story Cubes, Show & Tell, Picture Talks, Audio-Visual Rounds, Role Plays</li>
-            <li>🎁 <strong>First Class is Free:</strong> Join a playful trial before you enroll</li>
-            <li>📞 <strong>Need Help?</strong> Call us or download the brochure below</li>
+        {/* GALLERY */}
+        <section className={styles.card} aria-labelledby="gallery-title">
+          <h2 id="gallery-title" className={styles.h2}>Moments from VoiceMasters</h2>
+          <p className={styles.note}>
+            We celebrate progress with badges, certificates, and a cheerful monthly leaderboard.
+          </p>
+          <div className={styles.gallery}>
+            <figure className={styles.tile}><img src={v5} alt="Junior student on mic during activity" /></figure>
+            <figure className={styles.tile}><img src={v3} alt="Group practice and smiles" /></figure>
+            <figure className={styles.tile}><img src={v4} alt="Fun speaking game in class" /></figure>
+            <figure className={styles.tile}><img src={v2} alt="Storytelling and show-and-tell" /></figure>
+          </div>
+        </section>
+
+        {/* HOW IT WORKS */}
+        <section className={`${styles.card} ${styles.warm}`}>
+          <h2 className={styles.h2}>🗓️ How It Works</h2>
+          <ul className={styles.list}>
+            <li>🎯 <strong>3 Tracks:</strong> Little Speakers, Creative Talkers, Confidence Builders</li>
+            <li>🧠 <strong>Activities:</strong> Story Cubes, Show &amp; Tell, Picture Talks, AV rounds, Role Plays</li>
+            <li>🎁 <strong>First class is free:</strong> Join a playful trial before you enroll</li>
+            <li>📞 <strong>Need help?</strong> Call us or download the brochure</li>
           </ul>
-        </div>
+        </section>
 
-<div className={styles.backButtonWrapper}>
-  <button className={styles.backButton} onClick={() => window.location.href = "/public-speaking-seniors"}>
-    ← Switch to Seniors (Grade 5 onwards)
-  </button>
-</div>
-
-        <div className={styles.videoContainer}>
-          <div className={styles.videoWrapper}>
+        {/* VIDEO */}
+        <section className={styles.card} aria-labelledby="video-title">
+          <h2 id="video-title" className={styles.h2}>See VoiceMasters in Action</h2>
+          <div className={styles.video}>
             <iframe
               src="https://www.youtube.com/embed/yoXrngUSfDw"
               title="VoiceMasters Public Speaking"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            />
           </div>
-        </div>
+        </section>
 
-        <div className={styles.finalCTA}>
-          <h3>📥 Download the Brochure to Know More</h3>
-          <a
-            className={styles.menu__link}
-            href="https://drive.google.com/file/d/1hCd-_P1GTGXcceaUP2TyFUcAcf0XMZi7/view?usp=sharing" 
-            target="_blank"
-          >
-            Download Course Outline
-          </a>
-        </div>
-
-                <div className={styles.finalCTA}>
-                  <h3>📞 Call or Visit us to find out more or book a free trial</h3>
-                  <a href="https://wa.me/918904749795" target="_blank" rel="noopener noreferrer">
-                    <button>Book Your Trial Class</button>
-                  </a>
-                  <p style={{ fontSize: "0.95rem", marginTop: "1rem" }}>
-                    Also check out our <a href="/science">Science coaching</a> and <a href="/robotics-for-children">Robotics programs</a> for
-                    kids in Bengaluru.
-                  </p>
-                </div>
-                
-      </div>
+        {/* FOOTER CTA */}
+        <section className={`${styles.card} ${styles.final}`}>
+          <h3 className={styles.h3}>Ready to help your child find their voice?</h3>
+          <div className={styles.actionsRow}>
+            <a
+              className={`${styles.btn} ${styles.btnPrimary}`}
+              href="https://wa.me/918904749795"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book Trial
+            </a>
+            <a
+              className={`${styles.btn} ${styles.btnOutline}`}
+              href="https://drive.google.com/file/d/1hCd-_P1GTGXcceaUP2TyFUcAcf0XMZi7/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Course Outline
+            </a>
+          </div>
+          <p className={styles.cross}>
+            Also explore our <Link to="/science">Science coaching</Link> and{" "}
+            <Link to="/robotics-for-children">Robotics programs</Link> in Bengaluru.
+          </p>
+        </section>
+      </main>
       <Footer />
     </>
   );
 }
-
-export default VoiceJ;

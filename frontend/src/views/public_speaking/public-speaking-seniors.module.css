@@ -1,523 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-.demo-page{
-  height: auto;
-  width: 100%;
-  padding: 5px 0;
-  background: #ffffff;
+:root{
+  --magenta:#c72d60;
+  --magenta-dark:#a31e4e;
+  --royal:#004aad;
+  --royal-ink:#00357b;
+  --ink:#111827;
+  --muted:#6b7280;
+  --bg:#f7f7fb;
+  --card:#ffffff;
+  --ring: rgba(10, 20, 50, 0.06);
 }
 
-.about{
-  width: 1130px;
-  max-width: 85%;
+* { box-sizing: border-box; }
+
+body { background: var(--bg); }
+
+.shell{
+  /* Tighter, centered layout */
+  max-width: 1000px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  padding: clamp(16px, 3vw, 28px);
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
-.about> img {
-    border-radius: 10px;
+/* Reusable “card” sections for rhythm */
+.card{
+  background: var(--card);
+  border: 1px solid rgba(0,0,0,.05);
+  border-radius: 16px;
+  padding: clamp(16px, 2.8vw, 28px);
+  box-shadow: 0 6px 24px var(--ring);
+  margin: clamp(14px, 2.4vw, 24px) 0;
 }
 
-.text {
-  width: 80%;
-  padding-bottom: 40px;
+/* HERO */
+.hero{
+  position: relative;
+  background:
+    /* cool accents (on top) */
+    radial-gradient(1000px 520px at 110% -10%, rgba(0,74,173,0.10), transparent 60%),
+    radial-gradient(1200px 640px at -10% 120%, rgba(20,148,157,0.10), transparent 60%),
+    /* neutral base (bottom) */
+    linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
 }
-
-.text h2{
-  font-size: 35px;
-  font-weight: 1000;
-  margin-bottom: 10px;
-}
-.text h5 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  line-height: 1.4; /* makes it cleaner */
-}
-.text span {
-  color: #4070f4;
+.title{
+  font-size: clamp(1.0rem, 1.1rem + 2.2vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--magenta);
   font-weight: 600;
+  margin: 0 0 .25rem 0;
+  text-align: center;
 }
-.text p{
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 1px;
+.title1{
+  font-size: clamp(1.7rem, 1.1rem + 2.2vw, 2.4rem);
+  line-height: 1.2;
+  color: var(#000000);
+  font-weight: 800;
+  margin: 0 0 .25rem 0;
+  text-align: center;
 }
-.data{
-  margin-top: 30px;
+.subtitle{
+  text-align: center;
+  color: var(--muted);
+  font-size: clamp(1rem, .9rem + .3vw, 1.1rem);
+  margin: 0 0 .25rem 0;
 }
-.hire{
-  font-size: 18px;
-  background: #4070f4;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  padding: 8px 25px;
-  border-radius: 6px;
-  transition: 0.5s;
- 
-}
-.hire:hover{
-  background: #1a1818;
-  border: 1px solid #4070f4;
-}
-
-.data >a >{
-  display: flex;
-  align-items: center;
+.lead{
+  text-align: center;
+  color: #374151;
+  max-width: 720px;
+  margin: .35rem auto 0;
+  line-height: 1.65;
 }
 
-.menu__link {
-  font-size: 2.0rem;
-  color: #ec0ba9;
-  /* margin: 0 10px; */
-  display: inline-block;
+/* Actions block under hero */
+.actions{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: clamp(10px, 2vw, 16px);
+}
+@media (min-width: 720px){
+  .actions{ grid-template-columns: repeat(3,1fr); }
+}
+.linkSwitch{
+  justify-self: center;
+  margin-top: 6px;
+  color: var(--royal);
   text-decoration: underline;
 }
-
-.menu__link:hover {
-  text-decoration: underline wavy;
-  color: #b3008f;
-  transition: 0.3s ease;
+.linkSwitch:hover{
+  color: var(--royal-ink);
+  text-decoration: underline solid;
+  font-weight: 500;                      /* bold on hover */
+  transform: scale(1.2);                 /* 20% larger */
 }
 
-@media (max-width: 800px ){
-
-   .about{
-     display: flex;
-     flex-direction: column;
-   }
-
-   .text{
-    width: 100%;
-    text-align: center;
-   }
-
-   .text > h5 {
-    margin-bottom: 16px;
-    font-size: 18px;
-    line-height: 1.4;
-  }
-
-   .pic{
-    width: 80%;
-    margin: 20px auto 10px;
-    display: grid;
-  }
-
+/* Optional: accessibility – avoid zoom for reduced motion users */
+@media (prefers-reduced-motion: reduce) {
+  .linkSwitch { transition: color .2s ease; }
+  .linkSwitch:hover { transform: none; }
 }
-
-/* Container for both videos */
-.videoContainer {
-  display: flex;
-  justify-content: center;
+  
+  /* Buttons — simplified, brand-aligned */
+.btn{
+  display: inline-flex;
   align-items: center;
-  gap: 10px; /* Space between videos */
-  flex-wrap: wrap; /* Allows stacking on smaller screens */
-}
-
-/* Video Wrapper for YouTube videos */
-.videoWrapper {
-  position: relative;
-  width: 70%;              /* Wider video */
-  max-width: 720px;        /* Increased max-width */
-  margin: 20px auto;
-  padding-bottom: 56.25%;  /* 16:9 aspect ratio = 9/16 = 0.5625 */
-  height: 0;
-  overflow: hidden;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .98rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .06s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+  box-shadow: 0 4px 16px var(--ring);
 }
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
+.btn:hover{ transform: translateY(-1px); }
+.btn:active{ transform: translateY(0); }
 
-/* Adjust for PC - reduce vertical height by 15% (from 70% to ~59.5%) */
-@media (min-width: 1024px) {
-  .videoWrapper {
-    padding-bottom: 50%; 
-  }
+.btnPrimary{
+  background: var(--magenta);
+  color: #fff;
 }
+.btnPrimary:hover{ background: var(--magenta-dark); }
 
-/* Mobile Optimization: Increase vertical height (making it taller)
-   Here we set it to about 81% for devices up to 768px wide */
-   @media (max-width: 768px) {
-    .videoWrapper {
-      width: 90%;
-      padding-bottom: 75%; /* Keep landscape ratio even on mobile */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .videoWrapper {
-      width: 100%;
-      padding-bottom: 75%;
-    }
-  }
-
-  .container {
-    background-color: #ffffff;
-    min-height: 100vh;
-    padding: 0.5rem;
-  }
-  
-  /* Hero Section */
-  .heroSection {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #c72d60;
-    margin-bottom: 0.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.125rem;
-    color: #444;
-    margin-bottom: 0.5rem;
-  }
-  
-  .description {
-    font-size: 1rem;
-    color: #333;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.6;
-  }
-  
-  /* Schedule Section */
-  .scheduleBox {
-    background-color: #fef9c3;
-    border-left: 6px solid #facc15;
-    padding: 1.5rem;
-    margin: 2rem auto;
-    max-width: 700px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .scheduleBox h2 {
-    font-size: 2rem;
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
-    color: #92400e;
-  }
-  
-  .scheduleBox ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 1rem;
-  }
-  
-  .scheduleBox li {
-    margin-bottom: 0.3rem;
-    font-size: 1rem;
-    color: #444;
-  }
-  
-/* Container for both videos */
-.videoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px; /* Space between videos */
-  flex-wrap: wrap; /* Allows stacking on smaller screens */
+.btnOutline{
+  background: #fff;
+  color: var(--royal);
+  border-color: rgba(0,74,173,.28);
 }
-  
-/* Video Wrapper for YouTube videos */
-.videoWrapper {
-  position: relative;
-  width: 70%;              /* Wider video */
-  max-width: 720px;        /* Increased max-width */
-  margin: 20px auto;
-  padding-bottom: 56.25%;  /* 16:9 aspect ratio = 9/16 = 0.5625 */
-  height: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+.btnOutline:hover{
+  background: #f2f6ff;
+  border-color: rgba(0,74,173,.55);
 }
 
-/* Adjust for PC - reduce vertical height by 15% (from 70% to ~59.5%) */
-@media (min-width: 1024px) {
-  .videoWrapper {
-    padding-bottom: 30%; 
-  }
+.btnGhost{
+  background: #f8f9ff;
+  color: #1f2937;
+  border-color: #e5e7eb;
+}
+.btnGhost:hover{
+  background: #eef2ff;
 }
 
-/* Mobile Optimization: Increase vertical height (making it taller)
-   Here we set it to about 81% for devices up to 768px wide */
-   @media (max-width: 768px) {
-    .videoWrapper {
-      width: 90%;
-      padding-bottom: 75%; /* Keep landscape ratio even on mobile */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .videoWrapper {
-      width: 100%;
-      padding-bottom: 75%;
-    }
-  } 
-  /* Track Cards */
-  .trackCards {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  
-
-  .trackCard {
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 1rem;
-    text-align: center;
-    width: 280px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease-in-out;
-    background: #fff;
-  }
-
-  @media (min-width: 1024px) {
-  .trackCard {
-    width: 600px; /* Or whatever size you want */
-  }
-
-  .thumbImage {
-    width: 80%;
-  }
-}
-
-  
-  .trackCard:hover {
-    transform: translateY(-5px);
-  }
-  
-  .thumbImage {
-    width: 80%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
-  }
-
-  /* On large screens only */
-@media (min-width: 1024px) {
-  .thumbImage {
-    width: 100%;
-  }
-}
-
-  
-  .trackCard h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-  }
-  
-  .trackCard p {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 0.75rem;
-  }
-  
-  .trackCard button {
-    background-color: #f97316;
-    color: white;
-    border: none;
-    border-radius: 999px;
-    padding: 0.5rem 1.25rem;
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  
-  .trackCard button:hover {
-    background-color: #ea580c;
-  }
-  
-  /* Final CTA */
-  .finalCTA {
-    margin: 3rem auto;
-    text-align: center;
-  }
-  
-  .finalCTA h3 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .finalCTA button {
-    background-color: #f97316;
-    color: white;
-    border: none;
-    border-radius: 999px;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  
-  .finalCTA button:hover {
-    background-color: #ea580c;
-  }
-  
-  .menu__link {
-    font-size: 1.2rem;
-    color: #100199;
-    text-decoration: underline;
-    display: inline-block;
-    margin-top: 10px;
-    background-color: rgb(83, 229, 141);
-    padding: 2px 5px;
-    border-radius: 4px;
-  }
-  
-.galleryGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  gap: 12px;
-  justify-content: center;     /* ✅ Centers all image blocks as a group */
-  margin: 20px auto;
-  padding: 0;
-}
-
-.galleryImg {
-  width: 100%;
-  max-width: 240px;            /* ✅ Controls individual image size */
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.galleryImg:hover {
-  transform: scale(1.1);
-}
-
-
-.meetingCounter {
-  background: #f0fdfa;
-  border-left: 6px solid #14b8a6;
-  padding: 1.5rem;
-  border-radius: 10px;
+/* Section headings */
+.h2{
+  font-size: clamp(1.2rem, 1rem + .9vw, 1.6rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 .4rem 0;
   text-align: center;
-  margin: 2rem auto;
-  max-width: 650px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.h3{
+  font-size: clamp(1.1rem, .9rem + .7vw, 1.35rem);
+  font-weight: 700;
+  color: var(--ink);
+  text-align: center;
+  margin: 0 0 .4rem 0;
 }
 
-.meetingCounterTitle {
-  font-size: 1.8rem;
-  color: #0f766e;
-  margin-bottom: 0.6rem;
+/* Notes / small text */
+.note{
+  text-align: center;
+  color: #4b5563;
+  margin: 0 auto .6rem;
+  max-width: 760px;
 }
 
-.meetingCounterItem {
-  font-size: 1.1rem;
-  color: #134e4a;
-  margin-bottom: 0.5rem;
+/* How-it-works list */
+.warm{
+  background: linear-gradient(180deg, #fff7f2 0%, #ffffff 60%);
+  border-color: #ffe8d3;
 }
-
-.meetingCounterItem em {
-  font-style: normal;
-  color: #0c4a6e;
-  font-weight: 500;
+.list{
+  list-style: none;
+  padding: 0;
+  margin: .2rem 0 0 0;
+  color: #374151;
+  line-height: 1.7;
 }
+.list li{ margin: .25rem 0; }
 
-
-.countdownLine {
-  font-size: 1rem;
-  color: #166534;
-  margin-top: 0.8rem;
-  font-weight: 500;
+/* Gallery — neat tiles, fixed aspect so nothing looks stretched */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
-.pastMeetings {
-  margin-top: 2rem;
-  text-align: left;
-  max-height: 200px;
-  overflow-y: auto;
-  padding: 0 1rem;
-  background: #fdf4ff;
-  border: 1px solid #e879f9;
-  border-radius: 8px;
+@media (min-width: 760px){
+  .gallery{ grid-template-columns: repeat(4, 1fr); }
 }
-
-.pastMeetingsTitle {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #a21caf;
-  margin: 1rem 0 0.5rem 0;
+.tile{
+  margin: 0;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px var(--ring);
+  background: #f9fafb;
+  aspect-ratio: 4/3;   /* keeps uniform tiles */
 }
-
-.pastMeetingsList {
-  list-style-type: none;
-  padding-left: 0;
-  font-size: 0.95rem;
-  color: #4a044e;
-  line-height: 1.6;
-}
-
-.toggleButton {
-  background-color: #8b5cf6;
-  color: white;
-  font-size: 0.95rem;
-  border: none;
-  border-radius: 999px;
-  padding: 0.4rem 1.2rem;
-  margin: 1rem 0;
-  cursor: pointer;
+.tile img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  transition: background-color 0.3s ease;
+  transition: transform .25s ease;
+}
+.tile:hover img{ transform: scale(1.03); }
+
+/* Video — framed */
+.video{
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px var(--ring);
+  background: #000;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.video iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-.toggleButton:hover {
-  background-color: #6d28d9;
+/* Final CTA */
+.final{
+  text-align: center;
 }
-
-.backButtonWrapper {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
+.actionsRow{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 560px;
+  margin: 8px auto 6px;
 }
-
-.backButton {
-  background-color: #2563eb;
-  color: #ffffff;
-  font-size: 1rem;
-  border: none;
-  border-radius: 999px;
-  padding: 0.5rem 1.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+@media (min-width: 560px){
+  .actionsRow{ grid-template-columns: repeat(2,1fr); }
 }
-
-.backButton:hover {
-  background-color: #1e40af;
+.cross{
+  color: #374151;
+  margin-top: 8px;
+}
+.cross a{
+  color: var(--royal);
+  text-decoration: underline;
+}
+.cross a:hover{ 
+  color: var(--royal-ink);
+  text-decoration: underline solid;
+  font-weight: 500;                      /* bold on hover */
+  transform: scale(1.1);                 /* 20% larger */
 }

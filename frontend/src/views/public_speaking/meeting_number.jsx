@@ -182,7 +182,7 @@ const MeetingCounter = () => {
               🔴 Meeting in Progress (10:00 AM – 12:30 PM)
             </p>
           ) : (
-            <p className={styles.countdownLine}>⏳ Time left: {countdown}</p>
+            <p className={styles.countdownLine}><strong>⏳ Time to next meeting: </strong>{countdown}</p>
           )}
         </>
       )}
