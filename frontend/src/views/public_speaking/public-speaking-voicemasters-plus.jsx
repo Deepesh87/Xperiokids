@@ -8,6 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import banner1100 from "../../assets/plus.webp";    // ~1100×750
 import banner1600 from "../../assets/plus_1600.webp";    // ~1600w
 import banner2200 from "../../assets/plus_2200.webp";    // ~2200w
+import table_image from "../../assets/plus_table.webp"; 
 
 // Inline accordion component (you can split this to its own file later)
 function PlusAccordion() {
@@ -161,6 +162,17 @@ const VoicemastersPlus = () => {
         </p>
         <a href="/blog" className={styles.blogLink}>👉 Visit our Blog</a>
       </section> */}
+
+
+      {/* Add an image here */}
+      <div className={styles.tableImageContainer}>
+        <img 
+          src={table_image} 
+          alt="Voicemasters Plus Overview Table" 
+          className={styles.tableImage} 
+          loading="lazy"
+        />
+      </div>  
 
 <div className={styles.backButtonWrapper}>
   <button className={styles.backButton} onClick={() => window.location.href = "/public-speaking-for-children"}>

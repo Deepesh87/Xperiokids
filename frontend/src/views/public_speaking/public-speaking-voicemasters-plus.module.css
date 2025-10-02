@@ -65,3 +65,22 @@
 .backButton:hover {
   background-color: #1e40af;
 }
+
+.tableImageContainer {
+  width: min(1100px, 92%);
+  margin: 12px auto 16px;        /* centers the block */
+  display: flex;
+  justify-content: center;        /* centers the image */
+  align-items: center;
+}
+
+.tableImage {
+  width: clamp(220px, 45vw, 420px); /* small + responsive */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
