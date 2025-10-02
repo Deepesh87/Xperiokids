@@ -48,7 +48,7 @@ export default function PublicSpeakingLanding() {
                 listening skills, and expressive vocabulary.
               </p>
               <ul className={styles.bullets}>
-                <li>Fun prompts & table topics</li>
+                <li>Fun prompts, Games & table topics</li>
                 <li>Body language & voice basics</li>
                 <li>Gentle evaluations and badges</li>
               </ul>
@@ -87,8 +87,7 @@ export default function PublicSpeakingLanding() {
             <div className={styles.cardBody}>
               <h2 className={styles.cardTitle}>Voicemasters Plus (Add-On)</h2>
               <p className={styles.cardText}>
-                1:1 support: script templates, guided practice, feedback & short
-                1:1 writing sessions to deliver fuller role reports with confidence.
+                1:1 support, script writing sessions, guided practice, feedback & rehearsal sessions to deliver fuller roles with confidence.
               </p>
               <ul className={styles.bullets}>
                 <li>help prepare personalised scripts</li>
