@@ -166,7 +166,7 @@ const VoicemastersPlus = () => {
           <p className={styles.message}>
 
 Some learners in our Voicemasters program are still building confidence in meeting roles like  
-<strong>Timer</strong>, <strong>Ah-Counter</strong>, or <strong>Grammarian</strong>, and often keep their reports brief. 
+<strong> Timer</strong>, <strong>Ah-Counter</strong>, or <strong>Grammarian</strong>, and often keep their reports brief. 
 With the right structure and encouragement, these roles become stepping stones to bigger speaking opportunities—helping 
 children grow steadily as confident communicators.<br/><br/>
 Our <strong>combined bundle</strong> includes all regular Voicemasters meetings <strong>plus 5 focused 1:1 sessions</strong>. 
