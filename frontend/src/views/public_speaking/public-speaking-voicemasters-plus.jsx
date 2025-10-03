@@ -43,7 +43,7 @@ so every delivery becomes natural, confident, and complete.
         <summary className={styles.accSummary}>🤝 FIVE 1:1 session per month</summary>
         <div className={styles.accPanel}>
           <p>
-Your bundle includes <strong>5 individual 1:1 sessions each month</strong>—
+Plus includes <strong>5 individual 1:1 sessions each month</strong>—
 with <strong>at least one every week</strong>—scheduled outside the regular Sunday meetings.<br/><br/>
 Session timings will be coordinated in advance based on your child’s and the teacher’s availability.
 
@@ -75,11 +75,11 @@ Session timings will be coordinated in advance based on your child’s and the t
   <div className={styles.accPanel}>
     <div className={styles.priceGrid}>
       <div className={`${styles.priceCard} ${styles.highlight}`}>
-        <h4>4-Month Program</h4>
+        <h4>3 options to choose from</h4>
         {/* <p className={styles.amount}>₹ <span>10,000</span></p> */}
         <p>
-One flat fee covers <strong>all role-coaching support for a 4-month tenure</strong>.<br/>
-Most families see visible growth within this period, and many students gain enough confidence that renewing the bundle may not be necessary.
+Please contact us to know more about the Fee structure for Plus<br/>
+Most families see visible growth within 2-3 months period, and many students gain enough confidence that renewing Plus beyond 6 months may not be necessary.
 
         </p>
       </div>
@@ -89,11 +89,11 @@ Most families see visible growth within this period, and many students gain enou
 
 <details className={styles.accItem}>
   <summary className={styles.accSummary}>
-    Is individual attention provided in the regular meetings?
+    Is individual attention NOT provided in the regular meetings?
   </summary>
   <div className={styles.accPanel}>
     <p>
-      Yes. During the evaluation section of every Voicemasters meeting, each role taker
+      It is. During the evaluation section of every Voicemasters meeting, each role taker
       receives individual feedback. However, due to time limits, this feedback can be brief,
       and applying it is often left to the student.
     </p>
