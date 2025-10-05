@@ -80,14 +80,14 @@ export default function WhyFinancialLiteracyForKids() {
           content="Empower your child with financial skills early — saving, investing, and money management made fun at Xperio Learning."
         />
         <meta property="og:url" content={URL} />
-        <meta property="og:image" content="https://www.xperiolearning.com/blog-assets/finance-for-kids-hero-1280.webp" />
+        <meta property="og:image" content="https://www.xperiolearning.com/blog-assets/finance-blog.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={TITLE} />
         <meta
           name="twitter:description"
           content="Kids learn to save, invest, and budget through games, simulations, and projects in Xperio Learning’s Finance for Kids course."
         />
-        <meta name="twitter:image" content="https://www.xperiolearning.com/blog-assets/finance-for-kids-hero-1280.webp" />
+        <meta name="twitter:image" content="https://www.xperiolearning.com/blog-assets/finance-blog.webp" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
       </Helmet>
@@ -141,9 +141,9 @@ export default function WhyFinancialLiteracyForKids() {
               <source
                 type="image/webp"
                 srcSet="
-                  /blog-assets/finance-for-kids-hero-640.webp 640w,
-                  /blog-assets/finance-for-kids-hero-960.webp 960w,
-                  /blog-assets/finance-for-kids-hero-1280.webp 1280w
+                  /blog-assets/finance-blog.webp 640w,
+                  /blog-assets/finance-blog.webp 960w,
+                  /blog-assets/finance-blog.webp 1280w
                 "
                 sizes="(max-width: 640px) 100vw, (max-width: 980px) 90vw, 1280px"
               />
@@ -276,7 +276,7 @@ export default function WhyFinancialLiteracyForKids() {
         {/* CTA */}
         <section id="cta" className={styles.mainBlue}>
           <div className={styles.cardBody}>
-            <p className={styles.lead}>Ready to help your child speak with confidence? Book a free trial.</p>
+            <p className={styles.lead}>Ready to help your child be money wise? Book your seat today.</p>
             <p>
               <Link
                 to="https://wa.me/918904749795"
