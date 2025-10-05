@@ -29,6 +29,7 @@ const PublicSpeakingBlog = lazy(() => import("../views/blog/public-speaking-for-
 const LegoRoboticsBlog = lazy(() => import("../views/blog/lego-robotics-for-children"));
 const CancellationRefunds = lazy(() => import("../views/terms/refunds"));
 const PrivacyPolicy = lazy(() => import("../views/terms/privacy"));
+const WhyFinancialLiteracyForKids = lazy(() => import("../views/blog/why-financial-literacy-for-kids"));
 
 function MainRoutes() {
   return (
@@ -59,6 +60,7 @@ function MainRoutes() {
         <Route path="blog/what-is-robotics-for-kids" element={<WhyRoboticsProblemSolving />} />
         <Route path="blog/public-speaking-for-kids" element={<PublicSpeakingBlog />} />
         <Route path="blog/lego-robotics-for-children" element={<LegoRoboticsBlog />} />
+        <Route path="blog/why-financial-literacy-for-kids" element={<WhyFinancialLiteracyForKids />} />
         <Route path="/cancellation-refunds" element={<CancellationRefunds />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>

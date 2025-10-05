@@ -45,12 +45,12 @@ const ALL_POSTS = [
     readingMinutes: 3
   },
   {
-    slug: "financial-literacy-kids-importance",
+    slug: "why-financial-literacy-for-kids",
     title: "Financial Literacy for Kids: Why It Matters",
     description:
       "Teaching kids about money management, saving, and investing from an early age.",
     image: hero4,
-    datePublished: "2025-09-15",
+    datePublished: "2025-08-05",
     dateModified: "2025-09-15",
     tags: ["Financial Literacy", "Money Management"],
     readingMinutes: 6
