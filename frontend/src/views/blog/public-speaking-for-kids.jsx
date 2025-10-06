@@ -257,6 +257,7 @@ export default function PublicSpeakingBlog() {
           <ul className={styles.badges}>
             <li><Link to="/public-speaking" className={`${styles.cta} ${styles.ctaMagenta}`}>Public Speaking (VoiceMasters)</Link></li>
             <li><Link to="/robotics-for-children" className={`${styles.cta}`} style={{ background: "linear-gradient(135deg, var(--x-teal), var(--x-blue))" }}>Robotics</Link></li>
+            <li><Link to="/finance-for-kids" className={`${styles.cta} ${styles.ctaBlue}`}>Finance for Kids</Link></li>
           </ul>
         </section>
 

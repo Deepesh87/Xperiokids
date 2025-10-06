@@ -163,7 +163,7 @@ export default function Blog() {
           <p className={styles.kicker}>Xperio Learning Blog</p>
           <h1 className={styles.title}>STEM & Communication for Kids</h1>
           <p className={styles.subtitle}>
-            Robotics • LEGO • Arduino • Science Projects • Public Speaking
+            Robotics • LEGO • Arduino • Science • Public Speaking • Financial Literacy
           </p>
         </div>
       </header>

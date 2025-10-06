@@ -293,10 +293,10 @@ a:focus-visible {
   background: linear-gradient(135deg, var(--x-teal), var(--x-teal));
 }
 .ctaMagenta {
-  background: linear-gradient(135deg, var(--x-magenta), --x-magenta);
+  background: linear-gradient(135deg, var(--x-magenta), var(--x-magenta));
 }
 .ctaBlue {
-  background: linear-gradient(135deg, var(--x-blue), --x-blue);
+  background: linear-gradient(135deg, var(--x-blue), var(--x-blue));
 }
 
 /* TOC */

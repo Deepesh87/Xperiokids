@@ -176,7 +176,7 @@ export default function WhyFinancialLiteracyForKids() {
         </nav>
 
         {/* Sections */}
-        <section id="why-early" className={styles.main}>
+        <section id="why-early" className={styles.mainBlue}>
           <h2 className={styles.h2}>Why Teach Finance Early?</h2>
           <p className={styles.p}>
             Childhood is the best time to form habits — and money habits are no different. Teaching financial literacy early
@@ -188,7 +188,7 @@ export default function WhyFinancialLiteracyForKids() {
           </blockquote>
         </section>
 
-        <section id="real-world" className={styles.main}>
+        <section id="real-world" className={styles.mainBlue}>
           <h2 className={styles.h2}>Real-World Learning Through Practice</h2>
           <p className={styles.p}>
             Our <Link to="/finance-for-kids" className={styles.inlineLink}>Finance for Kids</Link> course goes beyond theory.
@@ -198,7 +198,7 @@ export default function WhyFinancialLiteracyForKids() {
           </p>
         </section>
 
-        <section id="indian-context" className={styles.main}>
+        <section id="indian-context" className={styles.mainBlue}>
           <h2 className={styles.h2}>Tailored for Indian Families</h2>
           <p className={styles.p}>
             Our course creators have read dozens of books on financial education for children and distilled the most useful
@@ -208,7 +208,7 @@ export default function WhyFinancialLiteracyForKids() {
           </p>
         </section>
 
-        <section id="hands-on" className={styles.main}>
+        <section id="hands-on" className={styles.mainBlue}>
           <h2 className={styles.h2}>Hands-On Games & Case Studies</h2>
           <p className={styles.p}>
             Finance is best learned by doing. That’s why our course is designed around activities, games, and role-plays rather
@@ -218,7 +218,7 @@ export default function WhyFinancialLiteracyForKids() {
           </p>
         </section>
 
-        <section id="next-steps" className={styles.main}>
+        <section id="next-steps" className={styles.mainBlue}>
           <h2 className={styles.h2}>Next Steps After the Course</h2>
           <p className={styles.p}>
             After completing the course, parents can start giving children small pocket money or help them open savings and
@@ -242,11 +242,12 @@ export default function WhyFinancialLiteracyForKids() {
         </aside>
 
         {/* Internal links */}
-        <section className={styles.main}>
+        <section className={styles.mainBlue}>
           <h3 className={styles.h3}>Explore programs</h3>
           <ul className={styles.badges}>
             <li><Link to="/finance-for-kids" className={`${styles.cta} ${styles.ctaBlue}`}>Finance for Kids</Link></li>
             <li><Link to="/robotics-for-children" className={`${styles.cta} ${styles.ctaTeal}`}>Robotics</Link></li>
+            <li><Link to="/public-speaking-for-children" className={`${styles.cta} ${styles.ctaMagenta}`}>Public Speaking</Link></li>
           </ul>
         </section>
 
