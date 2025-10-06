@@ -22,7 +22,7 @@ export default function WhyFinancialLiteracyForKids() {
     headline: TITLE,
     description:
       "Why financial literacy matters for kids in India — and how Xperio Learning’s Finance for Kids program helps children learn money management, budgeting, and investing through hands-on activities, stock simulations, and games.",
-    image: ["https://www.xperiolearning.com/blog-assets/finance-blog.webp"],
+    image: ["https://www.xperiolearning.com/blog-assets/finance-blog1.webp"],
     author: { "@type": "Organization", name: "Xperio Learning", "@id": "https://www.xperiolearning.com/#org" },
     publisher: { "@type": "Organization", name: "Xperio Learning", "@id": "https://www.xperiolearning.com/#org" },
     datePublished: PUBLISHED,
@@ -80,14 +80,14 @@ export default function WhyFinancialLiteracyForKids() {
           content="Empower your child with financial skills early — saving, investing, and money management made fun at Xperio Learning."
         />
         <meta property="og:url" content={URL} />
-        <meta property="og:image" content="https://www.xperiolearning.com/blog-assets/finance-blog.webp" />
+        <meta property="og:image" content="https://www.xperiolearning.com/blog-assets/finance-blog1.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={TITLE} />
         <meta
           name="twitter:description"
           content="Kids learn to save, invest, and budget through games, simulations, and projects in Xperio Learning’s Finance for Kids course."
         />
-        <meta name="twitter:image" content="https://www.xperiolearning.com/blog-assets/finance-blog.webp" />
+        <meta name="twitter:image" content="https://www.xperiolearning.com/blog-assets/finance-blog1.webp" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
       </Helmet>
@@ -141,9 +141,9 @@ export default function WhyFinancialLiteracyForKids() {
               <source
                 type="image/webp"
                 srcSet="
-                  /blog-assets/finance-blog.webp 640w,
-                  /blog-assets/finance-blog.webp 960w,
-                  /blog-assets/finance-blog.webp 1280w
+                  /blog-assets/finance-blog1.webp 640w,
+                  /blog-assets/finance-blog1.webp 960w,
+                  /blog-assets/finance-blog1.webp 1280w
                 "
                 sizes="(max-width: 640px) 100vw, (max-width: 980px) 90vw, 1280px"
               />
