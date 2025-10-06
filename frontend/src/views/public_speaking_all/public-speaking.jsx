@@ -14,7 +14,7 @@ export default function PublicSpeakingLanding() {
   return (
     <>
       <Helmet>
-        <title>Public Speaking at Xperio – VoiceMasters Juniors & Seniors</title>
+        <title>Public Speaking at Xperio Learning– VoiceMasters Juniors & Seniors</title>
         <meta
           name="description"
           content="Choose your path: VoiceMasters Juniors (Grades 1–4) and VoiceMasters Seniors (Grade 5+). Structured weekend public speaking programs in Bengaluru."
@@ -30,6 +30,9 @@ export default function PublicSpeakingLanding() {
           <div className={styles.heroInner}>
             <h1 className={styles.title}>VoiceMasters – Public Speaking</h1>
             <p className={styles.subtitle}>
+              Make your child that charismatic speaker, that confident leader, that engaging storyteller... whose voice is always heard and valued
+            </p>
+            <p className={styles.description}>
               Two learner-friendly tracks – <strong>Juniors (Grades 1–4)</strong> and{" "}
               <strong>Seniors (Grade 5+)</strong>. Build confidence, clarity and stage presence.
             </p>
