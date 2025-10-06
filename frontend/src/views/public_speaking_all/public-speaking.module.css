@@ -14,7 +14,7 @@
   background: linear-gradient(135deg, var(--blue) 0%, var(--magenta) 100%);
   color: #fff;
   text-align: center;
-  padding: clamp(2rem, 4vw + 1rem, 4rem) 1rem;
+  padding: clamp(0.8rem, 4vw + 1rem, 1.2rem) 1rem;
 }
 .title {
   font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
