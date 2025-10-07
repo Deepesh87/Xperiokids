@@ -76,6 +76,16 @@ const BOOKS = [
     blurb:
       "Dive into the world of Greek mythology with Percy Jackson, a demigod who embarks on epic quests, battles monsters, and discovers his true heritage."
   },
+   { id: "b7",
+      title: "Harry Potter Complete Collection",
+      author: "J.K. Rowling",
+      gradeFrom: 5,
+      gradeTo: 10,
+      tags: ["inspiration","values","classics","fiction"] ,
+          cover: require("../../assets/potter.webp"),
+    blurb:
+      "The magical journey of Harry Potter, a young wizard who attends Hogwarts School of Witchcraft and Wizardry, where he learns about friendship, bravery, and the battle between good and evil."
+    }
   {
     id: "b11",
     title: "The Beast of Buckingham Palace",
