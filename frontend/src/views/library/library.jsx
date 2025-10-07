@@ -86,6 +86,7 @@ const BOOKS = [
     blurb:
       "The magical journey of Harry Potter, a young wizard who attends Hogwarts School of Witchcraft and Wizardry, where he learns about friendship, bravery, and the battle between good and evil."
     }
+    ,
   {
     id: "b11",
     title: "The Beast of Buckingham Palace",
