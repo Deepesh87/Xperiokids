@@ -1,7 +1,6 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 
-function FalseRoute() {
-  return <div>FalseRoute</div>;
+export default function FalseRoute() {
+  return <Navigate to="/" replace />;
 }
-
-export default FalseRoute;
