@@ -8,7 +8,7 @@ function KPI() {
 
   return (
 <div className={Style.kpiContainer}>
-  <h3 className={Style.kpiSubtitle}>Our Google Rating</h3>
+  <h3 className={Style.kpiSubtitle}>Loved by Parents</h3>
   <a href={reviewLink} target="_blank" rel="noopener noreferrer" className={Style.kpiLink}>
     <div className={Style.kpiValue}>
       {googleRating}{" "}

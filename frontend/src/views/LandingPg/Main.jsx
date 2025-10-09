@@ -4,6 +4,7 @@ import WhyXperio from "./WhyXperio";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import TopAnnouncement from "./TopAnnouncement";
+import BlogTeaser from "./BlogTeaser";
 // import ReactGA from "react-ga";
 
 // const TRACKING_ID= "" // google analytics tracking ID
@@ -16,6 +17,7 @@ function Main() {
       <TopAnnouncement />
     <Landing/>
     <WhyXperio/>
+    <BlogTeaser posts={[]} />
     <Footer/>
   </div>;
 }

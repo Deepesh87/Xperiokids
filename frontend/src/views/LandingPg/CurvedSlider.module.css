@@ -1,8 +1,6 @@
 .scroller {
-  /* Speeds: desktop vs mobile (duration = time to travel the full track) */
-  --duration: 18s;   /* desktop default; adjust to taste */
   --gap: 16px;
-  --dir: reverse;    /* reverse = left→right; normal = right→left */
+  --dir: reverse; /* reverse = left→right; normal = right→left */
 
   position: relative;
   width: 100%;
@@ -10,7 +8,7 @@
   margin: 8px auto;
   overflow: hidden;
 
-  /* Softer edge fade so images are fully visible before exiting */
+  /* Fade edges */
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
           mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
 
@@ -22,13 +20,15 @@
   align-items: center;
   gap: var(--gap);
   will-change: transform;
-  animation: scroll var(--duration) linear infinite;
+  /* duration & loop distance are set from JS */
+  animation: scroll var(--duration, 18s) linear infinite;
   animation-direction: var(--dir);
 }
 
-.paused { animation-play-state: paused; }
+/* Pause when hovered OR when any child gets keyboard focus */
+.paused, .scroller:focus-within .track { animation-play-state: paused; }
 
-/* Cards with a gentle “curve” via rotateY */
+/* Cards with gentle “curve” */
 .card {
   flex: 0 0 auto;
   width: clamp(180px, 26vw, 280px);
@@ -42,9 +42,7 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.card:nth-child(odd) {
-  transform: translateZ(0) rotateY(-8deg) scale(0.96);
-}
+.card:nth-child(odd) { transform: translateZ(0) rotateY(-8deg) scale(0.96); }
 
 .card:hover {
   transform: rotateY(0deg) scale(1.02);
@@ -58,13 +56,13 @@
   display: block;
 }
 
-/* IMPORTANT: travel the FULL track width so every image passes the viewport */
+/* ✅ Seamless loop: distance comes from --loop (-50% for 2x, -33.333% for 3x) */
 @keyframes scroll {
   from { transform: translate3d(0, 0, 0); }
-  to   { transform: translate3d(-100%, 0, 0); } /* full track (we doubled the list) */
+  to   { transform: translate3d(var(--loop, -50%), 0, 0); }
 }
 
-/* Optional: light white vignette fallback in non-mask browsers */
+/* Edge fades (fallback) */
 .scroller::before,
 .scroller::after {
   content: "";
@@ -73,21 +71,14 @@
   width: 10%;
   pointer-events: none;
 }
+.scroller::before { left: 0; background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)); }
+.scroller::after  { right: 0; background: linear-gradient(to left,  rgba(255,255,255,1), rgba(255,255,255,0)); }
 
-.scroller::before {
-  left: 0;
-  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
-}
-
-.scroller::after {
-  right: 0;
-  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
-}
-
-/* Mobile: faster so it doesn’t feel sluggish */
+/* Mobile tweaks */
 @media (max-width: 768px) {
-  .scroller { --duration: 8s; }  /* try 6–10s to taste */
-  .card { width: clamp(160px, 72vw, 260px); }
+  /* slightly narrower cards so more unique images are visible */
+  .card { width: clamp(140px, 55vw, 220px); }
+
   .scroller {
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
             mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
@@ -96,5 +87,5 @@
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .track { animation: none; }
+  .track { animation: none !important; }
 }
