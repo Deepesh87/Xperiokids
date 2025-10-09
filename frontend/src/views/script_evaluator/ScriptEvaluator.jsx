@@ -155,7 +155,7 @@ export default function ScriptEvaluator() {
           <blockquote className={styles.quote}>
             <span className={styles.quoteMark}>“</span>
             If someone else can deliver your script as-is, it isn’t personal yet. Make it yours.
-            <span className={styles.quoteMark}>”</span>
+            <span className={styles.quoteMarkRight}>”</span>
           </blockquote>
 
           {/* ===== Usage policy & counter ===== */}
