@@ -292,7 +292,7 @@ export default function ScriptEvaluator() {
 
                 {Array.isArray(result.tips) && result.tips.length > 0 && (
                   <div className={styles.tipsWrap}>
-                    <h3 className={styles.h3}>Tips</h3>
+                    <h3 className={styles.h3}>Quick fixes</h3>
                     <ul className={styles.tips}>
                       {result.tips.map((tip, idx) => (
                         <li className={styles.tip} key={idx}>{tip}</li>
