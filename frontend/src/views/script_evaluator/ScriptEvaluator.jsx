@@ -265,7 +265,7 @@ export default function ScriptEvaluator() {
                   <div
                     className={styles.scoreRing}
                     style={{
-                      background: `conic-gradient(var(--magenta) ${score}%, #eef2f7 ${score}% 100%)`,
+                      background: `conic-gradient(var(--magenta) ${score}%, #eef2f7 ${score*10}% 100%)`,
                     }}
                     aria-label={`Personalization score ${score} out of 10`}
                     role="img"
