@@ -271,7 +271,7 @@ export default function ScriptEvaluator() {
                     role="img"
                   >
                     <div className={styles.scoreInner}>
-                      <div className={styles.scoreNumber}>{score*10}</div>
+                      <div className={styles.scoreNumber}>{score}</div>
                       <div className={styles.scoreLabel}>{scoreLabel}</div>
                     </div>
                   </div>
