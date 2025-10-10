@@ -265,13 +265,13 @@ export default function ScriptEvaluator() {
                   <div
                     className={styles.scoreRing}
                     style={{
-                      background: `conic-gradient(var(--magenta) ${score}%, #eef2f7 ${score*10}% 100%)`,
+                      background: `conic-gradient(var(--magenta) ${score*10}%, #eef2f7 ${score*10}% 100%)`,
                     }}
                     aria-label={`Personalization score ${score} out of 10`}
                     role="img"
                   >
                     <div className={styles.scoreInner}>
-                      <div className={styles.scoreNumber}>{score}</div>
+                      <div className={styles.scoreNumber}>{score*10}</div>
                       <div className={styles.scoreLabel}>{scoreLabel}</div>
                     </div>
                   </div>
