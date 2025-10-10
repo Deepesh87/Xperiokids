@@ -23,7 +23,7 @@ function About() {
               where experiential learning is crucial but often neglected. I started Xperio Learning to change that — to help students 
               truly engage with and experience what they learn. In parallel, I teach at Symbiosis, Bangalore, and conduct corporate 
               training sessions in SQL, Power BI, and Data Analysis for working professionals. My past roles include positions 
-              at Byju’s and Galgotias University in NCR.
+              at Byju’s and Galgotias University, NCR.
             </p>
             <div className={styles.data}>
               <a href="https://www.linkedin.com/in/kislaysingh/" target="_blank" className={styles.hire}>
