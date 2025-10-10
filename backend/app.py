@@ -1,7 +1,15 @@
 from flask import Flask, request, jsonify
-from your_script_file import evaluate_personalization  # use your function
+from evaluator import evaluate_personalization 
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
+
+
+
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 
 @app.route("/evaluate", methods=["POST"])
 def evaluate():
