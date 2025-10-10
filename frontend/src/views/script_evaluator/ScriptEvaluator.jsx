@@ -121,9 +121,9 @@ export default function ScriptEvaluator() {
   // Score helpers
   const score = result?.score ?? 0;
   const scoreLabel =
-    score >= 80 ? "Excellent" :
-    score >= 60 ? "Good" :
-    score >= 40 ? "Needs Work" :
+    score >= 8 ? "Excellent" :
+    score >= 6 ? "Good" :
+    score >= 4 ? "Needs Work" :
     score > 0   ? "Low" : "—";
 
   return (
@@ -292,7 +292,7 @@ export default function ScriptEvaluator() {
 
                 {Array.isArray(result.tips) && result.tips.length > 0 && (
                   <div className={styles.tipsWrap}>
-                    <h3 className={styles.h3}>Quick Fixes</h3>
+                    <h3 className={styles.h3}>Tips</h3>
                     <ul className={styles.tips}>
                       {result.tips.map((tip, idx) => (
                         <li className={styles.tip} key={idx}>{tip}</li>
@@ -301,7 +301,7 @@ export default function ScriptEvaluator() {
                   </div>
                 )}
 
-                <div className={styles.hintBlock}>
+                {/* <div className={styles.hintBlock}>
                   <h4 className={styles.h4}>Try adding 2–3 of these:</h4>
                   <ul className={styles.hints}>
                     <li>Specific names (“Grandma Meera”, “Coach Arjun”)</li>
@@ -310,7 +310,7 @@ export default function ScriptEvaluator() {
                     <li>A choice you made and its outcome</li>
                     <li>A short dialogue line you actually said</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             )}
           </section>
