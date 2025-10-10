@@ -156,7 +156,7 @@
   margin-bottom: 8px;
 }
 .textarea{
-  width: 100%;
+  width: 90%;
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 12px 14px;
