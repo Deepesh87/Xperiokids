@@ -155,7 +155,7 @@ export default function ScriptEvaluator() {
           <blockquote className={styles.quote}>
             <span className={styles.quoteMark}>“</span>
             If someone else can deliver your script as-is, it isn’t personal yet. Make it yours.
-            <span className={styles.quoteMarkRight}>”</span>
+            <span className={styles.quoteMark}>”</span>
           </blockquote>
 
           {/* ===== Usage policy & counter ===== */}
@@ -177,9 +177,27 @@ export default function ScriptEvaluator() {
             </p>
           </div>
 
-          <p className={styles.sublead}>
-            Paste your speech, click <strong>Evaluate</strong>, and get an AI-driven personalization score with quick fixes.
-          </p>
+<div className={styles.thresholds} role="note" aria-label="Score guidance">
+  <div className={styles.scaleNote}>Score is out of <b>10</b>.</div>
+  <ul className={styles.scaleList}>
+    <li>
+      <span className={`${styles.pill} ${styles.bad}`}>Below 4</span>
+      <span className={styles.lineText}>Needs a lot of improvement.</span>
+    </li>
+    <li>
+      <span className={`${styles.pill} ${styles.ok}`}>4 to 6</span>
+      <span className={styles.lineText}>Good start — refine further.</span>
+    </li>
+    <li>
+      <span className={`${styles.pill} ${styles.good}`}>Above 6</span>
+      <span className={styles.lineText}>Okay to submit for faculty review.</span>
+    </li>
+  </ul>
+</div>
+<p className={styles.sublead}>
+  Paste your speech, click <strong>Evaluate</strong>, and get an AI-driven personalization score with quick fixes.
+</p>
+
         </header>
 
         {/* Input Card */}

@@ -80,7 +80,7 @@
 /* Quote: keep on one line on wide screens, wrap on small */
 .quote{
   margin: 10px auto 6px;
-  max-width: 60ch;
+  max-width: 160ch;
   color: #1f2937;
   font-style: italic;
   position: relative;
@@ -327,4 +327,77 @@
   color: #6b7280;
   margin-top: 14px;
   font-size: .92rem;
+}
+
+.thresholds{
+  margin: 10px auto 0;
+  max-width: 780px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.05);
+  text-align: left;
+}
+.scaleNote{
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.scaleList{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+.scaleList li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.4;
+}
+.pill{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.88rem;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+  white-space: nowrap;
+}
+
+/* Brand-friendly colors */
+.bad{
+  background: #ffe4e6;         /* soft red */
+  color: #b91c1c;               /* red-700 */
+  border-color: #fecdd3;        /* red-200 */
+}
+.ok{
+  background: #fff3d6;          /* soft amber */
+  color: #b45309;               /* amber-700 */
+  border-color: #fde68a;        /* amber-300 */
+}
+.good{
+  background: #e6fffb;          /* soft teal */
+  color: #0f766e;               /* teal-700 */
+  border-color: #99f6e4;        /* teal-300 */
+}
+
+.lineText{
+  color: #374151;
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 520px){
+  .scaleList li{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .pill{ min-width: 0; }
 }
