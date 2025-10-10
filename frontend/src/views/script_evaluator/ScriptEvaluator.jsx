@@ -94,7 +94,7 @@ export default function ScriptEvaluator() {
       addAttempt();
       setAttemptsState(getAttempts());
 
-      const response = await fetch("http://localhost:5000/evaluate", {
+      const response = await fetch("https://xperio.onrender.com/evaluate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ script }),
@@ -267,7 +267,7 @@ export default function ScriptEvaluator() {
                     style={{
                       background: `conic-gradient(var(--magenta) ${score}%, #eef2f7 ${score}% 100%)`,
                     }}
-                    aria-label={`Personalization score ${score} out of 100`}
+                    aria-label={`Personalization score ${score} out of 10`}
                     role="img"
                   >
                     <div className={styles.scoreInner}>

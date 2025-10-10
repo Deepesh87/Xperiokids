@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify
-from evaluator import evaluate_personalization 
+from flask_cors import CORS  # ✅ NEW import
+from evaluator import evaluate_personalization
 from dotenv import load_dotenv
-import os, openai
+import os
+import openai
 
 app = Flask(__name__)
-
+CORS(app) 
 
 
 load_dotenv()
