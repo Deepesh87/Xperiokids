@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from evaluator import evaluate_personalization 
 from dotenv import load_dotenv
-import os
+import os, openai
 
 app = Flask(__name__)
 
