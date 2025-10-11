@@ -83,15 +83,15 @@
 
 .cardContainer {
   position: relative;
-  width: 275px;
-  height: 220px;
+  width: 250px;
+  height: 200px;
 }
 
 .comingSoonTag {
   position: absolute;
   top: -10px;
   left: -10px;
-  background-color: #006e25;
+  background-color: #027c2b;
   color: rgb(255, 255, 255);
   font-size: 0.7rem;
   font-weight: bold;
@@ -102,6 +102,20 @@
   transform: rotate(-8deg);
 }
 
+.aiTag {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #027c2b;
+  color: rgb(255, 255, 255);
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-8deg);
+}
 
 @media (max-width: 480px) {
   .gridContainer {

@@ -54,6 +54,9 @@ const sections = [
   {section.id === "finance" && (
     <div className={Style.comingSoonTag}>Coming Soon</div>
   )}
+  {section.id === "speaking" && (
+    <div className={Style.aiTag}>AI powered⚡</div>
+  )}
   <div className={Style.card}>
     <div className={Style.cardInner}>
       <div className={Style.cardFront}>
