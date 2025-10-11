@@ -12,8 +12,8 @@
 
 .card {
   perspective: 1000px;
-  width: 310px;
-  height: 250px;
+  width: 270px;
+  height: 230px;
 }
 
 .cardInner {
@@ -83,8 +83,8 @@
 
 .cardContainer {
   position: relative;
-  width: 250px;
-  height: 200px;
+  width: 275px;
+  height: 220px;
 }
 
 .comingSoonTag {
