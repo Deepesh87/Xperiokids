@@ -107,3 +107,42 @@
   text-decoration: none;
   transition: background 0.3s;
 }
+
+.aiStrip {
+  background: #fef3f7;
+  padding: 1.5rem;
+  margin: 1rem auto 2rem;
+  max-width: 960px;
+  text-align: center;
+  border: 2px solid var(--magenta);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.aiHeading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--magenta);
+  margin-bottom: 0.5rem;
+}
+
+.aiText {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.aiButton {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: var(--magenta);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.25s ease;
+}
+.aiButton:hover {
+  background: #b0214f;
+}

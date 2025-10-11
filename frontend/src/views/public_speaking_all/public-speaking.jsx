@@ -102,10 +102,20 @@ export default function PublicSpeakingLanding() {
               </Link>
             </div>
           </article>
-
-
-
         </section>
+
+{/* AI Script Evaluator Feature */}        
+<section className={styles.aiStrip}>
+  <h2 className={styles.aiHeading}>🧠 New! AI-Powered Script Evaluator</h2>
+  <p className={styles.aiText}>
+    Not sure how personal your speech really is? Try our <strong>AI Speech Evaluator</strong> —
+    it gives you a personalization score, helpful examples, and quick fixes to make your script more “you”.
+  </p>
+  <Link to="/script-evaluator" className={styles.aiButton}>
+    🎯 Try the Evaluator →
+  </Link>
+</section>
+
 
       <section className={styles.blogSection}>
         <h2 className={styles.blogHeading}>📚 Explore More on Public Speaking</h2>
