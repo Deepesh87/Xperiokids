@@ -405,3 +405,15 @@
   }
   .pill{ min-width: 0; }
 }
+
+.limitWarning {
+  color: #c72d60; /* magenta alert */
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.limitNear {
+  color: #f19c16; /* golden orange warning */
+  font-weight: 500;
+  margin-top: 0.25rem;
+}

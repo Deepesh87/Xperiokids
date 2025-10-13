@@ -10,6 +10,9 @@ import Nav from "../../components/Navbar/Nav";
 const MAX_TRIES = 5;
 const WINDOW_MS = 60 * 60 * 1000; // 1 hour
 const LS_KEY = "xe_script_eval_attempts"; // stores an array of timestamps (ms)
+const WORD_LIMIT = 1200; // ✅ maximum words allowed
+
+
 
 /** Get recent attempts (within the rolling 1-hour window) */
 function getAttempts() {
@@ -82,35 +85,39 @@ export default function ScriptEvaluator() {
     return `${m}m ${r}s`;
   }, [cooldownMs]);
 
-  const handleEvaluate = async () => {
-    if (remaining <= 0) return; // client-side guard
+const handleEvaluate = async () => {
+  if (remaining <= 0) return;
 
-    setLoading(true);
-    setResult(null);
-    setErrorMsg("");
+  // Word limit check
+  if (stats.wordCount > WORD_LIMIT) {
+    setErrorMsg(`Your script has ${stats.wordCount} words. Please reduce it to ${WORD_LIMIT} or fewer.`);
+    return;
+  }
 
-    try {
-      // Count attempt immediately (even if backend fails)
-      addAttempt();
-      setAttemptsState(getAttempts());
+  setLoading(true);
+  setResult(null);
+  setErrorMsg("");
 
-      const response = await fetch("https://xperio.onrender.com/evaluate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ script }),
-      });
+  try {
+    addAttempt();
+    setAttemptsState(getAttempts());
 
-      const data = await response.json();
-      if (!response.ok) {
-        throw new Error(data?.error || "Evaluation failed");
-      }
-      setResult(data);
-    } catch (err) {
-      setErrorMsg(err.message || "Something went wrong. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
+    const response = await fetch("https://xperio.onrender.com/evaluate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ script }),
+    });
+
+    const data = await response.json();
+    if (!response.ok) throw new Error(data?.error || "Evaluation failed");
+    setResult(data);
+  } catch (err) {
+    setErrorMsg(err.message || "Something went wrong. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   const handleClear = () => {
     setScript("");
@@ -219,6 +226,24 @@ export default function ScriptEvaluator() {
             aria-describedby="script-help stats"
           />
 
+{/* <div id="stats" className={styles.stats}>
+  <span>{stats.wordCount} words</span>
+  <span>{stats.charCount} characters</span>
+</div> */}
+
+{stats.wordCount > WORD_LIMIT && (
+  <p className={styles.limitWarning}>
+    ⚠️ Word limit exceeded ({stats.wordCount}/{WORD_LIMIT})
+  </p>
+)}
+{stats.wordCount > WORD_LIMIT * 0.9 && stats.wordCount <= WORD_LIMIT && (
+  <p className={styles.limitNear}>
+    ⏳ You’re close to the limit ({stats.wordCount}/{WORD_LIMIT})
+  </p>
+)}
+
+
+
           <div id="script-help" className={styles.help}>
             Tip: Speeches should be deeply personal and flow from genuine feeling, & ‘only-you’ experiences.
           </div>
@@ -254,6 +279,7 @@ export default function ScriptEvaluator() {
             </div>
           )}
         </section>
+
 
         {/* Results */}
         {(result || errorMsg) && (
