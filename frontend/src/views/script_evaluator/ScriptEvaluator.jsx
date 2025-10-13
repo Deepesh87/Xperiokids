@@ -200,7 +200,7 @@ const handleEvaluate = async () => {
       <span className={styles.lineText}>Okay to submit for faculty review.</span>
     </li>
     <li>
-      <span className={styles.lineText}>A 3- to 5-minute speech should be between 400 and 800 words, depending on your speaking speed.</span>
+      <span className={styles.lineText}>A 3- to 5-minute speech should be between 500 and 800 words, depending on your speaking speed.</span>
     </li>
   </ul>
 </div>
