@@ -27,16 +27,21 @@ export default function PublicSpeakingLanding() {
       <main className={styles.wrap}>
         {/* Hero */}
         <section className={styles.hero}>
-          <div className={styles.heroInner}>
-            <h1 className={styles.title}>VoiceMasters – Public Speaking</h1>
-            <p className={styles.subtitle}>
-              Make your child that charismatic speaker, that confident leader, that engaging storyteller... whose voice is always heard and valued
-            </p>
-            <p className={styles.description}>
-              Two learner-friendly tracks – <strong>Juniors (Grades 1–4)</strong> and{" "}
-              <strong>Seniors (Grade 5+)</strong>. Build confidence, clarity and stage presence.
-            </p>
-          </div>
+<div className={styles.heroInner}>
+  <h1 className={styles.title}>
+    VoiceMasters
+    <br />
+    <span className={styles.subtitleLine}>Public Speaking & Book Talk Club</span>
+  </h1>
+  <p className={styles.subtitle}>
+    Make your child that charismatic speaker, that confident leader, that engaging storyteller... whose voice is always heard and valued
+  </p>
+  <p className={styles.description}>
+    Two learner-friendly tracks – <strong>Juniors (Grades 1–4)</strong> and{" "}
+    <strong>Seniors (Grade 5+)</strong>. Build confidence, clarity and stage presence.
+  </p>
+</div>
+
         </section>
 
         {/* Cards */}

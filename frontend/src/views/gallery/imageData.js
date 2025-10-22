@@ -73,13 +73,17 @@ import img_068 from "../../assets/s20.jpg";
 import img_069 from "../../assets/s21.jpg";
 import img_070 from "../../assets/s22.webp";
 import img_071 from "../../assets/voicemasters_new5.jpeg";
+import img_072 from "../../assets/oct1.webp";
+import img_073 from "../../assets/oct2.webp";
 
 const images = [
+    img_072,
     img_006,
     img_028,
     img_031,
     img_040,
     img_044,
+    img_073,
     img_047,
     img_048,
     img_049,

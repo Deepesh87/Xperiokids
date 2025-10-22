@@ -14,8 +14,10 @@ import g15 from "../../assets/chaser.webp";
 import s8 from "../../assets/kit_2.webp";
 import s9 from "../../assets/ph.webp";
 import s111 from "../../assets/ph3.webp";
+import img_072 from "../../assets/oct1.webp";
+import img_073 from "../../assets/oct2.webp";
 
-const images = [img4, img1, img444, img24, img44, v2, s7, s9, s11, s8, s11, g15, s111];
+const images = [img4, img_073, img1, img444, img24, img44, v2, s7, s9, s11, img_072, s8, s11, g15, s111];
 
 function useInView(threshold = 0.2) {
   const ref = useRef(null);
