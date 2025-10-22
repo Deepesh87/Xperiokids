@@ -27,9 +27,9 @@
 
 .subtitleLine {
   display: block;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--magenta);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--000000);
   margin-top: 0.3rem;
 }
 
