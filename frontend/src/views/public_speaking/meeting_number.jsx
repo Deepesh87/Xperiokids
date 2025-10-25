@@ -1,218 +1,179 @@
-import { useEffect, useState } from "react";
+// File: MeetingCard.jsx
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./public-speaking-seniors.module.css";
 
-const MeetingCounter = () => {
-  const START_DATE = new Date("2025-03-02");
+/**
+ * Props:
+ * - title: "Sunday Batch" | "Saturday Batch" etc.
+ * - weekday: 0..6 (0 = Sunday, 6 = Saturday)
+ * - startDate: Date string (batch launch date)
+ * - startTime: { h: number, m: number }  // display + countdown start
+ * - endTime:   { h: number, m: number }  // display only
+ * - holidays:  Date[] (array of ISO strings like "2025-09-07")
+ */
+export default function MeetingCard({
+  title = "Batch",
+  weekday = 0,
+  startDate = "2025-03-02",
+  startTime = { h: 10, m: 0 },     // 10:00 AM
+  endTime   = { h: 12, m: 15 },    // 12:15 PM
+  holidays = []
+}) {
+  const START_DATE = useMemo(() => atMidnight(new Date(startDate)), [startDate]);
+  const HOLIDAYS = useMemo(() => holidays.map(d => atMidnight(new Date(d))), [holidays]);
 
-  // 👉 Holidays (no class): 7 & 14 Sept 2025
-  const HOLIDAYS = [
-    new Date("2025-09-07"),
-    new Date("2025-09-14"),
-  ];
-
-  const [showAll, setShowAll] = useState(false);
-
-  // --- utils ---
-  const atMidnight = (d) => {
-    const x = new Date(d);
-    x.setHours(0, 0, 0, 0);
-    return x;
-  };
-
-  const sameYMD = (a, b) => atMidnight(a).getTime() === atMidnight(b).getTime();
-  const isHoliday = (d) => HOLIDAYS.some((h) => sameYMD(h, d));
-
-  // count how many holidays fall ON or BEFORE a given date (and after START_DATE)
-  const holidayCountThrough = (d) =>
-    HOLIDAYS.filter(
-      (h) => atMidnight(h) >= atMidnight(START_DATE) && atMidnight(h) <= atMidnight(d)
-    ).length;
-
-  // next actual meeting Sundays (skip holidays)
-  const getNextTwoActualMeetings = () => {
-    const now = new Date();
-    const out = [];
-    let probe = new Date(now);
-
-    // Move probe to next Sunday (or today if Sunday and before 12:30 we consider today)
-    if (probe.getDay() !== 0) {
-      const days = (7 - probe.getDay()) % 7 || 7;
-      probe.setDate(probe.getDate() + days);
-    } else {
-      // If it's already Sunday, keep today; we'll filter out if holiday/past time below
-    }
-    probe = atMidnight(probe);
-
-    // If it's Sunday but already past 12:30 PM, move to next Sunday
-    const nowMinutes = now.getHours() * 60 + now.getMinutes();
-    if (now.getDay() === 0 && nowMinutes >= 12 * 60 + 30) {
-      probe.setDate(probe.getDate() + 7);
-    }
-
-    // Collect next 2 non-holiday Sundays
-    while (out.length < 2) {
-      if (!isHoliday(probe)) out.push(new Date(probe));
-      probe.setDate(probe.getDate() + 7);
-    }
-
-    return out;
-  };
-
-  const isMeetingInProgress = () => {
-    const now = new Date();
-    if (now.getDay() !== 0) return false;
-    if (isHoliday(now)) return false; // no meeting on holiday
-    const m = now.getHours() * 60 + now.getMinutes();
-    return m >= 600 && m < 750; // 10:00–12:30
-  };
-
-  // meeting number = number of non-holiday Sundays from START_DATE up to (and including) "date"
-  const getMeetingNumber = (date) => {
-    const cleanDate = atMidnight(date);
-    const cleanStart = atMidnight(START_DATE);
-
-    // Base weeks since start
-    const diffTime = cleanDate - cleanStart;
-    const baseWeeks = Math.floor(diffTime / (7 * 24 * 60 * 60 * 1000)) + 1;
-
-    // Subtract skipped weeks (holidays) that have occurred up to this date
-    const skippedSoFar = holidayCountThrough(cleanDate);
-
-    // If the "date" itself is a holiday, do not assign a meeting number (return null)
-    if (isHoliday(cleanDate)) return null;
-
-    return baseWeeks - skippedSoFar;
-  };
-
-  const formatDate = (date) =>
-    date.toLocaleDateString("en-IN", {
-      weekday: "long",
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    });
-
-  const [nextMeetingInfo, setNextMeetingInfo] = useState(null);
-  const [secondMeetingInfo, setSecondMeetingInfo] = useState(null);
+  const [nextTwo, setNextTwo] = useState([]);
   const [countdown, setCountdown] = useState("");
-  const [pastMeetings, setPastMeetings] = useState([]);
+  const [past, setPast] = useState([]);
 
+  // ---------- utils ----------
+  function atMidnight(d) { const x = new Date(d); x.setHours(0,0,0,0); return x; }
+  function sameYMD(a,b) { return atMidnight(a).getTime() === atMidnight(b).getTime(); }
+  function isHoliday(d)  { return HOLIDAYS.some(h => sameYMD(h, d)); }
+  function fmtDate(d) {
+    return d.toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  }
+  function fmtTime({h,m}) {
+    const d = new Date(); d.setHours(h, m, 0, 0);
+    return d.toLocaleTimeString("en-IN", { hour: "numeric", minute: "2-digit" });
+  }
+  function holidayCountThrough(d) {
+    const clean = atMidnight(d);
+    return HOLIDAYS.filter(h => h >= START_DATE && h <= clean).length;
+  }
+  function meetingNumber(onDate) {
+    const cleanDate = atMidnight(onDate);
+    if (isHoliday(cleanDate)) return null;
+    const diffMs = cleanDate - START_DATE;
+    if (diffMs < 0) return null;
+    const weeks = Math.floor(diffMs / (7 * 24 * 60 * 60 * 1000)) + 1;
+    return weeks - holidayCountThrough(cleanDate);
+  }
+  function nextNMeetings(n) {
+    const out = [];
+    const now = new Date();
+    let probe = atMidnight(now);
+
+    // move to target weekday
+    const delta = (weekday - probe.getDay() + 7) % 7;
+    probe.setDate(probe.getDate() + delta);
+
+    // if today is the weekday but the session already ended, move a week
+    const nowMin = now.getHours()*60 + now.getMinutes();
+    const endMin = endTime.h*60 + endTime.m;
+    if (delta === 0 && nowMin >= endMin) {
+      probe.setDate(probe.getDate() + 7);
+    }
+
+    while (out.length < n) {
+      if (!isHoliday(probe) && probe >= START_DATE) {
+        out.push(new Date(probe));
+      }
+      probe.setDate(probe.getDate() + 7);
+    }
+    return out;
+  }
+  function sessionInProgress() {
+    const now = new Date();
+    if (now.getDay() !== weekday) return false;
+    if (isHoliday(now)) return false;
+    const m = now.getHours()*60 + now.getMinutes();
+    const s = startTime.h*60 + startTime.m;
+    const e = endTime.h*60 + endTime.m;
+    return m >= s && m < e;
+  }
+
+  // ---------- effects ----------
   useEffect(() => {
-    // Upcoming (actual meetings only)
-    const [next, second] = getNextTwoActualMeetings();
+    const [nxt, second] = nextNMeetings(2);
+    setNextTwo([nxt, second]);
 
-    const nextSunday10AM = new Date(next);
-    nextSunday10AM.setHours(10, 0, 0, 0);
+    // build past list (compact; only last 6 shown in <details>)
+    const today = atMidnight(new Date());
+    const list = [];
+    let cur = new Date(START_DATE);
+    while (cur < today) {
+      if (!isHoliday(cur)) {
+        const num = meetingNumber(cur);
+        if (num != null) list.push({ num, date: fmtDate(cur) });
+      }
+      cur.setDate(cur.getDate() + 7);
+    }
+    setPast(list);
 
-    setNextMeetingInfo({
-      date: formatDate(next),
-      number: getMeetingNumber(next),
-      dateTime: nextSunday10AM,
-    });
-
-    setSecondMeetingInfo({
-      date: formatDate(second),
-      number: getMeetingNumber(second),
-    });
-
-    // Countdown to next actual meeting
-    const interval = setInterval(() => {
+    // countdown
+    const nextStart = new Date(nxt);
+    nextStart.setHours(startTime.h, startTime.m, 0, 0);
+    const timer = setInterval(() => {
       const now = new Date();
-      const diff = nextSunday10AM - now;
+      const diff = nextStart - now;
       if (diff <= 0) {
-        setCountdown(isMeetingInProgress() ? "Starting now!" : "Starting soon!");
+        setCountdown(sessionInProgress() ? "🔴 In progress" : "Starting soon");
         return;
       }
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const mins = Math.floor((diff / (1000 * 60)) % 60);
-      const secs = Math.floor((diff / 1000) % 60);
-      setCountdown(`${days}d ${hours}h ${mins}m ${secs}s`);
+      const d = Math.floor(diff / (1000*60*60*24));
+      const h = Math.floor((diff / (1000*60*60)) % 24);
+      const m = Math.floor((diff / (1000*60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+      setCountdown(`${d}d ${h}h ${m}m ${s}s`);
     }, 1000);
+    return () => clearInterval(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [weekday, startDate]);
 
-    // Past meetings (exclude holidays entirely from the list & numbering)
-    const today = atMidnight(new Date());
-    let current = atMidnight(START_DATE);
-    const list = [];
-    while (current < today) {
-      if (!isHoliday(current)) {
-        const number = getMeetingNumber(current);
-        if (number != null) {
-          list.push({
-            number,
-            date: formatDate(new Date(current)),
-          });
-        }
-      }
-      current.setDate(current.getDate() + 7);
-    }
-    setPastMeetings(list);
+  if (nextTwo.length < 2) return null;
 
-    return () => clearInterval(interval);
-  }, []);
+  const [nextDate, secondDate] = nextTwo;
+  const nextNum = meetingNumber(nextDate);
+  const secondNum = meetingNumber(secondDate);
 
   return (
     <motion.div
-      className={styles.meetingCounter}
-      initial={{ opacity: 0, y: 50 }}
+      className={styles.card}
+      initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
     >
-      <h2 className={styles.meetingCounterTitle}>
-        📆 Upcoming Voicemasters Meetings
-      </h2>
+      <h3
+  className={`${styles.title} ${
+    title.toLowerCase().includes("sunday")
+      ? styles.sundayTitle
+      : title.toLowerCase().includes("saturday")
+      ? styles.saturdayTitle
+      : ""
+  }`}
+>
+  {title}
+</h3>
 
-      {nextMeetingInfo && secondMeetingInfo && (
-        <>
-          <p className={styles.meetingCounterItem}>
-            <strong>Meeting #{nextMeetingInfo.number}</strong> on{" "}
-            <em>{nextMeetingInfo.date}</em>
-          </p>
-          <p className={styles.meetingCounterItem}>
-            <strong>Meeting #{secondMeetingInfo.number}</strong> on{" "}
-            <em>{secondMeetingInfo.date}</em>
-          </p>
-          {isMeetingInProgress() ? (
-            <p
-              className={styles.countdownLine}
-              style={{ color: "#dc2626", fontWeight: "600" }}
-            >
-              🔴 Meeting in Progress (10:00 AM – 12:30 PM)
-            </p>
-          ) : (
-            <p className={styles.countdownLine}><strong>⏳ Time to next meeting: </strong>{countdown}</p>
-          )}
-        </>
-      )}
 
-      {pastMeetings.length > 0 && (
-        <div className={styles.pastMeetings}>
-          <h3 className={styles.pastMeetingsTitle}>🗂️ Past Meetings</h3>
-          <ul className={styles.pastMeetingsList}>
-            {(showAll ? pastMeetings : pastMeetings.slice(-5)).map((meeting, idx) => (
-              <motion.li
-                key={meeting.number}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: idx * 0.02, duration: 0.3 }}
-                viewport={{ once: true }}
-              >
-                ✅ <strong>Meeting #{meeting.number}</strong> – {meeting.date}
-              </motion.li>
-            ))}
-          </ul>
-          <button
-            className={styles.toggleButton}
-            onClick={() => setShowAll((prev) => !prev)}
-          >
-            {showAll ? "🔽 Collapse" : "🔼 View All"}
-          </button>
+      <div className={styles.row}>
+        <div className={styles.badge}>Next</div>
+        <div className={styles.mainLine}>
+          <strong>#{nextNum}</strong> • {fmtDate(nextDate)} • {fmtTime(startTime)}–{fmtTime(endTime)}
         </div>
-      )}
+      </div>
+
+      <div className={styles.countdown}>
+        {sessionInProgress()
+          ? "🔴 Meeting in progress"
+          : <>⏳ {countdown}</>}
+      </div>
+
+      <div className={styles.secondary}>
+        Next after that: <strong>#{secondNum}</strong> — {fmtDate(secondDate)}
+      </div>
+
+      <details className={styles.pastBlock}>
+        <summary>Past meetings</summary>
+        <ul>
+          {past.slice(-6).map(p => (
+            <li key={p.num}>✅ <strong>#{p.num}</strong> — {p.date}</li>
+          ))}
+        </ul>
+      </details>
     </motion.div>
   );
-};
-
-export default MeetingCounter;
+}

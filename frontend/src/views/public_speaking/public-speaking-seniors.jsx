@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import MeetingCounter from "./meeting_number";
+import MeetingCard from "./meeting_number";
 import styles from "./public-speaking-seniors.module.css";
 import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
@@ -54,9 +54,27 @@ export default function Voice() {
         </header>
 
         {/* MEETING COUNTER */}
-        <section className={styles.card}>
-          <MeetingCounter />
-        </section>
+<section className={`${styles.card}`}>
+  <h2 className={styles.h2}>📅 Upcoming Meetings</h2>
+  <div className={styles.dualCards}>
+    <MeetingCard
+      title="Sunday Batch"
+      weekday={0} // Sunday
+      startDate="2025-03-02"
+      startTime={{ h: 10, m: 0 }}
+      endTime={{ h: 12, m: 15 }}   // aligns with your hero (12:15 PM)
+      holidays={["2025-09-07", "2025-09-14"]}
+    />
+    <MeetingCard
+      title="Saturday Batch"
+      weekday={6} // Saturday
+      startDate="2025-11-15"       // <-- set actual Saturday start date
+      startTime={{ h: 15, m: 0 }}  // 3:00 PM
+      endTime={{ h: 17, m: 15 }}   // 5:15 PM
+      holidays={["2025-09-07", "2025-09-14"]} // reuse or supply Saturday-specific holidays
+    />
+  </div>
+</section>
 
         {/* GALLERY */}
         <section className={styles.card} aria-labelledby="gallery-title">
