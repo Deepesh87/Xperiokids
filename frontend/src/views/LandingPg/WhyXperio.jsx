@@ -17,7 +17,7 @@ const sections = [
   {
     id: "science",
     img: lab,
-    link: "/science",
+    link: "/science-classes",
     alt: "Children doing hands-on science experiments",
     label: "Experiment with Ideas, Curiosity & Wonder",
   },

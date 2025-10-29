@@ -15,10 +15,11 @@ export default function ScienceLanding() {
     <>
       <Helmet>
         <title>Science at Xperio Learning – Tuitions, Experiments & Olympiad Prep</title>
-        <meta
-          name="description"
-          content="Science Tuitions, Exam & Olympiad Preparations, and strong concept foundations through theory plus hands-on experiments at Xperio Learning, Bengaluru."
-        />
+<meta
+  name="description"
+  content="Science Tuitions, Exam & Olympiad Preparations, strong concept foundations through hands-on experiments at Xperio Learning, Bengaluru. Proud Bronze winner at the International Greenwich Olympiad (IGO) 2025."
+/>
+
         <link rel="canonical" href="https://www.xperiolearning.com/science-classes" />
       </Helmet>
 
@@ -45,7 +46,7 @@ export default function ScienceLanding() {
 
           <div className={styles.gridTwo}>
             <div>
-              <h3 className={styles.h3}>Science Tuitions (Grades 7–12)</h3>
+              <h3 className={styles.h3}>Science Tuitions (Grades 7–10)</h3>
               <ul className={styles.list}>
                 <li>CBSE &amp; ICSE aligned lessons with doubt-clearing</li>
                 <li>Chapter-wise notes, practice sheets &amp; periodic tests</li>
@@ -76,11 +77,26 @@ export default function ScienceLanding() {
               </ul>
             </div>
           </div>
-
-          <div className={styles.note}>
-            We run small, supportive batches so every learner gets attention.
-          </div>
         </section>
+
+{/* ===== INTERNATIONAL ACHIEVEMENT ===== */}
+<section className={`${styles.card} ${styles.award}`} aria-labelledby="science-award-title">
+  <h2 id="science-award-title" className={styles.h2}>🏆 International Achievement</h2>
+  <p className={styles.para}>
+    We’re proud that our student won a <strong>Bronze Award</strong> at the
+    <strong> International Greenwich Olympiad (IGO) 2025, London</strong>, for the research project
+    <em> “Natural Plant Extracts as Inhibitors of Cell Division: A Study Using Onion Root Tips.” </em>
+    Guided and mentored by <strong>Dr. Kislay Singh</strong>.
+  </p>
+
+  <div className={styles.actionsRow}>
+    <Link to="/olympiad" className={styles.btnAward}>
+      See details→
+    </Link>
+  </div>
+</section>
+
+
 
         {/* ===== SAMPLE EXPERIMENTS / GALLERY ===== */}
 {/* ===== SAMPLE EXPERIMENTS / GALLERY ===== */}
