@@ -15,7 +15,7 @@ import { NavLink } from 'react-router-dom';
 const pages = [
   { to: "/", name: "Home" },
   { to: "/about", name: "About us" },
-  { to: "/gallery", name: "Gallery" },
+  { to: "/science-classes", name: "Science" },
   { to: "/robotics-for-children", name: "Robotics" },
   { to: "/public-speaking-for-children", name: "Public Speaking" },
   { to: "/finance-for-kids", name: "Finance" },
