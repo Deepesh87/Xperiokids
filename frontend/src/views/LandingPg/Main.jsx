@@ -5,6 +5,7 @@ import Nav from "../../components/Navbar/Nav";
 import Footer from "../../components/Footer/Footer";
 import TopAnnouncement from "./TopAnnouncement";
 import BlogTeaser from "./BlogTeaser";
+import DataScienceTeaser from "./data-science-teaser";
 // import ReactGA from "react-ga";
 
 // const TRACKING_ID= "" // google analytics tracking ID
@@ -18,6 +19,7 @@ function Main() {
     <Landing/>
     <WhyXperio/>
     <BlogTeaser posts={[]} />
+    <DataScienceTeaser /> 
     <Footer/>
   </div>;
 }

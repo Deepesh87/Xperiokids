@@ -32,6 +32,8 @@ const CancellationRefunds = lazy(() => import("../views/terms/refunds"));
 const PrivacyPolicy = lazy(() => import("../views/terms/privacy"));
 const WhyFinancialLiteracyForKids = lazy(() => import("../views/blog/why-financial-literacy-for-kids"));
 const ScriptEvaluator = lazy(() => import("../views/script_evaluator/ScriptEvaluator"));
+const DataScience = lazy(() => import("../views/data-science/data-science"));
+const DataScienceTeaser = lazy(() => import("../views/LandingPg/data-science-teaser"));
 
 function MainRoutes() {
   return (
@@ -67,6 +69,8 @@ function MainRoutes() {
         <Route path="blog/why-financial-literacy-for-kids" element={<WhyFinancialLiteracyForKids />} />
         <Route path="/cancellation-refunds" element={<CancellationRefunds />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/data-science" element={<DataScience />} />
+        <Route path="/data-science-teaser" element={<DataScienceTeaser />} />
       </Routes>
     </Suspense>
   );
