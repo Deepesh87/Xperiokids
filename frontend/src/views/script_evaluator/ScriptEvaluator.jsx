@@ -189,21 +189,24 @@ const handleEvaluate = async () => {
   <ul className={styles.scaleList}>
     <li>
       <span className={`${styles.pill} ${styles.bad}`}>Below 4</span>
-      <span className={styles.lineText}>Needs a lot of improvement.</span>
+      <span className={`${styles.lineText} ${styles.bad}`}>Needs a lot of improvement.</span>
     </li>
     <li>
       <span className={`${styles.pill} ${styles.ok}`}>4 to 6</span>
-      <span className={styles.lineText}>Good start — refine further.</span>
+      <span className={`${styles.lineText} ${styles.ok}`}>Good start — refine further.</span>
     </li>
     <li>
       <span className={`${styles.pill} ${styles.good}`}>Above 6</span>
-      <span className={styles.lineText}>Okay to submit for faculty review.</span>
+      <span className={`${styles.lineText} ${styles.good}`}>Okay to submit for faculty review.</span>
     </li>
     <li>
-      <span className={styles.lineText}>A 3- to 5-minute speech should be between 500 and 800 words, depending on your speaking speed.</span>
+      <span className={styles.lineText}>
+        A 3- to 5-minute speech should be between 500 and 800 words, depending on your speaking speed.
+      </span>
     </li>
   </ul>
 </div>
+
 <p className={styles.sublead}>
   Paste your speech, click <strong>Evaluate</strong>, and get an AI-driven personalization score with quick fixes.
 </p>
