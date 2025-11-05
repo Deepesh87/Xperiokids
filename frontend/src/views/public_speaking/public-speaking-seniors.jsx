@@ -22,9 +22,10 @@ export default function Voice() {
            
 
           <p className={styles.subtitle}>📍 In-Centre | Sundays | 10:00 AM – 12:15 PM</p>
+          <p className={styles.subtitle}>📍 In-Centre | Saturdays | 15:00 PM – 17:15 PM</p>
           <p className={styles.lead}>
             Build <strong>confidence</strong>, sharpen <strong>communication</strong>, and grow
-            <strong> leadership</strong>—one speech at a time.
+            <strong> leadership</strong>—one speech at a time. 2 different batches to choose from!
           </p>
 
           <div className={styles.actions}>
@@ -68,7 +69,7 @@ export default function Voice() {
     <MeetingCard
       title="Saturday Batch"
       weekday={6} // Saturday
-      startDate="2025-11-15"       // <-- set actual Saturday start date
+      startDate="2025-11-22"       // <-- set actual Saturday start date
       startTime={{ h: 15, m: 0 }}  // 3:00 PM
       endTime={{ h: 17, m: 15 }}   // 5:15 PM
       holidays={["2025-09-07", "2025-09-14"]} // reuse or supply Saturday-specific holidays
