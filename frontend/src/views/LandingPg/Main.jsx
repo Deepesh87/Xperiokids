@@ -19,7 +19,7 @@ function Main() {
     <Landing/>
     <WhyXperio/>
     <BlogTeaser posts={[]} />
-    <DataScienceTeaser /> 
+    {/* <DataScienceTeaser />  */}
     <Footer/>
   </div>;
 }
