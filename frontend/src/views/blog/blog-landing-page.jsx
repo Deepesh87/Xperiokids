@@ -9,6 +9,7 @@ import hero1 from "../../assets/robotics-problem-solving-hero.webp";
 import hero2 from "../../assets/public-speaking-confidence.webp";
 import hero3 from "../../assets/lego-robotics-beginners.webp";
 import hero4 from "../../assets/financial-literacy-kids.webp";
+import hero5 from "../../assets/parent_child.webp";
 
 const ALL_POSTS = [
   {
@@ -21,6 +22,17 @@ const ALL_POSTS = [
     dateModified: "2025-09-07",
     tags: ["Robotics", "Problem Solving", "STEM"],
     readingMinutes: 4
+  },
+  {
+    slug: "parenting-tips-for-public-speaking",
+    title: "How Parents Can Help Their Children Shine in Public Speaking",
+    description:
+      "Practical tips for parents from VoiceMasters to support kids in developing strong public speaking skills.",
+    image: hero5,
+    datePublished: "2025-11-11",
+    dateModified: "2025-01111",
+    tags: ["Public Speaking", "Confidence"],
+    readingMinutes: 5
   },
   {
     slug: "public-speaking-for-kids",
