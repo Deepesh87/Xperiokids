@@ -147,7 +147,7 @@ export default function PublicSpeakingParentsBlog() {
             The course is designed like a <strong>club</strong>, with a structured format where students take on different roles and deliver <strong>prepared speeches</strong>.
              The role takers conduct the meeting, introduce the speakers, and invite their evaluators. Students plan their 
              speeches at their own pace and volunteer for roles when they feel ready. Almost all roles — including 
-             speech evaluators — are performed by the students themselves. Occasionally, the faculty steps in as 
+             speech evaluators — are performed by the students themselves. The faculty steps in as 
              the <strong>General Evaluator (GE)</strong> to provide feedback on the overall meeting and highlight areas for improvement.
               We strongly believe in learning by doing, and this format ensures that students gain confidence by 
               speaking and engaging with an audience in every session.
@@ -212,11 +212,11 @@ export default function PublicSpeakingParentsBlog() {
 
 <section id="how-parents" className={styles.mainMagenta}>
 <h2 className={`${styles.h2Magenta} ${styles.headerHighlight}`}>How Parents Can Support Their Child’s Journey</h2>
-  <p className={styles.p}>
-    Parents play a vital role in helping children grow as confident communicators. 
-    Your involvement, encouragement, and understanding make all the difference. 
-    Here’s how you can actively support your child throughout their VoiceMasters journey:
-  </p>
+<p className={styles.p}>
+  At <strong>VoiceMasters</strong>, our teachers and mentors do most of the heavy lifting — guiding, coaching, and motivating every child throughout their journey. 
+  We only ask for a little support from parents — a few words of encouragement, a reminder to practice, or a gentle nudge before a meeting. 
+  Together, this partnership helps children grow into confident, expressive, and self-assured communicators.
+</p>
 <br />
   <ul className={styles.list}>
     <li>
