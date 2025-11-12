@@ -132,7 +132,8 @@ export default function PublicSpeakingParentsBlog() {
           <div className={styles.tocBody}>
             <strong>In this article</strong>
             <ul className={styles.tocList}>
-              <li className={styles.tocItemMagenta}><a href="#why-speaking">Why Public Speaking Matters</a></li>
+              <li className={styles.tocItemMagenta}><a href="#club">Club not a Course</a></li>
+              <li className={styles.tocItemMagenta}><a href="#meeting-structure">Meeting Structure</a></li>
               <li className={styles.tocItemMagenta}><a href="#how-parents">How Parents Can Support</a></li>
               <li className={styles.tocItemMagenta}><a href="#cta">Enroll Near You</a></li>
             </ul>
@@ -140,37 +141,133 @@ export default function PublicSpeakingParentsBlog() {
         </nav>
 
         {/* Sections */}
-        <section id="why-speaking" className={styles.mainMagenta}>
-          <h2 className={styles.h2Magenta}>Why Public Speaking Matters</h2>
+        <section id="club" className={styles.mainMagenta}>
+          <h2 className={`${styles.h2Magenta} ${styles.headerHighlight}`}>Club not a Course</h2>
           <p className={styles.p}>
-            Clear speaking helps children do better in school presentations, interviews, and everyday conversations.
-            Confidence grows when kids learn how to control their voice, manage their nerves, and organize ideas into
-            simple structures that any audience can follow. Children alos learn storytelling skills that boost reading comprehension
-            and writing ability. Plus, Storytelling is fun! Storytelling is a powerful tool for connection and influence,
-            and mastering it early sets kids up for success in school and beyond. Afterall Storytelling is everywhere—in
-            books, movies, ads, speeches, and conversations. And of course at Offices where presentations and pitches are
-            part of daily life.
+            The course is designed like a <strong>club</strong>, with a structured format where students take on different roles and deliver <strong>prepared speeches</strong>.
+             The role takers conduct the meeting, introduce the speakers, and invite their evaluators. Students plan their 
+             speeches at their own pace and volunteer for roles when they feel ready. Almost all roles — including 
+             speech evaluators — are performed by the students themselves. Occasionally, the faculty steps in as 
+             the <strong>General Evaluator (GE)</strong> to provide feedback on the overall meeting and highlight areas for improvement.
+              We strongly believe in learning by doing, and this format ensures that students gain confidence by 
+              speaking and engaging with an audience in every session.
           </p>
           <blockquote className={styles.quote} style={{ borderLeftColor: "var(--x-magenta)", background: "#fff5f8", color: "#7a1238" }}>
-            “Confidence is a skill—build it with small wins, often.”
+            “Courses create learners; clubs create leaders”
           </blockquote>
         </section>
 
+<section id="meeting-structure" className={styles.mainMagenta}>
+<h2 className={`${styles.h2Magenta} ${styles.headerHighlight}`}>Meeting Structure</h2>
+
+  <p className={styles.p}>
+    Every VoiceMasters meeting follows a structured format that helps students grow as confident speakers and thoughtful listeners. 
+    The meeting is divided into three main sections, each focusing on a unique communication skill.
+  </p>
+
+  <div className={styles.subSection}>
+    <h3 className={styles.subHeading}>1. Prepared Speech Session</h3>
+    <p className={styles.p}>
+      Members deliver speeches from <strong>P1 to P8</strong>, each designed around a specific learning objective. 
+      Every speech goes through two levels of review: first by the <em>AI Evaluator</em> (minimum score of 6 out of 10), 
+      and then by the faculty for personalized feedback. 
+      Students are encouraged to speak from their own experiences or stories rather than relying on copied or AI-generated content. 
+      If a speech does not meet its objective, the speaker is encouraged to refine and present it again in a future meeting.
+    </p>
+  </div>
+
+  <div className={styles.subSection}>
+    <h3 className={styles.subHeading}>2. Table Topics Session</h3>
+    <p className={styles.p}>
+      This is the impromptu speaking round, where the <em>Table Topics Master</em> invites volunteers to speak on spontaneous topics. 
+      It helps students think on their feet, organize ideas quickly, and speak confidently without prior preparation.
+    </p>
+  </div>
+
+  <div className={styles.subSection}>
+    <h3 className={styles.subHeading}>3. Evaluation Session</h3>
+    <p className={styles.p}>
+      The final and most reflective part of the meeting, where evaluators — including the General Evaluator, Timer, Ah-Counter, 
+      and Grammarian — share their reports. 
+      They highlight what went well, offer suggestions for improvement, and reinforce the spirit of constructive feedback.
+    </p>
+  </div>
+
+  <div className={styles.subSection}>
+    <h3 className={styles.subHeading}>Book Talk Session</h3>
+    <p className={styles.p}>
+      Every few meetings, we host a special <em>Book Talk</em> segment where members share insights from their favorite books. 
+      This encourages reading habits, improves summarizing skills, and helps students learn to present ideas clearly and concisely.
+    </p>
+  </div>
+
+  <p className={styles.p}>
+    Together, these sessions make every VoiceMasters meeting a well-rounded learning experience — 
+    helping students build confidence, clarity, and creativity in every role they take.
+  </p>
+</section>
+
+
+
 
 <section id="how-parents" className={styles.mainMagenta}>
-<h2 className={styles.h2Magenta}>How Parents Can Support Their Child’s Journey</h2>
-<p className={styles.p}>
-Parents play a vital role in building confidence and consistency. Here’s how you can support your child:
-</p>
-<ul className={styles.list}>
-<li>✅ <strong>Understand the Meeting Flow:</strong> Learn how meetings run so you can guide your child with clarity.</li>
-<li>✅ <strong>Check the WhatsApp Group:</strong> As soon as roles are announced, inform your child early to help them prepare calmly.</li>
-<li>✅ <strong>Help Personalize Their Speech:</strong> Encourage original thoughts and examples instead of copying from the internet.</li>
-<li>✅ <strong>Use the AI Evaluator Tool:</strong> It scores personalization—aim for a score above 6!</li>
-<li>✅ <strong>Watch Their Recordings:</strong> Celebrate their progress and gently discuss improvements.</li>
-<li>✅ <strong>Normalize Off Days:</strong> Everyone has a bad day—it’s part of learning. Keep encouraging!</li>
-<li>✅ <strong>Share Feedback with Us:</strong> If you see something we can improve, let us know. We’re listening.</li>
-</ul>
+<h2 className={`${styles.h2Magenta} ${styles.headerHighlight}`}>How Parents Can Support Their Child’s Journey</h2>
+  <p className={styles.p}>
+    Parents play a vital role in helping children grow as confident communicators. 
+    Your involvement, encouragement, and understanding make all the difference. 
+    Here’s how you can actively support your child throughout their VoiceMasters journey:
+  </p>
+<br />
+  <ul className={styles.list}>
+    <li>
+      ✅ <strong>Understand the Meeting Flow: </strong>  
+      Each meeting follows a structure — with prepared speeches, impromptu rounds, and evaluations. 
+      When you understand how meetings run, you can help your child prepare better and feel more comfortable 
+      taking on new roles or delivering speeches.
+    </li>
+<br />
+    <li>
+      ✅ <strong>Check the WhatsApp Group Regularly: </strong>  
+      Role announcements and meeting updates are shared in the group. 
+      As soon as your child’s name appears, discuss the role together and help them plan early. 
+      This reduces last-minute stress and builds responsibility.
+    </li>
+<br />
+    <li>
+      ✅ <strong>Help Personalize Their Speech: </strong>  
+      Encourage your child to share <em>their own experiences, feelings, and observations</em>. 
+      Avoid scripts copied from books or the internet — the goal is to help them find their own voice 
+      and express it authentically.
+    </li>
+<br />
+    <li>
+      ✅ <strong>Use the AI Evaluator Tool: </strong>  
+      Before submitting a speech, have your child run it through our AI evaluator. 
+      It provides an instant score for personalization — aim for a score above <strong>6</strong>. 
+      This helps them reflect on how original and relatable their speech is before presenting.
+    </li>
+<br />
+    <li>
+      ✅ <strong>Watch Their Recordings: </strong>  
+      Reviewing recorded speeches together is one of the best ways to track growth. 
+      Celebrate their progress, point out what they did well, and gently discuss areas for improvement. 
+      Positive reinforcement builds long-term confidence.
+    </li>
+<br />
+    <li>
+      ✅ <strong>Normalize Off Days: </strong>  
+      Not every meeting will go perfectly — and that’s okay! Some days your child might forget a line, 
+      speak too fast, or feel nervous. Reassure them that these moments are part of the learning journey 
+      and that real growth happens through consistent participation.
+    </li>
+<br />
+    <li>
+      ✅ <strong>Share Feedback with Us: </strong>  
+      We value your perspective. If you notice something that could make the program even better — 
+      be it timing, content, or support — please let us know. 
+      VoiceMasters is a collaborative space where teachers, parents, and students grow together.
+    </li>
+  </ul>
 </section>
 
 

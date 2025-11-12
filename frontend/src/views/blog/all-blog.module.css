@@ -411,3 +411,34 @@ a:focus-visible {
 .themeTeal a:focus-visible {
   box-shadow: 0 0 0 3px rgba(20, 148, 157, .35);
 }
+
+/* ====== Header background highlights ====== */
+.headerHighlight {
+  display: inline-block;
+  background: rgba(199, 45, 96, 0.08); /* light magenta tint */
+  padding: 6px 14px;
+  border-radius: 10px;
+  color: var(--x-magenta);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Optional – add subtle gradient if you want more depth */
+.headerHighlight {
+  background: linear-gradient(
+    90deg,
+    rgba(199, 45, 96, 0.08) 0%,
+    rgba(199, 45, 96, 0.03) 100%
+  );
+}
+
+/* Subheadings (like Prepared Speech, Table Topics etc.) */
+.subHeaderHighlight {
+  background: rgba(199, 45, 96, 0.05);
+  padding: 4px 10px;
+  border-left: 4px solid var(--x-magenta);
+  border-radius: 6px;
+  color: #333;
+  margin-top: 1.2rem;
+  font-weight: 600;
+}
