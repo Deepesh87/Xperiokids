@@ -69,7 +69,7 @@ export default function Voice() {
     <MeetingCard
       title="Saturday Batch"
       weekday={6} // Saturday
-      startDate="2025-11-22"       // <-- set actual Saturday start date
+      startDate="2026-01-11"       // <-- set actual Saturday start date
       startTime={{ h: 15, m: 0 }}  // 3:00 PM
       endTime={{ h: 17, m: 15 }}   // 5:15 PM
       holidays={["2025-09-07", "2025-09-14"]} // reuse or supply Saturday-specific holidays
